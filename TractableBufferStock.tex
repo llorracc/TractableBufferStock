@@ -2,38 +2,57 @@
 \documentclass{\handout}
 \providecommand{\texname}{TractableBufferStock}% Keyname for the paper
 \usepackage{\LaTeXInputs/\texname}% Styling for whole paper (and subfiles)
-\usepackage{\econtexSetup}\usepackage{\econtexShortcuts}
+\usepackage{\handoutSetup}
 
-% Lines containing CDCPrivate are excised when the public version of the document is created 
-% \setboolean{BigAndWide}{true} % CDCPrivate 
+% Lines containing Private are excised when the public version of the document is created 
 
 \begin{document}
+\DeclareGraphicsExtensions{.pdf,.svg,.png,.jpg} % change to %\DeclareGraphicsExtensions{.png,.svg,.jpg} to prefer png pix
 
-\begin{CDCPrivate}
-\centerline{CDC Private Version}                                % CDCPrivate
-\end{CDCPrivate}
+
 
 %\usepackage{endfloat}  % uncomment to put figures at the end
 
 %\handoutHeader
 \providecommand{\dmEqZero}{\ensuremath{\Delta\mRatE=0}}
 \providecommand{\dcEqZero}{\ensuremath{\Delta\cRatE=0}}
+\newcommand{\hideSup}{\makebox[0pt]{}}
+\renewcommand{\MPCU}{\MPC} % In principle, if parameters change when unemployed (like, death rate), could have different MPC; in practice, not done here
+\newcommand{\Mma}{{\it Mathematica}~}
+\renewcommand{\tSS}{\null}
+\newcommand{\psav}{\cancel{c}}
+\newcommand{\psavFunc}{\ensuremath{\cancel{\cFunc}}}
+\newcommand{\crho}{\cancel{\rho}}
+\newcommand{\nFuncP}{\nFunc^{\prime}}
+\newcommand{\nFuncPP}{\nFunc^{\prime\prime}}
+\newcommand{\nFuncPPP}{\nFunc^{\prime\prime\prime}}
+\providecommand{\FHWCPGro}{FHWC$_{\PGro}$}
+\providecommand{\FHWCWGro}{FHWC$_{\WGro}$}
+\providecommand{\DiscountMaxRIC}{\ensuremath{\bar{\Discount}_{\text{RIC}}}}
+\providecommand{\DiscountMaxGICTBS}{\bar{\Discount}_{\text{TBS}}}
+\providecommand{\GICPGro}{GIC$_{\PGro}$}
+\providecommand{\GICWGro}{GIC$_{\WGro}$}
+\providecommand{\DiscountMaxGICPGro}{\bar{\Discount}_{\text{GIC}_\PGro}}
+\providecommand{\DiscountMaxGICWGro}{\bar{\Discount}_{\text{GIC}_\WGro}}
+\providecommand{\DiscountMaxGICWhenFHWCTBSHolds}{\ensuremath{\bar{\Discount}_{\text{FHW}}}}
 
 \begin{verbatimwrite}{\jobname.title}
 A Tractable Model of Buffer Stock Saving
 \end{verbatimwrite}
 
-%\handoutNameMake
+\handoutNameMake
 
-%\section{Introduction} 
-
+\section{Introduction} 
 This handout illustrates the logic of precautionary saving by assuming that individuals face only a single, simple kind of uncertainty: A small risk of becoming permanently unemployed.  More realistic assumptions yield similar conclusions (after much more work).\footnote{The model simplifies many of the key results in \cite{carroll:brookings} and \cite{carrollBSLCPIH} using a discrete-time version of the elegant continuous-time model of \cite{toche:urisk}.  For a brief summary of the precautionary saving literature, see \cite{CarrollKimballPSPW}; for a more rigorous treatment of the theoretical issues, see \cite{BufferStockTheory}.}
+
+%\begin{comment}  
 
 \section{The Microeconomic Consumer's Problem}
 The aggregate wage $\Wage_{t}$ grows by a constant factor $\WGro$ every period, reflecting exogenous labor productivity improvements:
 \begin{equation}\begin{gathered}\begin{aligned}
         \Wage_{t+1} & =  \WGro \Wage_{t}.
 \end{aligned}\end{gathered}\end{equation}
+
 
 The consumer lives in a small open economy -- there is a constant interest factor $\Rfree$.  Defining $\mLevBF$ as {\bf m}arket resources (net worth plus current income), $\aLevBF$ as end-of-period {\bf a}ssets {\bf a}fter {\bf a}ll {\bf a}ctions have been {\bf a}ccomplished (specifically, after the consumption decision), and $\bLevBF$ as {\bf b}ank {\bf b}alances {\bf b}efore receipt of labor income, the dynamic budget constraint (DBC) can be decomposed into the following elements:
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -52,7 +71,6 @@ individuals labor income is zero.\footnote{We could allow for
   change.}
 
 \pagebreak 
-\opt{Aquamacs}{\pagebreak} % CDCPrivate for some reason the page break on the first page is messed up in the Aquamacs mode
 \subsection{The Unemployed Consumer's Problem} \label{subsec:Fred}
 
 Once a person becomes unemployed, that person can never become
@@ -64,7 +82,7 @@ $\uFunc(\bullet)= \bullet^{1-\CRRA}/(1-\CRRA)$, and they discount
 future felicity geometrically by $\Discount$ per period.
 
 
-\renewcommand{\MPCU}{\MPC} % In principle, if parameters change when unemployed (like, death rate), could have different MPC; in practice, not done here
+
 The solution to the unemployed consumer's optimization problem
 is\footnote{See \handoutC{PerfForesightCRRA} for a derivation, noting that human wealth is zero for the unemployed consumer.} 
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -96,7 +114,7 @@ discounted.}
 For many purposes (not least, the calibration of the model), it turns out to be useful to alternatviely express
 impatience conditions like \eqref{eq:RIC} in terms of the upper bound of the range of time preference
 factors $\bar{\Discount}$ that satisfy the condition; solving \eqref{eq:RIC} for $\Discount$, we designate this 
-object \providecommand{\DiscountMaxRIC}{\ensuremath{\bar{\Discount}_{\text{RIC}}}}
+object 
 \begin{equation}\begin{gathered}\begin{aligned}
   \DiscountMaxRIC & =  \Rfree^{\CRRA-1}
 \end{aligned}\end{gathered}\end{equation}
@@ -123,6 +141,7 @@ period ($\empState_{t+1}=1$), market resources will be
 \begin{equation}
 \mLevBF^{e}_{t+1} = (\mLevBF^{e}_{t}-\cLevBF^{e}_{t})\Rfree+\Wage_{t+1}\labor_{t+1}. \label{eq:Metp1}
 \end{equation}
+
 
 But employed consumers face a constant risk $\urate$ of becoming unemployed.  
 It will be convenient to define $\erate\equiv 1-\urate$ as the probability that a consumer does {\it not} become unemployed.  Whether the consumer is employed or not, the consumer's labor productivity $\labor$ is well-defined:\footnote{`Labor productivity' is purely hypothetical for a consumer who is unemployed; but defining it even for unemployed consumers simplifies notation and some later analysis.}  For convenience, $\labor$ is assumed to grow by a factor $\erate^{-1}$ every period,
@@ -162,13 +181,12 @@ usual steps lead to the standard consumption Euler equation:
 Defining nonbold variables as the bold equivalent divided
 by the level of permanent labor income for an employed consumer, e.g.\ ${\cRat}^{e}_{t}=\cLevBF^{e}_{t}/(\Wage_{t}\labor_{t})$, we can rewrite the
 consumption Euler equation as
-\begin{equation}\begin{gathered}\begin{aligned}
+\begin{equation}\label{eq:Explicit}\begin{split}
   1         & =  \Rfree\Discount \Ex_{t}\left[\left(\frac{{c}^{\bullet}_{t+1} \Wage_{t+1}\labor_{t+1}}{{\cRat}^{e}_{t} \Wage_{t}\labor_{t}}\right)^{-\CRRA} \right]  
 \\          & =  \Rfree\Discount \Ex_{t}\left[\left(\frac{{c}^{\bullet}_{t+1}}{{\cRat}^{e}_{t}}\PGro\right)^{-\CRRA} \right]
 \\          & =  \PGro^{-\CRRA}\Rfree\Discount \Ex_{t}\left[\left(\frac{{c}^{\bullet}_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA} \right] 
-\\          & =  \PGro^{-\CRRA}\Rfree\Discount \left\{(1-\urate)\left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA}+\urate \left(\frac{\cU_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA}\right\} \label{eq:Explicit}.
-\end{aligned}\end{gathered}\end{equation}
-
+\\          & =  \PGro^{-\CRRA}\Rfree\Discount \left\{(1-\urate)\left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA}+\urate \left(\frac{\cU_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA}\right\} 
+\end{split}\end{equation}
 
 \subsubsection{Analysis and Intuition of Consumption Growth}
 It will be useful now to define a `growth patience factor' (terminology justified below):
@@ -179,23 +197,19 @@ which is the factor by which ${\cRat}^{e}$ would grow in the
 perfect foresight version of the model with permanent income growth factor
 $\PGro$ (again see \handoutC{PerfForesightCRRA}).  
 Using this,
-\eqref{eq:Explicit} can be written as\footnote{This is where the perfect foresight assumption is important; without it \eqref{eq:BeforePFStep} would be 
+\eqref{eq:Explicit} can be written as\footnote{This is where the perfect foresight assumption is important; without it \eqref{eq:ctp1Oct} would be 
 \begin{equation}\begin{gathered}\begin{aligned}
  1       & =  \PatPGro^{\CRRA} \Ex_{t}\left[\left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA} \left\{1+\urate\left[\left(\frac{\cU_{t+1}}{{\cRat}^{e}_{t+1}}\right)^{-\CRRA}-1\right]\right\}\right] \label{eq:BeforePFStepWithEx}
 \end{aligned}\end{gathered}\end{equation}
-and we would be unable to proceed to the step from \eqref{eq:BeforePFStep} to \eqref{eq:ctp1Oct}.}
+and we would be unable to proceed to the step from \eqref{eq:ctp1Oct} to \eqref{eq:ctp1Oct}.}
 
-\begin{align}
+\begin{equation}\begin{gathered}\begin{aligned}
         1  & = \PatPGro^{\CRRA} \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA} \left\{(1-\urate)+\urate\left[\left(\frac{\cU_{t+1}}{{\cRat}^{e}_{t}}\right)\left(\frac{{\cRat}^{e}_{t}}{{\cRat}^{e}_{t+1}}\right)\right]^{-\CRRA}\right\} \notag
 \\       & = \PatPGro^{\CRRA} \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA} \left\{1+\urate\left[\left(\frac{\cU_{t+1}}{{\cRat}^{e}_{t+1}}\right)^{-\CRRA}-1\right]\right\} \notag % \label{eq:BeforePFStep}
-\\       \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{\CRRA} & = \PatPGro^{\CRRA} \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cU_{t+1}}\right)^{\CRRA}-1\right]\right\} \label{eq:ctp1Oct} \label{eq:cedel}
+\\       \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{\CRRA} & = \PatPGro^{\CRRA} \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cU_{t+1}}\right)^{\CRRA}-1\right]\right\} \label{eq:ctp1Oct} 
 \\       \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right) & = {\PatPGro} \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cU_{t+1}}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}.  \notag
-\end{align}
-\begin{CDCPrivate}
-An interesting thought:  Imagine the creation of an insurance system in which the consumer pledges their next period $\mRatE_{t+1}$ to the insurance company in exchange for receiving a lognormally distributed $\hat{\mRat}^{e}_{t+1}$ with an amount of variation that is (according to some metric that deserves further thought) equivalent, $\log \hat{\cRat}^{e}_{t+1}~\sim~\mathcal{N}(\Ex_{t}[{\cRat}^{e}_{t+1}]-\sigma^{2}_{\hat{\cRat}_{t+1}}/2,\sigma^{2}_{\hat{\cRat}_{t+1}}/2)$.  In that case we would be able to compute analytically the value of $\Ex_{t}[(\cRat^{e}_{t+1})^{-\CRRA}]$ in \eqref{eq:Explicit} and might be able to proceed with solving a version of the model with transitory as well as permanent shocks.
+\end{aligned}\end{gathered}\end{equation}
 
-Second thoughts on this:  This approach misses the concavity of the consumption function, which may or may not matter much depending on the magnitude of the shocks.  If it does matter, it should be possible for the insurance company to provide a contract in which the amount of consumption provided in the contract is, say, $\Ex_{t}[\cRat^{e}_{t+1}](\eta)^{\bullet}$ where $\eta$ is lognormal and $\bullet$ gives the best approximation to the slope of the consumption function around $\Ex_{t}[\cRat^{e}_{t+1}]$.  How many people would buy the contract would depend on the profit margin required by the insurance company, as well as consumption concavity.
-\end{CDCPrivate}
 
 \opt{MarginNotes}{\marginpar{\tiny Mnemonics for $\nabla$: sort of like a change, but a downward change, so like $\Delta$, but points down.}}
 
@@ -210,7 +224,7 @@ unemployed person), and define an `excess prudence' factor
   \prudEx & =  \left(\frac{\CRRA-1}{2}\right).
 \end{aligned}\end{gathered}\end{equation}
 
-Appendix~\ref{sec:CGroApprox} shows that, with some approximations, we can rewrite \eqref{eq:cedel} as
+Appendix~\ref{sec:CGroApprox} shows that, with some approximations, we can rewrite \eqref{eq:ctp1Oct} as
 \begin{equation}\begin{gathered}\begin{aligned}
          \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right) & \approx  \left(1+ \urate (1+\prudEx\nabla _{t+1})\nabla _{t+1}\right) {\PatPGro}
          \label{eq:cedelapprox}
@@ -236,14 +250,17 @@ saving motive induced by a higher degree of prudence.
 
 The target level of $\mRat^{e}$ (if one exists) will be the point of intersection between the $\dcEqZero$ and $\dmEqZero$ loci.  \opt{MarginNotes}{\marginpar{\tiny Note the dropping of the $t+1$ subscripts because we're talking about a steady-state.}}
 
-The $\dcEqZero$ locus can be characterized by substituting ${\cRat}^{e}_{t+1}={\cRat}^{e}_{t} \equiv {\cRat}^{e}$ into \eqref{eq:cedel}:
-\begin{align}
-         1 & = \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cRat_{t+1}^{u}}\right)^{\CRRA}-1\right]\right\} \PatPGro^{\CRRA} \label{eq:ctp1OctEq1}
+The $\dcEqZero$ locus can be characterized by substituting ${\cRat}^{e}_{t+1}={\cRat}^{e}_{t} \equiv {\cRat}^{e}$:
+\begin{equation}\begin{gathered}\begin{aligned}
+         1 & = \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cRat_{t+1}^{u}}\right)^{\CRRA}-1\right]\right\} \PatPGro^{\CRRA}  \notag
 \\ \PatPGro^{-\CRRA} & =  (1-\urate)+\urate\left(\frac{{\cRat}^{e}_{\tSS}}{\cRat_{t+1}^{u} }\right)^{\CRRA} \notag
 \\ \underbrace{\left(\frac{\PatPGro^{-\CRRA}-1+\urate}{\urate}\right)^{1/\CRRA}}_{\equiv \straight} & =   \left(\frac{{\cRat}^{e}_{\tSS}}{\cRatU_{t+1}}\right) \label{eq:straightDef}
-\\ \underbrace{\left(\overbrace{\urate^{-1}(\PatPGro^{-\CRRA}-1)}^{\equiv \varpi}+1\right)^{1/\CRRA}}_{\straight=(1+\varpi)^{1/\CRRA}} & =   \left(\frac{{\cRat}^{e}_{\tSS}}{\cRatU_{t+1}}\right) \notag %\label{eq:varpiDef}
-\\      {\cRat}^{e}_{\tSS} & = \cRat^{u}_{t+1} \straight \label{eq:cRatEtfmcRatUtp1}.
-\end{align}
+  \\ \underbrace{\left(\overbrace{\urate^{-1}(\PatPGro^{-\CRRA}-1)}^{\equiv \varpi}+1\right)^{1/\CRRA}}_{\straight=(1+\varpi)^{1/\CRRA}} & =   \left(\frac{{\cRat}^{e}_{\tSS}}{\cRatU_{t+1}}\right) \notag %\label{eq:varpiDef}
+\end{aligned}\end{gathered}\end{equation}
+which boils down to 
+\begin{equation}\begin{gathered}\begin{aligned}
+     {\cRat}^{e}_{\tSS} & = \cRat^{u}_{t+1} \straight \label{eq:cRatEtfmcRatUtp1}.
+\end{aligned}\end{gathered}\end{equation}
 
 
 The importance of the linearity of the consumption function of the unemployed consumer now becomes evident:  It means that the RHS of \eqref{eq:cRatEtfmcRatUtp1} is linear in $\cRat^{e}_{t}$:
@@ -251,14 +268,6 @@ The importance of the linearity of the consumption function of the unemployed co
   \cRat^{e}_{t} & =  \overbrace{(\mRat^{e}_{t}-{\cRat}^{e}_{t})\Rnorm \MPCU}^{\cRat^{u}_{t+1}} \straight \label{eq:PSTerm}.
 \end{aligned}\end{gathered}\end{equation}
 
-\begin{CDCPrivate}
-Without the linearity assumption, we would have 
-\begin{equation}\begin{gathered}\begin{aligned}
-      \cFunc^{e}(\mRatE_{t}) & =  \cRatU((\mRatE_{t}-\cFunc^{e}(\mRatE_{t}))\Rnorm) \straight
-,
-\end{aligned}\end{gathered}\end{equation}
-and even if we had a solution for $\cFunc^{u}$, this equation defines the consumption function for the employed consumer only implicitly; this explains why the linearity of the consumption function for the unemployed consumer is essential for the tractability of the solution.
-\end{CDCPrivate}
 
 We know that $\mRatE_{t}-{\cRat}^{e}_{t} > 0$ because a consumer in these circumstances (facing possible perpetual unemployment) will never borrow (see below for a full discussion of this point).  Since the RIC imposes $\MPCU>0$, \eqref{eq:PSTerm} tells us that steady-state consumption (if it exists)\footnote{Under some parameter values, the model has solutions under which the consumer always spends less than the amount that would leave $\mRatE$ constant, and so accumulates forever.} is a positive finite number so long as $\straight > 0$.\footnote{This will hold true iff the numerator on the LHS of \eqref{eq:straightDef} is a positive finite number; for this, we we need the condition:
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -274,14 +283,12 @@ We know that $\mRatE_{t}-{\cRat}^{e}_{t} > 0$ because a consumer in these circum
 \subsubsection{Upper Bounds for $\Discount$, Given Other Parameters}
 
 
-As with the RIC, it may be useful to rewrite this as defining an upper bound to the permissible time preference rates: \providecommand{\DiscountMaxGICTBS}{\bar{\Discount}_{\text{TBS}}}
+As with the RIC, it may be useful to rewrite this as defining an upper bound to the permissible time preference rates: 
 \begin{equation}\begin{gathered}\begin{aligned}
 \Discount < \DiscountMaxGICTBS & =  \left(\frac{\PGro^{\CRRA}}{\Rfree(1-\urate)}\right) \label{eq:DiscountMaxGICTBS}
 .
 \end{aligned}\end{gathered}\end{equation}
 
-\providecommand{\GICPGro}{GIC$_{\PGro}$}
-\providecommand{\GICWGro}{GIC$_{\WGro}$}
 In the limit as $\urate$ approaches zero, \eqref{eq:GICExistsSoln} reduces to a requirement that the growth patience factor is less than one,
 \begin{equation}\begin{gathered}\begin{aligned}
   \PatPGro & <  1 \label{eq:GICPGro}
@@ -290,8 +297,6 @@ which, as in \handoutM{PerfForesightCRRA},  we call a `growth impatience conditi
 We label the weaker condition \eqref{eq:GICExistsSoln} the `GIC-TBS' (the version of the GIC required for a solution to exist in the Tractable Buffer Stock model).  It will always hold if the plain-vanilla \GICWGro~holds because $\urate \geq 0$.  Thus, a consumer who, in the absence of uncertainty, would satisfy both the RIC and the \GICWGro, will have a positive finite target level of wealth when uncertainty is introduced.\footnote{See appendix~\ref{sec:mTargExists} for a proof that the \GICPGro~condition is both necessary and sufficient for the existence of a target level of wealth.}
 
 When it is useful to distinguish the version of the GIC that applies in the model with income growth of $\WGro$ from the corresponding condition when growth is $\PGro$ we will label the two conditions \GICPGro~and \GICWGro, and the corresponding bounds on $\Discount$ are 
-\providecommand{\DiscountMaxGICPGro}{\bar{\Discount}_{\text{GIC}_\PGro}}
-\providecommand{\DiscountMaxGICWGro}{\bar{\Discount}_{\text{GIC}_\WGro}}
 \begin{equation}\begin{gathered}\begin{aligned}
    \Discount < \DiscountMaxGICPGro & =  \Rfree^{\CRRA-1}\PGro^{\CRRA}
 \\ \Discount < \DiscountMaxGICWGro & =  \Rfree^{\CRRA-1}\WGro^{\CRRA}
@@ -344,7 +349,6 @@ $\urate$ on the relevant degree of growth impatience in the GIC-TBS
 condition.  
 
 \subsubsection{The Target Level of $\mRatE$}
-\renewcommand{\tSS}{\null}
 
 Appendix~\ref{sec:mTargExists} demonstrates that the RIC and the GIC-TBS are necessary conditions for the existence of a target value of market resources $\mTarg^{e},$ and that the \GICPGro~is sufficient.   Appendix~\ref{sec:mTargExact} solves for an explicit formula for that target.
 
@@ -393,7 +397,7 @@ wealth.\footnote{$(\pGro+\timeRate-\rfree) > 0$ is guaranteed by \eqref{eq:GICra
 
 The assumption of log utility is restrictive, and probably does not capture sufficient aversion to consumption fluctuations.  Fortunately, another special case helps to illuminate the effect of higher levels of prudence.  The appendix shows that, in the special case where $\timeRate=\rfree$, the target level of wealth will be approximable by
 \begin{equation}\begin{gathered}\begin{aligned}
- \mTarg^{\null} & \approx  1 + \left(\frac{1}{(\pGro-\rfree)+\timeRate(1+(\pGro/\urate)(1-(\pGro/\urate)\prudEx))}\right) \label{eq:mTargetrEqdelta}
+ \mTarg^{\hideSup} & \approx  1 + \left(\frac{1}{(\pGro-\rfree)+\timeRate(1+(\pGro/\urate)(1-(\pGro/\urate)\prudEx))}\right) \label{eq:mTargetrEqdelta}
 \end{aligned}\end{gathered}\end{equation}
 which is like \eqref{eq:mTargetLogCase} (with $\timeRate-\rfree=0$) but with the addition of the final term involving $\prudEx$ which measures the amount by which prudence exceeds the logarithmic benchmark.  An increase in $\prudEx$ reduces the denominator of \eqref{eq:mTargetrEqdelta} and thereby boosts the target level of wealth: Exactly what would be expected from an increase in the intensity of the precautionary motive.
 
@@ -403,8 +407,6 @@ Note that the different effects {\it interact} with each other, in the sense tha
 
 Interestingly, the limit of the buffer stock model as $\urate \downarrow 0$ is {\it not} the perfect foresight solution obtained when $\urate$ is exactly equal to zero.%  That limiting solution contains most of the insight that comes from the more general model with $\urate$ bounded strictly away from zero, so we confine the analysis here to that limiting case.
 
-\providecommand{\FHWCPGro}{FHWC$_{\PGro}$}
-\providecommand{\FHWCWGro}{FHWC$_{\WGro}$}
 The handout \handoutC{PerfForesightCRRA} shows that in the perfect foresight context, it is necessary to impose the Finite Human Wealth Condition $\Rfree > \WGro$ (henceforth, \FHWCWGro) to obtain a sensible solution.\footnote{The appendix to \handoutC{PerfForesightCRRA} shows that if the \FHWCWGro~fails, the limit of the perfect foresight model is $\cFunc(\mRat)=\infty~\forall~\mRat$, which is not a useful or plausible solution.}  But if the \FHWCWGro~holds, the \GICWGro~is strictly stronger than the RIC, because the combination $\Pat/\WGro < 1$ and $\Rfree > \WGro$ obviously implies $\Pat/\Rfree < 1$.  If we substitute $\PGro$ for $\WGro$, we can define the corresponding version of the condition in the case where growth is $\PGro$: the \FHWCPGro.
 
 It turns out that in the buffer stock model, we can relax the requirement that human wealth is finite.  
@@ -417,42 +419,29 @@ For any finite horizon, human wealth is finite, and there is a positive probabil
 
 The consequence is that the limiting model (as $\urate \downarrow 0$) exhibits a solution with a unique finite target $\mRatE$ so long as \eqref{eq:GICExistsSoln} holds, {\it even if human wealth is infinite}; in this case the $\dmEqZero$ locus is downward sloping (because $1-\Rnorm^{-1}<1$; see \eqref{eq:mDelEqZero}) while the $\dcEqZero$ locus is upward sloping (as guaranteed by \eqref{eq:GICExistsSoln}).  Thus, a target $\mRatE$ will exist.
 
+
 \subsubsection{The Phase Diagram}
 
 Figure~\ref{fig:PhaseDiag} presents the phase diagram.
 \begin{figure}
 \caption{Phase Diagram}\label{fig:PhaseDiag}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/TractableBufferStockPhaseDiag.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/TractableBufferStockPhaseDiag.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/TractableBufferStockPhaseDiag.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/TractableBufferStockPhaseDiag.png} % CDCPrivate
 \includegraphics[width=6in]{\FigDir/TractableBufferStockPhaseDiag}
 \end{figure}
-
 
 The $\Delta \mRatE_{\tSS} = 0$ locus, given in \eqref{eq:mDelEqZero}, indicates, for a given level of $\mRatE_{\tSS}$, how much consumption ${\cRat}^{e}_{\tSS}$ would be exactly the right amount to leave $\mRatE$ unchanged.  Call this the `permanently sustainable consumption locus,' or for short `sustainable consumption.'\footnote{Some authors refer to $\Delta \mRatE_{\tSS} = 0$ as giving the level of `permanent income,' but this definition differs from \cite{friedmanATheory}'s and is problematic because it could be confused with `permanent labor income' $\Wage_{t} \labor_{t}$.}  For any given $\mE$, consuming an amount less than the `sustainable' level will cause wealth to rise (and conversely for points above $\Delta \mRatE =0$).  This provides the logic for the horizontal arrows of motion in the diagram: Above the sustainable consumption locus they point left, and below they point right.
 
 \opt{MarginNotes}{\marginpar{\tiny READ THIS PARAGRAPH CAREFULLY BEFORE LECTURE.  Recall that $\Delta {\cRat}^{e}$ condition is derived from Euler equation (preferences); can't use budget constraint logic here (that's in the $\Delta \mRatE$ locus).}}
 
-The intuition for the $\Delta {\cRat}^{e}_{\tSS}=0$ locus (which comes from
-\eqref{eq:cDelEqZero}) is a bit subtler.  Take a point on 
-the $\Delta {\cRat}^{e}_{\tSS}=0$ locus, and consider how things 
-would change if $\mE$ were a bit higher at the same $\cE$.  
-Recall that the growth rate of consumption consistent with 
-the Euler equation \eqref{eq:cedel} depends on the amount by which consumption will
-fall if the bad state is realized, $\nabla_{t+1} = \cE_{t+1}/\cU_{t+1}$.  
-But $\cU_{t+1} = \MPCU \Rfree (\mE_{t} - \cE_{t})$ so at the same $\cE_{t}$ but 
-a greater $\mE_{t}$, $\cU_{t+1}$ will be larger.  If $\cE_{t+1}$ were to remain
-unchanged, then with the larger $\cU_{t+1}$ the ratio $\nabla_{t+1} = \cE_{t+1}/\cU_{t+1}-1$ would be smaller.
+The intuition for the $\Delta {\cRat}^{e}_{\tSS}=0$ locus (which comes from \eqref{eq:cDelEqZero}) is a bit subtler.  Take a point on the $\Delta {\cRat}^{e}_{\tSS}=0$ locus, and consider how things would change if $\mE$ were a bit higher at the same $\cE$.  Recall that the growth rate of consumption consistent with the Euler equation \eqref{eq:ctp1Oct} depends on the amount by which consumption will fall if the bad state is realized, $\nabla_{t+1} = \cE_{t+1}/\cU_{t+1}$.  But $\cU_{t+1} = \MPCU \Rfree (\mE_{t} - \cE_{t})$ so at the same $\cE_{t}$ but a greater $\mE_{t}$, $\cU_{t+1}$ will be larger.  If $\cE_{t+1}$ were to remain unchanged, then with the larger $\cU_{t+1}$ the ratio $\nabla_{t+1} = \cE_{t+1}/\cU_{t+1}-1$ would be smaller.
+
 
 The consequences of this are easiest to see in the logarithmic case whose consumption growth equation is derived in \eqref{eq:cedelapproxLog}, which tells us that ${\cRat}^{e}_{t+1} \approx {\cRat}^{e}_{t}\left(1+ \urate \nabla _{t+1}\right) {\PatPGro}$, which directly 
 implies that the lower $\nabla_{t+1}$ will yield a lower $\cE_{t+1}$.  That is, for any point to the right of the $\Delta \cE_{t+1}=0$ locus, the growth rate of consumption will be lower than at the corresonding point on the locus.  Since on the locus, growth
 was zero, this means that to the right of the locus, $\cE$ is declining (hence the down arrow in the phase diagram).  Reciprocally, for any point to the left of $\Delta \cE_{t+1}=0$, the Euler equation implies that consumption will rise.
 
-
 \begin{figure}
 \caption{The Consumption Function}\label{fig:cFunc}
 \includegraphics[width=6in]{\FigDir/TractableBufferStockcFunc}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/TractableBufferStockcFunc.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/TractableBufferStockcFunc.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/TractableBufferStockcFunc.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/TractableBufferStockcFunc.png} % CDCPrivate
 \end{figure}
 
 \subsubsection{The Consumption Function}
@@ -461,6 +450,7 @@ employed consumer (dropping the $e$ superscript to reduce clutter).  This
 is actually just the stable arm in the phase diagram.  (Think about
 why).  Also plotted are the 45 degree line along which $\cRat = \mRatE_{t}$
 as well as the function
+
 \begin{equation}\begin{gathered}\begin{aligned}
   \bar{\cFunc}(\mRat) & =  (\mRat-1+\hRat)\MPCU
 \end{aligned}\end{gathered}\end{equation}
@@ -509,7 +499,7 @@ implies:
 \begin{equation}\begin{gathered}\begin{aligned}
   \pGro & >  \CRRA^{-1}(\rfree-\timeRate) ,
 \end{aligned}\end{gathered}\end{equation}
-a condition that can be visually verified for our benchmark calibration in figure \ref{fig:GrowthA}.  Now multiply both sides of \eqref{eq:cedel} by $\PGro$, obtaining
+a condition that can be visually verified for our benchmark calibration in figure \ref{fig:GrowthA}.  Now multiply both sides of \eqref{eq:ctp1Oct} by $\PGro$, obtaining
 \begin{equation}\begin{gathered}\begin{aligned}
         \left(\frac{\cLevBF^{e}_{t+1}}{\cLevBF^{e}_{t}}\right) & =  (\Rfree\Discount)^{1/\CRRA} \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cU_{t+1}}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA} \label{eq:cLevGro}
 \\       \Delta \log \cLevBF^{e}_{t+1} & \approx  \CRRA^{-1}(\rfree-\timeRate) +  \urate \nabla _{t+1}, %\label{eq:cLevGroLogUtil}
@@ -529,17 +519,16 @@ gets low, expected consumption growth gets very large.
 \begin{figure}
 \caption{Income and Consumption Growth}\label{fig:GrowthA}
 \includegraphics[width=6in]{\FigDir/TractableBufferStockGrowthA}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/TractableBufferStockGrowthA.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/TractableBufferStockGrowthA.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/TractableBufferStockGrowthA.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/TractableBufferStockGrowthA.png} % CDCPrivate
 \end{figure}
 
-Next, note that the point where the consumption growth locus
-meets the income growth line is labelled $\mTarg^{\null}$.  This is
-because the place where consumption growth is equal to income
-growth is at the target value of $\mRatE$.
+
+Next, note that the point where the consumption growth locus meets the income growth line is labelled $\mTarg$.  This is because the place where consumption growth is equal to income growth is at the target value of $\mRatE$.
 
 
-\opt{MarginNotes}{\marginpar{\tiny $\mTarg^{\null}$ is point where impatience = prudence.}}
+\opt{MarginNotes}{\marginpar{\tiny $\mTarg^{\hideSup}$ is point where impatience = prudence.}}
+
+
+%\end{comment}
 
 \subsubsection{Summing Up the Intuition}
 We are finally in position to get an intuitive understanding of how the
@@ -556,9 +545,9 @@ target wealth-to-income ratio.
 \caption{Effect of An Increase In $\rfree$}
 \includegraphics[width=6in]{\FigDir/TractableBufferStockGrowthB}
 \label{fig:GrowthB}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/TractableBufferStockGrowthB.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/TractableBufferStockGrowthB.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/TractableBufferStockGrowthB.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/TractableBufferStockGrowthB.png} % CDCPrivate
 \end{figure}
+
+%\input{handoutBibMake.tex}\end{document}
 
 Now consider the results of increasing the interest rate to
 $\grave{\rfree}>\rfree$, depicted in figure~\ref{fig:GrowthB}.  Obviously the perfect foresight consumption
@@ -603,8 +592,6 @@ and saving rates.
 \caption{Effect of an Increase in $\urate$}
 \includegraphics[width=6in]{\FigDir/cGroIncreaseMhoPlot}
 \label{fig:cGroIncreaseMhoPlot}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/cGroIncreaseMhoPlot.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/cGroIncreaseMhoPlot.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/cGroIncreaseMhoPlot.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/cGroIncreaseMhoPlot.png} % CDCPrivate
 \end{figure}
 
 \subsubsection{Death to the Log-Linearized Consumption Euler Equation!}
@@ -644,7 +631,7 @@ reflected in a large value of $\nabla_{t+1}$.
 
 For example, an increase in the growth rate of income implies that the
 RHS of equation \eqref{eq:prectermSS} increases.  The new target level of
-$\mTarg^{\null}$ must be lower, because lower wealth induces greater consumption risk and a corresponding increase in the LHS of \eqref{eq:prectermSS}.  This is how the human wealth effect works in this framework:
+$\mTarg^{\hideSup}$ must be lower, because lower wealth induces greater consumption risk and a corresponding increase in the LHS of \eqref{eq:prectermSS}.  This is how the human wealth effect works in this framework:
 Consumers who anticipate faster income growth will hold less market wealth.
 
 The fact that consumption growth equals income growth in the
@@ -721,24 +708,18 @@ adjusts toward the steady state.
 \caption{Effect of Lower $\timeRate$ On Consumption Function}
 \includegraphics[width=6in]{\FigDir/PhaseDiagramDecreaseThetaPlot}
 \label{fig:DecreaseTheta}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/PhaseDiagramDecreaseThetaPlot.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/PhaseDiagramDecreaseThetaPlot.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/PhaseDiagramDecreaseThetaPlot.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/PhaseDiagramDecreaseThetaPlot.png} % CDCPrivate
 \end{figure}
 
 \begin{figure}
 \caption{Path of ${\cRat}^{e}$ Before and After $\timeRate$ Decline}
 \includegraphics[width=6in]{\FigDir/cPathAfterThetaDrop}
 \label{fig:cPathAfterThetaDrop}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/cPathAfterThetaDrop.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/cPathAfterThetaDrop.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/cPathAfterThetaDrop.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/cPathAfterThetaDrop.png} % CDCPrivate
 \end{figure}
 
 \begin{figure}
 \caption{Path of $\mRatE$ Before and After $\timeRate$ Decline}
 \includegraphics[width=6in]{\FigDir/mPathAfterThetaDrop}
 \label{fig:mPathAfterThetaDrop}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/mPathAfterThetaDrop.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/mPathAfterThetaDrop.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/mPathAfterThetaDrop.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/mPathAfterThetaDrop.png} % CDCPrivate
 \end{figure}
 
 
@@ -747,8 +728,6 @@ adjusts toward the steady state.
 \medskip
 \includegraphics[width=6in]{\FigDir/MPCPathAfterThetaDrop}
 \label{fig:MPCPathAfterThetaDrop}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/MPCPathAfterThetaDrop.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/MPCPathAfterThetaDrop.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/MPCPathAfterThetaDrop.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/MPCPathAfterThetaDrop.png} % CDCPrivate
 \end{figure}
 
 \section{A Macroeconomic Interpretation}
@@ -837,11 +816,11 @@ redistribution program guarantees that the behavior of employed households can
 be understood by analyzing the actions of a ``representative employed agent.''  
 
 If a benevolent source outside the economy were to provide every newborn with an initial
-transfer upon birth of size $\bTarg^{\null}$, then the newborn's total monetary resources 
+transfer upon birth of size $\bTarg^{\hideSup}$, then the newborn's total monetary resources 
 would be
 \begin{equation*}\begin{gathered}\begin{aligned}
-  \mRatE_{t,t} & =  \bTarg^{\null} + 1
-\\ & =  \mTarg^{\null} 
+  \mRatE_{t,t} & =  \bTarg^{\hideSup} + 1
+\\ & =  \mTarg^{\hideSup} 
 .
 \end{aligned}\end{gathered}\end{equation*}
 
@@ -871,24 +850,24 @@ stakes are financed by a wage tax.
 The size of the required tax rate is calculated as follows.  The total size
 of the resources transferred to the newborn generation must be
 \begin{equation}\begin{gathered}\begin{aligned}
-  \hat{\bRat}^{e}_{t,t} & =  \hat{\bRat}^{\null} \PopLev_{t,t} \hat{\Wage}_{t}
+  \hat{\bRat}^{e}_{t,t} & =  \hat{\bRat}^{\hideSup} \PopLev_{t,t} \hat{\Wage}_{t}
 \end{aligned}\end{gathered}\end{equation}
 where
 \begin{equation}\begin{gathered}\begin{aligned}
   \hat{\Wage}_{t} & =  \underbrace{\left(1-\Tax \right)}_{\equiv \TaxFree}\Wage_{t}
 \end{aligned}\end{gathered}\end{equation}
-is the after-tax wage rate for the economy as a whole (and $\hat{b}^{\null}$ is the steady state target ratio of bank balances to after-tax wages).
+is the after-tax wage rate for the economy as a whole (and $\hat{b}^{\hideSup}$ is the steady state target ratio of bank balances to after-tax wages).
 
 From \eqref{eq:LabIncTot}, the ratio of total aggregate labor income 
 to the labor income of the newborn generation is 
 \begin{equation}\begin{gathered}\begin{aligned}
   \left(\frac{1}{1-\EmpGro^{-1}}\right)
 \end{aligned}\end{gathered}\end{equation}
-so the aggregate wage tax rate required to finance a `stake' of size $\hat{b}^{\null}$ for
+so the aggregate wage tax rate required to finance a `stake' of size $\hat{b}^{\hideSup}$ for
 newborns is given by 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \hat{b}^{\null} & =    \left(\frac{\Tax}{1-\EmpGro^{-1}}\right)
-\\ \Tax & =  (1-\EmpGro^{-1})\hat{b}^{\null}
+  \hat{b}^{\hideSup} & =    \left(\frac{\Tax}{1-\EmpGro^{-1}}\right)
+\\ \Tax & =  (1-\EmpGro^{-1})\hat{b}^{\hideSup}
 .
 \end{aligned}\end{gathered}\end{equation}
 
@@ -900,28 +879,28 @@ unchanged.  Thus we can conclude not only that a representative agent exists
 in this economy, but that the steady-state characteristics of the 
 representative agent's problem are identical (in ratio form) to the 
 characteristics of the unrescaled individual's problem; that is, 
-$\hat{\cFunc}(\mRat) = \cFunc^{e}(\mRat)$, $\hat{b}^{\null} = \bTarg^{\null}$, and so on.  
+$\hat{\cFunc}(\mRat) = \cFunc^{e}(\mRat)$, $\hat{b}^{\hideSup} = \bTarg^{\hideSup}$, and so on.  
 
 Matters are not much more complicated outside the balanced growth
 steady state, so long as we assume that the government always
-transfers the amount $\hat{b}^{\null}$ to newborn households, financed by
+transfers the amount $\hat{b}^{\hideSup}$ to newborn households, financed by
 the tax $\Tax$ derived above.  Consider, for example, an economy that
 was in steady-state equilibrium leading up to period $\tNow$, and at
 the beginning of $\tNow$ there is a sudden realization that future
 growth rates will be higher than those anticipated and experienced in
 the past: $\WGro^{\prime} > \WGro$ after $\tNow$.  Since expected
-growth rates affect $\bTarg^{\null}$, the tax rate must be immediately and
+growth rates affect $\bTarg^{\hideSup}$, the tax rate must be immediately and
 permanently changed so that the generations born after $\tNow-1$
 receive a `stake' of the proper new size.  This change in $\Tax$ has
 two consequences for the generations that survive from periods prior
 to $\tNow$.  Under the old tax rate, they would have experienced
-$\bE_{t} = \bLevBF_{t}/\TaxFree\Wage_{t} = \bTarg^{\null}$; the change in
+$\bE_{t} = \bLevBF_{t}/\TaxFree\Wage_{t} = \bTarg^{\hideSup}$; the change in
 expectations has no effect on $\bLevBF_{t}$ or $\Wage_{t}$ but changes
 the tax rate to $\grave{\Tax}$.  Thus these households will have an
 actual resource ratio that differs from its new target value, $\bE_{t}
-\neq \Alt{\bTarg}^{\null}$, both because the after-tax income scaling factor
-has changed and because the target ratio has changed from $\bTarg^{\null}$
-to $\Alt{\bTarg}^{\null}$.
+\neq \Alt{\bTarg}^{\hideSup}$, both because the after-tax income scaling factor
+has changed and because the target ratio has changed from $\bTarg^{\hideSup}$
+to $\Alt{\bTarg}^{\hideSup}$.
 
 However, if we started out in steady-state, the {\it ratio} problem of every
 member of the continuing-employed population is identical to that of every 
@@ -942,7 +921,7 @@ consumer's consumption function shifted down, and consumption
 experienced a discrete jump downward, because the agent became more
 impatient.  Here, there is a modest further effect: With
 more-patient consumers, the tax rate that the government sets to finance a transfer
-of $\bTarg^{\null}$ to the newborns must be larger (so that the ratio of initial assets to
+of $\bTarg^{\hideSup}$ to the newborns must be larger (so that the ratio of initial assets to
 after-tax income is smaller).  Qualitatively, the
 dynamics are indistinguishable from the individual consumer's dynamics
 obtainable without working through the extra complication involved in
@@ -952,8 +931,6 @@ accounting for the `stakes.'
 \caption{Aggregate $c$ in PE/SOE Economy Before and After $\timeRate$ Decline}
 \includegraphics[width=6in]{\FigDir/SOEStakescPathAfterThetaDropPlot}
 \label{fig:SOEStakescPathAfterThetaDropPlot}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/SOEStakescPathAfterThetaDropPlot.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/SOEStakescPathAfterThetaDropPlot.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/TractableBufferStock/Figures/SOEStakescPathAfterThetaDropPlot.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/SOEStakescPathAfterThetaDropPlot.png} % CDCPrivate
 \end{figure}
 
 \subsubsection{No Stake}
@@ -1007,104 +984,9 @@ roughly to the postwar population growth rate in the United States.
 \caption{Path of Aggregate $c$ in Stakeless PE/SOE Economy From Date 0}
 \includegraphics[width=6in]{\FigDir/SOENoStakescPath}
 \label{fig:SOENoStakescPath}
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/SmallOpenEconomy/Figures/SOENoStakescPath.pdf /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/SOENoStakescPath.pdf} % CDCPrivate
-\write18{ln -fs /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Code/Mathematica/Examples/SmallOpenEconomy/Figures/SOENoStakescPath.png /Volumes/Data/Courses/Choice/LectureNotes/Consumption/Handouts/TractableBufferStock/Figures/SOENoStakescPath.png} % CDCPrivate
 \end{figure}
 
 
-\begin{CDCPrivate}
-\subsection{Unemployment Insurance}
-
-We consider now the consequences if the government creates a balanced-budget 
-partial `unemployment insurance' system.  This system operates by 
-imposing a labor income tax on the employed in order to finance transfers to 
-the unemployed.\footnote{
-The case of perfect (full) insurance is not very interesting,
-because impatient agents like the ones in our model would choose to run
-down their assets indefinitely, leaving no role for target saving and
-no interesting dynamics.  However, this is a knife-edge result that
-depends upon the complete elimination of idiosyncratic uncertainty.}
-
-Our definition of partial insurance starts by assuming that the `true'
-labor income process is the one specified above, but the government
-interferes with this process by selecting a constant proportion
-$\unins$ of the newly unemployed in each period who will be guaranteed a
-`wage-indexed unemployment benefit' that yields the same income they
-would have received if they had not become unemployed.  The lucky recipients
-of these payments, however, are subject to a risk of termination from
-the unemployment insurance program that matches the risk of becoming unemployed for the
-still-employed consumers.  
-
-Under these circumstances, the household does not care whether it remains employed, or becomes 
-unemployed but is selected for the unemployment insurance program: The 
-dynamics of idiosyncratic future income are identical in the two cases.
-
-Each generation finances its own unemployment insurance (this
-assumption is made to keep the model as transparent as possible; it
-would not change things much to have the UI system financed by the
-general government, but this would require some extra notation and
-derivations, and discussion of essentially inconsequential
-intergenerational aspects of unemployment insurance).  The government
-sets the overall uninsurance rate $\unins$ (`uninsurance' rather than
-`insurance' rate because $\unins=0$ will be `no uninsurance' or perfect
-insurance, while $\unins=1$ will be no insurance) and enforces exogenous taxation among the `truly employed'
-in the generation in such a way as to yield a modified
-`post-tax-and-transfer' growth profile consistent with substituting
-$\Alt{\urate}$ for $\urate$ in the derivations above, where
-\begin{equation}\begin{gathered}\begin{aligned}
-  \Alt{\urate} & =  \unins \urate
-\end{aligned}\end{gathered}\end{equation}
-and $\unins < 1$ guarantees that the insurance program results in a reduction
-of idiosyncratic income risk.  
-
-Substituting $\Alt{\urate}$ for $\urate$ in the prior derivations,
-this scheme is consistent with the generational budget constraint
-because, as noted above, the individual income growth process was constructed so
-that the present discounted value of income remains invariant to the
-size of $\urate$, and the aggregate income of a generation grows by
-$\WGro$ regardless of the underlying idiosyncratic unemployment risk.  
-
-This scheme is attractive because in practice it simply requires solving 
-the model specified above for a different value of $\urate$.  This will make
-solution and simulation of the model particularly simple.
-
-In addition to the consumption function, the solution procedure produces an
-estimate of the representative employed agent's value function.\footnote{See the appendix\ for a sketch of the method.}  Value depends
-on current resources, but also (numerically) on all of the parameters in the
-calibration of the model.  We are particularly interested in how value 
-relates to expected labor productivity growth $\WGro$, to the `true' unemployment risk 
-$\urate$, and to the generosity of the unemployment insurance program $\unins$.
-Writing
-\begin{equation}\begin{gathered}\begin{aligned}
-  \vFunc(\mRatE_{t};\WGro,\urate,\unins),
-\end{aligned}\end{gathered}\end{equation}
-(where we separate the state variable $\mRatE_{t}$ from the parameters using a semicolon) we can investigate a variety of interesting questions.  Some examples:
-
-\begin{itemize}
-\item For an economy starting at the steady state without unemployment insurance, how valuable
-is a given improvement in insurance?  That is, what is the change in monetary resources that would
-make the representative consumer indifferent to the change in insurance?  To answer this, we can find the
-$\Delta \mRatE$ such that 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \vFunc(\mRatE+\Delta \mRatE;\WGro,\urate,1) & =    \vFunc(\mRatE;\WGro,\urate,\unins)
-\end{aligned}\end{gathered}\end{equation}
-\item Suppose a policymaker considering is considering increasing the economy's openness or degree of `globalization.'  The benefit
-is faster productivity growth $\WGro$.  The cost is increased unemployment risk $\urate$.  For a given
-generosity of unemployment insurance, how much extra growth is necessary to offset the utility cost
-of greater risk?  That is, supposing the relationship between $\WGro$ and $\urate$ is indexed by a parameter $\pGro$, e.g. $\Alt{\urate} = \urate + (\Alt{\WGro}-\WGro)\pGro $, what is the $\pGro$ for which
-\begin{equation}\begin{gathered}\begin{aligned}
-  \vFunc(\mRatE;\WGro,\urate,1) & =  \vFunc(\mRatE;\Alt{\WGro},\Alt{\urate},1)
-\end{aligned}\end{gathered}\end{equation}
-\item If the policymaker can increase the generosity of unemployment insurance in the face of 
-increased unemployment risk stemming from globalization (perhaps
-`trade adjustment assistance' is politically feasible even if
-increased unemployment insurance {\it per se} is not), by how much would the unemployment
-insurance program need to change in order to offset the utility consequences of a given increase 
-in $\urate$?  % Actually, I think the answer to this one is easy: $\unins = \urate/\Alt{\urate}$
-\end{itemize}
-
-Many more such questions can be imagined.
-\end{CDCPrivate}
 
 \label{sec:PFwhenFHWfails}
 \pagebreak\appendix
@@ -1117,7 +999,7 @@ Many more such questions can be imagined.
 Using from \MathFactsList ~the second-order and then the first-order
 Taylor approximations  \TaylorTwo $(1+\epsilon)^{\zeta} \approx 1 + \zeta \epsilon +
 (1/2)\zeta(\zeta-1) \epsilon^{2}$ and then \TaylorOne $(1+\epsilon)^{\zeta} \approx 1 + \zeta \epsilon$, the expression in braces
-in \eqref{eq:cedel} can be rewritten
+in \eqref{eq:ctp1Oct} can be rewritten
 \begin{equation}\begin{gathered}\begin{aligned}
         \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cU_{t+1}}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA} & =  \left\{1+\urate\left[\left(\frac{\cU_{t+1}+{\cRat}^{e}_{t+1}-\cU_{t+1}}{\cU_{t+1}}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA} \notag
 \\      & =  \left\{1+\urate\left[\left(1+\nabla _{t+1}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA} \notag
@@ -1145,21 +1027,6 @@ which is equivalent to
   \overbrace{\Rnorm \MPCU \straight}^{= \mu-1} & >   \Rnorm-1  \label{eq:cDelEq0SlopeCondAlt}
 \end{aligned}\end{gathered}\end{equation}
 where the LHS is (proportional to) the slope of $\dcEqZero$ and the RHS is (proportional to) the slope of $\dmEqZero$.
-\begin{CDCPrivate}
-
-It is not totally obvious why these are equivalent, so here's the derivation.
-\begin{equation}\begin{gathered}\begin{aligned}
-  \left(\frac{\mu-1}{\mu}\right) & >  \left(\frac{\Rnorm-1}{\Rnorm}\right)
-\\  \Rnorm (\mu-1) & >  \mu (\Rnorm-1)
-\\  \Rnorm \mu - \Rnorm & >  \mu \Rnorm-\mu
-\\  - \Rnorm & >  -\mu
-\\   \Rnorm & <  \mu
-\\   \Rnorm & <  \Rnorm(\MPCU \straight + \Rnorm^{-1}) \label{eq:mDelEq0vscDelEq0Slope}
-\\   1 & <  \MPCU \straight + \Rnorm^{-1}
-\\   \Rnorm-1 & <  \MPCU \Rnorm \straight
-.
-\end{aligned}\end{gathered}\end{equation}
-\end{CDCPrivate}
 
 For any fixed $\urate$ and $\WGro$ and $\Rfree$ we can find some $\alpha$ for which $\WGro = \Rfree (1-\alpha \urate)$, and using this $\alpha$ it turns out to be useful to rewrite
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -1214,20 +1081,11 @@ In the case where human wealth is finite ($\alpha > 1$), we need the RHS of \eqr
 \end{aligned}\end{gathered}\end{equation}
 and the boundary will be the point at which this expression holds with equality.  
 
-An increase in impatience caused by an increase in the pure time preference rate $\timeRate$ (equivalently, a reduction in $\Discount$) has the effect of reducing growth-patience (the LHS of \eqref{eq:PatPGroReqForTarget}) and of increasing the RHS.  This means that there will be some time preference rate sufficiently large (some $\Discount$ sufficiently small) to guarantee that the condition holds with equality.  Then \eqref{eq:PatPGroReqForTarget} will always be satisfied by any $\Discount$ satisfying \providecommand{\DiscountMaxGICWhenFHWCTBSHolds}{\ensuremath{\bar{\Discount}_{\text{FHW}}}}
+An increase in impatience caused by an increase in the pure time preference rate $\timeRate$ (equivalently, a reduction in $\Discount$) has the effect of reducing growth-patience (the LHS of \eqref{eq:PatPGroReqForTarget}) and of increasing the RHS.  This means that there will be some time preference rate sufficiently large (some $\Discount$ sufficiently small) to guarantee that the condition holds with equality.  Then \eqref{eq:PatPGroReqForTarget} will always be satisfied by any $\Discount$ satisfying 
 \begin{equation}\begin{gathered}\begin{aligned}
   \Discount & <  \DiscountMaxGICWhenFHWCTBSHolds \label{eq:DiscountMaxGICWhenFHWCTBSHolds}
 .\end{aligned}\end{gathered}\end{equation}
 
-\begin{CDCPrivate}
-Here's a more careful exposition of the above:
-Rewrite the boundary condition as 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \PatR \overbrace{\left(\frac{1-\urate}{1-\alpha \urate}\right)}^{=\Rfree/\PGro}= \PatPGro & =  \left\{1  + \urate \left[\left(\frac{(\alpha-1)\urate}{\MPCU (1-\urate)}\right)^{\CRRA}-1\right] \right\}^{-1/\CRRA} \notag
-\end{aligned}\end{gathered}\end{equation}
-and note that if we reduce $\alpha$ incrementally the denominator on the LHS increases so the LHS decreases, while the RHS increases.  Under the new value of $\alpha$, therefore, $\PatPGro$, if the condition held with equality before it now holds with inequality.  
-
-\end{CDCPrivate}
 
 Since we have assumed the RIC (so that $\MPCU > 0$), as $\urate \downarrow 0$ or $\alpha \downarrow 1$, \eqref{eq:PatPGroReqForTarget} asymptotes to the \GICPGro~for any given value of $\Discount$.  
 
@@ -1289,13 +1147,13 @@ To simplify the expressions in the derivations below, we define $\zeta \equiv \R
 
 If a target value $\mTarg$ exists it will be at the point of intersection between the $\dcEqZero$ and the $\dmEqZero$ loci:
 \begin{equation}\begin{gathered}\begin{aligned}
-  \left(\frac{\zeta}{1+\zeta}\right)\mTarg^{\null} & =  (1-\Rnorm^{-1})\mTarg^{\null}+\Rnorm^{-1}
-\\  \left(\Rnorm\frac{\zeta}{1+\zeta}\right)\mTarg^{\null} & =  (\Rnorm-1)\mTarg^{\null}+1
-\\  \left(\Rnorm\left\{\frac{\zeta}{1+\zeta}-1\right\}+1\right)\mTarg^{\null} & =  1
-\\  \left(\Rnorm\left\{\frac{\zeta-(1+\zeta)}{1+\zeta}\right\}+\frac{1+\zeta}{1+\zeta}\right)\mTarg^{\null} & =  1
-\\  \left(\frac{1+\zeta-\Rnorm}{1+\zeta}\right)\mTarg^{\null} & =  1
-\\  \mTarg^{\null} & =  \left(\frac{1+\zeta}{1+\zeta-\Rnorm}\right)
-\\  \mTarg^{\null} & =  \left(\frac{1+\zeta+\Rnorm-\Rnorm}{1+\zeta-\Rnorm}\right)
+  \left(\frac{\zeta}{1+\zeta}\right)\mTarg^{\hideSup} & =  (1-\Rnorm^{-1})\mTarg^{\hideSup}+\Rnorm^{-1}
+\\  \left(\Rnorm\frac{\zeta}{1+\zeta}\right)\mTarg^{\hideSup} & =  (\Rnorm-1)\mTarg^{\hideSup}+1
+\\  \left(\Rnorm\left\{\frac{\zeta}{1+\zeta}-1\right\}+1\right)\mTarg^{\hideSup} & =  1
+\\  \left(\Rnorm\left\{\frac{\zeta-(1+\zeta)}{1+\zeta}\right\}+\frac{1+\zeta}{1+\zeta}\right)\mTarg^{\hideSup} & =  1
+\\  \left(\frac{1+\zeta-\Rnorm}{1+\zeta}\right)\mTarg^{\hideSup} & =  1
+\\  \mTarg^{\hideSup} & =  \left(\frac{1+\zeta}{1+\zeta-\Rnorm}\right)
+\\  \mTarg^{\hideSup} & =  \left(\frac{1+\zeta+\Rnorm-\Rnorm}{1+\zeta-\Rnorm}\right)
 \\ & =  1 + \left(\frac{\Rnorm}{1+\zeta-\Rnorm}\right)
 \\ & =  1 + \left(\frac{\Rfree}{\PGro+\zeta\PGro-\Rfree}\right)  \label{eq:mTarget}
 .
@@ -1310,7 +1168,7 @@ which is likely to increase as $\urate$ approaches zero.\footnote{`Likely' but n
   plausible calibrations the effect of the denominator predominates.}
 Note that the limit as $\urate \rightarrow 0$ is infinity, which
 implies that $\lim_{\urate \rightarrow
-  0} \mTarg^{\null} = 1$.  This is precisely what would be expected from
+  0} \mTarg^{\hideSup} = 1$.  This is precisely what would be expected from
 this model in which consumers are impatient but self-constrained to
 have $\mRatE > 1$:  As the risk gets infinitesimally small, the
 amount by which target $\mRatE$ exceeds its minimum possible value shrinks to
@@ -1371,7 +1229,7 @@ over the logarithmic case,
 \end{aligned}\end{gathered}\end{equation}
 \eqref{eq:mTarget} can be approximated by
 \begin{equation}\begin{gathered}\begin{aligned}
- \mTarg^{\null} & \approx  1 + \left(\frac{1}{\PGro/\Rfree-\patr \left(1-(\patpGro/\urate)(1-(-\patpGro/\urate)\prudEx) \right)-1}\right)
+ \mTarg^{\hideSup} & \approx  1 + \left(\frac{1}{\PGro/\Rfree-\patr \left(1-(\patpGro/\urate)(1-(-\patpGro/\urate)\prudEx) \right)-1}\right)
 \\ & \approx  1 + \left(\frac{1}{(\pGro-\rfree)+(-\patr) \left(1+(-\patpGro/\urate)(1-(-\patpGro/\urate)\prudEx)\right)}\right)
 \label{eq:mTargetApprox}
 \end{aligned}\end{gathered}\end{equation}
@@ -1417,7 +1275,7 @@ replace the denominator in \eqref{eq:mTargetApprox} with the negative
 of the RHS of \eqref{eq:newDenom}, yielding a more compact expression
 for the target level of resources,
 \begin{equation}\begin{gathered}\begin{aligned}
- \mTarg^{\null} & \approx  1 + \left(\frac{1}{\patr(\patpGrohat/\urate) - \patpGro }\right)
+ \mTarg^{\hideSup} & \approx  1 + \left(\frac{1}{\patr(\patpGrohat/\urate) - \patpGro }\right)
 \\ & =  1 + \left(\frac{1/(-\patpGro)}{1+(-\patr/\urate)(1+(-\patpGro/\urate)\prudEx)  }\right) \label{eq:mTargetCompact}
 .
 \end{aligned}\end{gathered}\end{equation}
@@ -1439,7 +1297,7 @@ the case where $\CRRA = 1$ (logarithmic utility).  In this case
 \end{aligned}\end{gathered}\end{equation}
 and the approximation becomes
 \begin{equation}\begin{gathered}\begin{aligned}
- \mTarg^{\null} & \approx  1 + \left(\frac{1}{(\pGro-\rfree)+\timeRate(1+(\pGro+\timeRate-\rfree)/\urate)}\right)
+ \mTarg^{\hideSup} & \approx  1 + \left(\frac{1}{(\pGro-\rfree)+\timeRate(1+(\pGro+\timeRate-\rfree)/\urate)}\right)
 \end{aligned}\end{gathered}\end{equation}
 which neatly captures the effect of an increase in human wealth (via either increased $\pGro$ or reduced $\rfree$), the effect of increased impatience $\timeRate$,
 or the effect of a reduction in unemployment risk $\urate$ in reducing target wealth.
@@ -1453,7 +1311,7 @@ The other useful case to consider is where $\rfree = \timeRate$ but $\CRRA>1$.  
 \end{aligned}\end{gathered}\end{equation}
 so that
 \begin{equation}\begin{gathered}\begin{aligned}
- \mTarg^{\null} & \approx  1 + \left(\frac{1}{(\pGro-\rfree)+\timeRate(1+(\pGro/\urate)(1-(\pGro/\urate)\prudEx))}\right)
+ \mTarg^{\hideSup} & \approx  1 + \left(\frac{1}{(\pGro-\rfree)+\timeRate(1+(\pGro/\urate)(1-(\pGro/\urate)\prudEx))}\right)
 \end{aligned}\end{gathered}\end{equation}
 where the additional term involving $\prudEx$ in this equation
 captures the fact that an increase in the prudence term $\prudEx$
@@ -1490,13 +1348,12 @@ by differentiating the consumption Euler equation with respect to $m_{t}$:
 \\  \uFunc^{\prime\prime}(\cFunc^{e}(\mRat_{t}))\MPCFunc^{e}(\mRat_{t}) & = \beth  \Rnorm (1-\MPCFunc^{e}(\mRat_{t}))\Ex_{t}[\uFunc^{\prime\prime}(\cFunc^{\bullet}(\mRat_{t+1}))\MPCFunc^{\bullet}(\mRat_{t+1})] \label{eq:dEuler}
 \end{aligned}\end{gathered}\end{equation}
 so that defining, e.g., $\MPCE_{t} = \MPCFunc^{e}(\mRat_{t})$ we have 
-\begin{align}
- \MPCE_{t} & =  (1-\MPCE_{t}) \underbrace{\beth \Rnorm (1/\uPP({\cRat}^{e}_{t}))\Ex_{t}\left[\uPP(c^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}\right]}_{\equiv \natural_{t+1}} \label{eq:natural}
+\begin{equation}\begin{gathered}\begin{aligned}
+ \MPCE_{t} & =  (1-\MPCE_{t}) \underbrace{\beth \Rnorm (1/\uPP({\cRat}^{e}_{t}))\Ex_{t}\left[\uPP(c^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}\right]}_{\equiv \natural_{t+1}} \notag %\label{eq:natural} 
 \\ (1+\natural_{t+1})\MPCE_{t} & = \natural_{t+1} \label{eq:naturalMPC}
-\\ \MPCE_{t} & = \left(\frac{\natural_{t+1}}{1+\natural_{t+1}}\right) \label{eq:naturalSolved}
+\\ \MPCE_{t} & = \left(\frac{\natural_{t+1}}{1+\natural_{t+1}}\right) \notag %\label{eq:naturalSolved}
 .
-\end{align}
-\newcommand{\Mma}{{\it Mathematica}~}
+\end{aligned}\end{gathered}\end{equation}
 At the target level of $\mRatE$ we have 
 \begin{equation*}\begin{gathered}\begin{aligned}
   \overbrace{(1/\uPP(\cTarg^{e}))\Ex_{t}\left[\uPP(c^{\bullet})\MPC^{\bullet}\right]}^{\natural / \Rnorm \beth} & =  \erate \overbrace{(\uPP(\cTarg^{e})/\uPP(\cTarg^{e}))}^{=1}\MPCE+\urate (\uPP(\cTarg^{u})/\uPP(\cTarg^{e}))\MPCU
@@ -1521,7 +1378,7 @@ by noting that utility in the employed state next year becomes asymptotically ir
 \\ & =  \beth \Rnorm \urate (\MPCU \Rnorm ((1-\bar{\MPC}^{e})/\bar{\MPC}^{e}))^{-\CRRA-1}\MPCU
 %\\ & =  \beth \Rnorm \urate (\MPCU \Rnorm)^{-\CRRA-1} \MPCU
 \end{aligned}\end{gathered}\end{equation*}
-so that from \eqref{eq:naturalSolved} we have 
+so that from \eqref{eq:naturalMPC} we have 
 \begin{equation}\begin{gathered}\begin{aligned}
   \bar{\MPC}^{e} \equiv \lim_{\mRat_{t} \rightarrow 0} \MPCFunc^{e}(\mRat_{t}) & =  \left(\frac{
 \beth \Rnorm \urate (\MPCU \Rnorm ((1-\bar{\MPC}^{e})/\bar{\MPC}^{e}))^{-\CRRA-1}\MPCU
@@ -1573,26 +1430,15 @@ so that
 %\MPC_{t}^{e\prime} & =  \left(\frac{\beth \Rnorm^{2} (1-\MPCE_{t})^{2} (\Ex_{t}[(\MPC_{t+1}^{\bullet})^{2}\uPPP(c^{\bullet}_{t+1})]+\erate \uPP({\cRat}^{e}_{t+1}) -(\MPCE_{t})^{2} \uPPP({\cRat}^{e}_{t}))}{\uPP({\cRat}^{e}_{t})+\beth \Rnorm \Ex_{t}[\uPP(c^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}]}\right)  \nonumber
 %\end{aligned}\end{gathered}\end{equation}
 %whose limit as ${\cRat}^{e} \rightarrow \infty$ is 
-which can be further simplified at the target because $\MPCFunc^{e \prime}_{t}(\mTarg^{\null}) = \MPCFunc^{e \prime}_{t+1}(\mTarg^{\null}) = \MPC^{e \prime}$ so that
+which can be further simplified at the target because $\MPCFunc^{e \prime}_{t}(\mTarg^{\hideSup}) = \MPCFunc^{e \prime}_{t+1}(\mTarg^{\hideSup}) = \MPC^{e \prime}$ so that
 \begin{equation}\begin{gathered}\begin{aligned}
 \MPC^{e\prime} & =  \left(\frac{\beth \Rnorm^{2} (1-\MPCE)^{2}\Ex_{t}[(\MPC^{\bullet})^{2} \uPPP(c^{\bullet})] -(\MPCE)^{2} \uPPP(\cTarg^{e})}{\uPP(\cTarg^{e}) + \beth \Rnorm \Ex_{t}[\uPP(c^{\bullet})\MPC^{\bullet}]- \beth \Rnorm^{2} (1-\MPCE)^{2}\erate \uPP(\cTarg^{e})}\right) \label{eq:MPCPrimeSS}
 .
 \end{aligned}\end{gathered}\end{equation}
 
-Another differentiation of \eqref{eq:kappaPExpr} similarly allows the construction of a formula for the value of $\MPC^{e \prime\prime}$ at the target $\mTarg^{\null}$; in principle, any number of derivatives can be 
+Another differentiation of \eqref{eq:kappaPExpr} similarly allows the construction of a formula for the value of $\MPC^{e \prime\prime}$ at the target $\mTarg^{\hideSup}$; in principle, any number of derivatives can be 
 constructed in this manner.\footnote{\Mma permits the convenient computation of the analytical derivatives, and then the substitution of constant target values to obtain analytical expressions like \eqref{eq:MPCPrimeSS}.  These solutions are simply imported by hand into the Matlab code.}
 
-\begin{CDCPrivate} % Some of these ideas are explored in cFuncExamineCarfully.nb; not ultimately very fruitful
-It is plausible to hypothesize that in the limit as $\mRatE_{t}$ approaches infinity, the ratio $\MPC^{e \prime}_{t+1}/\MPC^{e \prime}_{t}$ approaches
-a constant $\mu$.  If we make such an assumption, then we can use other results to show that
-\begin{equation}\begin{gathered}\begin{aligned}
-\lim_{\mRatE_{t} \rightarrow \infty} \MPCFunc^{e\prime}_{t}   & =  \left(\frac{\beth \Rnorm^{2} (1-\MPC)^{2} \left(\MPC^{2}\uPPP({c}_{t+1}) +\erate \uPP({c}_{t+1}) \mu \MPCFunc^{e \prime}_{t}\right)-\MPC^{2} \uPPP({c}_{t})}{\uPP({c}_{t})+\beth \Rnorm \uPP({c}_{t+1})\MPC  }\right) 
-\\ & =  \left(\frac{\beth \Rnorm^{2} (1-\MPC)^{2} \left(\MPC^{2}\uPPP({c}_{t+1})\right)-\MPC^{2} \uPPP({c}_{t})}{\uPP({c}_{t})+\beth \Rnorm \uPP({c}_{t+1})\MPC  -\beth \Rnorm^{2} (1-\MPC)^{2} \erate \uPP({c}_{t+1}) \mu  }\right) 
-\\ & =  \left(\frac{\beth \Rnorm^{2} (1-\MPC)^{2} \left(\MPC^{2}\uPPP({c}_{t}\PatPGro)\right)-\MPC^{2} \uPPP({c}_{t})}{\uPP({c}_{t})+\beth \Rnorm \uPP({c}_{t}\PatPGro)\MPC  -\beth \Rnorm^{2} (1-\MPC)^{2} \erate \uPP({c}_{t}\PatPGro) \mu  }\right) 
-\\ & =  \left(\frac{\uPPP({c}_{t})}{\uPP({c}_{t})}\right)\left(\frac{\beth \Rnorm^{2} (1-\MPC)^{2} \left(\MPC^{2}\PatPGro^{-\CRRA-2}\right)-\MPC^{2} }{1+\beth \Rnorm \PatPGro^{-\CRRA-1}\MPC  -\beth \Rnorm^{2} (1-\MPC)^{2} \erate \PatPGro^{-\CRRA-1} \mu  }\right) 
-\\ & =  -\left(\frac{(1+\CRRA)}{{c}_{t}}\right)\left(\frac{\beth \Rnorm^{2} (1-\MPC)^{2} \left(\MPC^{2}\PatPGro^{-\CRRA-2}\right)-\MPC^{2} }{1+\beth \Rnorm \PatPGro^{-\CRRA-1}\MPC  -\beth \Rnorm^{2} (1-\MPC)^{2} \erate \PatPGro^{-\CRRA-1} \mu  }\right) 
-\end{aligned}\end{gathered}\end{equation}
-\end{CDCPrivate}
 
 \begin{comment} % There's something wrong with the argument below, but I'm not sure what.
 % Anyway, this approach is superceded by the one below.
@@ -1608,42 +1454,27 @@ the reader that
 \end{aligned}\end{gathered}\end{equation}
 \end{comment}
 
-\begin{CDCPrivate}
-Separately, the limit of  \eqref{eq:kappaPExpr} as ${\cRat}^{e}_{t} \rightarrow 0$
- will be dominated by the outcomes for the unemployed consumer
-so that
-\begin{equation}\begin{gathered}\begin{aligned}
-\lim_{{\cRat}^{e}_{t} \rightarrow 0} \left\{ (\bar{\MPC}^{e})^{2} \uPPP({\cRat}^{e}_{t}) +\MPC_{t}^{e\prime}\uPP({\cRat}^{e}_{t}) \right\} & =  \lim_{{\cRat}^{e}_{t} \rightarrow 0}  \left\{ \beth \Rnorm (-\MPC_{t}^{e\prime}) \urate \uPP(c^{u}_{t+1})\MPCU
-+ \beth \Rnorm^{2} (1-\bar{\MPC}^{e})^{2} \urate (\MPCU)^{2}\uPPP(c^{u}_{t+1})\right\} \nonumber
-\end{aligned}\end{gathered}\end{equation}
-becomes
-\begin{equation}\begin{gathered}\begin{aligned}
-  \MPC_{t}^{e\prime}(\uPP({\cRat}^{e}_{t})+\beth \Rnorm \urate \uPP (c^{u}_{t+1})) & =  \beth \Rnorm^{2}(1-\bar{\MPC}^{e})^2 \urate (\MPCU)^{2}\uPPP(c^{u}_{t+1})-(\bar{\MPC}^{e})^{2} \uPPP({\cRat}^{e}_{t})
-\\  \MPC_{t}^{e\prime} & =  \left(\frac{\beth \Rnorm^{2}(1-\bar{\MPC}^{e})^2 \urate (\MPCU)^{2}\uPPP(c^{u}_{t+1})-(\bar{\MPC}^{e})^{2} \uPPP({\cRat}^{e}_{t})}{\uPP({\cRat}^{e}_{t})+\beth \Rnorm \urate \uPP (c^{u}_{t+1})}\right)
-\end{aligned}\end{gathered}\end{equation}
-which approaches a function $\gamma/{\cRat}^{e}_{t}$ as ${\cRat}^{e}_{t}$ approaches zero.  This is inconvenient, 
-because an infinite second derivative cannot be used for a data point in the set of interpolating points.
-\end{CDCPrivate}
 
 Reverse shooting requires us to solve separately for an approximation to the consumption function above the steady state and 
 another approximation below the steady state.  Using the approximate steady-state $\MPCE$ and $\MPC^{e\prime}$ 
 obtained above, we begin by picking a very small number for $\blacktriangle$ and then creating a Taylor
 approximation to the consumption function near the steady state:
-\begin{align}
-  \mRatE_{\Alt{t}} & = \mTarg^{\null} + \blacktriangle  \label{eq:revshootmstart} 
-\\ \tilde{\mathbf{c}}(\blacktriangle) & = \cTarg^{e} + \blacktriangle \MPCE+ (\blacktriangle^{2}/2) \MPC^{e\prime}+ (\blacktriangle^{3}/6) \MPC^{e\prime\prime} \label{eq:revshootcstart}
+\begin{equation}\begin{gathered}\begin{aligned}
+  \mRatE_{\Alt{t}} & = \mTarg^{\hideSup} + \blacktriangle  \label{eq:revshootmstart} 
+\\ \tilde{\mathbf{c}}(\blacktriangle) & = \cTarg^{e} + \blacktriangle \MPCE+ (\blacktriangle^{2}/2) \MPC^{e\prime}+ (\blacktriangle^{3}/6) \MPC^{e\prime\prime} \notag %\label{eq:revshootcstart}
 %\\ \MPCE_{\Alt{t}} & = \hat{\MPCFunc}^{e}(\blacktriangle)
-\end{align}
+\end{aligned}\end{gathered}\end{equation}
 and then iterate the reverse-shooting equations until we reach some period $n$ in
-which $\mRatE_{\Alt{t}-n}$ escapes some pre-specified interval $[\ushort{\mRat}^{e},\bar{\mRat}^{e}]$ (where the natural 
-value for $\ushort{\mRat}^{e}$ is 1 because this is the $\mRat$ that would be owned by a consumer who had saved
+which $\mRatE_{\Alt{t}-n}$ escapes some pre-specified interval $[\underline{\mRat}^{e},\bar{\mRat}^{e}]$ (where the natural 
+value for $\underline{\mRat}^{e}$ is 1 because this is the $\mRat$ that would be owned by a consumer who had saved
 nothing in the prior period and therefore is below any feasible value of $\mRat$ that could be realized by an 
 optimizing consumer).  This generates a sequence of points all of which
 are on the consumption function.  A parallel procedure (substituting $-$ for
-$+$ in \eqref{eq:revshootmstart} and where appropriate in \eqref{eq:revshootcstart}) generates the sequence of points for the approximation below the 
+$+$ in \eqref{eq:revshootmstart} and where appropriate in %\eqref{eq:revshootcstart})
+the corresponding equation for $\cRat$ generates the sequence of points for the approximation below the 
 steady state.  Taken together with the already-derived characterization of the function
 at the target level of wealth, these points constitute the basis for a piecewise second-order interpolating approximation to the
-consumption function on the interval $[\ushort{\mRat}^{e},\bar{\mRat}^{e}]$.
+consumption function on the interval $[\underline{\mRat}^{e},\bar{\mRat}^{e}]$.
 
 \subsection{The Value Function}
 
@@ -1684,21 +1515,6 @@ with the first iteration point generated by numerical integration from
   v^{e}_{\Alt{t}} & =  \vTarg^{e}+\int_{0}^{\blacktriangle} \uP(\tilde{\mathbf{c}}(\bullet)) d\bullet
 \end{aligned}\end{gathered}\end{equation}
 
-\begin{CDCPrivate} 
-An alternative method (which does not require numerical integration but does not work as well) is to use the Envelope theorem to compute an approximation to the 
-value function in the vicinity of the steady state:
-\begin{equation}\begin{gathered}\begin{aligned}
-    \vFunc^{e \prime}(\mRatE_{t}) & =  \uFunc^{\prime}(\cFunc(\mRatE_{t}))
-\\  \vFunc^{e \prime\prime}(\mRatE_{t}) & =  \uFunc^{\prime\prime}(\cFunc(\mRatE_{t}))\MPCE_{t}
-\\  \vFunc^{e \prime\prime\prime}(\mRatE_{t}) & =  \uFunc^{\prime\prime}(\cFunc(\mRatE_{t}))\MPC^{e\prime}_{t}+\uFunc^{\prime\prime\prime}(\cFunc(\mRatE_{t}))(\MPC^{e}_{t})^{2}
-\end{aligned}\end{gathered}\end{equation}
-which leads to an approximation of the level of value at $\mTarg^{\null}+\blacktriangle$ using 
-\begin{equation}\begin{gathered}\begin{aligned}
- \vFunc^{e}(\mTarg^{\null}+\blacktriangle) & \approx  \vTarg^{e} + \uFunc^{\prime}(\cTarg^{e})\blacktriangle + (\blacktriangle^{2}/2)\uFunc^{\prime\prime}(\cTarg^{e})\MPCE + (\blacktriangle^{3}/6)\left(\uFunc^{\prime\prime}(\cTarg^{e})\MPC^{e\prime}+\uFunc^{\prime\prime\prime}(\cTarg^{e})(\MPC^{e})^{2}\right) \nonumber
-.
-\end{aligned}\end{gathered}\end{equation}
-
-\end{CDCPrivate}
 
 
 \section{The Algorithm}
@@ -1711,9 +1527,9 @@ household might be in at any given point in time.  Using the backwards-shooting
 functions derived above, for any point $\star_{\Alt{t}}$ we can construct the
 sequence of points that must have led up to it: $\star_{\Alt{t}-1}$ and
 $\star_{\Alt{t}-2}$ and so on.  And using the approximations near the
-steady state like \eqref{eq:revshootcstart}, we can construct 
+steady state like \eqref{eq:revshootmstart}, we can construct 
 a vector-valued function $\pmb{\circ}(\blacktriangle)$ that generates, 
-e.g., $\{\mTarg^{\null}+\blacktriangle,\tilde{\mathbf{c}}(\blacktriangle), ... \}$.
+e.g., $\{\mTarg^{\hideSup}+\blacktriangle,\tilde{\mathbf{c}}(\blacktriangle), ... \}$.
 
 
 Now define an operator $\cdots$ as follows: $\cdots$ applied to some
@@ -1757,85 +1573,15 @@ connecting these points.
 
 
 
-\begin{CDCPrivate}
-With these points it is feasible to construct an approximating interpolation that will 
-be quite accurate within the bounds $[0,\bar{\mRat}^{e}]$.\footnote{A little bit of work is required to obtain a good representation all the way down to 0; see the software for the solution.}  This approximation, however, becomes highly problematic when evaluated outside of this range.  (Polynomial
-interpolations tend to `blow up' when extended outside the interval on which they are constructed.) 
-
-\begin{comment} % In the end, the approach defined in this comment did not work
-% The problem was that the resulting consumption function did not asymptote to the perfect foresight function
-Recognizing that $\lim_{\mRat \rightarrow \infty} \MPCFunc(\mRat)$ is a constant, analysis of \eqref{eq:kappaPExpr} leads 
-to the conclusion that the limiting functional form of $\MPCFunc^{\prime}(\mRat)$ is linear in $\mRat^{-1}$; that is, for some $\chi_{0}$ % and $\chi_{1}$, 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \lim_{\mRat \rightarrow \infty} -\cFunc^{\prime\prime}(\mRat) & \approx   - \chi_{0}/\mRat  \label{eq:cPPlimInf}
-,
-\end{aligned}\end{gathered}\end{equation}
-which leads to the following scheme for approximating the limiting consumption function.
-
-Start by assuming that \eqref{eq:cPPlimInf} holds exactly at the target level of wealth, 
-from which we can derive a unique
-\begin{equation}\begin{gathered}\begin{aligned}
-   \chi_{0} & =  \MPC^{e \prime} \mTarg^{\null}
-\end{aligned}\end{gathered}\end{equation}
-and by integration we construct
-\begin{equation}\begin{gathered}\begin{aligned}
-  -\cFunc^{\prime}(\mTarg^{\null}) & =  \chi_{2} - \chi_{0} \log \mTarg^{\null}
-\\ \chi_{2} & =  \chi_{0} \log \mTarg^{\null} -\cFunc^{\prime}(\mTarg^{\null}) 
-\\ -\cFunc(\mTarg^{\null}) & =  \chi_{3} + \chi_{2} \mTarg^{\null} - \chi_{0}(-\mTarg^{\null}+ \mTarg^{\null} \log \mTarg^{\null})
-\\ \chi_{3} & =  \chi_{0}(-\mTarg^{\null} + \mTarg^{\null} \log \mTarg^{\null}) - \chi_{2} \mTarg^{\null} - \cFunc(\mTarg^{\null})
-\end{aligned}\end{gathered}\end{equation}
-so that an approximation to the consumption function which matches the level and the first two
-derivatives of the consumption function at the target is given by 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \label{eq:cFuncLimInfty}
-   \cFunc(\mRat) & =  -\left(\chi_{3} + \chi_{2} \mRat - \chi_{0} (- \mRat + \mRat \log \mRat)  \right)
-\end{aligned}\end{gathered}\end{equation}
-
-
-Designating the final points obtained by the reverse shooting iterations using the $\barwedge$ 
-subscript (e.g. the last value of $\cons$ is $\cons_{\barwedge}$), we begin with the observation
-that if \eqref{eq:cPPlimInf} holds true then 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \label{eq:cPPPlimInf}
-  -\cPPP_{\barwedge} & =  \chi_{0} \mRat^{-2}
-\end{aligned}\end{gathered}\end{equation}
-and since the interpolating approximation constructed above produces a direct estimate of $\cPPP$ 
-at the final point in the iteration, we can obtain a direct estimate of $\chi_{0}$ from
-\begin{equation}\begin{gathered}\begin{aligned}
-  \chi_{0} & =  -\cPPP_{\barwedge} \mRat^{2}
-.
-\end{aligned}\end{gathered}\end{equation}
-
-Similarly, we can recursively obtain 
-\begin{equation}\begin{gathered}\begin{aligned}
-  -\cPP_{\barwedge} & =  \chi_{1}-\chi_{0}/\mRat
-\\ \chi_{1} & =  \chi_{0}/\mRat - \cPP_{\barwedge}
-\\  -\cP_{\barwedge} & =  \chi_{2}+\chi_{1}\mRat -\chi_{0} \log \mRat
-\\ \chi_{2} & =  \chi_{0} \log \mRat - \cP_{\barwedge} - \chi_{1} \mRat
-\\  -\cons_{\barwedge} & =  \chi_{3} + \chi_{2} \mRat + (1/2) \chi_{1} \mRat^{2} - \chi_{0} (- \mRat + \mRat \log \mRat)
-\\  \chi_{3} & =  \chi_{0} (- \mRat + \mRat \log \mRat)-\chi_{2} \mRat - (1/2) \chi_{1} \mRat^{2} -\cons_{\barwedge}
-\end{aligned}\end{gathered}\end{equation}
-so that the limiting approximation to the consumption function is 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \label{eq:cFuncLimInfty}
-   \cFunc(\mRat) & =  -\left(\chi_{3} + \chi_{2} \mRat + (1/2) \chi_{1} \mRat^{2} - \chi_{0} (- \mRat + \mRat \log \mRat)  \right)
-\end{aligned}\end{gathered}\end{equation}
-
-\centerline{\Large New Consumption Function Approximation}
-\end{comment}
-
-\end{CDCPrivate} 
 
 The reverse shooting algorithm terminates at some finite maximum point $\bar\mRat$, but for completeness 
 it is useful to have an approximation to the consumption function that is reasonably well behaved
-for any $\mTarg^{\null}$ no matter how large.\footnote{An extrapolation of the approximating interpolation will 
-not perform well; a polynomial approximation will inevitably ``blow up'' if evaluated at large enough $\mTarg^{\null}$.}
+for any $\mTarg^{\hideSup}$ no matter how large.\footnote{An extrapolation of the approximating interpolation will 
+not perform well; a polynomial approximation will inevitably ``blow up'' if evaluated at large enough $\mTarg^{\hideSup}$.}
 
 Since we know that the consumption function in the presence of uncertainty asymptotes to the 
 perfect foresight function, we adopt the following approach.  Defining the level of precautionary
 saving as\footnote{Mnemonic: This is the amount of consumption that is cancelled as a result of uncertainty.}
-\newcommand{\psav}{\cancel{c}}
-\newcommand{\psavFunc}{\ensuremath{\cancel{\cFunc}}}
 \begin{equation}\begin{gathered}\begin{aligned}
   \label{eq:pSavFunc}
   \psavFunc(\mRat) & =  \bar{\cFunc}(\mRat)-\cFunc(\mRat),
@@ -1866,123 +1612,6 @@ of the ``true'' $\psavFunc$ function.\footnote{The exact symmetry in
   the treatment of $\gamma$ and $\phi$ means that there will actually
   be two symmetrical solutions; either can be used.}
 
-\begin{CDCPrivate} % This actually works reasonably well; somewhat better (it seems) than the w method described below, but not as well as approximating the consumption function and producing the value function by integration (outside the interpolation point boundaries)
-\newcommand{\crho}{\cancel{\rho}}
-An alternative approximation can be obtained by defining an `inverted' value function which is 
-much closer to being linear.   Using $\cancel{\rho}=1-\CRRA$, we define 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \nFunc(\mRat) & =  (\crho \vFunc)^{1/\crho}
-\end{aligned}\end{gathered}\end{equation}
-which has many useful properties, among them that as $\vFunc \rightarrow \infty$, $\nFunc \rightarrow 0$.
-The values of $\{\nFunc,\nFunc^{\prime},\nFunc^{\prime\prime}\}$ can be computed at the same points for 
-which values of $v$ and its derivatives were constructed using the reverse-shooting method.  Outside of the interval, we can use
-the consumption function to produce $\nFunc$ by numerical integration from the boundaries of the interval.
-
-\newcommand{\nFuncP}{\nFunc^{\prime}}
-\newcommand{\nFuncPP}{\nFunc^{\prime\prime}}
-\newcommand{\nFuncPPP}{\nFunc^{\prime\prime\prime}}
-
-To complete this scheme, we will need the derivatives:
-\begin{equation}\begin{gathered}\begin{aligned}
-    \nFuncP  & =  (\crho \vFunc)^{(1/\crho)-1} \vFunc^{\prime}
-\\           & =  (\nFunc^{\crho})^{(1/\crho)-1} \uP
-\\  \nFuncPP & =  \crho ((1/\crho)-1)(\nFunc^{\crho})^{(1/\crho)-2} (\uP)^2 + (\crho\vFunc)^{(1/\crho)-1} \uPP \MPCFunc
-.
-\end{aligned}\end{gathered}\end{equation}
-along with the limits:
-\begin{equation}\begin{gathered}\begin{aligned}
-   \lim_{\mRat \rightarrow 0} \nFunc(\mRat) & =  0
-\\ \lim_{\mRat \rightarrow 0} \nFuncP(\mRat) & =  \lim_{\mRat \rightarrow 0} (\bar{\MPC}^{e} m)^{-\CRRA} (\crho \vFunc)^{\frac{1-\crho}{\crho}} 
-\\ & =  \lim_{\mRat \rightarrow 0} (\bar{\MPC}^{e} m)^{-\CRRA} (\crho(\uFunc(\bar{\MPC}^{e} m) + \Discount \PGro^{1-\CRRA} \Ex_{t}[\vFunc^{\bullet}_{t+1}]))^{\frac{\CRRA}{1-\CRRA}} 
-\\ & =  \lim_{\mRat \rightarrow 0} (\bar{\MPC}^{e} m)^{-\CRRA} (\crho(\uFunc(\bar{\MPC}^{e} m) + \Discount \PGro^{1-\CRRA} \urate \vFunc^{u}_{t+1}(\mRat(1-\bar{\MPC}^{e}))))^{\frac{\CRRA}{1-\CRRA}} 
-\\ & =  \lim_{\mRat \rightarrow 0} (\bar{\MPC}^{e} m)^{-\CRRA} (\crho(\uFunc(\bar{\MPC}^{e} m) + \Discount \PGro^{1-\CRRA} \urate \uFunc(\mRat(1-\bar{\MPC}^{e})\bar{\MPC}^{e})\mathfrak{v}))^{\frac{\CRRA}{1-\CRRA}} 
-\\ & =  \lim_{\mRat \rightarrow 0} (\bar{\MPC}^{e} m)^{-\CRRA} ((\bar{\MPC}^{e} m)^{1/(1-\CRRA)}(1 + \Discount \PGro^{1-\CRRA} \urate (1-\bar{\MPC}^{e})^{1-\CRRA}\mathfrak{v}))^{\frac{\CRRA}{1-\CRRA}} 
-\\ & =  \lim_{\mRat \rightarrow 0} (1 + \Discount \PGro^{1-\CRRA} \urate 
-(1-\bar{\MPC}^{e})^{1-\CRRA}\mathfrak{v})^{\frac{\CRRA}{1-\CRRA}} %\\ & =  \lim_{\mRat \rightarrow 0} (\bar{\MPC}^{e} m)^{-\CRRA} (\crho(\uFunc(\bar{\MPC}^{e} m)(1 + \Discount \PGro^{1-\CRRA} \urate (1-\bar{\MPC}^{e})^{1-\CRRA})))^{\frac{\CRRA}{1-\CRRA}} 
-%\\ & =  \lim_{\mRat \rightarrow 0} (\bar{\MPC}^{e} m)^{-\CRRA} ((\bar{\MPC}^{e} m)^{1-\CRRA}/(1-\Discount \PGro^{1-\CRRA} \urate))^{\frac{\CRRA}{1-\CRRA}} 
-%\\ & =  \lim_{\mRat \rightarrow 0} (1/(1-\Discount \PGro^{1-\CRRA} \urate))^{\frac{\CRRA}{1-\CRRA}} 
-% I think this one is not right : \\ \lim_{\mRat \rightarrow 0} \nFuncPP(\mRat) & =  0
-\end{aligned}\end{gathered}\end{equation}
-
-\cite{BufferStockTheory} shows that the 
-value function can be bounded for $\mRat>0$ by a function of the form 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \label{eq:phiFunc}
-  \phiFunc(\mRat) & =  \eta + m^{1-\CRRA}
- \\ \phiFunc^{\prime}(\mRat) & =  (1-\CRRA) m^{-\CRRA}
- \\ \phiFunc^{\prime\prime}(\mRat) & =  -\CRRA (1-\CRRA)m^{-\CRRA-1}
-\end{aligned}\end{gathered}\end{equation}
-for any $\eta > \underline{\eta} = 2 \beth/(1-\beth)$.
-
-Thus, dropping arguments we define 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \label{eq:wFunc}
-    \wFunc & =  \vFunc\phiFunc^{-1}
-\\  \wFunc^{\prime} & =  \vFunc^{\prime}\phiFunc^{-1}-\vFunc\phiFunc^{-2}\phiFunc^{\prime}
-\\   & =  (\vFunc^{\prime}-\vFunc\phiFunc^{-1}\phiFunc^{\prime})\phiFunc^{-1}
-\\  \wFunc^{\prime\prime} & =  \vFunc^{\prime\prime}\phiFunc^{-1}-\vFunc^{\prime}\phiFunc^{-2}\phiFunc^{\prime}-(\vFunc^{\prime}\phiFunc^{-2}\phiFunc^{\prime}-2 \vFunc\phiFunc^{-3}(\phiFunc^{\prime})^{2}+\vFunc\phiFunc^{-2}\phiFunc^{\prime\prime})
-\\  & =  \left(\vFunc^{\prime\prime}-2\vFunc^{\prime}\phiFunc^{-1}\phiFunc^{\prime}+2 \vFunc\phiFunc^{-2}(\phiFunc^{\prime})^{2}-\vFunc\phiFunc^{-1}\phiFunc^{\prime\prime}\right)\phiFunc^{-1}
-\end{aligned}\end{gathered}\end{equation}
-
-Thus, dropping arguments we define 
-\begin{equation}\begin{gathered}\begin{aligned}
-    \wFunc \phiFunc & =  \vFunc
-\\  \wFunc^{\prime} \phiFunc + \wFunc \phiFunc^{\prime} & =  \vFunc^{\prime}
-\\  \wFunc^{\prime\prime} \phiFunc + \wFunc^{\prime} \phiFunc^{\prime} + \wFunc^{\prime} \phiFunc^{\prime} + \wFunc \phiFunc^{\prime\prime} & =  \vFunc^{\prime\prime}
-\\  \wFunc^{\prime\prime} \phiFunc + 2 \wFunc^{\prime} \phiFunc^{\prime}+ \wFunc \phiFunc^{\prime\prime} & =  \vFunc^{\prime\prime}
-\\  \wFunc^{\prime\prime\prime} \phiFunc + \wFunc^{\prime\prime} \phiFunc^{\prime} + 2 \left(\wFunc^{\prime\prime} \phiFunc^{\prime} + \wFunc^{\prime} \phiFunc^{\prime\prime}\right)+ \wFunc^{\prime} \phiFunc^{\prime\prime}+ \wFunc \phiFunc^{\prime\prime\prime} & =  \vFunc^{\prime\prime\prime}
-\\  \wFunc^{\prime\prime\prime} \phiFunc + 3 \wFunc^{\prime\prime} \phiFunc^{\prime} + 3 \wFunc^{\prime} \phiFunc^{\prime\prime}+ \wFunc \phiFunc^{\prime\prime\prime} & =  \vFunc^{\prime\prime\prime}
-\end{aligned}\end{gathered}\end{equation}
-and $\wFunc(0)$ must be computed by application of L'Hopital's rule from
-\begin{equation}\begin{gathered}\begin{aligned}
-  \lim_{\mRat \rightarrow 0} \wFunc(\mRat) & =  \lim_{\mRat \rightarrow 0} \left(\frac{\uFunc(\mRat \bar{\MPC}) + \Discount \vFunc^{u}(\mRat (1-\bar{\MPC}))}{\eta + m + m^{1-\CRRA}}\right)
-\\ & =  \uFunc(\bar{\MPC})+\vFunc^{u}(1-\bar{\MPC})
-\end{aligned}\end{gathered}\end{equation}
-and 
-\begin{equation}\begin{gathered}\begin{aligned}
- \wFunc^{\prime}(0) & =  \left(\frac{\uFunc^{\prime}(\cFunc(\mRat)) - \wFunc(0) \phiFunc^{\prime}}{\phiFunc}\right)
-\\  & =  \left(\frac{\uFunc^{\prime}(\cFunc(\mRat)) - \wFunc(0) (1-(1-\CRRA)m^{-\CRRA})}{\eta+m+m^{1-\CRRA}}\right)
-\end{aligned}\end{gathered}\end{equation}
-
-\begin{equation}\begin{gathered}\begin{aligned}
-  \wFunc^{\prime\prime\prime} & =   \left(\vFunc^{\prime\prime\prime}-3 \wFunc^{\prime\prime} \phiFunc^{\prime} - 3 \wFunc^{\prime} \phiFunc^{\prime\prime}- \wFunc \phiFunc^{\prime\prime\prime}\right)\phiFunc^{-1} 
-\end{aligned}\end{gathered}\end{equation}
-
-Finally, the limit as $\mRat$ goes to zero will be useful:
-\begin{equation}\begin{gathered}\begin{aligned}
-\ushort{w} \equiv  \lim_{\mRat \rightarrow 0} \left(\frac{\vFunc(\mRat)}{\eta+m+m^{1-\CRRA}}\right) & =  \lim_{\mRat \rightarrow 0} \left(\frac{\vFunc^{\prime}(\mRat)}{1+(1-\CRRA)m^{-\CRRA}}\right)
-\\ & =  \lim_{\mRat \rightarrow 0} \left(\frac{\uFunc^{\prime}(\cFunc(\mRat))}{1+(1-\CRRA)m^{-\CRRA}}\right)
-\\ & =   \lim_{\mRat \rightarrow 0} \left(\frac{(\mRat \bar{\MPC}^{e})^{-\CRRA}}{1+(1-\CRRA)m^{-\CRRA}}\right)
-\\ & =    \left(\frac{(\bar{\MPC}^{e})^{-\CRRA}}{(1-\CRRA)}\right)
-\\ \lim_{\mRat \rightarrow 0} \wFunc^{\prime}(\mRat) & =  \lim_{\mRat \rightarrow 0} \left(\frac{\uFunc^{\prime}(\cFunc(\mRat)) -  (1+(1-\CRRA)m^{-\CRRA})\vFunc/(\eta + m + m^{1-\CRRA})}{\eta + m + m^{1-\CRRA}}\right)
-\\  & =  \lim_{\mRat \rightarrow 0} \left(\frac{\uFunc^{\prime}(\cFunc(\mRat)) -  (1+(1-\CRRA)m^{-\CRRA})\ushort{w}}{\eta + m + m^{1-\CRRA}}\right)
-\\  & =  \lim_{\mRat \rightarrow 0} \left(\frac{-\CRRA (\bar{\MPC}^{e} m)^{-\CRRA-1}\bar{\MPC}^{e} +  \CRRA(1-\CRRA)m^{-\CRRA-1}\ushort{w}}{(1 + (1-\CRRA) m^{-\CRRA})}\right)
-\\  & =  \lim_{\mRat \rightarrow 0} \left(\frac{-\CRRA (\bar{\MPC}^{e} m)^{-1}\bar{\MPC}^{e} +  \CRRA(1-\CRRA)m^{-1}\ushort{w}}{(1-\CRRA) }\right)
-\\  & =  \lim_{\mRat \rightarrow 0} \left(\frac{-\CRRA m^{-1} +  \CRRA(1-\CRRA)m^{-1}\ushort{w}}{(1-\CRRA) }\right)
-\end{aligned}\end{gathered}\end{equation}
-
-
-Another solution is to note that value for this problem is bounded below by the value 
-that would be experienced by an unemployed consumer and above by the value that 
-would be experienced by a consumer with the same PDV of income but whose income
-was perfectly certain,
-\begin{equation}\begin{gathered}\begin{aligned}
-    \vFunc(\mRat) < &  \vFunc^{e}(\mRat)   < \bar{\vFunc}(\mRat)
-\\  0 < & \vFunc^{e}(\mRat)-\vFunc(\mRat)   < \bar{\vFunc}(\mRat)-\vFunc(\mRat)
-\\  0 < & \underbrace{\left(\frac{\vFunc^{e}(\mRat)-\vFunc(\mRat)}{\bar{\vFunc}(\mRat)-\vFunc(\mRat)}\right)}_{\equiv \varsigma(\mRat)}  < 1
-\end{aligned}\end{gathered}\end{equation}
-so that for any $\mRat$ value can be represented by 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \vFunc(\mRat) & =  \varsigma(\mRat)(\bar{\vFunc}(\mRat)-\vFunc(\mRat))+\vFunc(\mRat)
-\end{aligned}\end{gathered}\end{equation}
-
-
-Since $\bar{\vFunc}$ and $\vFunc$ are analytical functions, this means that 
-our problem is effectively reduced to approximating the function $\varsigma(\mRat)$ 
-whose value is bounded in the $[0,1]$ interval.
-
-
-\end{CDCPrivate}
 
 
 
@@ -2024,40 +1653,28 @@ can be found in \cite{parkLiqConstrContinuous}.
 \section{The Marginal Propensity to Consume at Target Wealth}
 
 %\subsection{The MPC at the Steady State}
-For any $\mRatE_{t} \neq \mTarg^{\null}$ the marginal propensity to consume can be approximated by 
+For any $\mRatE_{t} \neq \mTarg^{\hideSup}$ the marginal propensity to consume can be approximated by 
 \begin{equation}\begin{gathered}\begin{aligned}
   \MPCFunc^{e}(\mRatE_{t}) & \approx  \left(\frac{\Delta {\cRat}^{e}_{t+1}}{\Delta \mRatE_{t+1}}\right)
 % \\  & \approx  \left(\frac{\cFunc(\mRatE_{t+1})-\cFunc(\mRatE_{t})}{\Delta \mRatE_{t+1}}\right)
 % \\ & =  \left(\frac{\cFunc(\mRatE_{t}+\Delta \mRatE_{t+1})-\cFunc(\mRatE_{t})}{\Delta \mRatE_{t+1}}\right)
 %\\ & \approx  \left(\frac{\cFunc(\mRatE_{t})+\MPCFunc(\mRatE_{t})\Delta \mRatE_{t+1}-\cFunc(\mRatE_{t})}{\Delta \mRatE_{t+1}}\right)
 \end{aligned}\end{gathered}\end{equation}
-but at the steady state $\mRatE_{\tNow}=\mTarg^{\null}$ both numerator and denominator are zero.
-We get around this problem using L'H\^{o}pital's rule.  Define $\blacktriangle=\mRatE_{t}-\mTarg^{\null}$ and assume that the consumption function can be approximated as
+but at the steady state $\mRatE_{\tNow}=\mTarg^{\hideSup}$ both numerator and denominator are zero.
+We get around this problem using L'H\^{o}pital's rule.  Define $\blacktriangle=\mRatE_{t}-\mTarg^{\hideSup}$ and assume that the consumption function can be approximated as
 \begin{equation}\begin{gathered}\begin{aligned}
   \cFunc(\mRatE_{t}) & \approx  \cTarg^{e} + \blacktriangle_{t} \MPCE
 \end{aligned}\end{gathered}\end{equation}
 where 
 \begin{equation}\begin{gathered}\begin{aligned}
-   \MPCE & \equiv  \frac{d \cFunc(\mRatE_{t})}{d \mRatE_{t}} |_{\mRatE_{t}=\mTarg^{\null}}
-%\\ \MPCE^{\prime} & \equiv  \frac{d^{2} \cFunc(\mRatE_{t})}{d (\mRatE_{t})^{2}} |_{\mRatE_{t}=\mTarg^{\null}}
+   \MPCE & \equiv  \frac{d \cFunc(\mRatE_{t})}{d \mRatE_{t}} |_{\mRatE_{t}=\mTarg^{\hideSup}}
+%\\ \MPCE^{\prime} & \equiv  \frac{d^{2} \cFunc(\mRatE_{t})}{d (\mRatE_{t})^{2}} |_{\mRatE_{t}=\mTarg^{\hideSup}}
 \end{aligned}\end{gathered}\end{equation}
 so that
-\begin{CDCPrivate}
 \begin{equation}\begin{gathered}\begin{aligned}
-  \Delta {\cRat}^{e}_{t+1} & \approx  \Delta \mRatE_{t+1}\MPCE 
-\end{aligned}\end{gathered}\end{equation}
-and
-\begin{equation}\begin{gathered}\begin{aligned}
-  \Delta \mRatE_{t+1} & =  (\mTarg^{\null} + \blacktriangle_{t} -\cFunc(\mTarg^{\null}+\blacktriangle_{t}))\Rnorm + 1 - (\mTarg^{\null}+\blacktriangle_{t})
-\\ & \approx  \mTarg^{\null}+\blacktriangle_{t}- (\cTarg^{e}+ \blacktriangle_{t} \MPCE)\Rnorm + 1 - (\mTarg^{\null}+\blacktriangle_{t})
-\\ & =  \underbrace{(\mTarg^{\null}-\cTarg^{e})\Rnorm+1}_{\mTarg^{\null}} -\mTarg^{\null} + ((1-\MPCE) \Rnorm-1)\blacktriangle_{t}
-\\ & =  (\rfree  - \MPCE \Rnorm) \blacktriangle_{t}
-\end{aligned}\end{gathered}\end{equation}
-\end{CDCPrivate} 
-\begin{equation}\begin{gathered}\begin{aligned}
-  \blacktriangle_{t+1} & =  (\mTarg^{\null} + \blacktriangle_{t} -\cFunc(\mTarg^{\null}+\blacktriangle_{t}))\Rnorm + 1 - \mTarg^{\null}
-\\ & \approx  (\mTarg^{\null}+\blacktriangle_{t}- (\cTarg^{e}+ \blacktriangle_{t} \MPCE))\Rnorm + 1 - \mTarg^{\null}
-\\ & =  \underbrace{(\mTarg^{\null}-\cTarg^{e})\Rnorm+1}_{\mTarg^{\null}} -\mTarg^{\null} + (1-\MPCE) \Rnorm\blacktriangle_{t}
+  \blacktriangle_{t+1} & =  (\mTarg^{\hideSup} + \blacktriangle_{t} -\cFunc(\mTarg^{\hideSup}+\blacktriangle_{t}))\Rnorm + 1 - \mTarg^{\hideSup}
+\\ & \approx  (\mTarg^{\hideSup}+\blacktriangle_{t}- (\cTarg^{e}+ \blacktriangle_{t} \MPCE))\Rnorm + 1 - \mTarg^{\hideSup}
+\\ & =  \underbrace{(\mTarg^{\hideSup}-\cTarg^{e})\Rnorm+1}_{\mTarg^{\hideSup}} -\mTarg^{\hideSup} + (1-\MPCE) \Rnorm\blacktriangle_{t}
 \\ & =  \underbrace{\left(1-\MPCE\right)}_{\equiv \MPS^{e}}\blacktriangle_{t}\Rnorm 
 \end{aligned}\end{gathered}\end{equation}
 and note for future use that 
@@ -2069,7 +1686,7 @@ and
 \begin{equation}\begin{gathered}\begin{aligned}
   \left(\frac{\blacktriangle_{t+1}}{\blacktriangle_{t}}\right)   & =  \MPS^{e}\Rnorm
 \end{aligned}\end{gathered}\end{equation}
-while using \eqref{eq:cedel} yields
+while using \eqref{eq:ctp1Oct} yields
 \begin{equation}\begin{gathered}\begin{aligned}
   c_{t+1}& =  {\PatPGro} \left\{1+\urate\left[\left(\frac{\cFunc(\mRatE_{t+1})}{(\mRatE_{t}-\cFunc(\mRatE_{t}))\Rnorm\MPCU}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}c_{t} 
 \\ \Delta c_{t+1} & \approx  {\PatPGro} \left\{1+\urate\left[\left(\frac{\cTarg^{e}+\MPCE \blacktriangle_{t+1} }{\cTarg^{u}(1 +\blacktriangle_{t}\MPS^{e} \Rnorm \MPCU/\cTarg^{u})}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}c_{t}-c_{t} \nonumber
@@ -2087,22 +1704,19 @@ so that
 \\  \MPCE \PatPGro \left((1-\MPCE)\Rnorm-1\right) & =  \urate(\cTarg^{e}/\cTarg^{u})^{\CRRA}(1-\MPCE) \Rnorm (\MPCE/\cTarg^{e} - \MPCU/\cTarg^{u}) \cTarg^{e}
 \end{aligned}\end{gathered}\end{equation}
 which is a quadratic equation in $\MPCE$.  This equation has only one solution inside the unit 
-interval, which will be the MPC at $\mTarg^{\null}$.  
+interval, which will be the MPC at $\mTarg^{\hideSup}$.  
 
 Note that an alternative approach would be to define $\Delta \cTarg^{e}$ using the
-RHS of \eqref{eq:dc} and $\Delta \mTarg^{\null} = (\MPS^{e}  \Rnorm - 1)\blacktriangle_{t}$ 
+RHS of \eqref{eq:dc} and $\Delta \mTarg^{\hideSup} = (\MPS^{e}  \Rnorm - 1)\blacktriangle_{t}$ 
 and to use a numerical rootfinding routine to locate the $\hat{\MPC}^{e}$ that solves 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \hat{\MPCFunc}^{e}(\blacktriangle_{t}) & =  \left(\frac{\Delta \cTarg^{e}}{\Delta \mTarg^{\null}}\right)
+  \hat{\MPCFunc}^{e}(\blacktriangle_{t}) & =  \left(\frac{\Delta \cTarg^{e}}{\Delta \mTarg^{\hideSup}}\right)
 \end{aligned}\end{gathered}\end{equation}
 using $\MPCE$ as the starting point for the numerical search.  This approach 
 has the virtue that it can produce estimates of the MPC at points near but not
 equal to the target level of wealth.  (We will use this below).
 
-
-
-
-Differentiating \eqref{eq:natural}, dropping arguments, and evaluating at the steady state yields
+Differentiating \eqref{eq:naturalMPC}, dropping arguments, and evaluating at the steady state yields
 \begin{equation}\begin{gathered}\begin{aligned}
   \MPC^{e\prime} & =  -\eta\MPC^{e\prime} (\erate \MPCE+\urate (\cTarg^{u}/\cTarg^{e})^{-\CRRA-1} \MPCU)
 \\ &  + \eta  (1-\MPCE)^{2}\Rnorm (\cTarg^{e})^{\CRRA+1}(-\CRRA-1)(\erate  \MPCE + \urate (\cTarg^{u})^{-\CRRA-2} \MPCU) \nonumber 
@@ -2119,16 +1733,16 @@ Differentiating \eqref{eq:natural}, dropping arguments, and evaluating at the st
 % eval: (setq TeX-command-list  (assq-delete-all (car (assoc "Biber"  TeX-command-list)) TeX-command-list))
 % eval: (setq TeX-command-list  (remove '("BibTeX" "%(bibtex) ../LaTeX/%s"    TeX-run-BibTeX nil t :help "Run BibTeX") TeX-command-list))
 % eval: (setq TeX-command-list  (remove '("BibTeX" "bibtex ../LaTeX/%s"    TeX-run-BibTeX nil t :help "Run BibTeX") TeX-command-list))
-% eval: (add-to-list 'TeX-command-list '("BibTeX" "bibtex LaTeX/%s" TeX-run-BibTeX nil t                                                                              :help "Run BibTeX") t)
-% eval: (add-to-list 'TeX-command-list '("BibTeX" "bibtex LaTeX/%s" TeX-run-BibTeX nil (plain-tex-mode latex-mode doctex-mode ams-tex-mode texinfo-mode context-mode) :help "Run BibTeX") t)
+% eval: (add-to-list 'TeX-command-list '("BibTeX" "bibtex %s" TeX-run-BibTeX nil t                                                                              :help "Run BibTeX") t)
+% eval: (add-to-list 'TeX-command-list '("BibTeX" "bibtex %s" TeX-run-BibTeX nil (plain-tex-mode latex-mode doctex-mode ams-tex-mode texinfo-mode context-mode) :help "Run BibTeX") t)
 % TeX-PDF-mode: t
 % TeX-file-line-error: t
 % TeX-debug-warnings: t
-% LaTeX-command-style: (("" "%(PDF)%(latex) %(file-line-error) %(extraopts) -output-directory=LaTeX %S%(PDFout)"))
+% LaTeX-command-style: (("" "%(PDF)%(latex) %(file-line-error) %(extraopts) -output-directory=. %S%(PDFout)"))
 % TeX-source-correlate-mode: t
 % TeX-parse-self: t
 % TeX-parse-all-errors: t
-% eval: (cond ((string-equal system-type "darwin") (progn (setq TeX-view-program-list '(("Skim" "/Applications/Skim.app/Contents/SharedSupport/displayline -b %n LaTeX/%o %b"))))))
+% eval: (cond ((string-equal system-type "darwin") (progn (setq TeX-view-program-list '(("Skim" "/Applications/Skim.app/Contents/SharedSupport/displayline -b %n       %o %b"))))))
 % eval: (cond ((string-equal system-type "gnu/linux") (progn (setq TeX-view-program-list '(("Evince" "evince --page-index=%(outpage) LaTeX/%o"))))))
 % eval: (cond ((string-equal system-type "gnu/linux") (progn (setq TeX-view-program-selection '((output-pdf "Evince"))))))
 % End:

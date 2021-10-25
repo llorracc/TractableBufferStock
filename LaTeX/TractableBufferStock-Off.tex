@@ -1,7 +1,9 @@
 \documentclass{handout}
 \usepackage{handoutSetup}\usepackage{handoutShortcuts}
 
+% Lines containing Private are excised when the public version of the document is created 
 
+% Items within a Private environment are excised when the public version of the document is created
 
 %\usepackage{endfloat}  % uncomment to put figures at the end
 
@@ -184,12 +186,12 @@ Using this,
 \end{aligned}\end{gathered}\end{equation}
 and we would be unable to proceed to the step from \eqref{eq:BeforePFStep} to \eqref{eq:ctp1Oct}.}
 
-\begin{align}
+\begin{equation}\begin{gathered}\begin{aligned}
         1  & = \PatPGro^{\CRRA} \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA} \left\{(1-\urate)+\urate\left[\left(\frac{\cU_{t+1}}{{\cRat}^{e}_{t}}\right)\left(\frac{{\cRat}^{e}_{t}}{{\cRat}^{e}_{t+1}}\right)\right]^{-\CRRA}\right\}
 \\       & = \PatPGro^{\CRRA} \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{-\CRRA} \left\{1+\urate\left[\left(\frac{\cU_{t+1}}{{\cRat}^{e}_{t+1}}\right)^{-\CRRA}-1\right]\right\} \label{eq:BeforePFStep}
 \\       \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right)^{\CRRA} & = \PatPGro^{\CRRA} \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cU_{t+1}}\right)^{\CRRA}-1\right]\right\} \label{eq:ctp1Oct}
 \\       \left(\frac{{\cRat}^{e}_{t+1}}{{\cRat}^{e}_{t}}\right) & = {\PatPGro} \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cU_{t+1}}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}. \label{eq:cedel}
-\end{align}
+\end{aligned}\end{gathered}\end{equation}
 
 \opt{MarginNotes}{\marginpar{\tiny Mnemonics for $\nabla$: sort of like a change, but a downward change, so like $\Delta$, but points down.}}
 
@@ -255,13 +257,13 @@ saving motive induced by a higher degree of prudence.
 The target level of $\mRat^{e}$ (if one exists) will be the point of intersection between the $\dcEqZero$ and $\dmEqZero$ loci.  \opt{MarginNotes}{\marginpar{\tiny Note the dropping of the $t+1$ subscripts because we're talking about a steady-state.}}
 
 The $\dcEqZero$ locus can be characterized by substituting ${\cRat}^{e}_{t+1}={\cRat}^{e}_{t} \equiv {\cRat}^{e}$ into \eqref{eq:cedel}:
-\begin{align}
+\begin{equation}\begin{gathered}\begin{aligned}
          1 & = \left\{1+\urate\left[\left(\frac{{\cRat}^{e}_{t+1}}{\cRat_{t+1}^{u}}\right)^{\CRRA}-1\right]\right\} \PatPGro^{\CRRA} \label{eq:ctp1OctEq1}
 \\ \PatPGro^{-\CRRA} & =  (1-\urate)+\urate\left(\frac{{\cRat}^{e}_{\tSS}}{\cRat_{t+1}^{u} }\right)^{\CRRA}
 \\ \underbrace{\left(\frac{\PatPGro^{-\CRRA}-1+\urate}{\urate}\right)^{1/\CRRA}}_{\equiv \straight} & =   \left(\frac{{\cRat}^{e}_{\tSS}}{\cRatU_{t+1}}\right) \label{eq:straightDef}
 \\ \underbrace{\left(\overbrace{\urate^{-1}(\PatPGro^{-\CRRA}-1)}^{\equiv \varpi}+1\right)^{1/\CRRA}}_{\straight=(1+\varpi)^{1/\CRRA}} & =   \left(\frac{{\cRat}^{e}_{\tSS}}{\cRatU_{t+1}}\right) \label{eq:varpiDef}
 \\      {\cRat}^{e}_{\tSS} & = \cRat^{u}_{t+1} \straight \label{eq:cRatEtfmcRatUtp1}.
-\end{align}
+\end{aligned}\end{gathered}\end{equation}
 
 
 The importance of the linearity of the consumption function of the unemployed consumer now becomes evident:  It means that the RHS of \eqref{eq:cRatEtfmcRatUtp1} is linear in $\cRat^{e}_{t}$:
@@ -1384,12 +1386,12 @@ by differentiating the consumption Euler equation with respect to $m_{t}$:
 \\  \uFunc^{\prime\prime}(\cFunc^{e}(\mRat_{t}))\MPCFunc^{e}(\mRat_{t}) & = \beth  \Rnorm (1-\MPCFunc^{e}(\mRat_{t}))\Ex_{t}[\uFunc^{\prime\prime}(\cFunc^{\bullet}(\mRat_{t+1}))\MPCFunc^{\bullet}(\mRat_{t+1})] \label{eq:dEuler}
 \end{aligned}\end{gathered}\end{equation}
 so that defining, e.g., $\MPCE_{t} = \MPCFunc^{e}(\mRat_{t})$ we have 
-\begin{align}
+\begin{equation}\begin{gathered}\begin{aligned}
  \MPCE_{t} & =  (1-\MPCE_{t}) \underbrace{\beth \Rnorm (1/\uPP({\cRat}^{e}_{t}))\Ex_{t}\left[\uPP(c^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}\right]}_{\equiv \natural_{t+1}} \label{eq:natural}
 \\ (1+\natural_{t+1})\MPCE_{t} & = \natural_{t+1} \label{eq:naturalMPC}
 \\ \MPCE_{t} & = \left(\frac{\natural_{t+1}}{1+\natural_{t+1}}\right) \label{eq:naturalSolved}
 .
-\end{align}
+\end{aligned}\end{gathered}\end{equation}
 \newcommand{\Mma}{{\it Mathematica}~}
 At the target level of $\mRatE$ we have 
 \begin{equation*}\begin{gathered}\begin{aligned}
@@ -1496,21 +1498,21 @@ Reverse shooting requires us to solve separately for an approximation to the con
 another approximation below the steady state.  Using the approximate steady-state $\MPCE$ and $\MPC^{e\prime}$ 
 obtained above, we begin by picking a very small number for $\blacktriangle$ and then creating a Taylor
 approximation to the consumption function near the steady state:
-\begin{align}
+\begin{equation}\begin{gathered}\begin{aligned}
   \mRatE_{\Alt{t}} & = \mTarg^{\null} + \blacktriangle  \label{eq:revshootmstart} 
 \\ \tilde{\mathbf{c}}(\blacktriangle) & = \cTarg^{e} + \blacktriangle \MPCE+ (\blacktriangle^{2}/2) \MPC^{e\prime}+ (\blacktriangle^{3}/6) \MPC^{e\prime\prime} \label{eq:revshootcstart}
 %\\ \MPCE_{\Alt{t}} & = \hat{\MPCFunc}^{e}(\blacktriangle)
-\end{align}
+\end{aligned}\end{gathered}\end{equation}
 and then iterate the reverse-shooting equations until we reach some period $n$ in
-which $\mRatE_{\Alt{t}-n}$ escapes some pre-specified interval $[\ushort{\mRat}^{e},\bar{\mRat}^{e}]$ (where the natural 
-value for $\ushort{\mRat}^{e}$ is 1 because this is the $\mRat$ that would be owned by a consumer who had saved
+which $\mRatE_{\Alt{t}-n}$ escapes some pre-specified interval $[\underline{\mRat}^{e},\bar{\mRat}^{e}]$ (where the natural 
+value for $\underline{\mRat}^{e}$ is 1 because this is the $\mRat$ that would be owned by a consumer who had saved
 nothing in the prior period and therefore is below any feasible value of $\mRat$ that could be realized by an 
 optimizing consumer).  This generates a sequence of points all of which
 are on the consumption function.  A parallel procedure (substituting $-$ for
 $+$ in \eqref{eq:revshootmstart} and where appropriate in \eqref{eq:revshootcstart}) generates the sequence of points for the approximation below the 
 steady state.  Taken together with the already-derived characterization of the function
 at the target level of wealth, these points constitute the basis for a piecewise second-order interpolating approximation to the
-consumption function on the interval $[\ushort{\mRat}^{e},\bar{\mRat}^{e}]$.
+consumption function on the interval $[\underline{\mRat}^{e},\bar{\mRat}^{e}]$.
 
 \subsection{The Value Function}
 
