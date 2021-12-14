@@ -1,0 +1,2404 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=latex 2020.4.7)  25 OCT 2021 11:58
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode TractableBufferStock.cfg,svg            ,charset=utf-8,html5.a.b.c.\input "\detokenize{TractableBufferStock}"
+(./TractableBufferStock.tex (./econtexRoot.tex (./Resources/econtexPaths.tex)) (./Resources/texmf-local/tex/latex/handout.cls
+
+LaTeX Warning: You have requested document class `./Resources/texmf-local/tex/latex/handout',
+               but the document class provides `handout'.
+
+Document Class: handout 2019/11/18 LaTeX class for handouts written by Christopher Carroll
+(/usr/local/texlive/texmf-local/tex/latex/snapshot.sty
+Package: snapshot 2002/03/05 v1.14
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count167
+\cp@tempcnt=\count168
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\c@IncludeTitlePage=\count169
+(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2020/01/24 v3.29 KOMA-Script document class (article)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
+))) (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box45
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 137.
+Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input line 2212.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+File: scrsize12pt.clo 2020/01/24 v3.29 KOMA-Script font size class option (12pt)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2020/01/24 v3.29 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count170
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 12
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 448.13095pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 1719.
+)
+\c@part=\count171
+\c@section=\count172
+\c@subsection=\count173
+\c@subsubsection=\count174
+\c@paragraph=\count175
+\c@subparagraph=\count176
+\scr@dte@section@maxnumwidth=\skip53
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4723.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4723.
+\scr@dte@part@maxnumwidth=\skip54
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4731.
+\scr@dte@subsection@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4741.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4741.
+\scr@dte@subsubsection@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4751.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4751.
+\scr@dte@paragraph@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4761.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4761.
+\scr@dte@subparagraph@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4771.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4771.
+\abovecaptionskip=\skip59
+\belowcaptionskip=\skip60
+\c@pti@nb@sid@b@x=\box46
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 6002.
+\scr@dte@figure@maxnumwidth=\skip61
+\c@figure=\count177
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 6014.
+\scr@dte@table@maxnumwidth=\skip62
+\c@table=\count178
+Class scrartcl Info: Redefining `\numberline' on input line 6178.
+\bibindent=\dimen134
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/03/22 3.42 The Babel package
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/03/22 3.42 Babel switching mechanism
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/03/22 3.42 Babel common definitions
+\babel@savecnt=\count179
+\U@D=\dimen135
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count180
+)
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 108.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count181
+\calc@Bcount=\count182
+\calc@Adimen=\dimen136
+\calc@Bdimen=\dimen137
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count183
+\calc@Cskip=\skip65
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read3
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip66
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen138
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen139
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count184
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count185
+\leftroot@=\count186
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count187
+\DOTSCASE@=\count188
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen140
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count189
+\c@MaxMatrixCols=\count190
+\dotsspace@=\muskip16
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
+\tag@help=\toks19
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
+\andhelp@=\toks20
+\eqnshift@=\dimen141
+\alignsep@=\dimen142
+\tagshift@=\dimen143
+\tagwidth@=\dimen144
+\totwidth@=\dimen145
+\lineht@=\dimen146
+\@envbody=\toks21
+\multlinegap=\skip67
+\multlinetaggap=\skip68
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip69
+\thm@postskip=\skip70
+\thm@headsep=\skip71
+\dth@everypar=\toks28
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xpatch/xpatch.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-03-06 L3 programming layer (loader) 
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-03-12 L3 backend support: dvips
+\l__pdf_internal_box=\box49
+\g__pdf_backend_object_int=\count196
+\l__pdf_backend_content_box=\box50
+\l__pdf_backend_model_box=\box51
+\g__pdf_backend_annotation_int=\count197
+\g__pdf_backend_link_int=\count198
+\g__pdf_backend_link_sf_int=\count199
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count266
+\g__xparse_grabber_int=\count267
+\l__xparse_m_args_int=\count268
+\l__xparse_v_nesting_int=\count269
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count270
+))
+Class scrartcl Info: amsthm's \deferred@thm@head patched.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box52
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen147
+\ar@mcellbox=\box53
+\extrarowheight=\dimen148
+\NC@list=\toks29
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box54
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count271
+\mult@box=\box55
+\multicol@leftmargin=\dimen149
+\c@unbalance=\count272
+\c@collectmore=\count273
+\doublecol@number=\count274
+\multicoltolerance=\count275
+\multicolpretolerance=\count276
+\full@width=\dimen150
+\page@free=\dimen151
+\premulticols=\dimen152
+\postmulticols=\dimen153
+\multicolsep=\skip74
+\multicolbaselineskip=\skip75
+\partial@page=\box56
+\last@line=\box57
+\maxbalancingoverflow=\dimen154
+\mult@rightbox=\box58
+\mult@grightbox=\box59
+\mult@gfirstbox=\box60
+\mult@firstbox=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\c@minrows=\count277
+\c@columnbadness=\count278
+\c@finalcolumnbadness=\count279
+\last@try=\dimen155
+\multicolovershoot=\dimen156
+\multicolundershoot=\dimen157
+\mult@nat@firstbox=\box99
+\colbreak@box=\box100
+\mc@col@check@num=\count280
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip76
+\multirow@cntb=\count281
+\multirow@dima=\skip77
+\bigstrutjot=\dimen158
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count282
+\@cmidlb=\count283
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count284
+\@lastruleclass=\count285
+\@thisrulewidth=\dimen171
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks30
+\AP@partial=\box101
+\AP@footins=\box102
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/enotez/enotez.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2020-03-06 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen172
+\l__xtemplate_tmp_int=\count286
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip78
+)
+Package: enotez 2020/01/16 v0.10b Endnotes for LaTeX2e
+\l__enotez_list_preamble_skip=\skip79
+\l__enotez_list_postamble_skip=\skip80
+\g__enotez_endnote_id_int=\count287
+\g__enotez_endnote_mark_int=\count288
+\c@endnote=\count289
+\g__enotez_list_printed_int=\count290
+\l__enotez_tmpa_int=\count291
+
+Package xtemplate Info: Declaring object type 'enotez-list' taking 1
+(xtemplate)             argument(s) on line 473.
+
+\l__enotez_list_notes_sep_dim=\dimen173
+(/usr/local/texlive/2020/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2018/02/28 v1.8 internationalization of LaTeX2e packages (CN)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+))) (/usr/local/texlive/2020/texmf-dist/tex/latex/moreverb/moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+\tab@position=\count292
+\tab@size=\count293
+\listing@line=\count294
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+Now handling font encoding T3 ...
+... no UTF-8 mapping file for font encoding T3
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 357.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)))) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/accents/accents.sty
+Package: accents 2006/05/12 v1.4 Math Accent Tools
+\cc@skew=\dimen174
+\cc@wd=\dimen175
+\cc@code=\count295
+\cc@group=\count296
+\cc@skewchar=\count297
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count298
+\c@@ppsavesec=\count299
+\c@@ppsaveapp=\count300
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/eucal.sty
+Package: eucal 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box103
+\UL@hyphenbox=\box104
+\UL@skip=\skip81
+\UL@hook=\toks31
+\UL@height=\dimen176
+\UL@pe=\count301
+\UL@pixel=\dimen177
+\ULC@box=\box105
+Package: ulem 2019/11/18
+\ULdepth=\dimen178
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+LaTeX Info: Redefining \bm on input line 209.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/optional/optional.sty
+Package: optional 2005/01/26 ver 2.2b;  Optional inclusion/omission
+)
+Using optional text marked with handout. 
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip82
+\bibsep=\skip83
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count302
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks32
+\footnotemargin=\dimen179
+\c@pp@next@reset=\count303
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/ncctools/manyfoot.sty
+Package: manyfoot 2019/08/03 v1.11 Many Footnote Levels Package (NCC)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/ncctools/nccfoots.sty
+Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
+)
+\MFL@columnwidth=\dimen180
+)
+\c@authornum=\count304
+\c@bottomauthor=\count305
+LaTeX Info: Redefining \rm on input line 405.
+LaTeX Info: Redefining \sf on input line 406.
+LaTeX Info: Redefining \tt on input line 407.
+LaTeX Info: Redefining \bf on input line 408.
+LaTeX Info: Redefining \it on input line 409.
+LaTeX Info: Redefining \sl on input line 410.
+LaTeX Info: Redefining \sc on input line 411.
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2020-02-18-14:17
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2020-03-12-14:03
+) (./Resources/LaTeXInputs/TractableBufferStock.sty) (./Resources/texmf-local/tex/latex/handoutSetup.sty (/usr/local/texlive/texmf-local/tex/latex/handoutShortcuts.sty) (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/psibycus.sty
+Package: psibycus 2004/10/18 v4.5 Ibycus4 using Type1 fonts (P.A.MacKay/WaS)
+\digraphs=\toks34
+(/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/ibycus4.map (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/tlgsqq.tex)) (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/Uibycus.fd
+File: Uibycus.fd 2004/10/18 v4.5 font definitions for Ibycus/Type1 (WaS)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/iby4extr.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/version4.tex Ibycus Greek. Version 4. 15 July 1997))) (/usr/local/texlive/2020/texmf-dist/tex/latex/ushort/ushort.sty
+ushort.sty by M. Vaeth: Release: 2.2 
+Package: ushort 2001/06/13 v2.2
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2020-03-12-14:03
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 105.
+)
+\Gin@req@height=\dimen181
+\Gin@req@width=\dimen182
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+(/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen183
+\Hy@linkcounter=\count306
+\Hy@pagecounter=\count307
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count308
+Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count309
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen184
+(/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count310
+\Field@Width=\dimen185
+\Fld@charsize=\dimen186
+\Field@toks=\toks35
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring ON on input line 6448.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count311
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver: htex4ht.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2020/01/14 v7.00d Hyperref driver for TeX4ht
+Package hyperref Info: tex4ht is already loaded.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 152.
+Including MathFactsList.defs) (./TractableBufferStock.cfg (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+version 2020-03-12-14:03
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2020-02-18-14:17
+--- needs --- tex4ht TractableBufferStock ---
+\tmp:cnt=\count312
+\openout15 = `TractableBufferStock.tmp'.
+
+(./TractableBufferStock.tmp)
+\tmp:dim=\skip84
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+(./TractableBufferStock.xref)
+\:refout=\write3
+\openout3 = `TractableBufferStock.xref'.
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the command line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-DOCTYPE'
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line option
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (Character bitmaps are controled only by `g' records of tex4ht.env and `-g' switches of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (Character bitmaps are controled only by `g' records of tex4ht.env and `-g' switches of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `frames'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: svg,charset=utf-8,html5,html,charset="latin1",p-width,pic-align,pic-tabular
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line option `imgdir:.../'
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+--------------------------------------
+--- Note --- for external SVG files try the command line options `svg-obj' and 'svg-'
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+)
+\:tokwrite=\toks36
+\:tokpage=\toks37
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+--------------------------------------
+\openout15 = `TractableBufferStock.4ct'.
+
+\:tocout=\write4
+\openout4 = `TractableBufferStock.4tc'.
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2020-02-26-14:25
+LaTeX Info: Redefining \_ on input line 168.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command line option `refcaption'
+--------------------------------------
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line option `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command line option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the command line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `fonts'
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use the command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2018-11-06-15:55
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/ifthen.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/scrartcl.4ht
+version 2018-10-20-15:45
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/article.4ht (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., index=2)
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/babel.4ht (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/english.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/verbatim.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/amsmath.4ht
+version 2019-12-29-14:17
+\tmp:muskip=\muskip19
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/amssymb.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/amsthm.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/dcolumn.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/array.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/multicol.4ht (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/multirow.4ht (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/booktabs.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/afterpage.4ht
+version 2009-05-21-09:32
+l.37 --- TeX4ht warning --- afterpage.sty not supported ---
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/moreverb.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/xcolor.4ht
+version 2019-04-09-10:06
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/color.4ht (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/color.4ht) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/accents.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/appendix.4ht
+version 2019-10-24-10:36
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/eucal.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/ulem.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/bm.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/url.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/natbib.4ht (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/footmisc.4ht
+version 2019-12-23-13:36
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/ushort.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+version 2018-10-01-14:24
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/graphics.4ht (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line options `graphics-num' or `graphics-'. The `num' should provide the density of pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions when bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+version 2019-09-14-15:17
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+(/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count313
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2019-12-23-13:36
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+))
+LaTeX Info: Redefining \autoref on input line 95.
+\Hy@SectionHShift=\skip85
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2020-03-16-10:43
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2019-12-28-14:40
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2020-03-06-15:07
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2019-11-21-13:36
+)) (./TractableBufferStock.aux)
+\openout1 = `TractableBufferStock.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 77.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 77.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+Package scrbase Info: activating english \contentsname on input line 77.
+Package scrbase Info: activating english \listfigurename on input line 77.
+Package scrbase Info: activating english \listtablename on input line 77.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 77.
+\AtBeginShipoutBox=\box106
+Package hyperref Info: Link coloring ON on input line 77.
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
+LaTeX Info: Redefining \nameref on input line 77.
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 77.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/bookmark/bkm-dvips.def
+File: bkm-dvips.def 2019/12/03 v1.28 bookmark driver for dvips (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+Package auxhook Info: \AddLineBeginMainAux comes a little late,
+(auxhook)             because the main .aux file is already opened on input line 213.
+\BKM@id=\count314
+))
+--- file TractableBufferStock.css ---
+)
+\verbatim@out=\write5
+\openout5 = `TractableBufferStock.title'.
+
+(./TractableBufferStock.title)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 45.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+--- file TractableBufferStock2.html ---
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 51.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 51.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+l. 51 Writing TractableBufferStock.idv[1] (TractableBufferStock0x.svg)
+l. 51 Writing TractableBufferStock.idv[2] (TractableBufferStock1x.svg)
+l. 52 Writing TractableBufferStock.idv[3] (TractableBufferStock2x.svg)
+l. 57 Writing TractableBufferStock.idv[4] (TractableBufferStock3x.svg)
+l. 57 Writing TractableBufferStock.idv[5] (TractableBufferStock4x.svg)
+l. 57 Writing TractableBufferStock.idv[6] (TractableBufferStock5x.svg)
+l. 57 Writing TractableBufferStock.idv[7] (TractableBufferStock6x.svg)
+[1
+
+
+]
+l. 58 Writing TractableBufferStock.idv[8] (TractableBufferStock7x.svg)
+l. 63 Writing TractableBufferStock.idv[9] (TractableBufferStock8x.svg)
+l. 64 Writing TractableBufferStock.idv[10] (TractableBufferStock9x.svg)
+l. 66 Writing TractableBufferStock.idv[11] (TractableBufferStock10x.svg)
+l. 67 Writing TractableBufferStock.idv[12] (TractableBufferStock11x.svg)
+--- file TractableBufferStock3.html ---
+l. 71 Writing TractableBufferStock.idv[13] (TractableBufferStock12x.svg)
+[2
+
+]
+l. 77 Writing TractableBufferStock.idv[14] (TractableBufferStock13x.svg)
+l. 77 Writing TractableBufferStock.idv[15] (TractableBufferStock14x.svg)
+--- file TractableBufferStock4.html ---
+l. 81 Writing TractableBufferStock.idv[16] (TractableBufferStock15x.svg)
+l. 82 Writing TractableBufferStock.idv[17] (TractableBufferStock16x.svg)
+--- file TractableBufferStock5.html ---
+l. 88 Writing TractableBufferStock.idv[18] (TractableBufferStock17x.svg)
+l. 92 Writing TractableBufferStock.idv[19] (TractableBufferStock18x.svg)
+l. 93 Writing TractableBufferStock.idv[20] (TractableBufferStock19x.svg)
+l. 95 Writing TractableBufferStock.idv[21] (TractableBufferStock20x.svg)
+--- file TractableBufferStock6.html ---
+l. 96 Writing TractableBufferStock.idv[22] (TractableBufferStock21x.svg)
+l. 96 Writing TractableBufferStock.idv[23] (TractableBufferStock22x.svg)
+l. 96 Writing TractableBufferStock.idv[24] (TractableBufferStock23x.svg)
+l. 96 Writing TractableBufferStock.idv[25] (TractableBufferStock24x.svg)
+l. 96 Writing TractableBufferStock.idv[26] (TractableBufferStock25x.svg)
+l. 96 Writing TractableBufferStock.idv[27] (TractableBufferStock26x.svg)
+[3
+
+
+
+]
+l. 100 Writing TractableBufferStock.idv[28] (TractableBufferStock27x.svg)
+l. 103 Writing TractableBufferStock.idv[29] (TractableBufferStock28x.svg)
+--- file TractableBufferStock7.html ---
+--- file TractableBufferStock8.html ---
+l. 112 Writing TractableBufferStock.idv[30] (TractableBufferStock29x.svg)
+l. 112 Writing TractableBufferStock.idv[31] (TractableBufferStock30x.svg)
+l. 116 Writing TractableBufferStock.idv[32] (TractableBufferStock31x.svg)
+l. 116 Writing TractableBufferStock.idv[33] (TractableBufferStock32x.svg)
+l. 118 Writing TractableBufferStock.idv[34] (TractableBufferStock33x.svg)
+[4
+
+
+]
+l. 122 Writing TractableBufferStock.idv[35] (TractableBufferStock34x.svg)
+l. 126 Writing TractableBufferStock.idv[36] (TractableBufferStock35x.svg)
+l. 126 Writing TractableBufferStock.idv[37] (TractableBufferStock36x.svg)
+l. 127 Writing TractableBufferStock.idv[38] (TractableBufferStock37x.svg)
+l. 129 Writing TractableBufferStock.idv[39] (TractableBufferStock38x.svg)
+l. 134 Writing TractableBufferStock.idv[40] (TractableBufferStock39x.svg)
+l. 134 Writing TractableBufferStock.idv[41] (TractableBufferStock40x.svg)
+--- file TractableBufferStock9.html ---
+l. 134 Writing TractableBufferStock.idv[42] (TractableBufferStock41x.svg)
+[5]
+l. 139 Writing TractableBufferStock.idv[43] (TractableBufferStock42x.svg)
+l. 139 Writing TractableBufferStock.idv[44] (TractableBufferStock43x.svg)
+l. 140 Writing TractableBufferStock.idv[45] (TractableBufferStock44x.svg)
+l. 141 Writing TractableBufferStock.idv[46] (TractableBufferStock45x.svg)
+l. 146 Writing TractableBufferStock.idv[47] (TractableBufferStock46x.svg)
+l. 147 Writing TractableBufferStock.idv[48] (TractableBufferStock47x.svg)
+l. 147 Writing TractableBufferStock.idv[49] (TractableBufferStock48x.svg)
+--- file TractableBufferStock10.html ---
+l. 147 Writing TractableBufferStock.idv[50] (TractableBufferStock49x.svg)
+l. 147 Writing TractableBufferStock.idv[51] (TractableBufferStock50x.svg)
+l. 148 Writing TractableBufferStock.idv[52] (TractableBufferStock51x.svg)
+[6
+
+
+]
+l. 152 Writing TractableBufferStock.idv[53] (TractableBufferStock52x.svg)
+l. 156 Writing TractableBufferStock.idv[54] (TractableBufferStock53x.svg)
+l. 157 Writing TractableBufferStock.idv[55] (TractableBufferStock54x.svg)
+l. 164 Writing TractableBufferStock.idv[56] (TractableBufferStock55x.svg)
+l. 165 Writing TractableBufferStock.idv[57] (TractableBufferStock56x.svg)
+[7]
+l. 170 Writing TractableBufferStock.idv[58] (TractableBufferStock57x.svg)
+l. 172 Writing TractableBufferStock.idv[59] (TractableBufferStock58x.svg)
+l. 174 Writing TractableBufferStock.idv[60] (TractableBufferStock59x.svg)
+l. 182 Writing TractableBufferStock.idv[61] (TractableBufferStock60x.svg)
+l. 184 Writing TractableBufferStock.idv[62] (TractableBufferStock61x.svg)
+[8]
+l. 193 Writing TractableBufferStock.idv[63] (TractableBufferStock62x.svg)
+l. 196 Writing TractableBufferStock.idv[64] (TractableBufferStock63x.svg)
+l. 198 Writing TractableBufferStock.idv[65] (TractableBufferStock64x.svg)
+--- file TractableBufferStock11.html ---
+l. 204 Writing TractableBufferStock.idv[66] (TractableBufferStock65x.svg)
+[9]
+l. 206 Writing TractableBufferStock.idv[67] (TractableBufferStock66x.svg)
+l. 218 Writing TractableBufferStock.idv[68] (TractableBufferStock67x.svg)
+[10
+
+]
+l. 223 Writing TractableBufferStock.idv[69] (TractableBufferStock68x.svg)
+l. 228 Writing TractableBufferStock.idv[70] (TractableBufferStock69x.svg)
+l. 232 Writing TractableBufferStock.idv[71] (TractableBufferStock70x.svg)
+l. 233 Writing TractableBufferStock.idv[72] (TractableBufferStock71x.svg)
+l. 237 Writing TractableBufferStock.idv[73] (TractableBufferStock72x.svg)
+l. 237 Writing TractableBufferStock.idv[74] (TractableBufferStock73x.svg)
+l. 237 Writing TractableBufferStock.idv[75] (TractableBufferStock74x.svg)
+l. 237 Writing TractableBufferStock.idv[76] (TractableBufferStock75x.svg)
+l. 237 Writing TractableBufferStock.idv[77] (TractableBufferStock76x.svg)
+--- file TractableBufferStock12.html ---
+l. 237 Writing TractableBufferStock.idv[78] (TractableBufferStock77x.svg)
+[11]
+l. 239 Writing TractableBufferStock.idv[79] (TractableBufferStock78x.svg)
+l. 239 Writing TractableBufferStock.idv[80] (TractableBufferStock79x.svg)
+l. 239 Writing TractableBufferStock.idv[81] (TractableBufferStock80x.svg)
+l. 239 Writing TractableBufferStock.idv[82] (TractableBufferStock81x.svg)
+l. 239 Writing TractableBufferStock.idv[83] (TractableBufferStock82x.svg)
+l. 239 Writing TractableBufferStock.idv[84] (TractableBufferStock83x.svg)
+l. 239 Writing TractableBufferStock.idv[85] (TractableBufferStock84x.svg)
+l. 241 Writing TractableBufferStock.idv[86] (TractableBufferStock85x.svg)
+l. 242 Writing TractableBufferStock.idv[87] (TractableBufferStock86x.svg)
+l. 242 Writing TractableBufferStock.idv[88] (TractableBufferStock87x.svg)
+l. 251 Writing TractableBufferStock.idv[89] (TractableBufferStock88x.svg)
+l. 251 Writing TractableBufferStock.idv[90] (TractableBufferStock89x.svg)
+l. 251 Writing TractableBufferStock.idv[91] (TractableBufferStock90x.svg)
+l. 253 Writing TractableBufferStock.idv[92] (TractableBufferStock91x.svg)
+l. 253 Writing TractableBufferStock.idv[93] (TractableBufferStock92x.svg)
+l. 254 Writing TractableBufferStock.idv[94] (TractableBufferStock93x.svg)
+[12
+
+]
+l. 261 Writing TractableBufferStock.idv[95] (TractableBufferStock94x.svg)
+l. 266 Writing TractableBufferStock.idv[96] (TractableBufferStock95x.svg)
+l. 267 Writing TractableBufferStock.idv[97] (TractableBufferStock96x.svg)
+[13]
+l. 272 Writing TractableBufferStock.idv[98] (TractableBufferStock97x.svg)
+l. 272 Writing TractableBufferStock.idv[99] (TractableBufferStock98x.svg)
+--- file TractableBufferStock13.html ---
+l. 272 Writing TractableBufferStock.idv[100] (TractableBufferStock99x.svg)
+l. 272 Writing TractableBufferStock.idv[101] (TractableBufferStock100x.svg)
+--- file TractableBufferStock14.html ---
+l. 279 Writing TractableBufferStock.idv[102] (TractableBufferStock101x.svg)
+l. 283 Writing TractableBufferStock.idv[103] (TractableBufferStock102x.svg)
+l. 287 Writing TractableBufferStock.idv[104] (TractableBufferStock103x.svg)
+[14
+
+
+]
+l. 292 Writing TractableBufferStock.idv[105] (TractableBufferStock104x.svg)
+l. 293 Writing TractableBufferStock.idv[106] (TractableBufferStock105x.svg)
+l. 296 Writing TractableBufferStock.idv[107] (TractableBufferStock106x.svg)
+l. 296 Writing TractableBufferStock.idv[108] (TractableBufferStock107x.svg)
+l. 297 Writing TractableBufferStock.idv[109] (TractableBufferStock108x.svg)
+l. 297 Writing TractableBufferStock.idv[110] (TractableBufferStock109x.svg)
+l. 297 Writing TractableBufferStock.idv[111] (TractableBufferStock110x.svg)
+--- file TractableBufferStock15.html ---
+l. 297 Writing TractableBufferStock.idv[112] (TractableBufferStock111x.svg)
+l. 299 Writing TractableBufferStock.idv[113] (TractableBufferStock112x.svg)
+l. 299 Writing TractableBufferStock.idv[114] (TractableBufferStock113x.svg)
+l. 299 Writing TractableBufferStock.idv[115] (TractableBufferStock114x.svg)
+l. 299 Writing TractableBufferStock.idv[116] (TractableBufferStock115x.svg)
+l. 299 Writing TractableBufferStock.idv[117] (TractableBufferStock116x.svg)
+l. 300 Writing TractableBufferStock.idv[118] (TractableBufferStock117x.svg)
+[15
+
+]
+l. 307 Writing TractableBufferStock.idv[119] (TractableBufferStock118x.svg)
+l. 308 Writing TractableBufferStock.idv[120] (TractableBufferStock119x.svg)
+l. 312 Writing TractableBufferStock.idv[121] (TractableBufferStock120x.svg)
+l. 315 Writing TractableBufferStock.idv[122] (TractableBufferStock121x.svg)
+[16]
+l. 316 Writing TractableBufferStock.idv[123] (TractableBufferStock122x.svg)
+l. 323 Writing TractableBufferStock.idv[124] (TractableBufferStock123x.svg)
+l. 323 Writing TractableBufferStock.idv[125] (TractableBufferStock124x.svg)
+l. 323 Writing TractableBufferStock.idv[126] (TractableBufferStock125x.svg)
+l. 325 Writing TractableBufferStock.idv[127] (TractableBufferStock126x.svg)
+l. 326 Writing TractableBufferStock.idv[128] (TractableBufferStock127x.svg)
+l. 326 Writing TractableBufferStock.idv[129] (TractableBufferStock128x.svg)
+l. 327 Writing TractableBufferStock.idv[130] (TractableBufferStock129x.svg)
+l. 328 Writing TractableBufferStock.idv[131] (TractableBufferStock130x.svg)
+l. 328 Writing TractableBufferStock.idv[132] (TractableBufferStock131x.svg)
+--- file TractableBufferStock16.html ---
+l. 332 Writing TractableBufferStock.idv[133] (TractableBufferStock132x.svg)
+l. 332 Writing TractableBufferStock.idv[134] (TractableBufferStock133x.svg)
+l. 332 Writing TractableBufferStock.idv[135] (TractableBufferStock134x.svg)
+l. 334 Writing TractableBufferStock.idv[136] (TractableBufferStock135x.svg)
+l. 335 Writing TractableBufferStock.idv[137] (TractableBufferStock136x.svg)
+l. 345 Writing TractableBufferStock.idv[138] (TractableBufferStock137x.svg)
+l. 346 Writing TractableBufferStock.idv[139] (TractableBufferStock138x.svg)
+l. 348 Writing TractableBufferStock.idv[140] (TractableBufferStock139x.svg)
+[17
+
+]
+l. 351 Writing TractableBufferStock.idv[141] (TractableBufferStock140x.svg)
+l. 353 Writing TractableBufferStock.idv[142] (TractableBufferStock141x.svg)
+l. 353 Writing TractableBufferStock.idv[143] (TractableBufferStock142x.svg)
+l. 355 Writing TractableBufferStock.idv[144] (TractableBufferStock143x.svg)
+l. 356 Writing TractableBufferStock.idv[145] (TractableBufferStock144x.svg)
+l. 357 Writing TractableBufferStock.idv[146] (TractableBufferStock145x.svg)
+l. 364 Writing TractableBufferStock.idv[147] (TractableBufferStock146x.svg)
+l. 367 Writing TractableBufferStock.idv[148] (TractableBufferStock147x.svg)
+l. 368 Writing TractableBufferStock.idv[149] (TractableBufferStock148x.svg)
+l. 369 Writing TractableBufferStock.idv[150] (TractableBufferStock149x.svg)
+[18]
+l. 376 Writing TractableBufferStock.idv[151] (TractableBufferStock150x.svg)
+l. 376 Writing TractableBufferStock.idv[152] (TractableBufferStock151x.svg)
+l. 381 Writing TractableBufferStock.idv[153] (TractableBufferStock152x.svg)
+l. 383 Writing TractableBufferStock.idv[154] (TractableBufferStock153x.svg)
+l. 389 Writing TractableBufferStock.idv[155] (TractableBufferStock154x.svg)
+l. 391 Writing TractableBufferStock.idv[156] (TractableBufferStock155x.svg)
+l. 393 Writing TractableBufferStock.idv[157] (TractableBufferStock156x.svg)
+l. 393 Writing TractableBufferStock.idv[158] (TractableBufferStock157x.svg)
+l. 395 Writing TractableBufferStock.idv[159] (TractableBufferStock158x.svg)
+--- file TractableBufferStock17.html ---
+l. 396 Writing TractableBufferStock.idv[160] (TractableBufferStock159x.svg)
+l. 396 Writing TractableBufferStock.idv[161] (TractableBufferStock160x.svg)
+l. 396 Writing TractableBufferStock.idv[162] (TractableBufferStock161x.svg)
+[19]
+l. 398 Writing TractableBufferStock.idv[163] (TractableBufferStock162x.svg)
+l. 399 Writing TractableBufferStock.idv[164] (TractableBufferStock163x.svg)
+l. 402 Writing TractableBufferStock.idv[165] (TractableBufferStock164x.svg)
+l. 402 Writing TractableBufferStock.idv[166] (TractableBufferStock165x.svg)
+l. 402 Writing TractableBufferStock.idv[167] (TractableBufferStock166x.svg)
+l. 406 Writing TractableBufferStock.idv[168] (TractableBufferStock167x.svg)
+l. 408 Writing TractableBufferStock.idv[169] (TractableBufferStock168x.svg)
+l. 408 Writing TractableBufferStock.idv[170] (TractableBufferStock169x.svg)
+l. 410 Writing TractableBufferStock.idv[171] (TractableBufferStock170x.svg)
+l. 410 Writing TractableBufferStock.idv[172] (TractableBufferStock171x.svg)
+--- file TractableBufferStock18.html ---
+l. 410 Writing TractableBufferStock.idv[173] (TractableBufferStock172x.svg)
+l. 410 Writing TractableBufferStock.idv[174] (TractableBufferStock173x.svg)
+l. 410 Writing TractableBufferStock.idv[175] (TractableBufferStock174x.svg)
+l. 410 Writing TractableBufferStock.idv[176] (TractableBufferStock175x.svg)
+l. 410 Writing TractableBufferStock.idv[177] (TractableBufferStock176x.svg)
+l. 410 Writing TractableBufferStock.idv[178] (TractableBufferStock177x.svg)
+l. 410 Writing TractableBufferStock.idv[179] (TractableBufferStock178x.svg)
+l. 410 Writing TractableBufferStock.idv[180] (TractableBufferStock179x.svg)
+l. 410 Writing TractableBufferStock.idv[181] (TractableBufferStock180x.svg)
+l. 410 Writing TractableBufferStock.idv[182] (TractableBufferStock181x.svg)
+l. 410 Writing TractableBufferStock.idv[183] (TractableBufferStock182x.svg)
+[20
+
+
+]
+l. 414 Writing TractableBufferStock.idv[184] (TractableBufferStock183x.svg)
+l. 414 Writing TractableBufferStock.idv[185] (TractableBufferStock184x.svg)
+l. 414 Writing TractableBufferStock.idv[186] (TractableBufferStock185x.svg)
+l. 414 Writing TractableBufferStock.idv[187] (TractableBufferStock186x.svg)
+l. 416 Writing TractableBufferStock.idv[188] (TractableBufferStock187x.svg)
+l. 416 Writing TractableBufferStock.idv[189] (TractableBufferStock188x.svg)
+l. 416 Writing TractableBufferStock.idv[190] (TractableBufferStock189x.svg)
+l. 416 Writing TractableBufferStock.idv[191] (TractableBufferStock190x.svg)
+l. 416 Writing TractableBufferStock.idv[192] (TractableBufferStock191x.svg)
+l. 416 Writing TractableBufferStock.idv[193] (TractableBufferStock192x.svg)
+l. 420 Writing TractableBufferStock.idv[194] (TractableBufferStock193x.svg)
+l. 420 Writing TractableBufferStock.idv[195] (TractableBufferStock194x.svg)
+l. 420 Writing TractableBufferStock.idv[196] (TractableBufferStock195x.svg)
+l. 420 Writing TractableBufferStock.idv[197] (TractableBufferStock196x.svg)
+l. 420 Writing TractableBufferStock.idv[198] (TractableBufferStock197x.svg)
+l. 420 Writing TractableBufferStock.idv[199] (TractableBufferStock198x.svg)
+[21] [22
+
+]
+l. 428 --- needs --- ./Figures/TractableBufferStockPhaseDiag-.svg ---
+[23
+
+]
+l. 431 Writing TractableBufferStock.idv[200] (TractableBufferStock199x.svg)
+l. 431 Writing TractableBufferStock.idv[201] (TractableBufferStock200x.svg)
+l. 431 Writing TractableBufferStock.idv[202] (TractableBufferStock201x.svg)
+l. 431 Writing TractableBufferStock.idv[203] (TractableBufferStock202x.svg)
+--- file TractableBufferStock19.html ---
+l. 431 Writing TractableBufferStock.idv[204] (TractableBufferStock203x.svg)
+l. 431 Writing TractableBufferStock.idv[205] (TractableBufferStock204x.svg)
+l. 431 Writing TractableBufferStock.idv[206] (TractableBufferStock205x.svg)
+l. 431 Writing TractableBufferStock.idv[207] (TractableBufferStock206x.svg)
+l. 435 Writing TractableBufferStock.idv[208] (TractableBufferStock207x.svg)
+l. 435 Writing TractableBufferStock.idv[209] (TractableBufferStock208x.svg)
+l. 435 Writing TractableBufferStock.idv[210] (TractableBufferStock209x.svg)
+l. 435 Writing TractableBufferStock.idv[211] (TractableBufferStock210x.svg)
+l. 435 Writing TractableBufferStock.idv[212] (TractableBufferStock211x.svg)
+l. 435 Writing TractableBufferStock.idv[213] (TractableBufferStock212x.svg)
+l. 435 Writing TractableBufferStock.idv[214] (TractableBufferStock213x.svg)
+l. 435 Writing TractableBufferStock.idv[215] (TractableBufferStock214x.svg)
+l. 435 Writing TractableBufferStock.idv[216] (TractableBufferStock215x.svg)
+l. 435 Writing TractableBufferStock.idv[217] (TractableBufferStock216x.svg)
+l. 435 Writing TractableBufferStock.idv[218] (TractableBufferStock217x.svg)
+l. 435 Writing TractableBufferStock.idv[219] (TractableBufferStock218x.svg)
+l. 438 Writing TractableBufferStock.idv[220] (TractableBufferStock219x.svg)
+l. 439 Writing TractableBufferStock.idv[221] (TractableBufferStock220x.svg)
+l. 439 Writing TractableBufferStock.idv[222] (TractableBufferStock221x.svg)
+l. 439 Writing TractableBufferStock.idv[223] (TractableBufferStock222x.svg)
+l. 440 Writing TractableBufferStock.idv[224] (TractableBufferStock223x.svg)
+l. 440 Writing TractableBufferStock.idv[225] (TractableBufferStock224x.svg)
+[24
+
+
+] [25
+
+]
+l. 444 --- needs --- ./Figures/TractableBufferStockcFunc-.svg ---
+[26
+
+]
+l. 448 Writing TractableBufferStock.idv[226] (TractableBufferStock225x.svg)
+l. 449 Writing TractableBufferStock.idv[227] (TractableBufferStock226x.svg)
+l. 451 Writing TractableBufferStock.idv[228] (TractableBufferStock227x.svg)
+l. 454 Writing TractableBufferStock.idv[229] (TractableBufferStock228x.svg)
+l. 458 Writing TractableBufferStock.idv[230] (TractableBufferStock229x.svg)
+l. 461 Writing TractableBufferStock.idv[231] (TractableBufferStock230x.svg)
+l. 463 Writing TractableBufferStock.idv[232] (TractableBufferStock231x.svg)
+--- file TractableBufferStock20.html ---
+l. 468 Writing TractableBufferStock.idv[233] (TractableBufferStock232x.svg)
+l. 468 Writing TractableBufferStock.idv[234] (TractableBufferStock233x.svg)
+l. 468 Writing TractableBufferStock.idv[235] (TractableBufferStock234x.svg)
+l. 468 Writing TractableBufferStock.idv[236] (TractableBufferStock235x.svg)
+l. 468 Writing TractableBufferStock.idv[237] (TractableBufferStock236x.svg)
+l. 468 Writing TractableBufferStock.idv[238] (TractableBufferStock237x.svg)
+l. 468 Writing TractableBufferStock.idv[239] (TractableBufferStock238x.svg)
+l. 468 Writing TractableBufferStock.idv[240] (TractableBufferStock239x.svg)
+l. 468 Writing TractableBufferStock.idv[241] (TractableBufferStock240x.svg)
+l. 468 Writing TractableBufferStock.idv[242] (TractableBufferStock241x.svg)
+[27
+
+]
+l. 470 Writing TractableBufferStock.idv[243] (TractableBufferStock242x.svg)
+--- file TractableBufferStock21.html ---
+l. 473 Writing TractableBufferStock.idv[244] (TractableBufferStock243x.svg)
+l. 473 Writing TractableBufferStock.idv[245] (TractableBufferStock244x.svg)
+l. 475 Writing TractableBufferStock.idv[246] (TractableBufferStock245x.svg)
+l. 476 Writing TractableBufferStock.idv[247] (TractableBufferStock246x.svg)
+l. 476 Writing TractableBufferStock.idv[248] (TractableBufferStock247x.svg)
+l. 477 Writing TractableBufferStock.idv[249] (TractableBufferStock248x.svg)
+l. 479 Writing TractableBufferStock.idv[250] (TractableBufferStock249x.svg)
+l. 479 Writing TractableBufferStock.idv[251] (TractableBufferStock250x.svg)
+l. 480 Writing TractableBufferStock.idv[252] (TractableBufferStock251x.svg)
+l. 482 Writing TractableBufferStock.idv[253] (TractableBufferStock252x.svg)
+l. 485 Writing TractableBufferStock.idv[254] (TractableBufferStock253x.svg)
+l. 485 Writing TractableBufferStock.idv[255] (TractableBufferStock254x.svg)
+l. 486 Writing TractableBufferStock.idv[256] (TractableBufferStock255x.svg)
+l. 487 Writing TractableBufferStock.idv[257] (TractableBufferStock256x.svg)
+--- file TractableBufferStock22.html ---
+l. 492 Writing TractableBufferStock.idv[258] (TractableBufferStock257x.svg)
+l. 494 Writing TractableBufferStock.idv[259] (TractableBufferStock258x.svg)
+l. 496 Writing TractableBufferStock.idv[260] (TractableBufferStock259x.svg)
+l. 497 Writing TractableBufferStock.idv[261] (TractableBufferStock260x.svg)
+l. 497 Writing TractableBufferStock.idv[262] (TractableBufferStock261x.svg)
+l. 499 Writing TractableBufferStock.idv[263] (TractableBufferStock262x.svg)
+[28
+
+
+
+]
+l. 502 Writing TractableBufferStock.idv[264] (TractableBufferStock263x.svg)
+l. 503 Writing TractableBufferStock.idv[265] (TractableBufferStock264x.svg)
+--- file TractableBufferStock23.html ---
+l. 508 Writing TractableBufferStock.idv[266] (TractableBufferStock265x.svg)
+l. 512 Writing TractableBufferStock.idv[267] (TractableBufferStock266x.svg)
+l. 513 Writing TractableBufferStock.idv[268] (TractableBufferStock267x.svg)
+l. 514 Writing TractableBufferStock.idv[269] (TractableBufferStock268x.svg)
+l. 515 Writing TractableBufferStock.idv[270] (TractableBufferStock269x.svg)
+[29
+
+] [30
+
+]
+l. 521 --- needs --- ./Figures/TractableBufferStockGrowthA-.svg ---
+[31
+
+]
+l. 525 Writing TractableBufferStock.idv[271] (TractableBufferStock270x.svg)
+l. 525 Writing TractableBufferStock.idv[272] (TractableBufferStock271x.svg)
+[32
+
+] [33
+
+]
+l. 545 Writing TractableBufferStock.idv[273] (TractableBufferStock272x.svg)
+l. 546 --- needs --- ./Figures/TractableBufferStockGrowthB-.svg ---
+[34
+
+]
+l. 553 Writing TractableBufferStock.idv[274] (TractableBufferStock273x.svg)
+l. 554 Writing TractableBufferStock.idv[275] (TractableBufferStock274x.svg)
+l. 558 Writing TractableBufferStock.idv[276] (TractableBufferStock275x.svg)
+l. 562 Writing TractableBufferStock.idv[277] (TractableBufferStock276x.svg)
+l. 564 Writing TractableBufferStock.idv[278] (TractableBufferStock277x.svg)
+l. 566 Writing TractableBufferStock.idv[279] (TractableBufferStock278x.svg)
+l. 567 Writing TractableBufferStock.idv[280] (TractableBufferStock279x.svg)
+l. 569 Writing TractableBufferStock.idv[281] (TractableBufferStock280x.svg)
+l. 570 Writing TractableBufferStock.idv[282] (TractableBufferStock281x.svg)
+l. 573 Writing TractableBufferStock.idv[283] (TractableBufferStock282x.svg)
+l. 574 Writing TractableBufferStock.idv[284] (TractableBufferStock283x.svg)
+l. 575 Writing TractableBufferStock.idv[285] (TractableBufferStock284x.svg)
+l. 576 Writing TractableBufferStock.idv[286] (TractableBufferStock285x.svg)
+l. 577 Writing TractableBufferStock.idv[287] (TractableBufferStock286x.svg)
+l. 578 Writing TractableBufferStock.idv[288] (TractableBufferStock287x.svg)
+l. 580 Writing TractableBufferStock.idv[289] (TractableBufferStock288x.svg)
+l. 588 Writing TractableBufferStock.idv[290] (TractableBufferStock289x.svg)
+[35
+
+] [36
+
+]
+l. 592 Writing TractableBufferStock.idv[291] (TractableBufferStock290x.svg)
+l. 593 --- needs --- ./Figures/cGroIncreaseMhoPlot-.svg ---
+[37
+
+]
+l. 602 Writing TractableBufferStock.idv[292] (TractableBufferStock291x.svg)
+l. 609 Writing TractableBufferStock.idv[293] (TractableBufferStock292x.svg)
+l. 614 Writing TractableBufferStock.idv[294] (TractableBufferStock293x.svg)
+l. 615 Writing TractableBufferStock.idv[295] (TractableBufferStock294x.svg)
+[38
+
+]
+l. 619 Writing TractableBufferStock.idv[296] (TractableBufferStock295x.svg)
+l. 625 Writing TractableBufferStock.idv[297] (TractableBufferStock296x.svg)
+l. 626 Writing TractableBufferStock.idv[298] (TractableBufferStock297x.svg)
+l. 630 Writing TractableBufferStock.idv[299] (TractableBufferStock298x.svg)
+l. 634 Writing TractableBufferStock.idv[300] (TractableBufferStock299x.svg)
+l. 640 Writing TractableBufferStock.idv[301] (TractableBufferStock300x.svg)
+l. 641 Writing TractableBufferStock.idv[302] (TractableBufferStock301x.svg)
+l. 644 Writing TractableBufferStock.idv[303] (TractableBufferStock302x.svg)
+l. 647 Writing TractableBufferStock.idv[304] (TractableBufferStock303x.svg)
+l. 648 Writing TractableBufferStock.idv[305] (TractableBufferStock304x.svg)
+l. 651 Writing TractableBufferStock.idv[306] (TractableBufferStock305x.svg)
+--- file TractableBufferStock24.html ---
+[39]
+l. 657 Writing TractableBufferStock.idv[307] (TractableBufferStock306x.svg)
+l. 663 Writing TractableBufferStock.idv[308] (TractableBufferStock307x.svg)
+l. 664 Writing TractableBufferStock.idv[309] (TractableBufferStock308x.svg)
+l. 665 Writing TractableBufferStock.idv[310] (TractableBufferStock309x.svg)
+l. 671 Writing TractableBufferStock.idv[311] (TractableBufferStock310x.svg)
+l. 672 Writing TractableBufferStock.idv[312] (TractableBufferStock311x.svg)
+l. 682 Writing TractableBufferStock.idv[313] (TractableBufferStock312x.svg)
+--- file TractableBufferStock25.html ---
+[40
+
+]
+l. 687 Writing TractableBufferStock.idv[314] (TractableBufferStock313x.svg)
+l. 694 Writing TractableBufferStock.idv[315] (TractableBufferStock314x.svg)
+l. 697 Writing TractableBufferStock.idv[316] (TractableBufferStock315x.svg)
+l. 701 Writing TractableBufferStock.idv[317] (TractableBufferStock316x.svg)
+l. 702 Writing TractableBufferStock.idv[318] (TractableBufferStock317x.svg)
+[41
+
+] [42
+
+]
+l. 708 Writing TractableBufferStock.idv[319] (TractableBufferStock318x.svg)
+l. 709 --- needs --- ./Figures/PhaseDiagramDecreaseThetaPlot-.svg ---
+[43
+
+] [44
+
+] [45
+
+]
+l. 714 Writing TractableBufferStock.idv[320] (TractableBufferStock319x.svg)
+l. 714 Writing TractableBufferStock.idv[321] (TractableBufferStock320x.svg)
+l. 715 --- needs --- ./Figures/cPathAfterThetaDrop-.svg ---
+[46
+
+] [47
+
+] [48
+
+]
+l. 720 Writing TractableBufferStock.idv[322] (TractableBufferStock321x.svg)
+l. 720 Writing TractableBufferStock.idv[323] (TractableBufferStock322x.svg)
+l. 721 --- needs --- ./Figures/mPathAfterThetaDrop-.svg ---
+[49
+
+] [50
+
+] [51
+
+]
+l. 727 Writing TractableBufferStock.idv[324] (TractableBufferStock323x.svg)
+l. 727 Writing TractableBufferStock.idv[325] (TractableBufferStock324x.svg)
+l. 729 --- needs --- ./Figures/MPCPathAfterThetaDrop-.svg ---
+[52
+
+]
+l. 738 Writing TractableBufferStock.idv[326] (TractableBufferStock325x.svg)
+l. 739 Writing TractableBufferStock.idv[327] (TractableBufferStock326x.svg)
+l. 740 Writing TractableBufferStock.idv[328] (TractableBufferStock327x.svg)
+l. 742 Writing TractableBufferStock.idv[329] (TractableBufferStock328x.svg)
+--- file TractableBufferStock26.html ---
+l. 759 Writing TractableBufferStock.idv[330] (TractableBufferStock329x.svg)
+[53
+
+
+]
+l. 761 Writing TractableBufferStock.idv[331] (TractableBufferStock330x.svg)
+l. 767 Writing TractableBufferStock.idv[332] (TractableBufferStock331x.svg)
+l. 769 Writing TractableBufferStock.idv[333] (TractableBufferStock332x.svg)
+l. 772 Writing TractableBufferStock.idv[334] (TractableBufferStock333x.svg)
+l. 773 Writing TractableBufferStock.idv[335] (TractableBufferStock334x.svg)
+l. 773 Writing TractableBufferStock.idv[336] (TractableBufferStock335x.svg)
+l. 775 Writing TractableBufferStock.idv[337] (TractableBufferStock336x.svg)
+l. 778 Writing TractableBufferStock.idv[338] (TractableBufferStock337x.svg)
+l. 780 Writing TractableBufferStock.idv[339] (TractableBufferStock338x.svg)
+l. 781 Writing TractableBufferStock.idv[340] (TractableBufferStock339x.svg)
+l. 781 Writing TractableBufferStock.idv[341] (TractableBufferStock340x.svg)
+l. 781 Writing TractableBufferStock.idv[342] (TractableBufferStock341x.svg)
+l. 782 Writing TractableBufferStock.idv[343] (TractableBufferStock342x.svg)
+[54]
+l. 786 Writing TractableBufferStock.idv[344] (TractableBufferStock343x.svg)
+l. 788 Writing TractableBufferStock.idv[345] (TractableBufferStock344x.svg)
+l. 794 Writing TractableBufferStock.idv[346] (TractableBufferStock345x.svg)
+l. 794 Writing TractableBufferStock.idv[347] (TractableBufferStock346x.svg)
+l. 795 Writing TractableBufferStock.idv[348] (TractableBufferStock347x.svg)
+l. 819 Writing TractableBufferStock.idv[349] (TractableBufferStock348x.svg)
+[55]
+l. 821 Writing TractableBufferStock.idv[350] (TractableBufferStock349x.svg)
+l. 835 Writing TractableBufferStock.idv[351] (TractableBufferStock350x.svg)
+--- file TractableBufferStock27.html ---
+l. 852 Writing TractableBufferStock.idv[352] (TractableBufferStock351x.svg)
+[56
+
+]
+l. 856 Writing TractableBufferStock.idv[353] (TractableBufferStock352x.svg)
+l. 859 Writing TractableBufferStock.idv[354] (TractableBufferStock353x.svg)
+l. 863 Writing TractableBufferStock.idv[355] (TractableBufferStock354x.svg)
+l. 866 Writing TractableBufferStock.idv[356] (TractableBufferStock355x.svg)
+l. 868 Writing TractableBufferStock.idv[357] (TractableBufferStock356x.svg)
+[57]
+l. 875 Writing TractableBufferStock.idv[358] (TractableBufferStock357x.svg)
+l. 882 Writing TractableBufferStock.idv[359] (TractableBufferStock358x.svg)
+l. 882 Writing TractableBufferStock.idv[360] (TractableBufferStock359x.svg)
+l. 886 Writing TractableBufferStock.idv[361] (TractableBufferStock360x.svg)
+l. 887 Writing TractableBufferStock.idv[362] (TractableBufferStock361x.svg)
+l. 888 Writing TractableBufferStock.idv[363] (TractableBufferStock362x.svg)
+l. 889 Writing TractableBufferStock.idv[364] (TractableBufferStock363x.svg)
+l. 891 Writing TractableBufferStock.idv[365] (TractableBufferStock364x.svg)
+l. 891 Writing TractableBufferStock.idv[366] (TractableBufferStock365x.svg)
+l. 892 Writing TractableBufferStock.idv[367] (TractableBufferStock366x.svg)
+l. 893 Writing TractableBufferStock.idv[368] (TractableBufferStock367x.svg)
+l. 894 Writing TractableBufferStock.idv[369] (TractableBufferStock368x.svg)
+l. 896 Writing TractableBufferStock.idv[370] (TractableBufferStock369x.svg)
+l. 897 Writing TractableBufferStock.idv[371] (TractableBufferStock370x.svg)
+l. 898 Writing TractableBufferStock.idv[372] (TractableBufferStock371x.svg)
+l. 898 Writing TractableBufferStock.idv[373] (TractableBufferStock372x.svg)
+l. 899 Writing TractableBufferStock.idv[374] (TractableBufferStock373x.svg)
+l. 900 Writing TractableBufferStock.idv[375] (TractableBufferStock374x.svg)
+l. 902 Writing TractableBufferStock.idv[376] (TractableBufferStock375x.svg)
+l. 903 Writing TractableBufferStock.idv[377] (TractableBufferStock376x.svg)
+--- file TractableBufferStock28.html ---
+l. 924 Writing TractableBufferStock.idv[378] (TractableBufferStock377x.svg)
+[58
+
+] [59] [60
+
+]
+l. 931 Writing TractableBufferStock.idv[379] (TractableBufferStock378x.svg)
+l. 931 Writing TractableBufferStock.idv[380] (TractableBufferStock379x.svg)
+l. 932 --- needs --- ./Figures/SOEStakescPathAfterThetaDropPlot-.svg ---
+[61
+
+]
+--- file TractableBufferStock29.html ---
+l. 950 Writing TractableBufferStock.idv[381] (TractableBufferStock380x.svg)
+l. 952 Writing TractableBufferStock.idv[382] (TractableBufferStock381x.svg)
+l. 956 Writing TractableBufferStock.idv[383] (TractableBufferStock382x.svg)
+l. 958 Writing TractableBufferStock.idv[384] (TractableBufferStock383x.svg)
+l. 958 Writing TractableBufferStock.idv[385] (TractableBufferStock384x.svg)
+--- file TractableBufferStock30.html ---
+l. 960 Writing TractableBufferStock.idv[386] (TractableBufferStock385x.svg)
+l. 960 Writing TractableBufferStock.idv[387] (TractableBufferStock386x.svg)
+l. 961 Writing TractableBufferStock.idv[388] (TractableBufferStock387x.svg)
+[62
+
+
+
+]
+l. 965 Writing TractableBufferStock.idv[389] (TractableBufferStock388x.svg)
+l. 977 Writing TractableBufferStock.idv[390] (TractableBufferStock389x.svg)
+l. 980 Writing TractableBufferStock.idv[391] (TractableBufferStock390x.svg)
+l. 980 Writing TractableBufferStock.idv[392] (TractableBufferStock391x.svg)
+[63] [64
+
+]
+l. 984 Writing TractableBufferStock.idv[393] (TractableBufferStock392x.svg)
+l. 985 --- needs --- ./Figures/SOENoStakescPath-.svg ---
+[65
+
+] [66
+
+]
+l. 1000 Writing TractableBufferStock.idv[394] (TractableBufferStock393x.svg)
+l. 1000 Writing TractableBufferStock.idv[395] (TractableBufferStock394x.svg)
+l. 1001 Writing TractableBufferStock.idv[396] (TractableBufferStock395x.svg)
+l. 1001 Writing TractableBufferStock.idv[397] (TractableBufferStock396x.svg)
+l. 1003 Writing TractableBufferStock.idv[398] (TractableBufferStock397x.svg)
+l. 1017 Writing TractableBufferStock.idv[399] (TractableBufferStock398x.svg)
+l. 1017 Writing TractableBufferStock.idv[400] (TractableBufferStock399x.svg)
+l. 1017 Writing TractableBufferStock.idv[401] (TractableBufferStock400x.svg)
+l. 1017 Writing TractableBufferStock.idv[402] (TractableBufferStock401x.svg)
+[67]
+l. 1018 Writing TractableBufferStock.idv[403] (TractableBufferStock402x.svg)
+l. 1021 Writing TractableBufferStock.idv[404] (TractableBufferStock403x.svg)
+l. 1021 Writing TractableBufferStock.idv[405] (TractableBufferStock404x.svg)
+l. 1021 Writing TractableBufferStock.idv[406] (TractableBufferStock405x.svg)
+l. 1021 Writing TractableBufferStock.idv[407] (TractableBufferStock406x.svg)
+l. 1021 Writing TractableBufferStock.idv[408] (TractableBufferStock407x.svg)
+l. 1021 Writing TractableBufferStock.idv[409] (TractableBufferStock408x.svg)
+l. 1021 Writing TractableBufferStock.idv[410] (TractableBufferStock409x.svg)
+--- file TractableBufferStock31.html ---
+l. 1021 Writing TractableBufferStock.idv[411] (TractableBufferStock410x.svg)
+l. 1022 Writing TractableBufferStock.idv[412] (TractableBufferStock411x.svg)
+l. 1026 Writing TractableBufferStock.idv[413] (TractableBufferStock412x.svg)
+[68
+
+]
+l. 1029 Writing TractableBufferStock.idv[414] (TractableBufferStock413x.svg)
+l. 1029 Writing TractableBufferStock.idv[415] (TractableBufferStock414x.svg)
+l. 1031 Writing TractableBufferStock.idv[416] (TractableBufferStock415x.svg)
+l. 1031 Writing TractableBufferStock.idv[417] (TractableBufferStock416x.svg)
+l. 1031 Writing TractableBufferStock.idv[418] (TractableBufferStock417x.svg)
+l. 1031 Writing TractableBufferStock.idv[419] (TractableBufferStock418x.svg)
+l. 1031 Writing TractableBufferStock.idv[420] (TractableBufferStock419x.svg)
+l. 1031 Writing TractableBufferStock.idv[421] (TractableBufferStock420x.svg)
+l. 1032 Writing TractableBufferStock.idv[422] (TractableBufferStock421x.svg)
+l. 1042 Writing TractableBufferStock.idv[423] (TractableBufferStock422x.svg)
+l. 1042 Writing TractableBufferStock.idv[424] (TractableBufferStock423x.svg)
+l. 1042 Writing TractableBufferStock.idv[425] (TractableBufferStock424x.svg)
+l. 1044 Writing TractableBufferStock.idv[426] (TractableBufferStock425x.svg)
+l. 1044 Writing TractableBufferStock.idv[427] (TractableBufferStock426x.svg)
+l. 1045 Writing TractableBufferStock.idv[428] (TractableBufferStock427x.svg)
+[69]
+l. 1052 Writing TractableBufferStock.idv[429] (TractableBufferStock428x.svg)
+l. 1052 Writing TractableBufferStock.idv[430] (TractableBufferStock429x.svg)
+l. 1052 Writing TractableBufferStock.idv[431] (TractableBufferStock430x.svg)
+l. 1052 Writing TractableBufferStock.idv[432] (TractableBufferStock431x.svg)
+l. 1052 Writing TractableBufferStock.idv[433] (TractableBufferStock432x.svg)
+l. 1053 Writing TractableBufferStock.idv[434] (TractableBufferStock433x.svg)
+l. 1055 Writing TractableBufferStock.idv[435] (TractableBufferStock434x.svg)
+l. 1056 Writing TractableBufferStock.idv[436] (TractableBufferStock435x.svg)
+l. 1060 Writing TractableBufferStock.idv[437] (TractableBufferStock436x.svg)
+l. 1063 Writing TractableBufferStock.idv[438] (TractableBufferStock437x.svg)
+l. 1063 Writing TractableBufferStock.idv[439] (TractableBufferStock438x.svg)
+l. 1063 Writing TractableBufferStock.idv[440] (TractableBufferStock439x.svg)
+l. 1063 Writing TractableBufferStock.idv[441] (TractableBufferStock440x.svg)
+l. 1063 Writing TractableBufferStock.idv[442] (TractableBufferStock441x.svg)
+l. 1063 Writing TractableBufferStock.idv[443] (TractableBufferStock442x.svg)
+l. 1063 Writing TractableBufferStock.idv[444] (TractableBufferStock443x.svg)
+l. 1063 Writing TractableBufferStock.idv[445] (TractableBufferStock444x.svg)
+l. 1063 Writing TractableBufferStock.idv[446] (TractableBufferStock445x.svg)
+l. 1063 Writing TractableBufferStock.idv[447] (TractableBufferStock446x.svg)
+l. 1063 Writing TractableBufferStock.idv[448] (TractableBufferStock447x.svg)
+l. 1063 Writing TractableBufferStock.idv[449] (TractableBufferStock448x.svg)
+l. 1063 Writing TractableBufferStock.idv[450] (TractableBufferStock449x.svg)
+l. 1063 Writing TractableBufferStock.idv[451] (TractableBufferStock450x.svg)
+l. 1063 Writing TractableBufferStock.idv[452] (TractableBufferStock451x.svg)
+l. 1065 Writing TractableBufferStock.idv[453] (TractableBufferStock452x.svg)
+l. 1065 Writing TractableBufferStock.idv[454] (TractableBufferStock453x.svg)
+[70]
+l. 1069 Writing TractableBufferStock.idv[455] (TractableBufferStock454x.svg)
+l. 1069 Writing TractableBufferStock.idv[456] (TractableBufferStock455x.svg)
+l. 1070 Writing TractableBufferStock.idv[457] (TractableBufferStock456x.svg)
+l. 1084 Writing TractableBufferStock.idv[458] (TractableBufferStock457x.svg)
+l. 1084 Writing TractableBufferStock.idv[459] (TractableBufferStock458x.svg)
+l. 1084 Writing TractableBufferStock.idv[460] (TractableBufferStock459x.svg)
+l. 1084 Writing TractableBufferStock.idv[461] (TractableBufferStock460x.svg)
+[71]
+l. 1085 Writing TractableBufferStock.idv[462] (TractableBufferStock461x.svg)
+l. 1090 Writing TractableBufferStock.idv[463] (TractableBufferStock462x.svg)
+l. 1090 Writing TractableBufferStock.idv[464] (TractableBufferStock463x.svg)
+l. 1090 Writing TractableBufferStock.idv[465] (TractableBufferStock464x.svg)
+l. 1090 Writing TractableBufferStock.idv[466] (TractableBufferStock465x.svg)
+l. 1090 Writing TractableBufferStock.idv[467] (TractableBufferStock466x.svg)
+l. 1092 Writing TractableBufferStock.idv[468] (TractableBufferStock467x.svg)
+l. 1092 Writing TractableBufferStock.idv[469] (TractableBufferStock468x.svg)
+l. 1092 Writing TractableBufferStock.idv[470] (TractableBufferStock469x.svg)
+l. 1092 Writing TractableBufferStock.idv[471] (TractableBufferStock470x.svg)
+l. 1092 Writing TractableBufferStock.idv[472] (TractableBufferStock471x.svg)
+l. 1093 Writing TractableBufferStock.idv[473] (TractableBufferStock472x.svg)
+[72]
+l. 1103 Writing TractableBufferStock.idv[474] (TractableBufferStock473x.svg)
+l. 1103 Writing TractableBufferStock.idv[475] (TractableBufferStock474x.svg)
+l. 1103 Writing TractableBufferStock.idv[476] (TractableBufferStock475x.svg)
+l. 1103 Writing TractableBufferStock.idv[477] (TractableBufferStock476x.svg)
+l. 1103 Writing TractableBufferStock.idv[478] (TractableBufferStock477x.svg)
+l. 1103 Writing TractableBufferStock.idv[479] (TractableBufferStock478x.svg)
+l. 1107 Writing TractableBufferStock.idv[480] (TractableBufferStock479x.svg)
+l. 1107 Writing TractableBufferStock.idv[481] (TractableBufferStock480x.svg)
+l. 1110 Writing TractableBufferStock.idv[482] (TractableBufferStock481x.svg)
+[73]
+l. 1114 Writing TractableBufferStock.idv[483] (TractableBufferStock482x.svg)
+l. 1118 Writing TractableBufferStock.idv[484] (TractableBufferStock483x.svg)
+l. 1118 Writing TractableBufferStock.idv[485] (TractableBufferStock484x.svg)
+l. 1118 Writing TractableBufferStock.idv[486] (TractableBufferStock485x.svg)
+l. 1118 Writing TractableBufferStock.idv[487] (TractableBufferStock486x.svg)
+--- file TractableBufferStock32.html ---
+l. 1118 Writing TractableBufferStock.idv[488] (TractableBufferStock487x.svg)
+l. 1118 Writing TractableBufferStock.idv[489] (TractableBufferStock488x.svg)
+l. 1118 Writing TractableBufferStock.idv[490] (TractableBufferStock489x.svg)
+l. 1118 Writing TractableBufferStock.idv[491] (TractableBufferStock490x.svg)
+l. 1120 Writing TractableBufferStock.idv[492] (TractableBufferStock491x.svg)
+l. 1120 Writing TractableBufferStock.idv[493] (TractableBufferStock492x.svg)
+l. 1120 Writing TractableBufferStock.idv[494] (TractableBufferStock493x.svg)
+l. 1120 Writing TractableBufferStock.idv[495] (TractableBufferStock494x.svg)
+l. 1121 Writing TractableBufferStock.idv[496] (TractableBufferStock495x.svg)
+[74
+
+]
+l. 1125 Writing TractableBufferStock.idv[497] (TractableBufferStock496x.svg)
+l. 1125 Writing TractableBufferStock.idv[498] (TractableBufferStock497x.svg)
+l. 1125 Writing TractableBufferStock.idv[499] (TractableBufferStock498x.svg)
+l. 1125 Writing TractableBufferStock.idv[500] (TractableBufferStock499x.svg)
+l. 1128 Writing TractableBufferStock.idv[501] (TractableBufferStock500x.svg)
+l. 1128 Writing TractableBufferStock.idv[502] (TractableBufferStock501x.svg)
+l. 1128 Writing TractableBufferStock.idv[503] (TractableBufferStock502x.svg)
+l. 1128 Writing TractableBufferStock.idv[504] (TractableBufferStock503x.svg)
+l. 1130 Writing TractableBufferStock.idv[505] (TractableBufferStock504x.svg)
+l. 1130 Writing TractableBufferStock.idv[506] (TractableBufferStock505x.svg)
+l. 1130 Writing TractableBufferStock.idv[507] (TractableBufferStock506x.svg)
+l. 1130 Writing TractableBufferStock.idv[508] (TractableBufferStock507x.svg)
+--- file TractableBufferStock33.html ---
+l. 1130 Writing TractableBufferStock.idv[509] (TractableBufferStock508x.svg)
+l. 1130 Writing TractableBufferStock.idv[510] (TractableBufferStock509x.svg)
+l. 1130 Writing TractableBufferStock.idv[511] (TractableBufferStock510x.svg)
+l. 1130 Writing TractableBufferStock.idv[512] (TractableBufferStock511x.svg)
+l. 1130 Writing TractableBufferStock.idv[513] (TractableBufferStock512x.svg)
+l. 1130 Writing TractableBufferStock.idv[514] (TractableBufferStock513x.svg)
+l. 1130 Writing TractableBufferStock.idv[515] (TractableBufferStock514x.svg)
+l. 1130 Writing TractableBufferStock.idv[516] (TractableBufferStock515x.svg)
+l. 1131 Writing TractableBufferStock.idv[517] (TractableBufferStock516x.svg)
+l. 1135 Writing TractableBufferStock.idv[518] (TractableBufferStock517x.svg)
+l. 1135 Writing TractableBufferStock.idv[519] (TractableBufferStock518x.svg)
+l. 1135 Writing TractableBufferStock.idv[520] (TractableBufferStock519x.svg)
+l. 1135 Writing TractableBufferStock.idv[521] (TractableBufferStock520x.svg)
+l. 1135 Writing TractableBufferStock.idv[522] (TractableBufferStock521x.svg)
+l. 1135 Writing TractableBufferStock.idv[523] (TractableBufferStock522x.svg)
+l. 1135 Writing TractableBufferStock.idv[524] (TractableBufferStock523x.svg)
+l. 1135 Writing TractableBufferStock.idv[525] (TractableBufferStock524x.svg)
+l. 1135 Writing TractableBufferStock.idv[526] (TractableBufferStock525x.svg)
+l. 1135 Writing TractableBufferStock.idv[527] (TractableBufferStock526x.svg)
+l. 1135 Writing TractableBufferStock.idv[528] (TractableBufferStock527x.svg)
+[75
+
+]
+l. 1138 Writing TractableBufferStock.idv[529] (TractableBufferStock528x.svg)
+l. 1141 Writing TractableBufferStock.idv[530] (TractableBufferStock529x.svg)
+l. 1143 Writing TractableBufferStock.idv[531] (TractableBufferStock530x.svg)
+l. 1143 Writing TractableBufferStock.idv[532] (TractableBufferStock531x.svg)
+l. 1143 Writing TractableBufferStock.idv[533] (TractableBufferStock532x.svg)
+l. 1144 Writing TractableBufferStock.idv[534] (TractableBufferStock533x.svg)
+l. 1148 Writing TractableBufferStock.idv[535] (TractableBufferStock534x.svg)
+l. 1148 Writing TractableBufferStock.idv[536] (TractableBufferStock535x.svg)
+l. 1148 Writing TractableBufferStock.idv[537] (TractableBufferStock536x.svg)
+l. 1149 Writing TractableBufferStock.idv[538] (TractableBufferStock537x.svg)
+[76]
+l. 1163 Writing TractableBufferStock.idv[539] (TractableBufferStock538x.svg)
+l. 1166 Writing TractableBufferStock.idv[540] (TractableBufferStock539x.svg)
+--- file TractableBufferStock34.html ---
+l. 1168 Writing TractableBufferStock.idv[541] (TractableBufferStock540x.svg)
+l. 1168 Writing TractableBufferStock.idv[542] (TractableBufferStock541x.svg)
+l. 1169 Writing TractableBufferStock.idv[543] (TractableBufferStock542x.svg)
+l. 1170 Writing TractableBufferStock.idv[544] (TractableBufferStock543x.svg)
+l. 1173 Writing TractableBufferStock.idv[545] (TractableBufferStock544x.svg)
+l. 1174 Writing TractableBufferStock.idv[546] (TractableBufferStock545x.svg)
+[77]
+l. 1177 Writing TractableBufferStock.idv[547] (TractableBufferStock546x.svg)
+l. 1178 Writing TractableBufferStock.idv[548] (TractableBufferStock547x.svg)
+l. 1189 Writing TractableBufferStock.idv[549] (TractableBufferStock548x.svg)
+l. 1189 Writing TractableBufferStock.idv[550] (TractableBufferStock549x.svg)
+l. 1190 Writing TractableBufferStock.idv[551] (TractableBufferStock550x.svg)
+l. 1190 Writing TractableBufferStock.idv[552] (TractableBufferStock551x.svg)
+l. 1190 Writing TractableBufferStock.idv[553] (TractableBufferStock552x.svg)
+l. 1193 Writing TractableBufferStock.idv[554] (TractableBufferStock553x.svg)
+[78
+
+]
+l. 1196 Writing TractableBufferStock.idv[555] (TractableBufferStock554x.svg)
+l. 1199 Writing TractableBufferStock.idv[556] (TractableBufferStock555x.svg)
+--- file TractableBufferStock35.html ---
+l. 1200 Writing TractableBufferStock.idv[557] (TractableBufferStock556x.svg)
+l. 1213 Writing TractableBufferStock.idv[558] (TractableBufferStock557x.svg)
+[79
+
+]
+l. 1219 Writing TractableBufferStock.idv[559] (TractableBufferStock558x.svg)
+l. 1219 Writing TractableBufferStock.idv[560] (TractableBufferStock559x.svg)
+l. 1219 Writing TractableBufferStock.idv[561] (TractableBufferStock560x.svg)
+--- file TractableBufferStock36.html ---
+l. 1219 Writing TractableBufferStock.idv[562] (TractableBufferStock561x.svg)
+l. 1219 Writing TractableBufferStock.idv[563] (TractableBufferStock562x.svg)
+l. 1220 Writing TractableBufferStock.idv[564] (TractableBufferStock563x.svg)
+[80
+
+]
+l. 1227 Writing TractableBufferStock.idv[565] (TractableBufferStock564x.svg)
+l. 1231 Writing TractableBufferStock.idv[566] (TractableBufferStock565x.svg)
+l. 1236 Writing TractableBufferStock.idv[567] (TractableBufferStock566x.svg)
+l. 1236 Writing TractableBufferStock.idv[568] (TractableBufferStock567x.svg)
+l. 1237 Writing TractableBufferStock.idv[569] (TractableBufferStock568x.svg)
+l. 1237 Writing TractableBufferStock.idv[570] (TractableBufferStock569x.svg)
+l. 1237 Writing TractableBufferStock.idv[571] (TractableBufferStock570x.svg)
+l. 1238 Writing TractableBufferStock.idv[572] (TractableBufferStock571x.svg)
+l. 1238 Writing TractableBufferStock.idv[573] (TractableBufferStock572x.svg)
+--- file TractableBufferStock37.html ---
+l. 1246 Writing TractableBufferStock.idv[574] (TractableBufferStock573x.svg)
+l. 1247 Writing TractableBufferStock.idv[575] (TractableBufferStock574x.svg)
+l. 1248 Writing TractableBufferStock.idv[576] (TractableBufferStock575x.svg)
+[81
+
+]
+l. 1258 Writing TractableBufferStock.idv[577] (TractableBufferStock576x.svg)
+l. 1262 Writing TractableBufferStock.idv[578] (TractableBufferStock577x.svg)
+l. 1271 Writing TractableBufferStock.idv[579] (TractableBufferStock578x.svg)
+l. 1271 Writing TractableBufferStock.idv[580] (TractableBufferStock579x.svg)
+l. 1271 Writing TractableBufferStock.idv[581] (TractableBufferStock580x.svg)
+l. 1271 Writing TractableBufferStock.idv[582] (TractableBufferStock581x.svg)
+--- file TractableBufferStock38.html ---
+l. 1271 Writing TractableBufferStock.idv[583] (TractableBufferStock582x.svg)
+l. 1271 Writing TractableBufferStock.idv[584] (TractableBufferStock583x.svg)
+l. 1271 Writing TractableBufferStock.idv[585] (TractableBufferStock584x.svg)
+l. 1271 Writing TractableBufferStock.idv[586] (TractableBufferStock585x.svg)
+[82]
+l. 1277 Writing TractableBufferStock.idv[587] (TractableBufferStock586x.svg)
+l. 1291 Writing TractableBufferStock.idv[588] (TractableBufferStock587x.svg)
+l. 1292 Writing TractableBufferStock.idv[589] (TractableBufferStock588x.svg)
+[83
+
+]
+l. 1299 Writing TractableBufferStock.idv[590] (TractableBufferStock589x.svg)
+l. 1302 Writing TractableBufferStock.idv[591] (TractableBufferStock590x.svg)
+l. 1302 Writing TractableBufferStock.idv[592] (TractableBufferStock591x.svg)
+l. 1302 Writing TractableBufferStock.idv[593] (TractableBufferStock592x.svg)
+l. 1303 Writing TractableBufferStock.idv[594] (TractableBufferStock593x.svg)
+l. 1306 Writing TractableBufferStock.idv[595] (TractableBufferStock594x.svg)
+l. 1306 Writing TractableBufferStock.idv[596] (TractableBufferStock595x.svg)
+l. 1307 Writing TractableBufferStock.idv[597] (TractableBufferStock596x.svg)
+[84]
+l. 1313 Writing TractableBufferStock.idv[598] (TractableBufferStock597x.svg)
+l. 1316 Writing TractableBufferStock.idv[599] (TractableBufferStock598x.svg)
+l. 1317 Writing TractableBufferStock.idv[600] (TractableBufferStock599x.svg)
+--- file TractableBufferStock39.html ---
+l. 1321 Writing TractableBufferStock.idv[601] (TractableBufferStock600x.svg)
+l. 1321 Writing TractableBufferStock.idv[602] (TractableBufferStock601x.svg)
+l. 1321 Writing TractableBufferStock.idv[603] (TractableBufferStock602x.svg)
+--- file TractableBufferStock40.html ---
+l. 1328 Writing TractableBufferStock.idv[604] (TractableBufferStock603x.svg)
+l. 1329 Writing TractableBufferStock.idv[605] (TractableBufferStock604x.svg)
+l. 1330 Writing TractableBufferStock.idv[606] (TractableBufferStock605x.svg)
+[85
+
+
+]
+l. 1336 Writing TractableBufferStock.idv[607] (TractableBufferStock606x.svg)
+l. 1337 Writing TractableBufferStock.idv[608] (TractableBufferStock607x.svg)
+l. 1344 Writing TractableBufferStock.idv[609] (TractableBufferStock608x.svg)
+l. 1346 Writing TractableBufferStock.idv[610] (TractableBufferStock609x.svg)
+[86]
+l. 1350 Writing TractableBufferStock.idv[611] (TractableBufferStock610x.svg)
+l. 1351 Writing TractableBufferStock.idv[612] (TractableBufferStock611x.svg)
+l. 1357 Writing TractableBufferStock.idv[613] (TractableBufferStock612x.svg)
+l. 1358 Writing TractableBufferStock.idv[614] (TractableBufferStock613x.svg)
+l. 1362 Writing TractableBufferStock.idv[615] (TractableBufferStock614x.svg)
+[87]
+l. 1365 Writing TractableBufferStock.idv[616] (TractableBufferStock615x.svg)
+l. 1366 Writing TractableBufferStock.idv[617] (TractableBufferStock616x.svg)
+l. 1369 Writing TractableBufferStock.idv[618] (TractableBufferStock617x.svg)
+l. 1369 Writing TractableBufferStock.idv[619] (TractableBufferStock618x.svg)
+--- file TractableBufferStock41.html ---
+l. 1373 Writing TractableBufferStock.idv[620] (TractableBufferStock619x.svg)
+l. 1374 Writing TractableBufferStock.idv[621] (TractableBufferStock620x.svg)
+l. 1375 Writing TractableBufferStock.idv[622] (TractableBufferStock621x.svg)
+[88
+
+]
+l. 1382 Writing TractableBufferStock.idv[623] (TractableBufferStock622x.svg)
+l. 1389 Writing TractableBufferStock.idv[624] (TractableBufferStock623x.svg)
+l. 1392 Writing TractableBufferStock.idv[625] (TractableBufferStock624x.svg)
+l. 1393 Writing TractableBufferStock.idv[626] (TractableBufferStock625x.svg)
+l. 1425 Writing TractableBufferStock.idv[627] (TractableBufferStock626x.svg)
+[89]
+l. 1433 Writing TractableBufferStock.idv[628] (TractableBufferStock627x.svg)
+l. 1434 Writing TractableBufferStock.idv[629] (TractableBufferStock628x.svg)
+l. 1439 Writing TractableBufferStock.idv[630] (TractableBufferStock629x.svg)
+l. 1439 Writing TractableBufferStock.idv[631] (TractableBufferStock630x.svg)
+--- file TractableBufferStock42.html ---
+l. 1459 Writing TractableBufferStock.idv[632] (TractableBufferStock631x.svg)
+l. 1459 Writing TractableBufferStock.idv[633] (TractableBufferStock632x.svg)
+l. 1460 Writing TractableBufferStock.idv[634] (TractableBufferStock633x.svg)
+[90
+
+]
+l. 1462 Writing TractableBufferStock.idv[635] (TractableBufferStock634x.svg)
+l. 1467 Writing TractableBufferStock.idv[636] (TractableBufferStock635x.svg)
+l. 1468 Writing TractableBufferStock.idv[637] (TractableBufferStock636x.svg)
+l. 1468 Writing TractableBufferStock.idv[638] (TractableBufferStock637x.svg)
+l. 1469 Writing TractableBufferStock.idv[639] (TractableBufferStock638x.svg)
+l. 1469 Writing TractableBufferStock.idv[640] (TractableBufferStock639x.svg)
+l. 1470 Writing TractableBufferStock.idv[641] (TractableBufferStock640x.svg)
+l. 1472 Writing TractableBufferStock.idv[642] (TractableBufferStock641x.svg)
+l. 1473 Writing TractableBufferStock.idv[643] (TractableBufferStock642x.svg)
+l. 1474 Writing TractableBufferStock.idv[644] (TractableBufferStock643x.svg)
+l. 1477 Writing TractableBufferStock.idv[645] (TractableBufferStock644x.svg)
+l. 1481 Writing TractableBufferStock.idv[646] (TractableBufferStock645x.svg)
+l. 1482 Writing TractableBufferStock.idv[647] (TractableBufferStock646x.svg)
+LaTeX Font Info:    Trying to load font information for U+euf on input line 1485.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [91]
+l. 1490 Writing TractableBufferStock.idv[648] (TractableBufferStock647x.svg)
+l. 1496 Writing TractableBufferStock.idv[649] (TractableBufferStock648x.svg)
+l. 1501 Writing TractableBufferStock.idv[650] (TractableBufferStock649x.svg)
+[92]
+l. 1510 Writing TractableBufferStock.idv[651] (TractableBufferStock650x.svg)
+l. 1514 Writing TractableBufferStock.idv[652] (TractableBufferStock651x.svg)
+[93]
+l. 1523 Writing TractableBufferStock.idv[653] (TractableBufferStock652x.svg)
+l. 1527 Writing TractableBufferStock.idv[654] (TractableBufferStock653x.svg)
+l. 1528 Writing TractableBufferStock.idv[655] (TractableBufferStock654x.svg)
+l. 1529 Writing TractableBufferStock.idv[656] (TractableBufferStock655x.svg)
+l. 1531 Writing TractableBufferStock.idv[657] (TractableBufferStock656x.svg)
+l. 1532 Writing TractableBufferStock.idv[658] (TractableBufferStock657x.svg)
+l. 1535 Writing TractableBufferStock.idv[659] (TractableBufferStock658x.svg)
+l. 1535 Writing TractableBufferStock.idv[660] (TractableBufferStock659x.svg)
+l. 1536 Writing TractableBufferStock.idv[661] (TractableBufferStock660x.svg)
+l. 1538 Writing TractableBufferStock.idv[662] (TractableBufferStock661x.svg)
+l. 1539 Writing TractableBufferStock.idv[663] (TractableBufferStock662x.svg)
+l. 1543 Writing TractableBufferStock.idv[664] (TractableBufferStock663x.svg)
+l. 1550 Writing TractableBufferStock.idv[665] (TractableBufferStock664x.svg)
+l. 1551 Writing TractableBufferStock.idv[666] (TractableBufferStock665x.svg)
+l. 1560 Writing TractableBufferStock.idv[667] (TractableBufferStock666x.svg)
+[94]
+l. 1568 Writing TractableBufferStock.idv[668] (TractableBufferStock667x.svg)
+l. 1571 Writing TractableBufferStock.idv[669] (TractableBufferStock668x.svg)
+l. 1571 Writing TractableBufferStock.idv[670] (TractableBufferStock669x.svg)
+l. 1577 Writing TractableBufferStock.idv[671] (TractableBufferStock670x.svg)
+l. 1579 Writing TractableBufferStock.idv[672] (TractableBufferStock671x.svg)
+--- file TractableBufferStock43.html ---
+l. 1580 Writing TractableBufferStock.idv[673] (TractableBufferStock672x.svg)
+--- file TractableBufferStock44.html ---
+l. 1585 Writing TractableBufferStock.idv[674] (TractableBufferStock673x.svg)
+l. 1590 Writing TractableBufferStock.idv[675] (TractableBufferStock674x.svg)
+[95
+
+
+]
+l. 1595 Writing TractableBufferStock.idv[676] (TractableBufferStock675x.svg)
+l. 1597 Writing TractableBufferStock.idv[677] (TractableBufferStock676x.svg)
+l. 1601 Writing TractableBufferStock.idv[678] (TractableBufferStock677x.svg)
+l. 1608 Writing TractableBufferStock.idv[679] (TractableBufferStock678x.svg)
+l. 1608 Writing TractableBufferStock.idv[680] (TractableBufferStock679x.svg)
+l. 1610 Writing TractableBufferStock.idv[681] (TractableBufferStock680x.svg)
+l. 1610 Writing TractableBufferStock.idv[682] (TractableBufferStock681x.svg)
+l. 1611 Writing TractableBufferStock.idv[683] (TractableBufferStock682x.svg)
+--- file TractableBufferStock45.html ---
+l. 1613 Writing TractableBufferStock.idv[684] (TractableBufferStock683x.svg)
+l. 1613 Writing TractableBufferStock.idv[685] (TractableBufferStock684x.svg)
+[96]
+l. 1618 Writing TractableBufferStock.idv[686] (TractableBufferStock685x.svg)
+l. 1620 Writing TractableBufferStock.idv[687] (TractableBufferStock686x.svg)
+l. 1621 Writing TractableBufferStock.idv[688] (TractableBufferStock687x.svg)
+l. 1623 Writing TractableBufferStock.idv[689] (TractableBufferStock688x.svg)
+l. 1629 Writing TractableBufferStock.idv[690] (TractableBufferStock689x.svg)
+l. 1634 Writing TractableBufferStock.idv[691] (TractableBufferStock690x.svg)
+l. 1635 Writing TractableBufferStock.idv[692] (TractableBufferStock691x.svg)
+[97
+
+] (/usr/local/texlive/texmf-local/tex/latex/handoutBibMake.tex (./TractableBufferStock.bbl [98
+runsystem(if [ ! -f TractableBufferStock.bib ]; then touch TractableBufferStock.bib ; fi)...executed.
+
+runsystem(if [ ! -f TractableBufferStock-Add.bib ]; then touch TractableBufferStock-Add.bib ; fi)...executed.
+
+] [99]))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1647.
+[100]
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 1647.
+\BKM@file=\write6
+\openout6 = `TractableBufferStock.out.ps'.
+
+(./TractableBufferStock.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1647.
+\snap@out=\write7
+\openout7 = `TractableBufferStock.dep'.
+
+Dependency list written on TractableBufferStock.dep.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1647.
+ ) 
+Here is how much of TeX's memory you used:
+ 22615 strings out of 480609
+ 384953 string characters out of 5903657
+ 839256 words of memory out of 5000000
+ 37545 multiletter control sequences out of 15000+600000
+ 562383 words of font info for 109 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,32n,89p,10716b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on TractableBufferStock.dvi (100 pages, 463760 bytes).
