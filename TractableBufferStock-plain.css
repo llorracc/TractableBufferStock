@@ -30,20 +30,6 @@
 .ecbx-1200{ font-weight: bold;}
 .ecbx-1200{ font-weight: bold;}
 .ecbx-1200{ font-weight: bold;}
-.ecrm-2074{font-size:166%;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ectt-1200{ font-family: monospace,monospace;}
-.ecrm-0600{font-size:50%;}
-.ecrm-1000{font-size:83%;}
 .cmr-8{font-size:66%;}
 .cmr-6{font-size:50%;}
 .cmmi-12{font-style: italic;}
@@ -68,6 +54,20 @@
 .cmss-8x-x-75{  font-family: sans-serif;}
 .cmss-8x-x-75{  font-family: sans-serif;}
 .cmss-8x-x-75{  font-family: sans-serif;}
+.ecrm-2074{font-size:166%;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ectt-1200{ font-family: monospace,monospace;}
+.ecrm-0600{font-size:50%;}
+.ecrm-1000{font-size:83%;}
 .cmbx-12{ font-weight: bold;}
 .cmss-10{font-size:83%;  font-family: sans-serif;}
 .cmss-10{  font-family: sans-serif;}
@@ -118,6 +118,7 @@
 .cmtt-12{font-family: monospace,monospace;}
 .eufm-10x-x-80{font-size:66%;}
 .small-caps{font-variant: small-caps; }
+body#tex4ht-menu {white-space: nowrap; }
 p{margin-top:0;margin-bottom:0}
 p.indent{text-indent:0;}
 p + p{margin-top:1em;}

@@ -1,49 +1,49 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
-\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-10001}{QQ2-1-1}{Introduction}}{1}\relax 
-\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-20002}{QQ2-1-2}{The Microeconomic Consumer's Problem}}{1}\relax 
-\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{1}{x1-30002.1}{QQ2-1-3}{The Unemployed Consumer's Problem}}{3}\relax 
-\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{1}{x1-40002.2}{QQ2-1-4}{The Employed Consumer's Problem}}{6}\relax 
-\doTocEntry\tocsubsubsection{2.2.1}{\csname a:TocLink\endcsname{1}{x1-50002.2.1}{QQ2-1-5}{Unemployment Risk as a Mean Preserving Spread in Human Wealth}}{6}\relax 
-\doTocEntry\tocsubsubsection{2.2.2}{\csname a:TocLink\endcsname{1}{x1-60002.2.2}{QQ2-1-6}{First Order Optimality Condition}}{8}\relax 
-\doTocEntry\tocsubsubsection{2.2.3}{\csname a:TocLink\endcsname{1}{x1-70002.2.3}{QQ2-1-7}{Analysis and Intuition of Consumption Growth}}{9}\relax 
-\doTocEntry\tocsubsubsection{2.2.4}{\csname a:TocLink\endcsname{1}{x1-80002.2.4}{QQ2-1-8}{Finding the Target}}{12}\relax 
-\doTocEntry\tocsubsubsection{2.2.5}{\csname a:TocLink\endcsname{1}{x1-90002.2.5}{QQ2-1-9}{Upper Bounds for $\ensuremath  {\beta }$, Given Other Parameters}}{14}\relax 
-\doTocEntry\tocsubsubsection{2.2.6}{\csname a:TocLink\endcsname{1}{x1-100002.2.6}{QQ2-1-10}{Why Increased Unemployment Risk Increases Effective Growth Impatience}}{17}\relax 
-\doTocEntry\tocsubsubsection{2.2.7}{\csname a:TocLink\endcsname{1}{x1-110002.2.7}{QQ2-1-11}{The Target Level of $\ensuremath  {m}^{e}$}}{18}\relax 
-\doTocEntry\tocsubsubsection{2.2.8}{\csname a:TocLink\endcsname{1}{x1-120002.2.8}{QQ2-1-12}{Conditions Required for a Perfect Foresight Solution; Existence of Target $\ensuremath  {m}^{e}$}}{20}\relax 
-\doTocEntry\tocsubsubsection{2.2.9}{\csname a:TocLink\endcsname{1}{x1-130002.2.9}{QQ2-1-13}{The Phase Diagram}}{21}\relax 
-\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-130011}{}{\ignorespaces Phase Diagram}}{figure}\relax 
-\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-130032}{}{\ignorespaces The Consumption Function}}{figure}\relax 
-\doTocEntry\tocsubsubsection{2.2.10}{\csname a:TocLink\endcsname{1}{x1-140002.2.10}{QQ2-1-16}{The Consumption Function}}{27}\relax 
-\doTocEntry\tocsubsubsection{2.2.11}{\csname a:TocLink\endcsname{1}{x1-150002.2.11}{QQ2-1-17}{Expected Consumption Growth Is Downward Sloping in $\ensuremath  {m}^{e}$}}{28}\relax 
-\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-150043}{}{\ignorespaces Income and Consumption Growth}}{figure}\relax 
-\doTocEntry\tocsubsubsection{2.2.12}{\csname a:TocLink\endcsname{1}{x1-160002.2.12}{QQ2-1-19}{Summing Up the Intuition}}{32}\relax 
-\doTocEntry\toclof{4}{\csname a:TocLink\endcsname{1}{x1-160014}{}{\ignorespaces Effect of An Increase In $\ensuremath  {\mathsf@@ {r}}$}}{figure}\relax 
-\doTocEntry\toclof{5}{\csname a:TocLink\endcsname{1}{x1-160025}{}{\ignorespaces Effect of an Increase in $\ensuremath  {\mho }$}}{figure}\relax 
-\doTocEntry\tocsubsubsection{2.2.13}{\csname a:TocLink\endcsname{1}{x1-170002.2.13}{QQ2-1-22}{Death to the Log-Linearized Consumption Euler Equation!}}{38}\relax 
-\doTocEntry\tocsubsubsection{2.2.14}{\csname a:TocLink\endcsname{1}{x1-180002.2.14}{QQ2-1-23}{A Final Experiment}}{40}\relax 
-\doTocEntry\toclof{6}{\csname a:TocLink\endcsname{1}{x1-180026}{}{\ignorespaces Effect of Lower $\ensuremath  {\vartheta }$ On Consumption Function}}{figure}\relax 
-\doTocEntry\toclof{7}{\csname a:TocLink\endcsname{1}{x1-180037}{}{\ignorespaces Path of ${\ensuremath  {c}}^{e}$ Before and After $\ensuremath  {\vartheta }$ Decline}}{figure}\relax 
-\doTocEntry\toclof{8}{\csname a:TocLink\endcsname{1}{x1-180048}{}{\ignorespaces Path of $\ensuremath  {m}^{e}$ Before and After $\ensuremath  {\vartheta }$ Decline}}{figure}\relax 
-\doTocEntry\toclof{9}{\csname a:TocLink\endcsname{1}{x1-180059}{}{\ignorespaces Marginal Propensity to Consume $\ensuremath  {\kappa }_{t}$ Before and After $\ensuremath  {\vartheta }$ Decline}}{figure}\relax 
-\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-28}{A Macroeconomic Interpretation}}{53}\relax 
-\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{1}{x1-200003.1}{QQ2-1-29}{Stakes}}{55}\relax 
-\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{1}{x1-210003.1.1}{QQ2-1-30}{A `Stake' That Yields a Representative Agent}}{55}\relax 
-\doTocEntry\toclof{10}{\csname a:TocLink\endcsname{1}{x1-2100710}{}{\ignorespaces Aggregate $c$ in PE/SOE Economy Before and After $\ensuremath  {\vartheta }$ Decline}}{figure}\relax 
-\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{1}{x1-220003.1.2}{QQ2-1-32}{No Stake}}{62}\relax 
-\doTocEntry\toclof{11}{\csname a:TocLink\endcsname{1}{x1-2200511}{}{\ignorespaces Path of Aggregate $c$ in Stakeless PE/SOE Economy From Date 0}}{figure}\relax 
-\doTocEntry\tocsection{A}{\csname a:TocLink\endcsname{1}{x1-23000A}{QQ2-1-34}{Approximate Formula for Consumption Growth}}{67}\relax 
-\doTocEntry\tocsection{B}{\csname a:TocLink\endcsname{1}{x1-24000B}{QQ2-1-35}{Conditions for a Target to Exist}}{67}\relax 
-\doTocEntry\tocsubsection{B.1}{\csname a:TocLink\endcsname{1}{x1-25000B.1}{QQ2-1-36}{Using the Phase Diagram Loci}}{67}\relax 
-\doTocEntry\tocsubsection{B.2}{\csname a:TocLink\endcsname{1}{x1-26000B.2}{QQ2-1-37}{A Target Always Exists When Human Wealth Is Infinite}}{70}\relax 
-\doTocEntry\tocsubsection{B.3}{\csname a:TocLink\endcsname{1}{x1-27000B.3}{QQ2-1-38}{Conditions Under Which a Target Exists When Human Wealth is Finite}}{71}\relax 
-\doTocEntry\tocsubsection{B.4}{\csname a:TocLink\endcsname{1}{x1-28000B.4}{QQ2-1-39}{Solutions Exist Even When Growth Impatience Fails}}{73}\relax 
-\doTocEntry\tocsection{C}{\csname a:TocLink\endcsname{1}{x1-29000C}{QQ2-1-40}{The Exact Formula for Target $m$}}{76}\relax 
-\doTocEntry\tocsection{D}{\csname a:TocLink\endcsname{1}{x1-30000D}{QQ2-1-41}{Approximating Target $m$}}{78}\relax 
-\doTocEntry\tocsection{E}{\csname a:TocLink\endcsname{1}{x1-31000E}{QQ2-1-42}{Numerical Solution}}{85}\relax 
-\doTocEntry\tocsubsection{E.1}{\csname a:TocLink\endcsname{1}{x1-32000E.1}{QQ2-1-43}{The Consumption Function}}{85}\relax 
-\doTocEntry\tocsubsection{E.2}{\csname a:TocLink\endcsname{1}{x1-33000E.2}{QQ2-1-44}{The Value Function}}{91}\relax 
-\doTocEntry\tocsection{F}{\csname a:TocLink\endcsname{1}{x1-34000F}{QQ2-1-45}{The Algorithm}}{94}\relax 
-\doTocEntry\tocsection{G}{\csname a:TocLink\endcsname{1}{x1-35000G}{QQ2-1-46}{Modified Formulas For Case Where $\ensuremath  {\Gamma }\geq \ensuremath  {\mathsf@@ {R}}$}}{97}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-36000G}{QQ2-1-47}{References}}{98}\relax 
+\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{3}{x3-10001}{QQ2-3-1}{Introduction}}{2}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{3}{x3-20002}{QQ2-3-2}{The Microeconomic Consumer's Problem}}{2}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{3}{x3-30002.1}{QQ2-3-3}{The Unemployed Consumer's Problem}}{4}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{3}{x3-40002.2}{QQ2-3-4}{The Employed Consumer's Problem}}{7}\relax 
+\doTocEntry\tocsubsubsection{2.2.1}{\csname a:TocLink\endcsname{3}{x3-50002.2.1}{QQ2-3-5}{Unemployment Risk as a Mean Preserving Spread in Human Wealth}}{7}\relax 
+\doTocEntry\tocsubsubsection{2.2.2}{\csname a:TocLink\endcsname{3}{x3-60002.2.2}{QQ2-3-6}{First Order Optimality Condition}}{9}\relax 
+\doTocEntry\tocsubsubsection{2.2.3}{\csname a:TocLink\endcsname{3}{x3-70002.2.3}{QQ2-3-7}{Analysis and Intuition of Consumption Growth}}{10}\relax 
+\doTocEntry\tocsubsubsection{2.2.4}{\csname a:TocLink\endcsname{3}{x3-80002.2.4}{QQ2-3-8}{Finding the Target}}{13}\relax 
+\doTocEntry\tocsubsubsection{2.2.5}{\csname a:TocLink\endcsname{3}{x3-90002.2.5}{QQ2-3-9}{Upper Bounds for $\ensuremath  {\beta }$, Given Other Parameters}}{15}\relax 
+\doTocEntry\tocsubsubsection{2.2.6}{\csname a:TocLink\endcsname{3}{x3-100002.2.6}{QQ2-3-10}{Why Increased Unemployment Risk Increases Effective Growth Impatience}}{18}\relax 
+\doTocEntry\tocsubsubsection{2.2.7}{\csname a:TocLink\endcsname{3}{x3-110002.2.7}{QQ2-3-11}{The Target Level of $\ensuremath  {m}^{e}$}}{19}\relax 
+\doTocEntry\tocsubsubsection{2.2.8}{\csname a:TocLink\endcsname{3}{x3-120002.2.8}{QQ2-3-12}{Conditions Required for a Perfect Foresight Solution; Existence of Target $\ensuremath  {m}^{e}$}}{21}\relax 
+\doTocEntry\tocsubsubsection{2.2.9}{\csname a:TocLink\endcsname{3}{x3-130002.2.9}{QQ2-3-13}{The Phase Diagram}}{22}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{3}{x3-130011}{}{\ignorespaces Phase Diagram}}{figure}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{3}{x3-130032}{}{\ignorespaces The Consumption Function}}{figure}\relax 
+\doTocEntry\tocsubsubsection{2.2.10}{\csname a:TocLink\endcsname{3}{x3-140002.2.10}{QQ2-3-16}{The Consumption Function}}{28}\relax 
+\doTocEntry\tocsubsubsection{2.2.11}{\csname a:TocLink\endcsname{3}{x3-150002.2.11}{QQ2-3-17}{Expected Consumption Growth Is Downward Sloping in $\ensuremath  {m}^{e}$}}{29}\relax 
+\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{3}{x3-150043}{}{\ignorespaces Income and Consumption Growth}}{figure}\relax 
+\doTocEntry\tocsubsubsection{2.2.12}{\csname a:TocLink\endcsname{3}{x3-160002.2.12}{QQ2-3-19}{Summing Up the Intuition}}{33}\relax 
+\doTocEntry\toclof{4}{\csname a:TocLink\endcsname{3}{x3-160014}{}{\ignorespaces Effect of An Increase In $\ensuremath  {\mathsf@@ {r}}$}}{figure}\relax 
+\doTocEntry\toclof{5}{\csname a:TocLink\endcsname{3}{x3-160025}{}{\ignorespaces Effect of an Increase in $\ensuremath  {\mho }$}}{figure}\relax 
+\doTocEntry\tocsubsubsection{2.2.13}{\csname a:TocLink\endcsname{3}{x3-170002.2.13}{QQ2-3-22}{Death to the Log-Linearized Consumption Euler Equation!}}{39}\relax 
+\doTocEntry\tocsubsubsection{2.2.14}{\csname a:TocLink\endcsname{3}{x3-180002.2.14}{QQ2-3-23}{A Final Experiment}}{41}\relax 
+\doTocEntry\toclof{6}{\csname a:TocLink\endcsname{3}{x3-180026}{}{\ignorespaces Effect of Lower $\ensuremath  {\vartheta }$ On Consumption Function}}{figure}\relax 
+\doTocEntry\toclof{7}{\csname a:TocLink\endcsname{3}{x3-180037}{}{\ignorespaces Path of ${\ensuremath  {c}}^{e}$ Before and After $\ensuremath  {\vartheta }$ Decline}}{figure}\relax 
+\doTocEntry\toclof{8}{\csname a:TocLink\endcsname{3}{x3-180048}{}{\ignorespaces Path of $\ensuremath  {m}^{e}$ Before and After $\ensuremath  {\vartheta }$ Decline}}{figure}\relax 
+\doTocEntry\toclof{9}{\csname a:TocLink\endcsname{3}{x3-180059}{}{\ignorespaces Marginal Propensity to Consume $\ensuremath  {\kappa }_{t}$ Before and After $\ensuremath  {\vartheta }$ Decline}}{figure}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{3}{x3-190003}{QQ2-3-28}{A Macroeconomic Interpretation}}{54}\relax 
+\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{3}{x3-200003.1}{QQ2-3-29}{Stakes}}{56}\relax 
+\doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{3}{x3-210003.1.1}{QQ2-3-30}{A `Stake' That Yields a Representative Agent}}{56}\relax 
+\doTocEntry\toclof{10}{\csname a:TocLink\endcsname{3}{x3-2100710}{}{\ignorespaces Aggregate $c$ in PE/SOE Economy Before and After $\ensuremath  {\vartheta }$ Decline}}{figure}\relax 
+\doTocEntry\tocsubsubsection{3.1.2}{\csname a:TocLink\endcsname{3}{x3-220003.1.2}{QQ2-3-32}{No Stake}}{63}\relax 
+\doTocEntry\toclof{11}{\csname a:TocLink\endcsname{3}{x3-2200511}{}{\ignorespaces Path of Aggregate $c$ in Stakeless PE/SOE Economy From Date 0}}{figure}\relax 
+\doTocEntry\tocsection{A}{\csname a:TocLink\endcsname{3}{x3-23000A}{QQ2-3-34}{Approximate Formula for Consumption Growth}}{68}\relax 
+\doTocEntry\tocsection{B}{\csname a:TocLink\endcsname{3}{x3-24000B}{QQ2-3-35}{Conditions for a Target to Exist}}{68}\relax 
+\doTocEntry\tocsubsection{B.1}{\csname a:TocLink\endcsname{3}{x3-25000B.1}{QQ2-3-36}{Using the Phase Diagram Loci}}{68}\relax 
+\doTocEntry\tocsubsection{B.2}{\csname a:TocLink\endcsname{3}{x3-26000B.2}{QQ2-3-37}{A Target Always Exists When Human Wealth Is Infinite}}{71}\relax 
+\doTocEntry\tocsubsection{B.3}{\csname a:TocLink\endcsname{3}{x3-27000B.3}{QQ2-3-38}{Conditions Under Which a Target Exists When Human Wealth is Finite}}{72}\relax 
+\doTocEntry\tocsubsection{B.4}{\csname a:TocLink\endcsname{3}{x3-28000B.4}{QQ2-3-39}{Solutions Exist Even When Growth Impatience Fails}}{74}\relax 
+\doTocEntry\tocsection{C}{\csname a:TocLink\endcsname{3}{x3-29000C}{QQ2-3-40}{The Exact Formula for Target $m$}}{77}\relax 
+\doTocEntry\tocsection{D}{\csname a:TocLink\endcsname{3}{x3-30000D}{QQ2-3-41}{Approximating Target $m$}}{79}\relax 
+\doTocEntry\tocsection{E}{\csname a:TocLink\endcsname{3}{x3-31000E}{QQ2-3-42}{Numerical Solution}}{86}\relax 
+\doTocEntry\tocsubsection{E.1}{\csname a:TocLink\endcsname{3}{x3-32000E.1}{QQ2-3-43}{The Consumption Function}}{86}\relax 
+\doTocEntry\tocsubsection{E.2}{\csname a:TocLink\endcsname{3}{x3-33000E.2}{QQ2-3-44}{The Value Function}}{92}\relax 
+\doTocEntry\tocsection{F}{\csname a:TocLink\endcsname{3}{x3-34000F}{QQ2-3-45}{The Algorithm}}{95}\relax 
+\doTocEntry\tocsection{G}{\csname a:TocLink\endcsname{3}{x3-35000G}{QQ2-3-46}{Modified Formulas For Case Where $\ensuremath  {\Gamma }\geq \ensuremath  {\mathsf@@ {R}}$}}{98}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{3}{x3-36000G}{QQ2-3-47}{References}}{99}\relax 
 \par 

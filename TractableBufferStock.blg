@@ -8,15 +8,15 @@ Database file #3: TractableBufferStock-Add.bib
 Done.
 You've used 18 entries,
             2327 wiz_defined-function locations,
-            712 strings with 8081 characters,
-and the built_in function-call counts, 7870 in all, are:
-= -- 819
-> -- 316
+            711 strings with 8068 characters,
+and the built_in function-call counts, 7874 in all, are:
+= -- 816
+> -- 320
 < -- 0
-+ -- 113
-- -- 87
-* -- 666
-:= -- 1565
++ -- 114
+- -- 88
+* -- 667
+:= -- 1564
 add.period$ -- 20
 call.type$ -- 18
 change.case$ -- 94
@@ -24,14 +24,14 @@ chr.to.int$ -- 18
 cite$ -- 18
 duplicate$ -- 301
 empty$ -- 526
-format.name$ -- 119
+format.name$ -- 120
 if$ -- 1505
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 20
 newline$ -- 67
 num.names$ -- 108
-pop$ -- 66
+pop$ -- 68
 preamble$ -- 2
 purify$ -- 94
 quote$ -- 0
@@ -46,4 +46,4 @@ type$ -- 192
 warning$ -- 0
 while$ -- 106
 width$ -- 0
-write$ -- 233
+write$ -- 231

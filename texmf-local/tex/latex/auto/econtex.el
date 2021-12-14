@@ -33,15 +33,18 @@
     "manyfoot"
     "perpage")
    (TeX-add-symbols
+    '("llorraccio" 1)
     '("aspublished" 1)
     '("jelclass" 1)
     '("keywords" 1)
     '("maketitleWithForcedDate" 1)
     '("forcedate" 1)
     '("Descriptionlabel" 1)
+    "Ex"
     "bmmax"
     "textSizeDefault"
     "abstractSizeDefault"
+    "ushort"
     "titlepagefinish"
     "thanksFooter"
     "rm"
@@ -67,7 +70,10 @@
     "name")
    (LaTeX-add-environments
     "authorsinfo"
-    "Description")
+    "Description"
+    "definition"
+    "theorem"
+    "lemma")
    (LaTeX-add-counters
     "IncludeTitlePage"
     "authornum"

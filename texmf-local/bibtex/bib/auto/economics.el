@@ -3,6 +3,7 @@
  (lambda ()
    (LaTeX-add-bibitems
     ""
+    "yaari1965uncertain"
     "violante_marginal_2021"
     "harmenbergInvariant"
     "dmHowMuch"

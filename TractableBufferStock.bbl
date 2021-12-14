@@ -24,18 +24,17 @@
 \textsc{Carroll, Christopher~D.}  (1992): ``The Buffer-Stock Theory of Saving:
   Some Macroeconomic Evidence,'' \emph{Brookings Papers on Economic Activity},
   1992(2), 61--156,
-  \url{http://econ.jhu.edu/people/ccarroll/BufferStockBPEA.pdf}.
+  \url{https://www.econ2.jhu.edu/people/ccarroll/BufferStockBPEA.pdf}.
 
 \harvarditem[Carroll]{Carroll}{1997}{carrollBSLCPIH}
 \textsc{\BySame{}}  (1997): ``Buffer Stock Saving and the Life Cycle/Permanent
-  Income Hypothesis,'' \emph{Quarterly Journal of Economics}, CXII(1), 1--56,
-  \url{http://econ.jhu.edu/people/ccarroll/BSLCPIH.zip}.
+  Income Hypothesis,'' \emph{Quarterly Journal of Economics}, CXII(1), 1--56.
 
 \harvarditem[Carroll]{Carroll}{2001}{carroll:death}
 \textsc{\BySame{}}  (2001): ``Death to the {L}og-{L}inearized {C}onsumption
   {E}uler {E}quation! ({A}nd {V}ery {P}oor {H}ealth to the {S}econd-{O}rder
   Approximation),'' \emph{Advances in Macroeconomics}, 1(1), Article 6,
-  \url{http://econ.jhu.edu/people/ccarroll/death.pdf}.
+  \url{https://www.econ2.jhu.edu/people/ccarroll/death.pdf}.
 
 \harvarditem[Carroll]{Carroll}{Forthcoming}{BufferStockTheory}
 \textsc{\BySame{}}  (Forthcoming): ``Theoretical Foundations of Buffer Stock
@@ -46,26 +45,28 @@
   Wealth In Cases Where FHWC-TBS Fails,''
   \emph{./Code/Mathematica/Examples/ManipulateParameters/When-FHWC-Holds.nb},
   Download
-  \href{http://econ.jhu.edu/people/ccarroll/public/lecturenotes/consumption/TractableBufferStock.zip}{archive}
+  \href{https://www.econ2.jhu.edu/people/ccarroll/public/lecturenotes/consumption/TractableBufferStock.zip}{archive}
   and open Mathematica notebook.
 
 \harvarditem[Carroll and Jeanne]{Carroll and Jeanne}{2009}{cjSOE}
 \textsc{Carroll, Christopher~D.,  {and} Olivier Jeanne}  (2009): ``A Tractable
   Model of Precautionary Reserves, Net Foreign Assets, or Sovereign Wealth
   Funds,'' \emph{NBER Working Paper Number 15228},
-  \url{http://econ.jhu.edu/people/ccarroll/papers/cjSOE}.
-
-\harvarditem[Carroll and Kimball]{Carroll and
-  Kimball}{1996}{carroll&kimball:concavity}
-\textsc{Carroll, Christopher~D.,  {and} Miles~S. Kimball}  (1996): ``On the
-  {C}oncavity of the {C}onsumption {F}unction,'' \emph{Econometrica}, 64(4),
-  981--992, \url{http://econ.jhu.edu/people/ccarroll/concavity.pdf}.
+  \url{https://www.econ2.jhu.edu/people/ccarroll/papers/cjSOE}.
 
 \harvarditem[Carroll and Kimball]{Carroll and
   Kimball}{2007}{CarrollKimballPSPW}
-\textsc{\BySame{}}  (2007): ``Precautionary Saving and Precautionary Wealth,''
-  \emph{Palgrave Dictionary of Economics and Finance, 2nd Ed.},
-  \url{http://econ.jhu.edu/people/ccarroll/papers/PalgravePrecautionary.pdf}.
+\textsc{Carroll, Christopher~D.,  {and} Miles~S. Kimball}  (2007):
+  ``Precautionary Saving and Precautionary Wealth,'' \emph{Palgrave Dictionary
+  of Economics and Finance, 2nd Ed.},
+  \url{https://www.econ2.jhu.edu/people/ccarroll/papers/PalgravePrecautionary.pdf}.
+
+\harvarditem[Carroll and Kim\-ball]{Carroll and
+  Kim\-ball}{1996}{carroll&kimball:concavity}
+\textsc{Carroll, Chris\-to\-pher~D.,  {and} Miles~S. Kim\-ball}  (1996): ``On
+  the {C}on\-cav\-ity of the {C}on\-sumption {F}unction,'' \emph{Econometrica},
+  64(4), 981--992,
+  \url{https://www.econ2.jhu.edu/people/ccarroll/concavity.pdf}.
 
 \harvarditem[Friedman]{Friedman}{1957}{friedmanATheory}
 \textsc{Friedman, Milton~A.}  (1957): \emph{A Theory of the Consumption
@@ -101,8 +102,7 @@
   \url{http://www.jstor.org/stable/1806179}.
 
 \harvarditem[Toche]{Toche}{2005}{toche:urisk}
-\textsc{Toche, Patrick}  (2005): ``A Tractable Model of Precautionary Saving in
-  Continuous Time,'' \emph{Economics Letters}, 87(2), 267--272,
-  \url{http://ideas.repec.org/a/eee/ecolet/v87y2005i2p267-272.html}.
+\textsc{Toche, Patrick}  (2005): ``A Tractable Model of Pre\-cau\-tion\-ary
+  Sav\-ing in Con\-tin\-uous Time,'' \emph{Economics Letters}, 87(2), 267--272.
 
 \end{thebibliography}
