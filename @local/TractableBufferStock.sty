@@ -1,0 +1,61 @@
+\newboolean{AddRefsExists}
+\newboolean{economicsExists}
+\newboolean{BothExist}
+\newboolean{NeitherExists}
+\setboolean{BothExist}{true}
+\setboolean{NeitherExists}{true}
+
+\usepackage{ushort}
+
+% Typographic helpers specific to this handout
+\providecommand{\tSS}{}
+\renewcommand{\tSS}{\null}
+\newcommand{\hideSup}{\makebox[0pt]{}}
+\newcommand{\Mma}{{\it Mathematica}~}
+\newcommand{\psav}{\cancel{c}}
+\newcommand{\crho}{\cancel{\rho}}
+\newcommand{\nFuncP}{\nFunc^{\prime}}
+\newcommand{\nFuncPP}{\nFunc^{\prime\prime}}
+\newcommand{\nFuncPPP}{\nFunc^{\prime\prime\prime}}
+
+% TractableBufferStock's own macros: objects the shared registry (econ-ark-tools, @resources/notation) lacks, built on its names.
+% The math-mode ones are wrapped in \ensuremath because the handout uses several of them in running text.
+\providecommand{\aNrmE}{\ensuremath{\aNrm^{e}}}
+\providecommand{\bNrmE}{\ensuremath{\bNrm^{e}}}
+\providecommand{\cNrmE}{\ensuremath{\cNrm^{e}}}
+\providecommand{\cNrmU}{\ensuremath{\cNrm^{u}}}
+\providecommand{\mNrmE}{\ensuremath{\mNrm^{e}}}
+\providecommand{\mNrmU}{\ensuremath{\mNrm^{u}}}
+\providecommand{\vNrmE}{\ensuremath{\vNrm^{e}}}
+\providecommand{\MPCE}{\ensuremath{\MPC^{e}}}
+\providecommand{\cTrgNrm}{\ensuremath{\TargetNrm{\cNrm}}}
+\providecommand{\bTrgNrm}{\ensuremath{\TargetNrm{\bNrm}}}
+\providecommand{\vTrgNrm}{\ensuremath{\TargetNrm{\vNrm}}}
+\providecommand{\GPRteAdj}{\ensuremath{\check{\APRte}_{\WGroRtehFix}}}
+\providecommand{\dcEqZero}{\ensuremath{\Delta\cNrmE=0}}
+\providecommand{\dmEqZero}{\ensuremath{\Delta\mNrmE=0}}
+\providecommand{\MPS}{\ensuremath{\lambda}}
+\providecommand{\straight}{\ensuremath{\Pi}}
+\providecommand{\prudEx}{\ensuremath{\omega}}
+\providecommand{\empState}{\ensuremath{\xi}}
+\providecommand{\tThen}{\ensuremath{\tau}}
+\providecommand{\uPPP}{\ensuremath{\uFunc^{\prime\prime\prime}}}
+\providecommand{\psavFunc}{\ensuremath{\cancel{\cFunc}}}
+\providecommand{\FHWC}{\ensuremath{\text{FHWC}}}
+\providecommand{\FHWChFix}{\ensuremath{\text{FHWC}_{\WGroFachFix}}}
+\providecommand{\FHWCWGro}{\ensuremath{\text{FHWC}_{\WGroFac}}}
+\providecommand{\GIChFix}{\ensuremath{\text{GIC}_{\WGroFachFix}}}
+\providecommand{\GICWGro}{\ensuremath{\text{GIC}_{\WGroFac}}}
+\providecommand{\DiscFacMaxRIC}{\ensuremath{\bar{\DiscFac}_{\text{RIC}}}}
+\providecommand{\DiscFacMaxGICTBS}{\ensuremath{\bar{\DiscFac}_{\text{TBS}}}}
+\providecommand{\DiscFacMaxGIChFix}{\ensuremath{\bar{\DiscFac}_{\text{GIC}_{\WGroFachFix}}}}
+\providecommand{\DiscFacMaxGICWGro}{\ensuremath{\bar{\DiscFac}_{\text{GIC}_{\WGroFac}}}}
+\providecommand{\DiscFacMaxGICWhenFHWCTBSHolds}{\ensuremath{\bar{\DiscFac}_{\text{FHW}}}}
+
+% The growth objects adjusted to keep human wealth h fixed. The glyph is chosen here.
+\providecommand{\WGroFachFix}{\ensuremath{\mathring{\mathrm{G}}}}
+\providecommand{\WGroRtehFix}{\ensuremath{\mathring{\mathrm{g}}}}
+% \mathring overflows hyperref's bookmark conversion, and the factor appears in a section title
+\AtBeginDocument{\pdfstringdefDisableCommands{\def\WGroFachFix{G}\def\WGroRtehFix{g}}}
+\providecommand{\GPFachFix}{\ensuremath{\APFac_{\WGroFachFix}}}
+\providecommand{\GPRtehFix}{\ensuremath{\APRte_{\WGroRtehFix}}}
