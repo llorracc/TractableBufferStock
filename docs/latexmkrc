@@ -6,6 +6,11 @@ $bibtex_use=2;
 $pdf_mode = 1;
 #$out_dir = './LaTeX';
 $rc_report = 1;
+# \input@path in @resources/tex-add-search-paths is consulted only after kpathsea,
+# so without this a bare \usepackage{econark} finds the machine's TEXMFLOCAL copy.
+$ENV{'TEXINPUTS'} = './@resources/texlive/texmf-local/tex/latex//:' . ($ENV{'TEXINPUTS'} || '');
+$ENV{'BIBINPUTS'} = './@resources/texlive/texmf-local/bibtex/bib:' . ($ENV{'BIBINPUTS'} || '');
+$ENV{'BSTINPUTS'} = './@resources/texlive/texmf-local/bibtex/bst:' . ($ENV{'BSTINPUTS'} || '');
 $pdflatex="pdflatex -interaction=nonstopmode %O %S";
 @default_files = ('TractableBufferStock.tex');
 $aux_out_dir_report = 1;

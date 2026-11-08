@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  8 NOV 2026 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  8 NOV 2026 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -804,114 +804,114 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 [5] [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 250.
+(hyperref)                removing `math shift' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 250.
+(hyperref)                removing `\beta' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 250.
+(hyperref)                removing `math shift' on input line 249.
 
 [7] [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 318.
+(hyperref)                removing `math shift' on input line 317.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 318.
+(hyperref)                removing `superscript' on input line 317.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 318.
+(hyperref)                removing `math shift' on input line 317.
 
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 373.
+(hyperref)                removing `math shift' on input line 372.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 373.
+(hyperref)                removing `superscript' on input line 372.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 373.
+(hyperref)                removing `math shift' on input line 372.
 
 [10]
 <./Figures/TractableBufferStockPhaseDiag.pdf, id=245, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockPhaseDiag.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockPhaseDiag.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockPhaseDiag.pdf  used on i
-nput line 395.
+nput line 394.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [11 <./Figures/TractableBufferStockPhaseDiag.pdf>]
 <./Figures/TractableBufferStockcFunc.pdf, id=299, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockcFunc.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockcFunc.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockcFunc.pdf  used on input
- line 411.
+ line 410.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 455.
+(hyperref)                removing `math shift' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 455.
+(hyperref)                removing `superscript' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 455.
+(hyperref)                removing `math shift' on input line 454.
 
 [13 <./Figures/TractableBufferStockcFunc.pdf>]
 <./Figures/TractableBufferStockGrowthA.pdf, id=378, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockGrowthA.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockGrowthA.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockGrowthA.pdf  used on inp
-ut line 482.
+ut line 481.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [14 <./Figures/TractableBufferStockGrowthA.pdf>]
 <./Figures/TractableBufferStockGrowthB.pdf, id=454, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockGrowthB.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockGrowthB.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockGrowthB.pdf  used on inp
-ut line 507.
+ut line 506.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [15 <./Figures/TractableBufferStockGrowthB.pdf>]
 <./Figures/cGroIncreaseMhoPlot.pdf, id=518, 462.52798pt x 289.08pt>
 File: ./Figures/cGroIncreaseMhoPlot.pdf Graphic file (type pdf)
 <use ./Figures/cGroIncreaseMhoPlot.pdf>
 Package pdftex.def Info: ./Figures/cGroIncreaseMhoPlot.pdf  used on input line 
-554.
+553.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [16 <./Figures/cGroIncreaseMhoPlot.pdf>] [17]
 <./Figures/PhaseDiagramDecreaseThetaPlot.pdf, id=616, 462.52798pt x 289.08pt>
 File: ./Figures/PhaseDiagramDecreaseThetaPlot.pdf Graphic file (type pdf)
 <use ./Figures/PhaseDiagramDecreaseThetaPlot.pdf>
 Package pdftex.def Info: ./Figures/PhaseDiagramDecreaseThetaPlot.pdf  used on i
-nput line 670.
+nput line 669.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
 <./Figures/cPathAfterThetaDrop.pdf, id=617, 462.52798pt x 289.08pt>
 File: ./Figures/cPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/cPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/cPathAfterThetaDrop.pdf  used on input line 
-676.
+675.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
 <./Figures/mPathAfterThetaDrop.pdf, id=618, 462.52798pt x 289.08pt>
 File: ./Figures/mPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/mPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/mPathAfterThetaDrop.pdf  used on input line 
-682.
+681.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
 <./Figures/MPCPathAfterThetaDrop.pdf, id=619, 462.52798pt x 289.08pt>
 File: ./Figures/MPCPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/MPCPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/MPCPathAfterThetaDrop.pdf  used on input lin
-e 690.
+e 689.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [18] [19 <./Figures/PhaseDiagramDecreaseThetaPlot.pdf> <./Figures/cPathAfterTh
 etaDrop.pdf>] [20 <./Figures/mPathAfterThetaDrop.pdf> <./Figures/MPCPathAfterTh
@@ -921,37 +921,37 @@ etaDrop.pdf>] [21] [22] [23]
 File: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf Graphic file (type pdf)
 <use ./Figures/SOEStakescPathAfterThetaDropPlot.pdf>
 Package pdftex.def Info: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf  used o
-n input line 893.
+n input line 892.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [24 <./Figures/SOEStakescPathAfterThetaDropPlot.pdf>]
 <./Figures/SOENoStakescPath.pdf, id=839, 462.52798pt x 289.08pt>
 File: ./Figures/SOENoStakescPath.pdf Graphic file (type pdf)
 <use ./Figures/SOENoStakescPath.pdf>
-Package pdftex.def Info: ./Figures/SOENoStakescPath.pdf  used on input line 946
+Package pdftex.def Info: ./Figures/SOENoStakescPath.pdf  used on input line 945
 .
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [25] [26 <./Figures/SOENoStakescPath.pdf>]
 [27] [28] [29] [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1102.
+(hyperref)                removing `math shift' on input line 1101.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1102.
+(hyperref)                removing `math shift' on input line 1101.
 
 [31]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1154.
+(hyperref)                removing `math shift' on input line 1153.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1154.
+(hyperref)                removing `math shift' on input line 1153.
 
 [32] [33] [34] [35] [36] [37]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 144
-6.
+5.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -959,15 +959,15 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 [40]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1579.
+(hyperref)                removing `math shift' on input line 1578.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\geq' on input line 1579.
+(hyperref)                removing `\geq' on input line 1578.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1579.
+(hyperref)                removing `math shift' on input line 1578.
 
 [41] (./TractableBufferStock.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 11--14
@@ -1049,10 +1049,10 @@ Package rerunfilecheck Info: File `TractableBufferStock.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23580 strings out of 474122
- 451540 string characters out of 5746461
+ 23582 strings out of 474122
+ 451566 string characters out of 5746461
  1953187 words of memory out of 5000000
- 45249 multiletter control sequences out of 15000+600000
+ 45251 multiletter control sequences out of 15000+600000
  596424 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,31n,131p,10988b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s

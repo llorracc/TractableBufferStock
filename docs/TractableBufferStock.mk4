@@ -1,2 +1,11 @@
+-- Write each image straight to its file: Ghostscript's notices go to stdout and would corrupt it.
 Make:image("svg$",
-"dvisvgm -n -p ${page} --exact -c 1.0,1.0 -s ${source} > ${output}")
+"dvisvgm -n -p ${page} --exact -c 1.0,1.0 -o ${output} ${source}")
+
+-- tex4ht inverts images in dark mode, but page-style.css keeps this page white,
+-- so the rule would draw white math on a white background.
+local filter = require "make4ht-filter"
+local no_dark_invert = filter{ function(css)
+  return (css:gsub("@media%s*%(prefers%-color%-scheme:%s*dark%)%s*%b{}", ""))
+end }
+Make:match("css$", no_dark_invert)

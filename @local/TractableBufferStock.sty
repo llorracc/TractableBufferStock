@@ -59,3 +59,12 @@
 \AtBeginDocument{\pdfstringdefDisableCommands{\def\WGroFachFix{G}\def\WGroRtehFix{g}}}
 \providecommand{\GPFachFix}{\ensuremath{\APFac_{\WGroFachFix}}}
 \providecommand{\GPRtehFix}{\ensuremath{\APRte_{\WGroRtehFix}}}
+
+% tex4ht gives a \label inside a footnote the footnote's number, so state the equation's number.
+% Use this after the end of the equation, not inside it.
+\providecommand{\labelEqInFootnote}[1]{%
+  \protected@edef\@currentlabel{\theequation}%
+  \ifcsname Configure\endcsname % only under tex4ht
+    \Configure{newlabel}{\csname cur:th\endcsname\the\c@footnote}{\theequation}%
+  \fi
+  \label{#1}}
