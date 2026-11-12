@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  11 NOV 2026 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  11 NOV 2026 22:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2417,6 +2417,6 @@ Here is how much of TeX's memory you used:
  50061 multiletter control sequences out of 15000+600000
  593589 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 129i,33n,149p,11471b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,33n,149p,11471b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TractableBufferStock.dvi (98 pages, 468348 bytes).
+Output written on TractableBufferStock.dvi (98 pages, 468252 bytes).

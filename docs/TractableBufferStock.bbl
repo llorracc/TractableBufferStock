@@ -24,17 +24,15 @@
   Approximation),'' \emph{Advances in Macroeconomics}, 1(1), Article 6,
   \url{https://www.econ2.jhu.edu/people/ccarroll/death.pdf}.
 
+\harvarditem[Carroll]{Carroll}{2021}{When-FHWC-Holds}
+\textsc{\BySame{}}  (2021): ``Mathematica Notebook Illustrating Target Wealth
+  In Cases Where FHWC-TBS Fails,'' Download
+  \href{https://www.econ2.jhu.edu/people/ccarroll/public/lecturenotes/consumption/TractableBufferStock.zip}{archive}
+  and open Mathematica notebook.
+
 \harvarditem[Carroll]{Carroll}{2023}{BufferStockTheory}
 \textsc{\BySame{}}  (2023): ``Theoretical Foundations of Buffer Stock Saving,''
   \emph{Submitted}.
-
-\harvarditem[Carroll]{Carroll}{Ongoing}{When-FHWC-Holds}
-\textsc{\BySame{}}  (Ongoing): ``Mathematica Notebook Illustrating Target
-  Wealth In Cases Where FHWC-TBS Fails,''
-  \emph{./Code/Mathematica/Examples/ManipulateParameters/When-FHWC-Holds.nb},
-  Download
-  \href{https://www.econ2.jhu.edu/people/ccarroll/public/lecturenotes/consumption/TractableBufferStock.zip}{archive}
-  and open Mathematica notebook.
 
 \harvarditem[Carroll and Jeanne]{Carroll and Jeanne}{2009}{cjSOE}
 \textsc{Carroll, Christopher~D.,  {and} Olivier Jeanne}  (2009): ``A Tractable
