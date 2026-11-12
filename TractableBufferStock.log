@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  9 NOV 2026 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  11 NOV 2026 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,7 +801,12 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [2] [3] [4]
-[5] [6]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 191
+.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [5] [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 249.
@@ -841,14 +846,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 372.
 
 [10]
-<./Figures/TractableBufferStockPhaseDiag.pdf, id=245, 462.52798pt x 289.08pt>
+<./Figures/TractableBufferStockPhaseDiag.pdf, id=246, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockPhaseDiag.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockPhaseDiag.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockPhaseDiag.pdf  used on i
 nput line 394.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [11 <./Figures/TractableBufferStockPhaseDiag.pdf>]
-<./Figures/TractableBufferStockcFunc.pdf, id=299, 462.52798pt x 289.08pt>
+<./Figures/TractableBufferStockcFunc.pdf, id=300, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockcFunc.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockcFunc.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockcFunc.pdf  used on input
@@ -868,46 +873,46 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 454.
 
 [13 <./Figures/TractableBufferStockcFunc.pdf>]
-<./Figures/TractableBufferStockGrowthA.pdf, id=378, 462.52798pt x 289.08pt>
+<./Figures/TractableBufferStockGrowthA.pdf, id=379, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockGrowthA.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockGrowthA.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockGrowthA.pdf  used on inp
 ut line 481.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [14 <./Figures/TractableBufferStockGrowthA.pdf>]
-<./Figures/TractableBufferStockGrowthB.pdf, id=454, 462.52798pt x 289.08pt>
+<./Figures/TractableBufferStockGrowthB.pdf, id=460, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockGrowthB.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockGrowthB.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockGrowthB.pdf  used on inp
 ut line 506.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [15 <./Figures/TractableBufferStockGrowthB.pdf>]
-<./Figures/cGroIncreaseMhoPlot.pdf, id=518, 462.52798pt x 289.08pt>
+<./Figures/cGroIncreaseMhoPlot.pdf, id=524, 462.52798pt x 289.08pt>
 File: ./Figures/cGroIncreaseMhoPlot.pdf Graphic file (type pdf)
 <use ./Figures/cGroIncreaseMhoPlot.pdf>
 Package pdftex.def Info: ./Figures/cGroIncreaseMhoPlot.pdf  used on input line 
 553.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [16 <./Figures/cGroIncreaseMhoPlot.pdf>] [17]
-<./Figures/PhaseDiagramDecreaseThetaPlot.pdf, id=616, 462.52798pt x 289.08pt>
+<./Figures/PhaseDiagramDecreaseThetaPlot.pdf, id=622, 462.52798pt x 289.08pt>
 File: ./Figures/PhaseDiagramDecreaseThetaPlot.pdf Graphic file (type pdf)
 <use ./Figures/PhaseDiagramDecreaseThetaPlot.pdf>
 Package pdftex.def Info: ./Figures/PhaseDiagramDecreaseThetaPlot.pdf  used on i
 nput line 669.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
-<./Figures/cPathAfterThetaDrop.pdf, id=617, 462.52798pt x 289.08pt>
+<./Figures/cPathAfterThetaDrop.pdf, id=623, 462.52798pt x 289.08pt>
 File: ./Figures/cPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/cPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/cPathAfterThetaDrop.pdf  used on input line 
 675.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
-<./Figures/mPathAfterThetaDrop.pdf, id=618, 462.52798pt x 289.08pt>
+<./Figures/mPathAfterThetaDrop.pdf, id=624, 462.52798pt x 289.08pt>
 File: ./Figures/mPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/mPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/mPathAfterThetaDrop.pdf  used on input line 
 681.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
-<./Figures/MPCPathAfterThetaDrop.pdf, id=619, 462.52798pt x 289.08pt>
+<./Figures/MPCPathAfterThetaDrop.pdf, id=625, 462.52798pt x 289.08pt>
 File: ./Figures/MPCPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/MPCPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/MPCPathAfterThetaDrop.pdf  used on input lin
@@ -916,7 +921,7 @@ e 689.
  [18] [19 <./Figures/PhaseDiagramDecreaseThetaPlot.pdf> <./Figures/cPathAfterTh
 etaDrop.pdf>] [20 <./Figures/mPathAfterThetaDrop.pdf> <./Figures/MPCPathAfterTh
 etaDrop.pdf>] [21] [22] [23]
-<./Figures/SOEStakescPathAfterThetaDropPlot.pdf, id=808, 462.52798pt x 289.08pt
+<./Figures/SOEStakescPathAfterThetaDropPlot.pdf, id=814, 462.52798pt x 289.08pt
 >
 File: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf Graphic file (type pdf)
 <use ./Figures/SOEStakescPathAfterThetaDropPlot.pdf>
@@ -924,7 +929,7 @@ Package pdftex.def Info: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf  used o
 n input line 892.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [24 <./Figures/SOEStakescPathAfterThetaDropPlot.pdf>]
-<./Figures/SOENoStakescPath.pdf, id=839, 462.52798pt x 289.08pt>
+<./Figures/SOENoStakescPath.pdf, id=845, 462.52798pt x 289.08pt>
 File: ./Figures/SOENoStakescPath.pdf Graphic file (type pdf)
 <use ./Figures/SOENoStakescPath.pdf>
 Package pdftex.def Info: ./Figures/SOENoStakescPath.pdf  used on input line 945
@@ -949,14 +954,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1153.
 
-[32] [33] [34] [35] [36] [37]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 144
-5.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [38] [39]
-[40]
+[32] [33] [34] [35] [36] [37] [38] [39] [40]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1578.
@@ -1049,10 +1047,10 @@ Package rerunfilecheck Info: File `TractableBufferStock.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23582 strings out of 474122
- 451566 string characters out of 5746461
+ 23580 strings out of 474122
+ 451555 string characters out of 5746461
  1953187 words of memory out of 5000000
- 45251 multiletter control sequences out of 15000+600000
+ 45249 multiletter control sequences out of 15000+600000
  596424 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,31n,131p,10988b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1100,10 +1098,10 @@ pe1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
 public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
 blic/wasy-type1/wasy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
 ic/wasy-type1/wasy8.pfb>
-Output written on TractableBufferStock.pdf (43 pages, 802464 bytes).
+Output written on TractableBufferStock.pdf (43 pages, 800715 bytes).
 PDF statistics:
- 1478 PDF objects out of 1728 (max. 8388607)
- 1038 compressed objects within 11 object streams
+ 1484 PDF objects out of 1728 (max. 8388607)
+ 1043 compressed objects within 11 object streams
  260 named destinations out of 1000 (max. 500000)
  336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

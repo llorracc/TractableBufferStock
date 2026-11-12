@@ -43,15 +43,15 @@ The consumer lives in a small open economy -- there is a constant interest facto
 \begin{equation}\begin{gathered}\begin{aligned}
     \aLvl_{t} & =  \mLvl_{t}-\cLvl_{t}
 \\  \bLvl_{t+1} & =  \Rfree \aLvl_{t}
-\\  \mLvl_{t+1} & =  \bLvl_{t+1}+\labor_{t+1}\Wage_{t+1}\empState_{t+1}  \label{eq:DBC}
+\\  \mLvl_{t+1} & =  \bLvl_{t+1}+\labor_{t+1}\Wage_{t+1}\tranShkAll_{t+1}  \label{eq:DBC}
 \end{aligned}\end{gathered}\end{equation}
-where $\labor$ measures the consumer's labor productivity (`endowment') and $\empState$ is a dummy variable indicating the consumer's employment state: Everyone is either employed (state `e'), in which case $\empState = 1$, or unemployed (state `u'), in which case $\empState=0$, so that for unemployed individuals labor income is zero.\footnote{We could allow for unemployment insurance by modifying the values of $\empState$ associated with the two states.  The key conclusions would not change.}
+where $\labor$ measures the consumer's labor productivity (`endowment') and $\tranShkAll$ is a dummy variable indicating the consumer's employment state: Everyone is either employed (state `e'), in which case $\tranShkAll = 1$, or unemployed (state `u'), in which case $\tranShkAll=0$, so that for unemployed individuals labor income is zero.\footnote{We could allow for unemployment insurance by modifying the values of $\tranShkAll$ associated with the two states.  The key conclusions would not change.}
 
 \pagebreak 
 \subsection{The Unemployed Consumer's Problem} \label{subsec:Fred}
 
 Once a person becomes unemployed, that person can never become
-employed again (i.e.\ if $\empState_{t}=0$ then $\empState_{t+1}=0$).
+employed again (i.e.\ if $\tranShkAll_{t}=0$ then $\tranShkAll_{t+1}=0$).
 Consumers have a CRRA felicity function\footnote{`Felicity' refers
   explicitly to a one-period, or in a continuous-time model, an
   instantaneous utility function.}
@@ -113,8 +113,8 @@ and we say that a consumer is `return impatient' if the RIC \eqref{eq:RIC} holds
 \subsection{The Employed Consumer's Problem}
 
 \subsubsection{Unemployment Risk as a Mean Preserving Spread in Human Wealth} \label{subsubsec:uMPS}
-If a person who is employed in period $t$ ($\empState_{t}=1$) is still employed next
-period ($\empState_{t+1}=1$), market resources will be
+If a person who is employed in period $t$ ($\tranShkAll_{t}=1$) is still employed next
+period ($\tranShkAll_{t+1}=1$), market resources will be
 \begin{equation}
 \mLvl^{e}_{t+1} = (\mLvl^{e}_{t}-\cLvl^{e}_{t})\Rfree+\Wage_{t+1}\labor_{t+1}. \label{eq:Metp1}
 \end{equation}
@@ -132,8 +132,8 @@ which means that for a consumer who remains employed, labor income will grow by 
 so that the {\it expected} labor income growth factor for
 employed consumers is the same $\WGroFac$ as in the perfect foresight case:
 \begin{equation*}\begin{gathered}\begin{aligned}
-  \Ex_{t}[\Wage_{t+1}\labor_{t+1}\empState_{t+1}] & =   \left(\frac{\labor_{t} \WGroFac \Wage_{t}}{\erate}\right)\left(\urate \times 0 + \erate \times 1 \right)
-\\ \left(\frac{\Ex_{t}[\Wage_{t+1}\labor_{t+1}\empState_{t+1}]}{\Wage_{t} \labor_{t}}\right) &  =  \WGroFac
+  \Ex_{t}[\Wage_{t+1}\labor_{t+1}\tranShkAll_{t+1}] & =   \left(\frac{\labor_{t} \WGroFac \Wage_{t}}{\erate}\right)\left(\urate \times 0 + \erate \times 1 \right)
+\\ \left(\frac{\Ex_{t}[\Wage_{t+1}\labor_{t+1}\tranShkAll_{t+1}]}{\Wage_{t} \labor_{t}}\right) &  =  \WGroFac
 ,
 \end{aligned}\end{gathered}\end{equation*}
 which is  the reason for \eqref{eq:meanPreserve}'s assumption about the growth of
@@ -222,7 +222,7 @@ The $\dcEqZero$ locus can be characterized by substituting ${\cNrm}^{e}_{t+1}={\
          1 & = \left\{1+\urate\left[\left(\frac{{\cNrm}^{e}_{t+1}}{\cNrm_{t+1}^{u}}\right)^{\CRRA}-1\right]\right\} \GPFachFix^{\CRRA}  \notag
 \\ \GPFachFix^{-\CRRA} & =  (1-\urate)+\urate\left(\frac{{\cNrm}^{e}_{\tSS}}{\cNrm_{t+1}^{u} }\right)^{\CRRA} \notag
 \\ \underbrace{\left(\frac{\GPFachFix^{-\CRRA}-1+\urate}{\urate}\right)^{1/\CRRA}}_{\equiv \straight} & =   \left(\frac{{\cNrm}^{e}_{\tSS}}{\cNrmU_{t+1}}\right) \label{eq:straightDef}
-  \\ \underbrace{\left(\overbrace{\urate^{-1}(\GPFachFix^{-\CRRA}-1)}^{\equiv \varpi}+1\right)^{1/\CRRA}}_{\straight=(1+\varpi)^{1/\CRRA}} & =   \left(\frac{{\cNrm}^{e}_{\tSS}}{\cNrmU_{t+1}}\right) \notag %\label{eq:varpiDef}
+  \\ \underbrace{\left(1+\urate^{-1}(\GPFachFix^{-\CRRA}-1)\right)^{1/\CRRA}}_{=\straight} & =   \left(\frac{{\cNrm}^{e}_{\tSS}}{\cNrmU_{t+1}}\right) \notag
 \end{aligned}\end{gathered}\end{equation}
 which boils down to 
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -402,7 +402,7 @@ The intuition for the $\Delta {\cNrm}^{e}_{\tSS}=0$ locus (which comes from \eqr
 
 
 The consequences of this are easiest to see in the logarithmic case whose consumption growth equation is derived in \eqref{eq:cedelapproxLog}, which tells us that ${\cNrm}^{e}_{t+1} \approx {\cNrm}^{e}_{t}\left(1+ \urate \nabla _{t+1}\right) {\GPFachFix}$, which directly 
-implies that the lower $\nabla_{t+1}$ will yield a lower $\cNrmE_{t+1}$.  That is, for any point to the right of the $\Delta \cNrmE_{t+1}=0$ locus, the growth rate of consumption will be lower than at the corresonding point on the locus.  Since on the locus, growth
+implies that the lower $\nabla_{t+1}$ will yield a lower $\cNrmE_{t+1}$.  That is, for any point to the right of the $\Delta \cNrmE_{t+1}=0$ locus, the growth rate of consumption will be lower than at the corresponding point on the locus.  Since on the locus, growth
 was zero, this means that to the right of the locus, $\cNrmE$ is declining (hence the down arrow in the phase diagram).  Reciprocally, for any point to the left of $\Delta \cNrmE_{t+1}=0$, the Euler equation implies that consumption will rise.
 
 \begin{figure}
@@ -660,7 +660,7 @@ smaller.
 The final figures depict the time paths of consumption, market wealth,
 and the marginal propensity to consume $\MPCFunc(\mNrm)$ following the
 decline in $\discRte$.  These are implicit in the phase diagram
-analysis, but the dots in these two new diagrams are spread out evenly
+analysis, but the dots in these three diagrams are spread out evenly
 over time to give a sense of the time scale over which the model
 adjusts toward the steady state.
 
@@ -974,70 +974,70 @@ which leads directly to \eqref{eq:cedelapprox} in the main text.
 
 \subsection{Using the Phase Diagram Loci} 
  
-At a steady-state value of $\mNrmE$, both $\dcEqZero$ and $\dmEqZero$ hold (equations \eqref{eq:cDelEqZero} and \eqref{eq:mDelEqZero}); for convenience defining $\mu = \RNrmByG \MPC \straight + 1$, 
+At a steady-state value of $\mNrmE$, both $\dcEqZero$ and $\dmEqZero$ hold (equations \eqref{eq:cDelEqZero} and \eqref{eq:mDelEqZero}); for convenience defining $\mathfrak{z} \equiv \RNrmByG \MPC \straight$, 
 \begin{equation}\begin{gathered}\begin{aligned}
-  0 = \overbrace{\left(\frac{\mu-1}{\mu}\right) \mNrmE}^{\Delta {\cNrm}^{e} } & =  \overbrace{\left(\frac{\RNrmByG-1}{\RNrmByG}\right)\mNrmE + \RNrmByG^{-1}}^{\Delta \mNrmE} = 0.
+  0 = \overbrace{\left(\frac{\mathfrak{z}}{1+\mathfrak{z}}\right) \mNrmE}^{\Delta {\cNrm}^{e} } & =  \overbrace{\left(\frac{\RNrmByG-1}{\RNrmByG}\right)\mNrmE + \RNrmByG^{-1}}^{\Delta \mNrmE} = 0.
 \end{aligned}\end{gathered}\end{equation}
-But since $\RNrmByG^{-1}$ is a positive number, at $\mNrmE=0$ the $\dmEqZero$ locus's value is $\RNrmByG^{-1}$ while the value of the $\dcEqZero$ locus is zero, the two loci can intersect for a positive $\mNrmE$ only if the slope of the $\dcEqZero$ locus is greater:\footnote{We also need $\mu$ to be nonnegative.}
+But since $\RNrmByG^{-1}$ is a positive number, at $\mNrmE=0$ the $\dmEqZero$ locus's value is $\RNrmByG^{-1}$ while the value of the $\dcEqZero$ locus is zero, the two loci can intersect for a positive $\mNrmE$ only if the slope of the $\dcEqZero$ locus is greater:\footnote{We also need $1+\mathfrak{z}$ to be nonnegative.}
 \begin{equation}\begin{gathered}\begin{aligned}
-  \left(\frac{\mu-1}{\mu}\right) & >  \left(\frac{\RNrmByG-1}{\RNrmByG}\right) \label{eq:cDelEq0SlopeCond}
+  \left(\frac{\mathfrak{z}}{1+\mathfrak{z}}\right) & >  \left(\frac{\RNrmByG-1}{\RNrmByG}\right) \label{eq:cDelEq0SlopeCond}
 \end{aligned}\end{gathered}\end{equation}
 which is equivalent to 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \overbrace{\RNrmByG \MPC \straight}^{= \mu-1} & >   \RNrmByG-1  \label{eq:cDelEq0SlopeCondAlt}
+  \overbrace{\RNrmByG \MPC \straight}^{= \mathfrak{z}} & >   \RNrmByG-1  \label{eq:cDelEq0SlopeCondAlt}
 \end{aligned}\end{gathered}\end{equation}
 where the LHS is (proportional to) the slope of $\dcEqZero$ and the RHS is (proportional to) the slope of $\dmEqZero$.
 
-For any fixed $\urate$ and $\WGroFac$ and $\Rfree$ we can find some $\alpha$ for which $\WGroFac = \Rfree (1-\alpha \urate)$, and using this $\alpha$ it turns out to be useful to rewrite
+For any fixed $\urate$ and $\WGroFac$ and $\Rfree$ we can find some $\mathfrak{a}$ for which $\WGroFac = \Rfree (1-\mathfrak{a} \urate)$, and using this $\mathfrak{a}$ it turns out to be useful to rewrite
 \begin{equation}\begin{gathered}\begin{aligned}
   \RNrmByG^{-1} & =  \WGroFachFix/\Rfree
 \\ & =  \WGroFac/\Rfree(1-\urate)
-\\ & =  \Rfree(1-\alpha \urate)/\Rfree(1-\urate)
-\\ & =  (1-\alpha \urate + \urate - \urate)/(1-\urate)
-\\ & =  (1-\urate+(1-\alpha) \urate)/(1-\urate)
-\\ & =  1+(1-\alpha)\urate/(1-\urate) \label{eq:RnormFromAlpha}
+\\ & =  \Rfree(1-\mathfrak{a} \urate)/\Rfree(1-\urate)
+\\ & =  (1-\mathfrak{a} \urate + \urate - \urate)/(1-\urate)
+\\ & =  (1-\urate+(1-\mathfrak{a}) \urate)/(1-\urate)
+\\ & =  1+(1-\mathfrak{a})\urate/(1-\urate) \label{eq:RnormFromAlpha}
 .
 \end{aligned}\end{gathered}\end{equation}
 
-Note for future use that \eqref{eq:RnormFromAlpha} implies that whenever $\alpha \leq 1$, the \FHWChFix~fails (`human wealth is infinite') because $\RNrmByG^{-1} > 1 \Rightarrow \Rfree/\WGroFachFix = \RNrmByG < 1 \Rightarrow \Rfree < \WGroFachFix$.  
+Note for future use that \eqref{eq:RnormFromAlpha} implies that whenever $\mathfrak{a} \leq 1$, the \FHWChFix~fails (`human wealth is infinite') because $\RNrmByG^{-1} > 1 \Rightarrow \Rfree/\WGroFachFix = \RNrmByG < 1 \Rightarrow \Rfree < \WGroFachFix$.  
 
 Multiplying both sides of \eqref{eq:cDelEq0SlopeCondAlt} by $\RNrmByG^{-1}$ then substituting the expression for $\RNrmByG^{-1}$ from \eqref{eq:RnormFromAlpha} gives
 \begin{equation}\begin{gathered}\begin{aligned}
   1- \RNrmByG^{-1} & <  \MPC \straight
-\\ - (1-\alpha)\urate/(1-\urate) & <  \MPC \straight \label{eq:alphaReq}
+\\ - (1-\mathfrak{a})\urate/(1-\urate) & <  \MPC \straight \label{eq:alphaReq}
 \end{aligned}\end{gathered}\end{equation}
 
 \subsection{A Target Always Exists When Human Wealth Is Infinite}
 
-Since $0 < \urate < 1$ and $\MPC>0$ (as guaranteed by the RIC), \eqref{eq:alphaReq} is satisfied whenever the \FHWChFix~fails ($\alpha \leq 1$) and $\straight > 0$.
-We now show that under these conditions, $(1+\varpi)^{1/\CRRA}=\straight>0$.  
+Since $0 < \urate < 1$ and $\MPC>0$ (as guaranteed by the RIC), \eqref{eq:alphaReq} is satisfied whenever the \FHWChFix~fails ($\mathfrak{a} \leq 1$) and $\straight > 0$.
+We now show that under these conditions, $\straight>0$.
 
 $\straight$ from \eqref{eq:straightDef} is:
 \begin{equation}\begin{gathered}\begin{aligned}
-  \straight & =  \left(1+\overbrace{\urate^{-1}(\GPFachFix^{-\CRRA}-1)}^{\equiv \varpi}\right)^{1/\CRRA}
+  \straight & =  \left(1+\urate^{-1}(\GPFachFix^{-\CRRA}-1)\right)^{1/\CRRA}
 \end{aligned}\end{gathered}\end{equation}
 but note that 
 \begin{equation}\begin{gathered}\begin{aligned}
   \GPFachFix & =  \RPFac \overbrace{(\Rfree/\WGroFachFix)}^{=\RNrmByG}
 \end{aligned}\end{gathered}\end{equation}
-and in the case where $\alpha=1$, $\RNrmByG$ must also be 1, implying that $\GPFachFix = \RPFac < 1$ (the RIC) so that $\GPFachFix^{-\CRRA} > 1$ and so $\varpi > 0$ and hence $\straight > 1 > 0$.  The other interesting case is when $\alpha=0$ so that $\WGroFac=\Rfree$ and $\RNrmByG=\Rfree/\WGroFachFix=\Rfree(1-\urate)/\WGroFac=(1-\urate)<1$.  In this case $\GPFachFix < \RPFac$ and so $\GPFachFix^{-\CRRA} > \RPFac^{-\CRRA} > 1$ and so $\varpi$ is even more positive so that $\straight$ is even more strongly $>0$.  Similar logic holds for any $\alpha \leq 1$.  
+and in the case where $\mathfrak{a}=1$, $\RNrmByG$ must also be 1, implying that $\GPFachFix = \RPFac < 1$ (the RIC) so that $\GPFachFix^{-\CRRA} > 1$ and hence $\straight > 1 > 0$.  The other interesting case is when $\mathfrak{a}=0$ so that $\WGroFac=\Rfree$ and $\RNrmByG=\Rfree/\WGroFachFix=\Rfree(1-\urate)/\WGroFac=(1-\urate)<1$.  In this case $\GPFachFix < \RPFac$ and so $\GPFachFix^{-\CRRA} > \RPFac^{-\CRRA} > 1$ and so $\straight$ is even further above 1, so that it is even more strongly $>0$.  Similar logic holds for any $\mathfrak{a} \leq 1$.  
 
-Thus, we can conclude that, when human wealth is infinite (that is, if $\alpha \leq 1$), a target $\TargetNrm{\mNrm}^{e}$ will exist.  
+Thus, we can conclude that, when human wealth is infinite (that is, if $\mathfrak{a} \leq 1$), a target $\TargetNrm{\mNrm}^{e}$ will exist.  
 
 \subsection{Conditions Under Which a Target Exists When Human Wealth is Finite}
 
-In the case where human wealth is finite ($\alpha > 1$), we need the RHS of \eqref{eq:alphaReq} not merely to be positive, but to exceed a specific positive number, $(\alpha-1)\urate/(1-\urate)$:  
+In the case where human wealth is finite ($\mathfrak{a} > 1$), we need the RHS of \eqref{eq:alphaReq} not merely to be positive, but to exceed a specific positive number, $(\mathfrak{a}-1)\urate/(1-\urate)$:  
 \begin{equation}\begin{gathered}\begin{aligned}
-    \MPC (1+\varpi)^{1/\CRRA} & >  (\alpha-1)\urate/(1-\urate)
-\\   (1+\varpi)^{1/\CRRA} & >  \left(\frac{(\alpha-1)\urate}{\MPC (1-\urate)}\right)
-\\   (1+\varpi) & >  \left(\frac{(\alpha-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}
-\\  (\GPFachFix^{-\CRRA}-1)\urate^{-1} = \varpi & >  \left(\frac{(\alpha-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}-1
-\\  (\GPFachFix^{-\CRRA}-1) & >  \urate \left[\left(\frac{(\alpha-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}-1\right]
-\\  \GPFachFix^{-\CRRA} & >  1  + \urate \left[\left(\frac{(\alpha-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}-1\right]
-\\  \GPFachFix & <  \left\{1  + \urate \underbrace{\left[\left(\frac{(\alpha-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}-1\right]}_{\equiv \chi} \right\}^{-1/\CRRA} \label{eq:GPFacRawReqForTarget}
-%\\  \GPFachFix & <  \left\{1  + \urate \left[\left(\frac{(\alpha-1)\urate-\MPC (1-\urate)}{\MPC (1-\urate)}\right)^{\CRRA}\right] \right\}^{-1/\CRRA}
-%\\  \GPFachFix & <  \left(\frac{1}{\MPC (1-\urate)}\right)^{-1/\CRRA}\left\{\MPC (1-\urate)  + \urate \left[\left((\alpha-1)\urate-\MPC (1-\urate)\right)^{\CRRA}\right] \right\}^{-1/\CRRA} \notag
-%\\  \GPFachFix & <  \left(\MPC (1-\urate)\right)^{1/\CRRA}\left\{\MPC (1-\urate)  + \urate \left[\left((\alpha-1)\urate-\MPC (1-\urate)\right)^{\CRRA}\right] \right\}^{-1/\CRRA} \notag
+    \MPC \straight & >  (\mathfrak{a}-1)\urate/(1-\urate)
+\\   \straight & >  \left(\frac{(\mathfrak{a}-1)\urate}{\MPC (1-\urate)}\right)
+\\   \straight^{\CRRA} & >  \left(\frac{(\mathfrak{a}-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}
+\\  (\GPFachFix^{-\CRRA}-1)\urate^{-1} = \straight^{\CRRA}-1 & >  \left(\frac{(\mathfrak{a}-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}-1
+\\  (\GPFachFix^{-\CRRA}-1) & >  \urate \left[\left(\frac{(\mathfrak{a}-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}-1\right]
+\\  \GPFachFix^{-\CRRA} & >  1  + \urate \left[\left(\frac{(\mathfrak{a}-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}-1\right]
+\\  \GPFachFix & <  \left\{1  + \urate \left[\left(\frac{(\mathfrak{a}-1)\urate}{\MPC (1-\urate)}\right)^{\CRRA}-1\right] \right\}^{-1/\CRRA} \label{eq:GPFacRawReqForTarget}
+%\\  \GPFachFix & <  \left\{1  + \urate \left[\left(\frac{(\mathfrak{a}-1)\urate-\MPC (1-\urate)}{\MPC (1-\urate)}\right)^{\CRRA}\right] \right\}^{-1/\CRRA}
+%\\  \GPFachFix & <  \left(\frac{1}{\MPC (1-\urate)}\right)^{-1/\CRRA}\left\{\MPC (1-\urate)  + \urate \left[\left((\mathfrak{a}-1)\urate-\MPC (1-\urate)\right)^{\CRRA}\right] \right\}^{-1/\CRRA} \notag
+%\\  \GPFachFix & <  \left(\MPC (1-\urate)\right)^{1/\CRRA}\left\{\MPC (1-\urate)  + \urate \left[\left((\mathfrak{a}-1)\urate-\MPC (1-\urate)\right)^{\CRRA}\right] \right\}^{-1/\CRRA} \notag
 \end{aligned}\end{gathered}\end{equation}
 and the boundary will be the point at which this expression holds with equality.  
 
@@ -1047,20 +1047,20 @@ An increase in impatience caused by an increase in the pure time preference rate
 .\end{aligned}\end{gathered}\end{equation}
 
 
-Since we have assumed the RIC (so that $\MPC > 0$), as $\urate \downarrow 0$ or $\alpha \downarrow 1$, \eqref{eq:GPFacRawReqForTarget} asymptotes to the \GIChFix~for any given value of $\DiscFac$.  
+Since we have assumed the RIC (so that $\MPC > 0$), as $\urate \downarrow 0$ or $\mathfrak{a} \downarrow 1$, \eqref{eq:GPFacRawReqForTarget} asymptotes to the \GIChFix~for any given value of $\DiscFac$.  
 
-The apparently harder case is when $\alpha>1$ and $\urate > 0$.  But note that we will have found $\DiscFacMaxGICWhenFHWCTBSHolds$ if we can find the corresponding $\MPC$ at which the first term in $\chi$ reaches 1:
+The apparently harder case is when $\mathfrak{a}>1$ and $\urate > 0$.  But note that we will have found $\DiscFacMaxGICWhenFHWCTBSHolds$ if we can find the corresponding $\MPC$ at which the first term in the square brackets of the requirement for a target, \eqref{eq:GPFacRawReqForTarget}, reaches 1:
 \begin{equation}\begin{gathered}\begin{aligned}
-    \left(\frac{(\alpha-1)\urate}{(1-\RPFac) (1-\urate)}\right)^{\CRRA} & =  1
-\\  \left(\frac{(\alpha-1)\urate}{(1-\RPFac) (1-\urate)}\right) & =  1
-\\  \left(\frac{(\alpha-1)\urate}{ (1-\urate)}\right) & =  1-\RPFac
-\\  1-\left(\frac{(\alpha-1)\urate}{ (1-\urate)}\right) & =  \RPFac
-\\                  \left[1-\left(\frac{(\alpha-1)\urate}{ (1-\urate)}\right)\right] & =  (\Rfree \DiscFac)^{1/\CRRA}/\Rfree
-\\  \Rfree^{\CRRA}  \left[1-\left(\frac{(\alpha-1)\urate}{ (1-\urate)}\right)\right]^{\CRRA} & =  (\Rfree \DiscFac)
-\\  \Rfree^{\CRRA-1}\left[1-\left(\frac{(\alpha-1)\urate}{ (1-\urate)}\right)\right]^{\CRRA} & =  \DiscFacMaxGICWhenFHWCTBSHolds \label{eq:DiscountMaxGICWhenFHWCTBSHoldsAndGICPGroIsExactlySatisfied}
+    \left(\frac{(\mathfrak{a}-1)\urate}{(1-\RPFac) (1-\urate)}\right)^{\CRRA} & =  1
+\\  \left(\frac{(\mathfrak{a}-1)\urate}{(1-\RPFac) (1-\urate)}\right) & =  1
+\\  \left(\frac{(\mathfrak{a}-1)\urate}{ (1-\urate)}\right) & =  1-\RPFac
+\\  1-\left(\frac{(\mathfrak{a}-1)\urate}{ (1-\urate)}\right) & =  \RPFac
+\\                  \left[1-\left(\frac{(\mathfrak{a}-1)\urate}{ (1-\urate)}\right)\right] & =  (\Rfree \DiscFac)^{1/\CRRA}/\Rfree
+\\  \Rfree^{\CRRA}  \left[1-\left(\frac{(\mathfrak{a}-1)\urate}{ (1-\urate)}\right)\right]^{\CRRA} & =  (\Rfree \DiscFac)
+\\  \Rfree^{\CRRA-1}\left[1-\left(\frac{(\mathfrak{a}-1)\urate}{ (1-\urate)}\right)\right]^{\CRRA} & =  \DiscFacMaxGICWhenFHWCTBSHolds \label{eq:DiscountMaxGICWhenFHWCTBSHoldsAndGICPGroIsExactlySatisfied}
 .\end{aligned}\end{gathered}\end{equation}
 
-Somewhat miraculously, at this value of $\DiscFac$, because $\chi=0$, \eqref{eq:GPFacRawReqForTarget} holds with equality, which means that $\DiscFacMaxGICWhenFHWCTBSHolds=\DiscFacMaxGIChFix$.  This means that the \GIChFix~defines the definitive boundary condition:  A finite target $\mNrmE$ exists so long as $\DiscFac < \DiscFacMaxGIChFix = \WGroFachFix^{\CRRA}/\Rfree.$
+Somewhat miraculously, at this value of $\DiscFac$, because that bracketed term is then 0, \eqref{eq:GPFacRawReqForTarget} holds with equality, which means that $\DiscFacMaxGICWhenFHWCTBSHolds=\DiscFacMaxGIChFix$.  This means that the \GIChFix~defines the definitive boundary condition:  A finite target $\mNrmE$ exists so long as $\DiscFac < \DiscFacMaxGIChFix = \WGroFachFix^{\CRRA}/\Rfree.$
 
 \subsection{Solutions Exist Even When Growth Impatience Fails}
 
@@ -1068,16 +1068,16 @@ We have just demonstrated that satisfying the \GIChFix~condition is necessary an
 
 This can be understood as follows.  Rewrite the requirement for existence of a target, \eqref{eq:cDelEq0SlopeCondAlt}, as 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \MPC (1+\varpi)^{1/\CRRA}+1 & >   \RNrmByG  \label{eq:cDelEq0SlopeCondAltAlt}
+  \MPC \straight+1 & >   \RNrmByG  \label{eq:cDelEq0SlopeCondAltAlt}
 ,\end{aligned}\end{gathered}\end{equation}
 or taking logs we have approximately 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \MPC (1+\varpi)^{1/\CRRA} & >   \rfree-\WGroRtehFix \label{eq:cDelEq0SlopeCondLog}
+  \MPC \straight & >   \rfree-\WGroRtehFix \label{eq:cDelEq0SlopeCondLog}
 .\end{aligned}\end{gathered}\end{equation}
 
-The LHS captures the slope of the $\dcEqZero$ locus, which is $\MPC$ modified by $\varpi$ whose difference from $\varpi=0$ captures the degree of growth (im)patience.\footnote{`Captures' does not mean `is equal to.'  Equation~\eqref{eq:cDelEq0SlopeCondAlt} provides the actual formula for the slope.}  The RHS captures the slope of the $\dmEqZero$ locus.  Recall that the inequality captures the fact that a target $\mTrgNrm^{e}$ exists if these two loci intercept, which happens if the slope of $\dcEqZero$ exceeds that of $\dmEqZero$.
+The LHS captures the slope of the $\dcEqZero$ locus, which is $\MPC$ modified by $\straight$, whose difference from 1 captures the degree of growth (im)patience.\footnote{`Captures' does not mean `is equal to.'  Equation~\eqref{eq:cDelEq0SlopeCondAlt} provides the actual formula for the slope.}  The RHS captures the slope of the $\dmEqZero$ locus.  Recall that the inequality captures the fact that a target $\mTrgNrm^{e}$ exists if these two loci intercept, which happens if the slope of $\dcEqZero$ exceeds that of $\dmEqZero$.
 
-If the consumer is `growth patience poised' (that is, $\GPFachFix = 1$), then $\varpi = 0$ and the slope of the $\dcEqZero$ locus is identical to the $\MPC$ that characterizes the perfect foresight consumption function.  In this case \eqref{eq:cDelEq0SlopeCondLog} becomes
+If the consumer is `growth patience poised' (that is, $\GPFachFix = 1$), then $\straight = 1$ and the slope of the $\dcEqZero$ locus is identical to the $\MPC$ that characterizes the perfect foresight consumption function.  In this case \eqref{eq:cDelEq0SlopeCondLog} becomes
 \begin{equation}\begin{gathered}\begin{aligned}
   \rfree-\CRRA^{-1}(\rfree-\discRte) & >   \rfree-\WGroRtehFix
 \\ \WGroRtehFix & >  \CRRA^{-1}(\rfree-\discRte) \label{eq:patpGroLT0}
@@ -1085,9 +1085,9 @@ If the consumer is `growth patience poised' (that is, $\GPFachFix = 1$), then $\
 which is the (log version of) the \GIChFix.  The condition cannot hold both as an equality $\GPFachFix=1$ (our starting assumption) and an inequality $\GPFachFix < 1$ (the conclusion of \eqref{eq:patpGroLT0}).  This contradiction constitutes a proof that exactly at $\GPFachFix=1$ a target does not exist.
 
 
-As noted above, if the consumer is growth-impatient ($\GPFachFix < 1$) then $\varpi > 0$ and the slope of $\dcEqZero$ is monotonically increased as the degree of growth-impatience increases (so that target $\TargetNrm{\mNrm}^{e}$ is diminished).  
+As noted above, if the consumer is growth-impatient ($\GPFachFix < 1$) then $\straight > 1$ and the slope of $\dcEqZero$ is monotonically increased as the degree of growth-impatience increases (so that target $\TargetNrm{\mNrm}^{e}$ is diminished).  
 
-But if the consumer is growth-patient ($\GPFachFix > 1$) then $\varpi < 0$ and the slope of $\dcEqZero$ is diminished (which reflects the fact that the greater the degree of patience, the lower will consumption be for any given $\mNrmE$).\footnote{Note that if the \GIChFix~fails so that $\straight < 1$, the slope of the $\dcEqZero$ locus is shallower than the slope of the perfect foresight consumption function.  The fact that these two loci never intersect reflects the fact that the consumer will behave in such a way as to accumulate $\mNrmE$ forever.}  The lower bound is defined by the point at which the degree of growth patience becomes so strong that the slope of $\dcEqZero$ reaches zero (when $\straight=0$; equivalently, $\varpi$ reaches -1).  This restricts the permissible degree of growth patience, because $\straight > 0$ requires (rewrite \eqref{eq:GICExistsSoln}):
+But if the consumer is growth-patient ($\GPFachFix > 1$) then $\straight < 1$ and the slope of $\dcEqZero$ is diminished (which reflects the fact that the greater the degree of patience, the lower will consumption be for any given $\mNrmE$).\footnote{Note that if the \GIChFix~fails so that $\straight < 1$, the slope of the $\dcEqZero$ locus is shallower than the slope of the perfect foresight consumption function.  The fact that these two loci never intersect reflects the fact that the consumer will behave in such a way as to accumulate $\mNrmE$ forever.}  The lower bound is defined by the point at which the degree of growth patience becomes so strong that the slope of $\dcEqZero$ reaches zero (when $\straight=0$).  This restricts the permissible degree of growth patience, because $\straight > 0$ requires (rewrite \eqref{eq:GICExistsSoln}):
 \begin{equation}\begin{gathered}\begin{aligned}
   \left(\frac{(\Rfree \DiscFac (1-\urate))^{1/\CRRA}}{\WGroFac/(1-\urate)}\right) = \left(\frac{(\Rfree \DiscFac (1-\urate))^{1/\CRRA}}{\WGroFachFix}\right) & <  1
 .\end{aligned}\end{gathered}\end{equation}
@@ -1100,28 +1100,28 @@ The easiest way to understand all of this is graphically.  A notebook \cite{When
 
 \section{The Exact Formula for Target $m$}\label{sec:mTargExact}
 
-To simplify the expressions in the derivations below, we define $\zeta \equiv \RNrmByG \MPC \straight$ so that $\Rfree \MPC \straight = \zeta \WGroFachFix$ and we drop the $e$ superscripts, allowing \eqref{eq:cDelEqZero} to be rewritten as 
+To simplify the expressions in the derivations below, we use $\mathfrak{z} \equiv \RNrmByG \MPC \straight$ so that $\Rfree \MPC \straight = \mathfrak{z} \WGroFachFix$ and we drop the $e$ superscripts, allowing \eqref{eq:cDelEqZero} to be rewritten as 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \cNrm_{\tSS} & =  \left(\frac{\zeta }{1+\zeta}\right)\mNrm .
+  \cNrm_{\tSS} & =  \left(\frac{\mathfrak{z} }{1+\mathfrak{z}}\right)\mNrm .
 \end{aligned}\end{gathered}\end{equation}
 
 If a target value $\mTrgNrm$ exists it will be at the point of intersection between the $\dcEqZero$ and the $\dmEqZero$ loci:
 \begin{equation}\begin{gathered}\begin{aligned}
-  \left(\frac{\zeta}{1+\zeta}\right)\mTrgNrm^{\hideSup} & =  (1-\RNrmByG^{-1})\mTrgNrm^{\hideSup}+\RNrmByG^{-1}
-\\  \left(\RNrmByG\frac{\zeta}{1+\zeta}\right)\mTrgNrm^{\hideSup} & =  (\RNrmByG-1)\mTrgNrm^{\hideSup}+1
-\\  \left(\RNrmByG\left\{\frac{\zeta}{1+\zeta}-1\right\}+1\right)\mTrgNrm^{\hideSup} & =  1
-\\  \left(\RNrmByG\left\{\frac{\zeta-(1+\zeta)}{1+\zeta}\right\}+\frac{1+\zeta}{1+\zeta}\right)\mTrgNrm^{\hideSup} & =  1
-\\  \left(\frac{1+\zeta-\RNrmByG}{1+\zeta}\right)\mTrgNrm^{\hideSup} & =  1
-\\  \mTrgNrm^{\hideSup} & =  \left(\frac{1+\zeta}{1+\zeta-\RNrmByG}\right)
-\\  \mTrgNrm^{\hideSup} & =  \left(\frac{1+\zeta+\RNrmByG-\RNrmByG}{1+\zeta-\RNrmByG}\right)
-\\ & =  1 + \left(\frac{\RNrmByG}{1+\zeta-\RNrmByG}\right)
-\\ & =  1 + \left(\frac{\Rfree}{\WGroFachFix+\zeta\WGroFachFix-\Rfree}\right)  \label{eq:mTarget}
+  \left(\frac{\mathfrak{z}}{1+\mathfrak{z}}\right)\mTrgNrm^{\hideSup} & =  (1-\RNrmByG^{-1})\mTrgNrm^{\hideSup}+\RNrmByG^{-1}
+\\  \left(\RNrmByG\frac{\mathfrak{z}}{1+\mathfrak{z}}\right)\mTrgNrm^{\hideSup} & =  (\RNrmByG-1)\mTrgNrm^{\hideSup}+1
+\\  \left(\RNrmByG\left\{\frac{\mathfrak{z}}{1+\mathfrak{z}}-1\right\}+1\right)\mTrgNrm^{\hideSup} & =  1
+\\  \left(\RNrmByG\left\{\frac{\mathfrak{z}-(1+\mathfrak{z})}{1+\mathfrak{z}}\right\}+\frac{1+\mathfrak{z}}{1+\mathfrak{z}}\right)\mTrgNrm^{\hideSup} & =  1
+\\  \left(\frac{1+\mathfrak{z}-\RNrmByG}{1+\mathfrak{z}}\right)\mTrgNrm^{\hideSup} & =  1
+\\  \mTrgNrm^{\hideSup} & =  \left(\frac{1+\mathfrak{z}}{1+\mathfrak{z}-\RNrmByG}\right)
+\\  \mTrgNrm^{\hideSup} & =  \left(\frac{1+\mathfrak{z}+\RNrmByG-\RNrmByG}{1+\mathfrak{z}-\RNrmByG}\right)
+\\ & =  1 + \left(\frac{\RNrmByG}{1+\mathfrak{z}-\RNrmByG}\right)
+\\ & =  1 + \left(\frac{\Rfree}{\WGroFachFix+\mathfrak{z}\WGroFachFix-\Rfree}\right)  \label{eq:mTarget}
 .
 \end{aligned}\end{gathered}\end{equation}
 
 A first point about this formula is suggested by the fact that
 \begin{equation}\begin{gathered}\begin{aligned}
-  \zeta\WGroFachFix & =  \Rfree \MPC \left(1+\left(\frac{\GPFachFix^{-\CRRA} - 1}{\urate}\right)\right)^{1/\CRRA}
+  \mathfrak{z}\WGroFachFix & =  \Rfree \MPC \left(1+\left(\frac{\GPFachFix^{-\CRRA} - 1}{\urate}\right)\right)^{1/\CRRA}
 \end{aligned}\end{gathered}\end{equation}
 which is likely to increase as $\urate$ approaches zero.\footnote{`Likely' but not certain because of the fact that $\urate$ affects $\GPFachFix$ as well as
   appearing in the denominator of \eqref{eq:mTarget}; however, for
@@ -1136,7 +1136,7 @@ zero.
 
 We now show that the RIC and \GIChFix~ensure that the denominator of the fraction in \eqref{eq:mTarget} is positive: 
 \begin{equation*}\begin{gathered}\begin{aligned}
-\WGroFachFix + \zeta \WGroFachFix - \Rfree & =  \WGroFachFix + \Rfree \MPC \straight - \Rfree
+\WGroFachFix + \mathfrak{z} \WGroFachFix - \Rfree & =  \WGroFachFix + \Rfree \MPC \straight - \Rfree
  \\& =  \WGroFachFix + \Rfree \left(1- \frac{(\Rfree \DiscFac)^{1/\CRRA}}{\Rfree}\right) \left(\frac{(\frac{(\Rfree\DiscFac)^{1/\CRRA}}{\WGroFachFix})^{-\CRRA}-1}{\urate}+1\right)^{1/\CRRA}-\Rfree
  \\& >   \WGroFachFix+\Rfree \left(1-\frac{(\Rfree\DiscFac)^{1/\CRRA}}{\Rfree}\right)
 \left(\frac{(\frac{(\Rfree\DiscFac)^{1/\CRRA}}{\WGroFachFix})^{-\CRRA}-1}{1}+1\right)^{1/\CRRA}-\Rfree
@@ -1152,16 +1152,16 @@ not necessarily imply that the denominator is decreasing as $\urate$ moves from 
 
 \section{Approximating Target $m$}
 
-Now defining
+Now noting that
 \begin{equation}\begin{gathered}\begin{aligned}
-  \aleph & =  \left(\frac{\GPFachFix^{-\CRRA} - 1}{\urate}\right),
+  \straight^{\CRRA}-1 & =  \left(\frac{\GPFachFix^{-\CRRA} - 1}{\urate}\right),
 \end{aligned}\end{gathered}\end{equation}
 under certain conditions we can obtain further insight into \eqref{eq:mTarget} using a judicious mix of first- and second-order Taylor expansions (along with $\MPC = -\RPRte$):\footnote{See below for caveats.}
 \begin{equation}\begin{gathered}\begin{aligned}
   \label{eq:zetaExp}
-  \zeta\WGroFachFix & =  \Rfree \MPC \left(1+\aleph\right)^{1/\CRRA}
-\\ & \approx  -\Rfree \RPRte \left(1+\CRRA^{-1}\aleph+(\CRRA^{-1})(\CRRA^{-1}-1)(\aleph^{2}/2)\right)
-\\ & =  -\Rfree \RPRte \left(1+\CRRA^{-1}\aleph\left\{1+\left(\frac{1-\CRRA}{\CRRA}\right)(\aleph/2)\right\}\right) %\label{eq:zetaTaylor2}
+  \mathfrak{z}\WGroFachFix & =  \Rfree \MPC \left(1+(\straight^{\CRRA}-1)\right)^{1/\CRRA}
+\\ & \approx  -\Rfree \RPRte \left(1+\CRRA^{-1}(\straight^{\CRRA}-1)+(\CRRA^{-1})(\CRRA^{-1}-1)((\straight^{\CRRA}-1)^{2}/2)\right)
+\\ & =  -\Rfree \RPRte \left(1+\CRRA^{-1}(\straight^{\CRRA}-1)\left\{1+\left(\frac{1-\CRRA}{\CRRA}\right)((\straight^{\CRRA}-1)/2)\right\}\right) %\label{eq:zetaTaylor2}
 %\\ & \approx  - \Rfree \RPRte \left\{1+\CRRA^{-1}\left(\frac{(1+\GPRtehFix)^{-\CRRA} - 1}{\urate}\right)\right\}
 %\\ & \approx  - \Rfree \RPRte \left\{1+\CRRA^{-1}\left(\frac{1-\CRRA \GPRtehFix- 1}{\urate}\right)\right\}
 %\\ & \approx  - \Rfree \RPRte\left(1+\left(\frac{1}{\CRRA}\right)\frac{1-\CRRA\GPRtehFix - 1}{\urate}\right)
@@ -1172,13 +1172,13 @@ under certain conditions we can obtain further insight into \eqref{eq:mTarget} u
 But
 \begin{equation}\begin{gathered}\begin{aligned}
   \label{eq:hatpi}
-  \aleph & =  \left(\frac{(1+\GPRtehFix)^{-\CRRA}-1}{\urate}\right)
+  \straight^{\CRRA}-1 & =  \left(\frac{(1+\GPRtehFix)^{-\CRRA}-1}{\urate}\right)
 \\ & \approx  \left(\frac{1- \CRRA \GPRtehFix-1}{\urate}\right)
 \\ & \approx  -\left(\frac{\CRRA \GPRtehFix}{\urate}\right)
 \end{aligned}\end{gathered}\end{equation}
-which is guaranteed to be positive by the \GIChFix, but which can take any value in the interval $(0,\infty)$.  Note, however, that the approximations above are valid only if $\aleph$ is `small' which requires that the degree of growth impatience be small relative to the size of the unemployment risk.  Thus, the formulas derived above (and used below) are reliable only in rather special circumstances, in particular when the consumer is only very slightly growth-impatient.\footnote{Other approximations are better for consumers who are highly impatient, relative to their unemployment risk; in this case a better approximation to \eqref{eq:zetaExp} is obtained by rewriting it as $\zeta\WGroFachFix = \Rfree \MPC \aleph^{1/\CRRA} \left(1+\aleph^{-1}\right)^{1/\CRRA}$ and approximating using $(1+\aleph^{-1})^{1/\CRRA} \approx 1 + \CRRA^{-1}\aleph^{-1}+\CRRA^{-1}(\CRRA^{-1}-1)\aleph^{-2}/2$.}  Under these circumstances, this approximation can be substituted into \eqref{eq:zetaExp} to obtain
+which is guaranteed to be positive by the \GIChFix, but which can take any value in the interval $(0,\infty)$.  Note, however, that the approximations above are valid only if $\straight$ is close to 1, which requires that the degree of growth impatience be small relative to the size of the unemployment risk.  Thus, the formulas derived above (and used below) are reliable only in rather special circumstances, in particular when the consumer is only very slightly growth-impatient.\footnote{Other approximations are better for consumers who are highly impatient, relative to their unemployment risk; in this case a better approximation to \eqref{eq:zetaExp} is obtained by rewriting it as $\mathfrak{z}\WGroFachFix = \Rfree \MPC (\straight^{\CRRA}-1)^{1/\CRRA} \left(1+(\straight^{\CRRA}-1)^{-1}\right)^{1/\CRRA}$ and approximating using $(1+(\straight^{\CRRA}-1)^{-1})^{1/\CRRA} \approx 1 + \CRRA^{-1}(\straight^{\CRRA}-1)^{-1}+\CRRA^{-1}(\CRRA^{-1}-1)(\straight^{\CRRA}-1)^{-2}/2$.}  Under these circumstances, this approximation can be substituted into \eqref{eq:zetaExp} to obtain
 \begin{equation}\begin{gathered}\begin{aligned}
-  \zeta\WGroFachFix & \approx   -\Rfree \RPRte \left(1-(\GPRtehFix/\urate)(1+(1-\CRRA)(-\GPRtehFix/\urate)/2)\right)
+  \mathfrak{z}\WGroFachFix & \approx   -\Rfree \RPRte \left(1-(\GPRtehFix/\urate)(1+(1-\CRRA)(-\GPRtehFix/\urate)/2)\right)
 \\ & \approx  \underbrace{-\Rfree \RPRte}_{>0} \left\{1\underbrace{-(\GPRtehFix/\urate)}_{>0}\left(1+\underbrace{(1-\CRRA)}_{<0}\underbrace{(-\GPRtehFix/\urate)}_{>0}/2\right)\right\} \label{eq:zetaGammaApprox}
 .
 \end{aligned}\end{gathered}\end{equation}
@@ -1228,7 +1228,7 @@ this means that we need:
 \\ 0 & >  \GPRtehFix -  \RPRte(\GPRteAdj/\urate) \label{eq:newDenom}
 .
 \end{aligned}\end{gathered}\end{equation}
-But since the RIC guarantees $\RPRte<0$ and the \GIChFix~guarantees $\GPRtehFix<0$ (which, in turn, guarantees $\GPRteAdj < 0$), this condition must hold.\footnote{In more detail: For the second-order Taylor approximation in \eqref{eq:zetaExp}, we implicitly assume that the absolute value of the second-order term is much smaller than that of the first-order one, i.e. $|\CRRA^{-1} \aleph | \geq |(\CRRA^{-1})(\CRRA^{-1}-1)(\aleph^{2}/2)|$. Substituting \eqref{eq:hatpi}, the above could be simplified to $1 \geq (-\GPRtehFix/\urate)\prudEx$, therefore we have $\GPRteAdj < 0$. This simple justification is based on the confidence that we have proved above that RIC and \GIChFix~guarantee the denominator of the fraction in \eqref{eq:mTarget} is positive.}
+But since the RIC guarantees $\RPRte<0$ and the \GIChFix~guarantees $\GPRtehFix<0$ (which, in turn, guarantees $\GPRteAdj < 0$), this condition must hold.\footnote{In more detail: For the second-order Taylor approximation in \eqref{eq:zetaExp}, we implicitly assume that the absolute value of the second-order term is much smaller than that of the first-order one, i.e. $|\CRRA^{-1} (\straight^{\CRRA}-1) | \geq |(\CRRA^{-1})(\CRRA^{-1}-1)((\straight^{\CRRA}-1)^{2}/2)|$. Substituting \eqref{eq:hatpi}, the above could be simplified to $1 \geq (-\GPRtehFix/\urate)\prudEx$, therefore we have $\GPRteAdj < 0$. This simple justification is based on the confidence that we have proved above that RIC and \GIChFix~guarantee the denominator of the fraction in \eqref{eq:mTarget} is positive.}
 
 The same set of derivations imply that we can
 replace the denominator in \eqref{eq:mTargetApprox} with the negative
@@ -1304,27 +1304,27 @@ of the marginal propensity to consume as well.  These are obtained
 by differentiating the consumption Euler equation with respect to $m_{t}$:
 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \uP(\cFunc^{e}(\mNrm_{t})) & = \overbrace{\RNrmByG \DiscFac \WGroFachFix^{1-\CRRA}}^{\beth} \Ex_{t}[\uP(\cFunc^{\bullet}(\mNrm_{t+1}))]
-\\  \uFunc^{\prime\prime}(\cFunc^{e}(\mNrm_{t}))\MPCFunc^{e}(\mNrm_{t}) & = \beth  \RNrmByG (1-\MPCFunc^{e}(\mNrm_{t}))\Ex_{t}[\uFunc^{\prime\prime}(\cFunc^{\bullet}(\mNrm_{t+1}))\MPCFunc^{\bullet}(\mNrm_{t+1})] \label{eq:dEuler}
+  \uP(\cFunc^{e}(\mNrm_{t})) & = \overbrace{\RNrmByG \DiscFac \WGroFachFix^{1-\CRRA}}^{\DiscFacAlt} \Ex_{t}[\uP(\cFunc^{\bullet}(\mNrm_{t+1}))]
+\\  \uFunc^{\prime\prime}(\cFunc^{e}(\mNrm_{t}))\MPCFunc^{e}(\mNrm_{t}) & = \DiscFacAlt  \RNrmByG (1-\MPCFunc^{e}(\mNrm_{t}))\Ex_{t}[\uFunc^{\prime\prime}(\cFunc^{\bullet}(\mNrm_{t+1}))\MPCFunc^{\bullet}(\mNrm_{t+1})] \label{eq:dEuler}
 \end{aligned}\end{gathered}\end{equation}
 so that defining, e.g., $\MPCE_{t} = \MPCFunc^{e}(\mNrm_{t})$ we have 
 \begin{equation}\begin{gathered}\begin{aligned}
- \MPCE_{t} & =  (1-\MPCE_{t}) \underbrace{\beth \RNrmByG (1/\uPP({\cNrm}^{e}_{t}))\Ex_{t}\left[\uPP(c^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}\right]}_{\equiv \natural_{t+1}} \notag %\label{eq:natural} 
+ \MPCE_{t} & =  (1-\MPCE_{t}) \underbrace{\DiscFacAlt \RNrmByG (1/\uPP({\cNrm}^{e}_{t}))\Ex_{t}\left[\uPP(c^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}\right]}_{\equiv \natural_{t+1}} \notag %\label{eq:natural} 
 \\ (1+\natural_{t+1})\MPCE_{t} & = \natural_{t+1} \label{eq:naturalMPC}
 \\ \MPCE_{t} & = \left(\frac{\natural_{t+1}}{1+\natural_{t+1}}\right) \notag %\label{eq:naturalSolved}
 .
 \end{aligned}\end{gathered}\end{equation}
 At the target level of $\mNrmE$ we have 
 \begin{equation*}\begin{gathered}\begin{aligned}
-  \overbrace{(1/\uPP(\cTrgNrm^{e}))\Ex_{t}\left[\uPP(c^{\bullet})\MPC^{\bullet}\right]}^{\natural / \RNrmByG \beth} & =  \erate \overbrace{(\uPP(\cTrgNrm^{e})/\uPP(\cTrgNrm^{e}))}^{=1}\MPCE+\urate (\uPP(\cTrgNrm^{u})/\uPP(\cTrgNrm^{e}))\MPC
+  \overbrace{(1/\uPP(\cTrgNrm^{e}))\Ex_{t}\left[\uPP(c^{\bullet})\MPC^{\bullet}\right]}^{\natural / \RNrmByG \DiscFacAlt} & =  \erate \overbrace{(\uPP(\cTrgNrm^{e})/\uPP(\cTrgNrm^{e}))}^{=1}\MPCE+\urate (\uPP(\cTrgNrm^{u})/\uPP(\cTrgNrm^{e}))\MPC
 \end{aligned}\end{gathered}\end{equation*}
 so that 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \natural & =   \beth \RNrmByG (\erate \MPCE + \urate (\cTrgNrm^{u}/\cTrgNrm^{e})^{-\CRRA-1} \MPC)
+  \natural & =   \DiscFacAlt \RNrmByG (\erate \MPCE + \urate (\cTrgNrm^{u}/\cTrgNrm^{e})^{-\CRRA-1} \MPC)
 \end{aligned}\end{gathered}\end{equation}
 yielding from \eqref{eq:naturalMPC} a quadratic equation in $\MPCE$:
 \begin{equation}\begin{gathered}\begin{aligned}
-  \left(1+\beth \RNrmByG (\erate \MPCE + \urate (\cTrgNrm^{u}/\cTrgNrm^{e})^{-\CRRA-1}  \MPC) \right)\MPCE & =  \beth \RNrmByG (\erate \MPCE + \urate (\cTrgNrm^{u}/\cTrgNrm^{e})^{-\CRRA-1} \MPC) \label{eq:quadraticForTargetMPC}
+  \left(1+\DiscFacAlt \RNrmByG (\erate \MPCE + \urate (\cTrgNrm^{u}/\cTrgNrm^{e})^{-\CRRA-1}  \MPC) \right)\MPCE & =  \DiscFacAlt \RNrmByG (\erate \MPCE + \urate (\cTrgNrm^{u}/\cTrgNrm^{e})^{-\CRRA-1} \MPC) \label{eq:quadraticForTargetMPC}
 \end{aligned}\end{gathered}\end{equation} 
 which has one solution for $\MPCE$ in the interval $[0,1]$, which is the MPC at target wealth.\footnote{The 
 \Mma code constructs this derivative and solves the quadratic equation analytically; the Matlab code simply copies
@@ -1333,17 +1333,17 @@ the analytical formula generated by \Mma.}
 The limiting MPC as consumption approaches zero, $\bar{\MPC}^{e},$ will also be useful; this is obtained
 by noting that utility in the employed state next year becomes asymptotically irrelevant as ${\cNrm}^{e}_{t}$ approaches zero, so that 
 \begin{equation*}\begin{gathered}\begin{aligned}
-  \lim_{{\cNrm}^{e}_{t} \rightarrow 0}  \overbrace{ \beth \RNrmByG \MPCE_{t+1} \left(\erate ({\cNrm}^{e}_{t+1}/{\cNrm}^{e}_{t})^{-\CRRA-1}  + \urate (\cNrmU_{t+1}/{\cNrm}^{e}_{t})^{-\CRRA-1}\MPC\right)}^{\natural_{t+1}} & =  \beth \RNrmByG \urate (\cNrmU_{t+1}/{\cNrm}^{e}_{t})^{-\CRRA-1}\MPC
-\\  & =  \beth \RNrmByG \urate (\MPC \RNrmByG \aNrmE_{t}/(\aNrmE_{t}(\bar{\MPC}^{e}/(1-\bar{\MPC}^{e})))^{-\CRRA-1})\MPC
-\\ & =  \beth \RNrmByG \urate (\MPC \RNrmByG ((1-\bar{\MPC}^{e})/\bar{\MPC}^{e}))^{-\CRRA-1}\MPC
-%\\ & =  \beth \RNrmByG \urate (\MPC \RNrmByG)^{-\CRRA-1} \MPC
+  \lim_{{\cNrm}^{e}_{t} \rightarrow 0}  \overbrace{ \DiscFacAlt \RNrmByG \MPCE_{t+1} \left(\erate ({\cNrm}^{e}_{t+1}/{\cNrm}^{e}_{t})^{-\CRRA-1}  + \urate (\cNrmU_{t+1}/{\cNrm}^{e}_{t})^{-\CRRA-1}\MPC\right)}^{\natural_{t+1}} & =  \DiscFacAlt \RNrmByG \urate (\cNrmU_{t+1}/{\cNrm}^{e}_{t})^{-\CRRA-1}\MPC
+\\  & =  \DiscFacAlt \RNrmByG \urate (\MPC \RNrmByG \aNrmE_{t}/(\aNrmE_{t}(\bar{\MPC}^{e}/(1-\bar{\MPC}^{e})))^{-\CRRA-1})\MPC
+\\ & =  \DiscFacAlt \RNrmByG \urate (\MPC \RNrmByG ((1-\bar{\MPC}^{e})/\bar{\MPC}^{e}))^{-\CRRA-1}\MPC
+%\\ & =  \DiscFacAlt \RNrmByG \urate (\MPC \RNrmByG)^{-\CRRA-1} \MPC
 \end{aligned}\end{gathered}\end{equation*}
 so that from \eqref{eq:naturalMPC} we have 
 \begin{equation}\begin{gathered}\begin{aligned}
   \bar{\MPC}^{e} \equiv \lim_{\mNrm_{t} \rightarrow 0} \MPCFunc^{e}(\mNrm_{t}) & =  \left(\frac{
-\beth \RNrmByG \urate (\MPC \RNrmByG ((1-\bar{\MPC}^{e})/\bar{\MPC}^{e}))^{-\CRRA-1}\MPC
+\DiscFacAlt \RNrmByG \urate (\MPC \RNrmByG ((1-\bar{\MPC}^{e})/\bar{\MPC}^{e}))^{-\CRRA-1}\MPC
 }{1+
-\beth \RNrmByG \urate (\MPC \RNrmByG ((1-\bar{\MPC}^{e})/\bar{\MPC}^{e}))^{-\CRRA-1}\MPC
+\DiscFacAlt \RNrmByG \urate (\MPC \RNrmByG ((1-\bar{\MPC}^{e})/\bar{\MPC}^{e}))^{-\CRRA-1}\MPC
 }\right) \label{eq:MPCat0}
 \end{aligned}\end{gathered}\end{equation}
 which implicitly defines $\bar{\MPC}^{e}$.  An explicit solution is not available, but after 
@@ -1352,47 +1352,47 @@ parameter values have been defined a numerical rootfinder can calculate a soluti
 Finally, it will be useful to have an estimate of the curvature (second derivative) of the consumption function.  This can be obtained by a procedure analogous to the one used to obtain the MPC: differentiate the differentiated Euler equation \eqref{eq:dEuler} again.  Noting that $\MPC^{u\prime}=0$ we can obtain:
 \begin{equation}\begin{gathered}\begin{aligned}
 \lefteqn{  (\MPCFunc^{e}_{t})^{2} \uPPP(\cFunc^{e}_{t}) +\MPCFunc_{t}^{e\prime}\uPP(\cFunc^{e}_{t}) = } &   \nonumber \\ 
-&  \beth \RNrmByG \left\{(-\MPCFunc_{t}^{e\prime}) \Ex_{t}[\uPP(\cFunc^{\bullet}_{t+1})\MPCFunc^{\bullet}_{t+1}]
+&  \DiscFacAlt \RNrmByG \left\{(-\MPCFunc_{t}^{e\prime}) \Ex_{t}[\uPP(\cFunc^{\bullet}_{t+1})\MPCFunc^{\bullet}_{t+1}]
 +  \RNrmByG (1-\MPCFunc^{e}_{t})^{2}\left(\Ex_{t}[(\MPCFunc_{t+1}^{\bullet})^{2}\uPPP(\cFunc^{\bullet}_{t+1})]+\erate  \uPP(\cFunc^{e}_{t+1})\MPCFunc_{t+1}^{e\prime}\right)\right\} \nonumber \\ \label{eq:kappaPExpr}
 \end{aligned}\end{gathered}\end{equation}
 \begin{comment} % The following attempts to derive an expression that will be useful in determining a functional form for \MPC^{e \prime} as c goes to infinity
 the limit of which as ${\cNrm}^{e}_{t} \rightarrow \infty$ is 
 \begin{equation}\begin{gathered}\begin{aligned}
 \lefteqn{  (\MPCE)^{2} \uPPP({\cNrm}^{e}_{t}) +\MPC^{e\prime}\uPP({\cNrm}^{e}_{t}) = } &   \nonumber \\ 
-&  \beth \RNrmByG (-\MPC^{e\prime}) \Ex_{t}[\uPP(\cFunc^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}]
- + \beth \RNrmByG^{2} (1-\MPCE)^{2} (\Ex_{t}[(\MPC_{t+1}^{\bullet})^{2}\uPPP(\cFunc^{\bullet}_{t+1})]+\erate \uPP({\cNrm}^{e}_{t+1})\MPC^{e\prime}) \nonumber
+&  \DiscFacAlt \RNrmByG (-\MPC^{e\prime}) \Ex_{t}[\uPP(\cFunc^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}]
+ + \DiscFacAlt \RNrmByG^{2} (1-\MPCE)^{2} (\Ex_{t}[(\MPC_{t+1}^{\bullet})^{2}\uPPP(\cFunc^{\bullet}_{t+1})]+\erate \uPP({\cNrm}^{e}_{t+1})\MPC^{e\prime}) \nonumber
 \end{aligned}\end{gathered}\end{equation}
 but since as ${\cNrm}^{e}_{t} \rightarrow \infty$ the ratio of ${\cNrm}^{e}/\cTrgNrm^{u}$ approaches 1 this approaches
 \begin{equation}\begin{gathered}\begin{aligned}
 \lefteqn{  (\MPCE)^{2} \uPPP({c}_{t}) +\MPC^{e\prime}_{t}\uPP(c_{t}) = } &   \nonumber \\ 
-&  \beth \RNrmByG (-\MPC^{e\prime}_{t}) \uPP(c_{t+1})\MPC
- + \beth \RNrmByG^{2} (1-\MPCE)^{2} (\MPCE)^{2}\uPPP(c_{t+1})+\erate \uPP({c}_{t+1})\MPC^{e\prime}_{t+1}) \nonumber
+&  \DiscFacAlt \RNrmByG (-\MPC^{e\prime}_{t}) \uPP(c_{t+1})\MPC
+ + \DiscFacAlt \RNrmByG^{2} (1-\MPCE)^{2} (\MPCE)^{2}\uPPP(c_{t+1})+\erate \uPP({c}_{t+1})\MPC^{e\prime}_{t+1}) \nonumber
 \end{aligned}\end{gathered}\end{equation}
 but since $c_{t+1}$ approaches $\mu c_{t}$ this can be rewritten
 \begin{equation}\begin{gathered}\begin{aligned}
 \lefteqn{  (\MPCE)^{2} \uPPP({c}_{t}) +\MPC^{e\prime}_{t}\uPP(c_{t}) = } &   \nonumber \\ 
-&  \beth \RNrmByG (-\MPC^{e\prime}_{t}) \uPP(c_{t}) \mu^{-\CRRA-1}\MPC
- + \beth \RNrmByG^{2} (1-\MPCE)^{2} (\MPCE)^{2}\uPPP(c_{t})\mu^{-\CRRA-2}+\erate \uPP({c}_{t})\mu^{-\CRRA-2}\MPC^{e\prime}_{t+1}) \nonumber
+&  \DiscFacAlt \RNrmByG (-\MPC^{e\prime}_{t}) \uPP(c_{t}) \mu^{-\CRRA-1}\MPC
+ + \DiscFacAlt \RNrmByG^{2} (1-\MPCE)^{2} (\MPCE)^{2}\uPPP(c_{t})\mu^{-\CRRA-2}+\erate \uPP({c}_{t})\mu^{-\CRRA-2}\MPC^{e\prime}_{t+1}) \nonumber
 \end{aligned}\end{gathered}\end{equation}
 and dividing both sides by $\uPP(c_{t})$ and realizing that $\uPPP(c)/\uPP(c) = (\CRRA+1)/c$ we have
 \begin{equation}\begin{gathered}\begin{aligned}
 \lefteqn{  (\MPCE)^{2} (\CRRA+1)/c_{t} +\MPC^{e\prime}_{t}= } &   \nonumber \\ 
-&  \beth \RNrmByG (-\MPC^{e\prime}_{t})  \mu^{-\CRRA-1}\MPC
- + \beth \RNrmByG^{2} (1-\MPCE)^{2} (\MPCE)^{2}\mu^{-\CRRA-2}(\CRRA+1)/c_{t}+\erate \mu^{-\CRRA-2}\MPC^{e\prime}_{t+1}) \nonumber
+&  \DiscFacAlt \RNrmByG (-\MPC^{e\prime}_{t})  \mu^{-\CRRA-1}\MPC
+ + \DiscFacAlt \RNrmByG^{2} (1-\MPCE)^{2} (\MPCE)^{2}\mu^{-\CRRA-2}(\CRRA+1)/c_{t}+\erate \mu^{-\CRRA-2}\MPC^{e\prime}_{t+1}) \nonumber
 \end{aligned}\end{gathered}\end{equation}
 \end{comment}
 so that
 \begin{equation}\begin{gathered}\begin{aligned}
-\MPCFunc^{e\prime}_{t}   & =  \left(\frac{\beth \RNrmByG^{2} (1-\MPCFunc^{e}_{t})^{2} \left( \Ex_{t}[(\MPCFunc_{t+1}^{\bullet})^{2}\uPPP(\cFunc^{\bullet}_{t+1})] +\erate \uPP(\cFunc^{e}_{t+1}) \MPCFunc^{e \prime}_{t+1}\right)-(\MPCFunc^{e}_{t})^{2} \uPPP(\cFunc^{e}_{t})}{\uPP(\cFunc^{e}_{t})+\beth \RNrmByG \Ex_{t}[\uPP(\cFunc^{\bullet}_{t+1})\MPCFunc^{\bullet}_{t+1}]  }\right) \nonumber \\ \label{eq:kappaPReverse}
+\MPCFunc^{e\prime}_{t}   & =  \left(\frac{\DiscFacAlt \RNrmByG^{2} (1-\MPCFunc^{e}_{t})^{2} \left( \Ex_{t}[(\MPCFunc_{t+1}^{\bullet})^{2}\uPPP(\cFunc^{\bullet}_{t+1})] +\erate \uPP(\cFunc^{e}_{t+1}) \MPCFunc^{e \prime}_{t+1}\right)-(\MPCFunc^{e}_{t})^{2} \uPPP(\cFunc^{e}_{t})}{\uPP(\cFunc^{e}_{t})+\DiscFacAlt \RNrmByG \Ex_{t}[\uPP(\cFunc^{\bullet}_{t+1})\MPCFunc^{\bullet}_{t+1}]  }\right) \nonumber \\ \label{eq:kappaPReverse}
 \end{aligned}\end{gathered}\end{equation}
 %leading to a dynamic equation for $\MPC_{t}^{e\prime}$
 %\begin{equation}\begin{gathered}\begin{aligned}
-%\MPC_{t}^{e\prime} & =  \left(\frac{\beth \RNrmByG^{2} (1-\MPCE_{t})^{2} (\Ex_{t}[(\MPC_{t+1}^{\bullet})^{2}\uPPP(c^{\bullet}_{t+1})]+\erate \uPP({\cNrm}^{e}_{t+1}) -(\MPCE_{t})^{2} \uPPP({\cNrm}^{e}_{t}))}{\uPP({\cNrm}^{e}_{t})+\beth \RNrmByG \Ex_{t}[\uPP(c^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}]}\right)  \nonumber
+%\MPC_{t}^{e\prime} & =  \left(\frac{\DiscFacAlt \RNrmByG^{2} (1-\MPCE_{t})^{2} (\Ex_{t}[(\MPC_{t+1}^{\bullet})^{2}\uPPP(c^{\bullet}_{t+1})]+\erate \uPP({\cNrm}^{e}_{t+1}) -(\MPCE_{t})^{2} \uPPP({\cNrm}^{e}_{t}))}{\uPP({\cNrm}^{e}_{t})+\DiscFacAlt \RNrmByG \Ex_{t}[\uPP(c^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}]}\right)  \nonumber
 %\end{aligned}\end{gathered}\end{equation}
 %whose limit as ${\cNrm}^{e} \rightarrow \infty$ is 
 which can be further simplified at the target because $\MPCFunc^{e \prime}_{t}(\mTrgNrm^{\hideSup}) = \MPCFunc^{e \prime}_{t+1}(\mTrgNrm^{\hideSup}) = \MPC^{e \prime}$ so that
 \begin{equation}\begin{gathered}\begin{aligned}
-\MPC^{e\prime} & =  \left(\frac{\beth \RNrmByG^{2} (1-\MPCE)^{2}\Ex_{t}[(\MPC^{\bullet})^{2} \uPPP(c^{\bullet})] -(\MPCE)^{2} \uPPP(\cTrgNrm^{e})}{\uPP(\cTrgNrm^{e}) + \beth \RNrmByG \Ex_{t}[\uPP(c^{\bullet})\MPC^{\bullet}]- \beth \RNrmByG^{2} (1-\MPCE)^{2}\erate \uPP(\cTrgNrm^{e})}\right) \label{eq:MPCPrimeSS}
+\MPC^{e\prime} & =  \left(\frac{\DiscFacAlt \RNrmByG^{2} (1-\MPCE)^{2}\Ex_{t}[(\MPC^{\bullet})^{2} \uPPP(c^{\bullet})] -(\MPCE)^{2} \uPPP(\cTrgNrm^{e})}{\uPP(\cTrgNrm^{e}) + \DiscFacAlt \RNrmByG \Ex_{t}[\uPP(c^{\bullet})\MPC^{\bullet}]- \DiscFacAlt \RNrmByG^{2} (1-\MPCE)^{2}\erate \uPP(\cTrgNrm^{e})}\right) \label{eq:MPCPrimeSS}
 .
 \end{aligned}\end{gathered}\end{equation}
 
@@ -1407,9 +1407,9 @@ since $\lim_{\mNrmE_{t} \rightarrow \infty} \MPCFunc(\mNrmE_{t}) = \MPC$ and the
 $\cFunc^{e}$ and $\cFunc^{u}$ is finite, analysis like that which led to \eqref{eq:MPCPrimeSS} should convince
 the reader that
 \begin{equation}\begin{gathered}\begin{aligned}
-\lim_{\mNrmE_{t} \rightarrow \infty} \MPCFunc^{e\prime}(\mNrmE_{t}) & =  \left(\frac{\uPPP({\cNrm}^{e}_{t}) (\beth \RNrmByG^{2} (1-\MPC)^{2}\MPC^{2}  -\MPC^{2}) }{\uPP(\cTrgNrm^{e})(1-\beth \RNrmByG^{2} (1-\MPC)^{2}\erate  + \beth \RNrmByG \MPC}\right)
-\\ & =  -(1/{\cNrm}^{e}_{t})\left(\frac{(\CRRA+1) (\beth \RNrmByG^{2} (1-\MPC)^{2}-1)\MPC^{2}  }{1-\beth \RNrmByG^{2} (1-\MPC)^{2}\erate  + \beth \RNrmByG \MPC}\right)
-\\ & =  -(1/\mNrmE_{t})\left(\frac{(\CRRA+1) (\beth \RNrmByG^{2} (1-\MPC)^{2}-1)\MPC  }{1-\beth \RNrmByG^{2} (1-\MPC)^{2}\erate  + \beth \RNrmByG \MPC}\right)
+\lim_{\mNrmE_{t} \rightarrow \infty} \MPCFunc^{e\prime}(\mNrmE_{t}) & =  \left(\frac{\uPPP({\cNrm}^{e}_{t}) (\DiscFacAlt \RNrmByG^{2} (1-\MPC)^{2}\MPC^{2}  -\MPC^{2}) }{\uPP(\cTrgNrm^{e})(1-\DiscFacAlt \RNrmByG^{2} (1-\MPC)^{2}\erate  + \DiscFacAlt \RNrmByG \MPC}\right)
+\\ & =  -(1/{\cNrm}^{e}_{t})\left(\frac{(\CRRA+1) (\DiscFacAlt \RNrmByG^{2} (1-\MPC)^{2}-1)\MPC^{2}  }{1-\DiscFacAlt \RNrmByG^{2} (1-\MPC)^{2}\erate  + \DiscFacAlt \RNrmByG \MPC}\right)
+\\ & =  -(1/\mNrmE_{t})\left(\frac{(\CRRA+1) (\DiscFacAlt \RNrmByG^{2} (1-\MPC)^{2}-1)\MPC  }{1-\DiscFacAlt \RNrmByG^{2} (1-\MPC)^{2}\erate  + \DiscFacAlt \RNrmByG \MPC}\right)
 .
 \end{aligned}\end{gathered}\end{equation}
 \end{comment}
@@ -1598,7 +1598,7 @@ approaches a different, but still well-defined, limit even if $\WGroFachFix
 It turns out that the limit in question is the one defined by the solution to a
 perfect foresight problem with liquidity constraints.  A semi-analytical solution does
 exist in this case, but it requires formidable notation and analysis to present and
-understand, so the details are not presented here.  A continuous-time treatement
+understand, so the details are not presented here.  A continuous-time treatment
 can be found in \cite{parkLiqConstrContinuous}.
 
 \pagebreak
@@ -1636,7 +1636,7 @@ so that
   \blacktriangle_{t+1} & =  (\mTrgNrm^{\hideSup} + \blacktriangle_{t} -\cFunc(\mTrgNrm^{\hideSup}+\blacktriangle_{t}))\RNrmByG + 1 - \mTrgNrm^{\hideSup}
 \\ & \approx  (\mTrgNrm^{\hideSup}+\blacktriangle_{t}- (\cTrgNrm^{e}+ \blacktriangle_{t} \MPCE))\RNrmByG + 1 - \mTrgNrm^{\hideSup}
 \\ & =  \underbrace{(\mTrgNrm^{\hideSup}-\cTrgNrm^{e})\RNrmByG+1}_{\mTrgNrm^{\hideSup}} -\mTrgNrm^{\hideSup} + (1-\MPCE) \RNrmByG\blacktriangle_{t}
-\\ & =  \underbrace{\left(1-\MPCE\right)}_{\equiv \MPS^{e}}\blacktriangle_{t}\RNrmByG 
+\\ & =  \left(1-\MPCE\right)\blacktriangle_{t}\RNrmByG 
 \end{aligned}\end{gathered}\end{equation}
 and note for future use that 
 \begin{equation}\begin{gathered}\begin{aligned}
@@ -1645,30 +1645,30 @@ and note for future use that
 \end{aligned}\end{gathered}\end{equation}
 and 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \left(\frac{\blacktriangle_{t+1}}{\blacktriangle_{t}}\right)   & =  \MPS^{e}\RNrmByG
+  \left(\frac{\blacktriangle_{t+1}}{\blacktriangle_{t}}\right)   & =  (1-\MPCE)\RNrmByG
 \end{aligned}\end{gathered}\end{equation}
 while using \eqref{eq:BeforePFStep} yields
 \begin{equation}\begin{gathered}\begin{aligned}
   c_{t+1}& =  {\GPFachFix} \left\{1+\urate\left[\left(\frac{\cFunc(\mNrmE_{t+1})}{(\mNrmE_{t}-\cFunc(\mNrmE_{t}))\RNrmByG\MPC}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}c_{t} 
-\\ \Delta c_{t+1} & \approx  {\GPFachFix} \left\{1+\urate\left[\left(\frac{\cTrgNrm^{e}+\MPCE \blacktriangle_{t+1} }{\cTrgNrm^{u}(1 +\blacktriangle_{t}\MPS^{e} \RNrmByG \MPC/\cTrgNrm^{u})}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}c_{t}-c_{t} \nonumber
-\\ & =  \left[{\GPFachFix} \left\{1+\urate\left[\left(\left(\frac{\cTrgNrm^{e}}{\cTrgNrm^{u}}\right)\left(\frac{1+\MPCE \blacktriangle_{t}\MPS^{e}\RNrmByG/\cTrgNrm^{e} }{1 +\blacktriangle_{t}\MPS^{e} \RNrmByG \MPC/\cTrgNrm^{u}}\right)\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}-1\right] (\cTrgNrm^{e}+\blacktriangle_{t}) \label{eq:dc}
-\\ \Delta c_{t+1} & \approx  \left[{\GPFachFix} \left\{1+\urate\left[\left(\left(\frac{\cTrgNrm^{e}}{\cTrgNrm^{u}}\right)\left(1+\MPCE \blacktriangle_{t}\MPS^{e} \RNrmByG/\cTrgNrm^{e} -\blacktriangle_{t}\MPS^{e} \RNrmByG \MPC/\cTrgNrm^{u}\right)\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}-1\right] c_{t}\nonumber
-\\  & =  \left[{\GPFachFix} \left\{1+\urate\left[(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\left(1+ \blacktriangle_{t}\MPS^{e} \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}-1\right] c_{t}\nonumber
-\\  & =  \left[{\GPFachFix} \left\{1+\urate\left[(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}-1\right]+\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\CRRA \blacktriangle_{t}\MPS^{e} \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right\}^{1/\CRRA}-1\right] c_{t}\nonumber
-\\  & \approx  \left[\underbrace{{\GPFachFix} \left\{1+\urate\left[(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}-1\right]\right\}}_{=1}(1+\GPFachFix^{-1}\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\blacktriangle_{t}\MPS^{e} \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})-1\right] c_{t}\nonumber
-\\  & =  \left[\GPFachFix^{-1}\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\blacktriangle_{t}\MPS^{e} \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right] c_{t}\nonumber
+\\ \Delta c_{t+1} & \approx  {\GPFachFix} \left\{1+\urate\left[\left(\frac{\cTrgNrm^{e}+\MPCE \blacktriangle_{t+1} }{\cTrgNrm^{u}(1 +\blacktriangle_{t}(1-\MPCE) \RNrmByG \MPC/\cTrgNrm^{u})}\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}c_{t}-c_{t} \nonumber
+\\ & =  \left[{\GPFachFix} \left\{1+\urate\left[\left(\left(\frac{\cTrgNrm^{e}}{\cTrgNrm^{u}}\right)\left(\frac{1+\MPCE \blacktriangle_{t}(1-\MPCE)\RNrmByG/\cTrgNrm^{e} }{1 +\blacktriangle_{t}(1-\MPCE) \RNrmByG \MPC/\cTrgNrm^{u}}\right)\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}-1\right] (\cTrgNrm^{e}+\blacktriangle_{t}) \label{eq:dc}
+\\ \Delta c_{t+1} & \approx  \left[{\GPFachFix} \left\{1+\urate\left[\left(\left(\frac{\cTrgNrm^{e}}{\cTrgNrm^{u}}\right)\left(1+\MPCE \blacktriangle_{t}(1-\MPCE) \RNrmByG/\cTrgNrm^{e} -\blacktriangle_{t}(1-\MPCE) \RNrmByG \MPC/\cTrgNrm^{u}\right)\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}-1\right] c_{t}\nonumber
+\\  & =  \left[{\GPFachFix} \left\{1+\urate\left[(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\left(1+ \blacktriangle_{t}(1-\MPCE) \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right)^{\CRRA}-1\right]\right\}^{1/\CRRA}-1\right] c_{t}\nonumber
+\\  & =  \left[{\GPFachFix} \left\{1+\urate\left[(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}-1\right]+\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\CRRA \blacktriangle_{t}(1-\MPCE) \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right\}^{1/\CRRA}-1\right] c_{t}\nonumber
+\\  & \approx  \left[\underbrace{{\GPFachFix} \left\{1+\urate\left[(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}-1\right]\right\}}_{=1}(1+\GPFachFix^{-1}\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\blacktriangle_{t}(1-\MPCE) \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})-1\right] c_{t}\nonumber
+\\  & =  \left[\GPFachFix^{-1}\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\blacktriangle_{t}(1-\MPCE) \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right] c_{t}\nonumber
 \end{aligned}\end{gathered}\end{equation}
 so that
 \begin{equation}\begin{gathered}\begin{aligned}
-  \lim_{\blacktriangle_{t} \rightarrow 0} \left(\frac{\Delta c_{t+1}}{\Delta m_{t+1}}\right) & =  \left(\frac{\left[\GPFachFix^{-1}\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\MPS^{e} \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right] \cTrgNrm^{e}}{(1-\MPCE)\RNrmByG-1}\right)
-\\  \MPCE \GPFachFix & =  \left(\frac{\left[\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}\MPS^{e} \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right] \cTrgNrm^{e}}{(1-\MPCE)\RNrmByG-1}\right)
+  \lim_{\blacktriangle_{t} \rightarrow 0} \left(\frac{\Delta c_{t+1}}{\Delta m_{t+1}}\right) & =  \left(\frac{\left[\GPFachFix^{-1}\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}(1-\MPCE) \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right] \cTrgNrm^{e}}{(1-\MPCE)\RNrmByG-1}\right)
+\\  \MPCE \GPFachFix & =  \left(\frac{\left[\urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}(1-\MPCE) \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u})\right] \cTrgNrm^{e}}{(1-\MPCE)\RNrmByG-1}\right)
 \\  \MPCE \GPFachFix \left((1-\MPCE)\RNrmByG-1\right) & =  \urate(\cTrgNrm^{e}/\cTrgNrm^{u})^{\CRRA}(1-\MPCE) \RNrmByG (\MPCE/\cTrgNrm^{e} - \MPC/\cTrgNrm^{u}) \cTrgNrm^{e}
 \end{aligned}\end{gathered}\end{equation}
 which is a quadratic equation in $\MPCE$.  This equation has only one solution inside the unit 
 interval, which will be the MPC at $\mTrgNrm^{\hideSup}$.  
 
 Note that an alternative approach would be to define $\Delta \cTrgNrm^{e}$ using the
-RHS of \eqref{eq:dc} and $\Delta \mTrgNrm^{\hideSup} = (\MPS^{e}  \RNrmByG - 1)\blacktriangle_{t}$ 
+RHS of \eqref{eq:dc} and $\Delta \mTrgNrm^{\hideSup} = ((1-\MPCE)  \RNrmByG - 1)\blacktriangle_{t}$ 
 and to use a numerical rootfinding routine to locate the $\check{\MPC}^{e}$ that solves 
 \begin{equation}\begin{gathered}\begin{aligned}
   \check{\MPCFunc}^{e}(\blacktriangle_{t}) & =  \left(\frac{\Delta \cTrgNrm^{e}}{\Delta \mTrgNrm^{\hideSup}}\right)

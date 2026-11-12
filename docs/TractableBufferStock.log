@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  9 NOV 2026 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  11 NOV 2026 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1531,6 +1531,11 @@ l. 184 Writing TractableBufferStock.idv[68] (TractableBufferStock67x.svg)
 [9]
 l. 189 Writing TractableBufferStock.idv[69] (TractableBufferStock68x.svg)
 l. 190 Writing TractableBufferStock.idv[70] (TractableBufferStock69x.svg)
+LaTeX Font Info:    Trying to load font information for U+euf on input line 191
+.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
 l. 195 Writing TractableBufferStock.idv[71] (TractableBufferStock70x.svg)
 l. 199 Writing TractableBufferStock.idv[72] (TractableBufferStock71x.svg)
 l. 200 Writing TractableBufferStock.idv[73] (TractableBufferStock72x.svg)
@@ -1563,8 +1568,8 @@ l. 220 Writing TractableBufferStock.idv[94] (TractableBufferStock93x.svg)
 l. 221 Writing TractableBufferStock.idv[95] (TractableBufferStock94x.svg)
 l. 228 Writing TractableBufferStock.idv[96] (TractableBufferStock95x.svg)
 l. 233 Writing TractableBufferStock.idv[97] (TractableBufferStock96x.svg)
-[12]
 l. 234 Writing TractableBufferStock.idv[98] (TractableBufferStock97x.svg)
+[12]
 l. 239 Writing TractableBufferStock.idv[99] (TractableBufferStock98x.svg)
 l. 239 Writing TractableBufferStock.idv[100] (TractableBufferStock99x.svg)
 --- file TractableBufferStock12.html ---
@@ -2092,320 +2097,310 @@ l. 1023 Writing TractableBufferStock.idv[449] (TractableBufferStock448x.svg)
 l. 1023 Writing TractableBufferStock.idv[450] (TractableBufferStock449x.svg)
 l. 1023 Writing TractableBufferStock.idv[451] (TractableBufferStock450x.svg)
 l. 1023 Writing TractableBufferStock.idv[452] (TractableBufferStock451x.svg)
-l. 1023 Writing TractableBufferStock.idv[453] (TractableBufferStock452x.svg)
-l. 1023 Writing TractableBufferStock.idv[454] (TractableBufferStock453x.svg)
-l. 1025 Writing TractableBufferStock.idv[455] (TractableBufferStock454x.svg)
-l. 1025 Writing TractableBufferStock.idv[456] (TractableBufferStock455x.svg)
+l. 1025 Writing TractableBufferStock.idv[453] (TractableBufferStock452x.svg)
+l. 1025 Writing TractableBufferStock.idv[454] (TractableBufferStock453x.svg)
 [69]
-l. 1029 Writing TractableBufferStock.idv[457] (TractableBufferStock456x.svg)
-l. 1029 Writing TractableBufferStock.idv[458] (TractableBufferStock457x.svg)
-l. 1030 Writing TractableBufferStock.idv[459] (TractableBufferStock458x.svg)
+l. 1029 Writing TractableBufferStock.idv[455] (TractableBufferStock454x.svg)
+l. 1029 Writing TractableBufferStock.idv[456] (TractableBufferStock455x.svg)
+l. 1030 Writing TractableBufferStock.idv[457] (TractableBufferStock456x.svg)
+l. 1044 Writing TractableBufferStock.idv[458] (TractableBufferStock457x.svg)
+l. 1044 Writing TractableBufferStock.idv[459] (TractableBufferStock458x.svg)
 l. 1044 Writing TractableBufferStock.idv[460] (TractableBufferStock459x.svg)
 l. 1044 Writing TractableBufferStock.idv[461] (TractableBufferStock460x.svg)
-l. 1044 Writing TractableBufferStock.idv[462] (TractableBufferStock461x.svg)
-l. 1044 Writing TractableBufferStock.idv[463] (TractableBufferStock462x.svg)
-l. 1045 Writing TractableBufferStock.idv[464] (TractableBufferStock463x.svg)
+l. 1045 Writing TractableBufferStock.idv[462] (TractableBufferStock461x.svg)
 [70]
+l. 1050 Writing TractableBufferStock.idv[463] (TractableBufferStock462x.svg)
+l. 1050 Writing TractableBufferStock.idv[464] (TractableBufferStock463x.svg)
 l. 1050 Writing TractableBufferStock.idv[465] (TractableBufferStock464x.svg)
 l. 1050 Writing TractableBufferStock.idv[466] (TractableBufferStock465x.svg)
 l. 1050 Writing TractableBufferStock.idv[467] (TractableBufferStock466x.svg)
-l. 1050 Writing TractableBufferStock.idv[468] (TractableBufferStock467x.svg)
-l. 1050 Writing TractableBufferStock.idv[469] (TractableBufferStock468x.svg)
+l. 1052 Writing TractableBufferStock.idv[468] (TractableBufferStock467x.svg)
+l. 1052 Writing TractableBufferStock.idv[469] (TractableBufferStock468x.svg)
 l. 1052 Writing TractableBufferStock.idv[470] (TractableBufferStock469x.svg)
 l. 1052 Writing TractableBufferStock.idv[471] (TractableBufferStock470x.svg)
-l. 1052 Writing TractableBufferStock.idv[472] (TractableBufferStock471x.svg)
-l. 1052 Writing TractableBufferStock.idv[473] (TractableBufferStock472x.svg)
-l. 1052 Writing TractableBufferStock.idv[474] (TractableBufferStock473x.svg)
-l. 1053 Writing TractableBufferStock.idv[475] (TractableBufferStock474x.svg)
+l. 1053 Writing TractableBufferStock.idv[472] (TractableBufferStock471x.svg)
+l. 1063 Writing TractableBufferStock.idv[473] (TractableBufferStock472x.svg)
+l. 1063 Writing TractableBufferStock.idv[474] (TractableBufferStock473x.svg)
+l. 1063 Writing TractableBufferStock.idv[475] (TractableBufferStock474x.svg)
 l. 1063 Writing TractableBufferStock.idv[476] (TractableBufferStock475x.svg)
 l. 1063 Writing TractableBufferStock.idv[477] (TractableBufferStock476x.svg)
-l. 1063 Writing TractableBufferStock.idv[478] (TractableBufferStock477x.svg)
-l. 1063 Writing TractableBufferStock.idv[479] (TractableBufferStock478x.svg)
-l. 1063 Writing TractableBufferStock.idv[480] (TractableBufferStock479x.svg)
-l. 1063 Writing TractableBufferStock.idv[481] (TractableBufferStock480x.svg)
 [71]
-l. 1067 Writing TractableBufferStock.idv[482] (TractableBufferStock481x.svg)
-l. 1067 Writing TractableBufferStock.idv[483] (TractableBufferStock482x.svg)
-l. 1070 Writing TractableBufferStock.idv[484] (TractableBufferStock483x.svg)
-l. 1074 Writing TractableBufferStock.idv[485] (TractableBufferStock484x.svg)
+l. 1067 Writing TractableBufferStock.idv[478] (TractableBufferStock477x.svg)
+l. 1067 Writing TractableBufferStock.idv[479] (TractableBufferStock478x.svg)
+l. 1070 Writing TractableBufferStock.idv[480] (TractableBufferStock479x.svg)
+l. 1074 Writing TractableBufferStock.idv[481] (TractableBufferStock480x.svg)
+l. 1078 Writing TractableBufferStock.idv[482] (TractableBufferStock481x.svg)
+l. 1078 Writing TractableBufferStock.idv[483] (TractableBufferStock482x.svg)
+l. 1078 Writing TractableBufferStock.idv[484] (TractableBufferStock483x.svg)
+--- file TractableBufferStock31.html ---
+l. 1078 Writing TractableBufferStock.idv[485] (TractableBufferStock484x.svg)
 l. 1078 Writing TractableBufferStock.idv[486] (TractableBufferStock485x.svg)
 l. 1078 Writing TractableBufferStock.idv[487] (TractableBufferStock486x.svg)
 l. 1078 Writing TractableBufferStock.idv[488] (TractableBufferStock487x.svg)
-l. 1078 Writing TractableBufferStock.idv[489] (TractableBufferStock488x.svg)
---- file TractableBufferStock31.html ---
-l. 1078 Writing TractableBufferStock.idv[490] (TractableBufferStock489x.svg)
-l. 1078 Writing TractableBufferStock.idv[491] (TractableBufferStock490x.svg)
-l. 1078 Writing TractableBufferStock.idv[492] (TractableBufferStock491x.svg)
-l. 1078 Writing TractableBufferStock.idv[493] (TractableBufferStock492x.svg)
-[72]
-l. 1080 Writing TractableBufferStock.idv[494] (TractableBufferStock493x.svg)
-l. 1080 Writing TractableBufferStock.idv[495] (TractableBufferStock494x.svg)
-l. 1080 Writing TractableBufferStock.idv[496] (TractableBufferStock495x.svg)
-l. 1080 Writing TractableBufferStock.idv[497] (TractableBufferStock496x.svg)
-l. 1081 Writing TractableBufferStock.idv[498] (TractableBufferStock497x.svg)
-l. 1085 Writing TractableBufferStock.idv[499] (TractableBufferStock498x.svg)
-l. 1085 Writing TractableBufferStock.idv[500] (TractableBufferStock499x.svg)
-l. 1085 Writing TractableBufferStock.idv[501] (TractableBufferStock500x.svg)
-l. 1085 Writing TractableBufferStock.idv[502] (TractableBufferStock501x.svg)
-l. 1088 Writing TractableBufferStock.idv[503] (TractableBufferStock502x.svg)
-l. 1088 Writing TractableBufferStock.idv[504] (TractableBufferStock503x.svg)
-l. 1088 Writing TractableBufferStock.idv[505] (TractableBufferStock504x.svg)
-l. 1088 Writing TractableBufferStock.idv[506] (TractableBufferStock505x.svg)
+[72
+
+]
+l. 1080 Writing TractableBufferStock.idv[489] (TractableBufferStock488x.svg)
+l. 1080 Writing TractableBufferStock.idv[490] (TractableBufferStock489x.svg)
+l. 1080 Writing TractableBufferStock.idv[491] (TractableBufferStock490x.svg)
+l. 1080 Writing TractableBufferStock.idv[492] (TractableBufferStock491x.svg)
+l. 1081 Writing TractableBufferStock.idv[493] (TractableBufferStock492x.svg)
+l. 1085 Writing TractableBufferStock.idv[494] (TractableBufferStock493x.svg)
+l. 1085 Writing TractableBufferStock.idv[495] (TractableBufferStock494x.svg)
+l. 1085 Writing TractableBufferStock.idv[496] (TractableBufferStock495x.svg)
+l. 1085 Writing TractableBufferStock.idv[497] (TractableBufferStock496x.svg)
+l. 1088 Writing TractableBufferStock.idv[498] (TractableBufferStock497x.svg)
+l. 1088 Writing TractableBufferStock.idv[499] (TractableBufferStock498x.svg)
+l. 1088 Writing TractableBufferStock.idv[500] (TractableBufferStock499x.svg)
+l. 1088 Writing TractableBufferStock.idv[501] (TractableBufferStock500x.svg)
+l. 1090 Writing TractableBufferStock.idv[502] (TractableBufferStock501x.svg)
+l. 1090 Writing TractableBufferStock.idv[503] (TractableBufferStock502x.svg)
+l. 1090 Writing TractableBufferStock.idv[504] (TractableBufferStock503x.svg)
+l. 1090 Writing TractableBufferStock.idv[505] (TractableBufferStock504x.svg)
+--- file TractableBufferStock32.html ---
+l. 1090 Writing TractableBufferStock.idv[506] (TractableBufferStock505x.svg)
 l. 1090 Writing TractableBufferStock.idv[507] (TractableBufferStock506x.svg)
 l. 1090 Writing TractableBufferStock.idv[508] (TractableBufferStock507x.svg)
 l. 1090 Writing TractableBufferStock.idv[509] (TractableBufferStock508x.svg)
 l. 1090 Writing TractableBufferStock.idv[510] (TractableBufferStock509x.svg)
---- file TractableBufferStock32.html ---
 l. 1090 Writing TractableBufferStock.idv[511] (TractableBufferStock510x.svg)
 l. 1090 Writing TractableBufferStock.idv[512] (TractableBufferStock511x.svg)
-l. 1090 Writing TractableBufferStock.idv[513] (TractableBufferStock512x.svg)
-l. 1090 Writing TractableBufferStock.idv[514] (TractableBufferStock513x.svg)
-l. 1090 Writing TractableBufferStock.idv[515] (TractableBufferStock514x.svg)
-l. 1090 Writing TractableBufferStock.idv[516] (TractableBufferStock515x.svg)
-l. 1090 Writing TractableBufferStock.idv[517] (TractableBufferStock516x.svg)
-l. 1090 Writing TractableBufferStock.idv[518] (TractableBufferStock517x.svg)
 l.1090 --- TeX4ht warning --- \Link{x13-8008r12}? ---
+l. 1091 Writing TractableBufferStock.idv[513] (TractableBufferStock512x.svg)
 [73
 
-
 ]
-l. 1091 Writing TractableBufferStock.idv[519] (TractableBufferStock518x.svg)
+l. 1095 Writing TractableBufferStock.idv[514] (TractableBufferStock513x.svg)
+l. 1095 Writing TractableBufferStock.idv[515] (TractableBufferStock514x.svg)
+l. 1095 Writing TractableBufferStock.idv[516] (TractableBufferStock515x.svg)
+l. 1095 Writing TractableBufferStock.idv[517] (TractableBufferStock516x.svg)
+l. 1095 Writing TractableBufferStock.idv[518] (TractableBufferStock517x.svg)
+l. 1095 Writing TractableBufferStock.idv[519] (TractableBufferStock518x.svg)
 l. 1095 Writing TractableBufferStock.idv[520] (TractableBufferStock519x.svg)
 l. 1095 Writing TractableBufferStock.idv[521] (TractableBufferStock520x.svg)
 l. 1095 Writing TractableBufferStock.idv[522] (TractableBufferStock521x.svg)
 l. 1095 Writing TractableBufferStock.idv[523] (TractableBufferStock522x.svg)
 l. 1095 Writing TractableBufferStock.idv[524] (TractableBufferStock523x.svg)
-l. 1095 Writing TractableBufferStock.idv[525] (TractableBufferStock524x.svg)
-l. 1095 Writing TractableBufferStock.idv[526] (TractableBufferStock525x.svg)
-l. 1095 Writing TractableBufferStock.idv[527] (TractableBufferStock526x.svg)
-l. 1095 Writing TractableBufferStock.idv[528] (TractableBufferStock527x.svg)
-l. 1095 Writing TractableBufferStock.idv[529] (TractableBufferStock528x.svg)
-l. 1095 Writing TractableBufferStock.idv[530] (TractableBufferStock529x.svg)
-l. 1098 Writing TractableBufferStock.idv[531] (TractableBufferStock530x.svg)
-l. 1101 Writing TractableBufferStock.idv[532] (TractableBufferStock531x.svg)
-l. 1103 Writing TractableBufferStock.idv[533] (TractableBufferStock532x.svg)
-l. 1103 Writing TractableBufferStock.idv[534] (TractableBufferStock533x.svg)
-l. 1103 Writing TractableBufferStock.idv[535] (TractableBufferStock534x.svg)
-l. 1104 Writing TractableBufferStock.idv[536] (TractableBufferStock535x.svg)
+l. 1098 Writing TractableBufferStock.idv[525] (TractableBufferStock524x.svg)
+l. 1101 Writing TractableBufferStock.idv[526] (TractableBufferStock525x.svg)
+l. 1103 Writing TractableBufferStock.idv[527] (TractableBufferStock526x.svg)
+l. 1103 Writing TractableBufferStock.idv[528] (TractableBufferStock527x.svg)
+l. 1103 Writing TractableBufferStock.idv[529] (TractableBufferStock528x.svg)
+l. 1104 Writing TractableBufferStock.idv[530] (TractableBufferStock529x.svg)
+l. 1108 Writing TractableBufferStock.idv[531] (TractableBufferStock530x.svg)
+l. 1108 Writing TractableBufferStock.idv[532] (TractableBufferStock531x.svg)
+l. 1108 Writing TractableBufferStock.idv[533] (TractableBufferStock532x.svg)
 [74]
-l. 1108 Writing TractableBufferStock.idv[537] (TractableBufferStock536x.svg)
-l. 1108 Writing TractableBufferStock.idv[538] (TractableBufferStock537x.svg)
-l. 1108 Writing TractableBufferStock.idv[539] (TractableBufferStock538x.svg)
-l. 1109 Writing TractableBufferStock.idv[540] (TractableBufferStock539x.svg)
+l. 1109 Writing TractableBufferStock.idv[534] (TractableBufferStock533x.svg)
+l. 1123 Writing TractableBufferStock.idv[535] (TractableBufferStock534x.svg)
 [75]
-l. 1123 Writing TractableBufferStock.idv[541] (TractableBufferStock540x.svg)
-l. 1126 Writing TractableBufferStock.idv[542] (TractableBufferStock541x.svg)
+l. 1126 Writing TractableBufferStock.idv[536] (TractableBufferStock535x.svg)
 --- file TractableBufferStock33.html ---
-l. 1128 Writing TractableBufferStock.idv[543] (TractableBufferStock542x.svg)
-l. 1128 Writing TractableBufferStock.idv[544] (TractableBufferStock543x.svg)
-l. 1129 Writing TractableBufferStock.idv[545] (TractableBufferStock544x.svg)
-l. 1130 Writing TractableBufferStock.idv[546] (TractableBufferStock545x.svg)
-l. 1133 Writing TractableBufferStock.idv[547] (TractableBufferStock546x.svg)
-l. 1134 Writing TractableBufferStock.idv[548] (TractableBufferStock547x.svg)
-l. 1137 Writing TractableBufferStock.idv[549] (TractableBufferStock548x.svg)
-l. 1138 Writing TractableBufferStock.idv[550] (TractableBufferStock549x.svg)
+l. 1128 Writing TractableBufferStock.idv[537] (TractableBufferStock536x.svg)
+l. 1128 Writing TractableBufferStock.idv[538] (TractableBufferStock537x.svg)
+l. 1129 Writing TractableBufferStock.idv[539] (TractableBufferStock538x.svg)
+l. 1130 Writing TractableBufferStock.idv[540] (TractableBufferStock539x.svg)
+l. 1133 Writing TractableBufferStock.idv[541] (TractableBufferStock540x.svg)
+l. 1134 Writing TractableBufferStock.idv[542] (TractableBufferStock541x.svg)
+l. 1137 Writing TractableBufferStock.idv[543] (TractableBufferStock542x.svg)
+l. 1138 Writing TractableBufferStock.idv[544] (TractableBufferStock543x.svg)
 [76
 
 ]
-l. 1149 Writing TractableBufferStock.idv[551] (TractableBufferStock550x.svg)
-l. 1149 Writing TractableBufferStock.idv[552] (TractableBufferStock551x.svg)
-l. 1150 Writing TractableBufferStock.idv[553] (TractableBufferStock552x.svg)
-l. 1150 Writing TractableBufferStock.idv[554] (TractableBufferStock553x.svg)
-l. 1150 Writing TractableBufferStock.idv[555] (TractableBufferStock554x.svg)
-l. 1153 Writing TractableBufferStock.idv[556] (TractableBufferStock555x.svg)
-l. 1156 Writing TractableBufferStock.idv[557] (TractableBufferStock556x.svg)
-l. 1159 Writing TractableBufferStock.idv[558] (TractableBufferStock557x.svg)
+l. 1149 Writing TractableBufferStock.idv[545] (TractableBufferStock544x.svg)
+l. 1149 Writing TractableBufferStock.idv[546] (TractableBufferStock545x.svg)
+l. 1150 Writing TractableBufferStock.idv[547] (TractableBufferStock546x.svg)
+l. 1150 Writing TractableBufferStock.idv[548] (TractableBufferStock547x.svg)
+l. 1150 Writing TractableBufferStock.idv[549] (TractableBufferStock548x.svg)
+l. 1153 Writing TractableBufferStock.idv[550] (TractableBufferStock549x.svg)
+l. 1156 Writing TractableBufferStock.idv[551] (TractableBufferStock550x.svg)
+l. 1159 Writing TractableBufferStock.idv[552] (TractableBufferStock551x.svg)
 --- file TractableBufferStock34.html ---
-[77]
-l. 1160 Writing TractableBufferStock.idv[559] (TractableBufferStock558x.svg)
-l. 1173 Writing TractableBufferStock.idv[560] (TractableBufferStock559x.svg)
-l. 1179 Writing TractableBufferStock.idv[561] (TractableBufferStock560x.svg)
-l. 1179 Writing TractableBufferStock.idv[562] (TractableBufferStock561x.svg)
-l. 1179 Writing TractableBufferStock.idv[563] (TractableBufferStock562x.svg)
+l. 1160 Writing TractableBufferStock.idv[553] (TractableBufferStock552x.svg)
+[77
+
+]
+l. 1173 Writing TractableBufferStock.idv[554] (TractableBufferStock553x.svg)
+l. 1179 Writing TractableBufferStock.idv[555] (TractableBufferStock554x.svg)
+l. 1179 Writing TractableBufferStock.idv[556] (TractableBufferStock555x.svg)
+l. 1179 Writing TractableBufferStock.idv[557] (TractableBufferStock556x.svg)
 --- file TractableBufferStock35.html ---
-l. 1179 Writing TractableBufferStock.idv[564] (TractableBufferStock563x.svg)
-l. 1179 Writing TractableBufferStock.idv[565] (TractableBufferStock564x.svg)
+l. 1179 Writing TractableBufferStock.idv[558] (TractableBufferStock557x.svg)
+l. 1179 Writing TractableBufferStock.idv[559] (TractableBufferStock558x.svg)
+l. 1180 Writing TractableBufferStock.idv[560] (TractableBufferStock559x.svg)
 [78
 
 ]
-l. 1180 Writing TractableBufferStock.idv[566] (TractableBufferStock565x.svg)
-l. 1187 Writing TractableBufferStock.idv[567] (TractableBufferStock566x.svg)
-l. 1191 Writing TractableBufferStock.idv[568] (TractableBufferStock567x.svg)
+l. 1187 Writing TractableBufferStock.idv[561] (TractableBufferStock560x.svg)
+l. 1191 Writing TractableBufferStock.idv[562] (TractableBufferStock561x.svg)
+l. 1196 Writing TractableBufferStock.idv[563] (TractableBufferStock562x.svg)
+l. 1196 Writing TractableBufferStock.idv[564] (TractableBufferStock563x.svg)
+l. 1197 Writing TractableBufferStock.idv[565] (TractableBufferStock564x.svg)
+l. 1197 Writing TractableBufferStock.idv[566] (TractableBufferStock565x.svg)
+l. 1197 Writing TractableBufferStock.idv[567] (TractableBufferStock566x.svg)
+l. 1198 Writing TractableBufferStock.idv[568] (TractableBufferStock567x.svg)
+l. 1198 Writing TractableBufferStock.idv[569] (TractableBufferStock568x.svg)
+--- file TractableBufferStock36.html ---
+l. 1206 Writing TractableBufferStock.idv[570] (TractableBufferStock569x.svg)
+l. 1207 Writing TractableBufferStock.idv[571] (TractableBufferStock570x.svg)
+l. 1208 Writing TractableBufferStock.idv[572] (TractableBufferStock571x.svg)
 [79
 
 ]
-l. 1196 Writing TractableBufferStock.idv[569] (TractableBufferStock568x.svg)
-l. 1196 Writing TractableBufferStock.idv[570] (TractableBufferStock569x.svg)
-l. 1197 Writing TractableBufferStock.idv[571] (TractableBufferStock570x.svg)
-l. 1197 Writing TractableBufferStock.idv[572] (TractableBufferStock571x.svg)
-l. 1197 Writing TractableBufferStock.idv[573] (TractableBufferStock572x.svg)
-l. 1198 Writing TractableBufferStock.idv[574] (TractableBufferStock573x.svg)
-l. 1198 Writing TractableBufferStock.idv[575] (TractableBufferStock574x.svg)
---- file TractableBufferStock36.html ---
-l. 1206 Writing TractableBufferStock.idv[576] (TractableBufferStock575x.svg)
-l. 1207 Writing TractableBufferStock.idv[577] (TractableBufferStock576x.svg)
-l. 1208 Writing TractableBufferStock.idv[578] (TractableBufferStock577x.svg)
-l. 1218 Writing TractableBufferStock.idv[579] (TractableBufferStock578x.svg)
-[80
-
-]
-l. 1222 Writing TractableBufferStock.idv[580] (TractableBufferStock579x.svg)
+l. 1218 Writing TractableBufferStock.idv[573] (TractableBufferStock572x.svg)
+l. 1222 Writing TractableBufferStock.idv[574] (TractableBufferStock573x.svg)
+l. 1231 Writing TractableBufferStock.idv[575] (TractableBufferStock574x.svg)
+l. 1231 Writing TractableBufferStock.idv[576] (TractableBufferStock575x.svg)
+l. 1231 Writing TractableBufferStock.idv[577] (TractableBufferStock576x.svg)
+l. 1231 Writing TractableBufferStock.idv[578] (TractableBufferStock577x.svg)
+--- file TractableBufferStock37.html ---
+l. 1231 Writing TractableBufferStock.idv[579] (TractableBufferStock578x.svg)
+l. 1231 Writing TractableBufferStock.idv[580] (TractableBufferStock579x.svg)
 l. 1231 Writing TractableBufferStock.idv[581] (TractableBufferStock580x.svg)
 l. 1231 Writing TractableBufferStock.idv[582] (TractableBufferStock581x.svg)
-l. 1231 Writing TractableBufferStock.idv[583] (TractableBufferStock582x.svg)
-l. 1231 Writing TractableBufferStock.idv[584] (TractableBufferStock583x.svg)
---- file TractableBufferStock37.html ---
-l. 1231 Writing TractableBufferStock.idv[585] (TractableBufferStock584x.svg)
-l. 1231 Writing TractableBufferStock.idv[586] (TractableBufferStock585x.svg)
-l. 1231 Writing TractableBufferStock.idv[587] (TractableBufferStock586x.svg)
-l. 1231 Writing TractableBufferStock.idv[588] (TractableBufferStock587x.svg)
-l. 1237 Writing TractableBufferStock.idv[589] (TractableBufferStock588x.svg)
+[80]
+l. 1237 Writing TractableBufferStock.idv[583] (TractableBufferStock582x.svg)
+l. 1251 Writing TractableBufferStock.idv[584] (TractableBufferStock583x.svg)
+l. 1252 Writing TractableBufferStock.idv[585] (TractableBufferStock584x.svg)
 [81
 
 ]
-l. 1251 Writing TractableBufferStock.idv[590] (TractableBufferStock589x.svg)
-l. 1252 Writing TractableBufferStock.idv[591] (TractableBufferStock590x.svg)
-l. 1259 Writing TractableBufferStock.idv[592] (TractableBufferStock591x.svg)
-l. 1262 Writing TractableBufferStock.idv[593] (TractableBufferStock592x.svg)
-l. 1262 Writing TractableBufferStock.idv[594] (TractableBufferStock593x.svg)
-l. 1262 Writing TractableBufferStock.idv[595] (TractableBufferStock594x.svg)
-l. 1263 Writing TractableBufferStock.idv[596] (TractableBufferStock595x.svg)
-l. 1266 Writing TractableBufferStock.idv[597] (TractableBufferStock596x.svg)
-l. 1266 Writing TractableBufferStock.idv[598] (TractableBufferStock597x.svg)
-l. 1267 Writing TractableBufferStock.idv[599] (TractableBufferStock598x.svg)
+l. 1259 Writing TractableBufferStock.idv[586] (TractableBufferStock585x.svg)
+l. 1262 Writing TractableBufferStock.idv[587] (TractableBufferStock586x.svg)
+l. 1262 Writing TractableBufferStock.idv[588] (TractableBufferStock587x.svg)
+l. 1262 Writing TractableBufferStock.idv[589] (TractableBufferStock588x.svg)
+l. 1263 Writing TractableBufferStock.idv[590] (TractableBufferStock589x.svg)
+l. 1266 Writing TractableBufferStock.idv[591] (TractableBufferStock590x.svg)
+l. 1266 Writing TractableBufferStock.idv[592] (TractableBufferStock591x.svg)
+l. 1267 Writing TractableBufferStock.idv[593] (TractableBufferStock592x.svg)
+l. 1273 Writing TractableBufferStock.idv[594] (TractableBufferStock593x.svg)
 [82]
-l. 1273 Writing TractableBufferStock.idv[600] (TractableBufferStock599x.svg)
-l. 1276 Writing TractableBufferStock.idv[601] (TractableBufferStock600x.svg)
-l. 1277 Writing TractableBufferStock.idv[602] (TractableBufferStock601x.svg)
+l. 1276 Writing TractableBufferStock.idv[595] (TractableBufferStock594x.svg)
+l. 1277 Writing TractableBufferStock.idv[596] (TractableBufferStock595x.svg)
 --- file TractableBufferStock38.html ---
-l. 1281 Writing TractableBufferStock.idv[603] (TractableBufferStock602x.svg)
-l. 1281 Writing TractableBufferStock.idv[604] (TractableBufferStock603x.svg)
-l. 1281 Writing TractableBufferStock.idv[605] (TractableBufferStock604x.svg)
+l. 1281 Writing TractableBufferStock.idv[597] (TractableBufferStock596x.svg)
+l. 1281 Writing TractableBufferStock.idv[598] (TractableBufferStock597x.svg)
+l. 1281 Writing TractableBufferStock.idv[599] (TractableBufferStock598x.svg)
 --- file TractableBufferStock39.html ---
-l. 1288 Writing TractableBufferStock.idv[606] (TractableBufferStock605x.svg)
-l. 1289 Writing TractableBufferStock.idv[607] (TractableBufferStock606x.svg)
+l. 1288 Writing TractableBufferStock.idv[600] (TractableBufferStock599x.svg)
+l. 1289 Writing TractableBufferStock.idv[601] (TractableBufferStock600x.svg)
+l. 1290 Writing TractableBufferStock.idv[602] (TractableBufferStock601x.svg)
 [83
 
-]
-l. 1290 Writing TractableBufferStock.idv[608] (TractableBufferStock607x.svg)
-l. 1296 Writing TractableBufferStock.idv[609] (TractableBufferStock608x.svg)
-l. 1297 Writing TractableBufferStock.idv[610] (TractableBufferStock609x.svg)
-l. 1304 Writing TractableBufferStock.idv[611] (TractableBufferStock610x.svg)
-[84
 
 ]
-l. 1306 Writing TractableBufferStock.idv[612] (TractableBufferStock611x.svg)
-l. 1310 Writing TractableBufferStock.idv[613] (TractableBufferStock612x.svg)
-l. 1311 Writing TractableBufferStock.idv[614] (TractableBufferStock613x.svg)
-l. 1317 Writing TractableBufferStock.idv[615] (TractableBufferStock614x.svg)
-l. 1318 Writing TractableBufferStock.idv[616] (TractableBufferStock615x.svg)
+l. 1296 Writing TractableBufferStock.idv[603] (TractableBufferStock602x.svg)
+l. 1297 Writing TractableBufferStock.idv[604] (TractableBufferStock603x.svg)
+l. 1304 Writing TractableBufferStock.idv[605] (TractableBufferStock604x.svg)
+l. 1306 Writing TractableBufferStock.idv[606] (TractableBufferStock605x.svg)
+l. 1310 Writing TractableBufferStock.idv[607] (TractableBufferStock606x.svg)
+[84]
+l. 1311 Writing TractableBufferStock.idv[608] (TractableBufferStock607x.svg)
+l. 1317 Writing TractableBufferStock.idv[609] (TractableBufferStock608x.svg)
+l. 1318 Writing TractableBufferStock.idv[610] (TractableBufferStock609x.svg)
+l. 1322 Writing TractableBufferStock.idv[611] (TractableBufferStock610x.svg)
+l. 1325 Writing TractableBufferStock.idv[612] (TractableBufferStock611x.svg)
 [85]
-l. 1322 Writing TractableBufferStock.idv[617] (TractableBufferStock616x.svg)
-l. 1325 Writing TractableBufferStock.idv[618] (TractableBufferStock617x.svg)
-l. 1326 Writing TractableBufferStock.idv[619] (TractableBufferStock618x.svg)
-l. 1329 Writing TractableBufferStock.idv[620] (TractableBufferStock619x.svg)
-l. 1329 Writing TractableBufferStock.idv[621] (TractableBufferStock620x.svg)
+l. 1326 Writing TractableBufferStock.idv[613] (TractableBufferStock612x.svg)
+l. 1329 Writing TractableBufferStock.idv[614] (TractableBufferStock613x.svg)
+l. 1329 Writing TractableBufferStock.idv[615] (TractableBufferStock614x.svg)
 --- file TractableBufferStock40.html ---
-l. 1333 Writing TractableBufferStock.idv[622] (TractableBufferStock621x.svg)
-l. 1334 Writing TractableBufferStock.idv[623] (TractableBufferStock622x.svg)
-l. 1335 Writing TractableBufferStock.idv[624] (TractableBufferStock623x.svg)
+l. 1333 Writing TractableBufferStock.idv[616] (TractableBufferStock615x.svg)
+l. 1334 Writing TractableBufferStock.idv[617] (TractableBufferStock616x.svg)
+l. 1335 Writing TractableBufferStock.idv[618] (TractableBufferStock617x.svg)
+l. 1342 Writing TractableBufferStock.idv[619] (TractableBufferStock618x.svg)
 [86
 
 ]
-l. 1342 Writing TractableBufferStock.idv[625] (TractableBufferStock624x.svg)
-l. 1349 Writing TractableBufferStock.idv[626] (TractableBufferStock625x.svg)
-l. 1352 Writing TractableBufferStock.idv[627] (TractableBufferStock626x.svg)
-l. 1353 Writing TractableBufferStock.idv[628] (TractableBufferStock627x.svg)
+l. 1349 Writing TractableBufferStock.idv[620] (TractableBufferStock619x.svg)
+l. 1352 Writing TractableBufferStock.idv[621] (TractableBufferStock620x.svg)
+l. 1353 Writing TractableBufferStock.idv[622] (TractableBufferStock621x.svg)
+l. 1385 Writing TractableBufferStock.idv[623] (TractableBufferStock622x.svg)
 [87]
-l. 1385 Writing TractableBufferStock.idv[629] (TractableBufferStock628x.svg)
-l. 1393 Writing TractableBufferStock.idv[630] (TractableBufferStock629x.svg)
-l. 1394 Writing TractableBufferStock.idv[631] (TractableBufferStock630x.svg)
-l. 1399 Writing TractableBufferStock.idv[632] (TractableBufferStock631x.svg)
-l. 1399 Writing TractableBufferStock.idv[633] (TractableBufferStock632x.svg)
+l. 1393 Writing TractableBufferStock.idv[624] (TractableBufferStock623x.svg)
+l. 1394 Writing TractableBufferStock.idv[625] (TractableBufferStock624x.svg)
+l. 1399 Writing TractableBufferStock.idv[626] (TractableBufferStock625x.svg)
+l. 1399 Writing TractableBufferStock.idv[627] (TractableBufferStock626x.svg)
 --- file TractableBufferStock41.html ---
-l. 1419 Writing TractableBufferStock.idv[634] (TractableBufferStock633x.svg)
-l. 1419 Writing TractableBufferStock.idv[635] (TractableBufferStock634x.svg)
-l. 1420 Writing TractableBufferStock.idv[636] (TractableBufferStock635x.svg)
+l. 1419 Writing TractableBufferStock.idv[628] (TractableBufferStock627x.svg)
+l. 1419 Writing TractableBufferStock.idv[629] (TractableBufferStock628x.svg)
+l. 1420 Writing TractableBufferStock.idv[630] (TractableBufferStock629x.svg)
+l. 1422 Writing TractableBufferStock.idv[631] (TractableBufferStock630x.svg)
 [88
 
 ]
-l. 1422 Writing TractableBufferStock.idv[637] (TractableBufferStock636x.svg)
-l. 1427 Writing TractableBufferStock.idv[638] (TractableBufferStock637x.svg)
-l. 1428 Writing TractableBufferStock.idv[639] (TractableBufferStock638x.svg)
-l. 1428 Writing TractableBufferStock.idv[640] (TractableBufferStock639x.svg)
-l. 1429 Writing TractableBufferStock.idv[641] (TractableBufferStock640x.svg)
-l. 1429 Writing TractableBufferStock.idv[642] (TractableBufferStock641x.svg)
-l. 1430 Writing TractableBufferStock.idv[643] (TractableBufferStock642x.svg)
-l. 1432 Writing TractableBufferStock.idv[644] (TractableBufferStock643x.svg)
-l. 1433 Writing TractableBufferStock.idv[645] (TractableBufferStock644x.svg)
-l. 1434 Writing TractableBufferStock.idv[646] (TractableBufferStock645x.svg)
-l. 1437 Writing TractableBufferStock.idv[647] (TractableBufferStock646x.svg)
-l. 1441 Writing TractableBufferStock.idv[648] (TractableBufferStock647x.svg)
-l. 1442 Writing TractableBufferStock.idv[649] (TractableBufferStock648x.svg)
-LaTeX Font Info:    Trying to load font information for U+euf on input line 144
-5.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [89]
-l. 1450 Writing TractableBufferStock.idv[650] (TractableBufferStock649x.svg)
-l. 1456 Writing TractableBufferStock.idv[651] (TractableBufferStock650x.svg)
-l. 1461 Writing TractableBufferStock.idv[652] (TractableBufferStock651x.svg)
+l. 1427 Writing TractableBufferStock.idv[632] (TractableBufferStock631x.svg)
+l. 1428 Writing TractableBufferStock.idv[633] (TractableBufferStock632x.svg)
+l. 1428 Writing TractableBufferStock.idv[634] (TractableBufferStock633x.svg)
+l. 1429 Writing TractableBufferStock.idv[635] (TractableBufferStock634x.svg)
+l. 1429 Writing TractableBufferStock.idv[636] (TractableBufferStock635x.svg)
+l. 1430 Writing TractableBufferStock.idv[637] (TractableBufferStock636x.svg)
+l. 1432 Writing TractableBufferStock.idv[638] (TractableBufferStock637x.svg)
+l. 1433 Writing TractableBufferStock.idv[639] (TractableBufferStock638x.svg)
+l. 1434 Writing TractableBufferStock.idv[640] (TractableBufferStock639x.svg)
+l. 1437 Writing TractableBufferStock.idv[641] (TractableBufferStock640x.svg)
+l. 1441 Writing TractableBufferStock.idv[642] (TractableBufferStock641x.svg)
+l. 1442 Writing TractableBufferStock.idv[643] (TractableBufferStock642x.svg)
+l. 1450 Writing TractableBufferStock.idv[644] (TractableBufferStock643x.svg)
+[89]
+l. 1456 Writing TractableBufferStock.idv[645] (TractableBufferStock644x.svg)
+l. 1461 Writing TractableBufferStock.idv[646] (TractableBufferStock645x.svg)
 [90]
-l. 1470 Writing TractableBufferStock.idv[653] (TractableBufferStock652x.svg)
-l. 1474 Writing TractableBufferStock.idv[654] (TractableBufferStock653x.svg)
+l. 1470 Writing TractableBufferStock.idv[647] (TractableBufferStock646x.svg)
+l. 1474 Writing TractableBufferStock.idv[648] (TractableBufferStock647x.svg)
+l. 1483 Writing TractableBufferStock.idv[649] (TractableBufferStock648x.svg)
+l. 1487 Writing TractableBufferStock.idv[650] (TractableBufferStock649x.svg)
+l. 1488 Writing TractableBufferStock.idv[651] (TractableBufferStock650x.svg)
+l. 1489 Writing TractableBufferStock.idv[652] (TractableBufferStock651x.svg)
+l. 1491 Writing TractableBufferStock.idv[653] (TractableBufferStock652x.svg)
+l. 1492 Writing TractableBufferStock.idv[654] (TractableBufferStock653x.svg)
+l. 1495 Writing TractableBufferStock.idv[655] (TractableBufferStock654x.svg)
+l. 1495 Writing TractableBufferStock.idv[656] (TractableBufferStock655x.svg)
+l. 1496 Writing TractableBufferStock.idv[657] (TractableBufferStock656x.svg)
+l. 1498 Writing TractableBufferStock.idv[658] (TractableBufferStock657x.svg)
+l. 1499 Writing TractableBufferStock.idv[659] (TractableBufferStock658x.svg)
 [91]
-l. 1483 Writing TractableBufferStock.idv[655] (TractableBufferStock654x.svg)
-l. 1487 Writing TractableBufferStock.idv[656] (TractableBufferStock655x.svg)
-l. 1488 Writing TractableBufferStock.idv[657] (TractableBufferStock656x.svg)
-l. 1489 Writing TractableBufferStock.idv[658] (TractableBufferStock657x.svg)
-l. 1491 Writing TractableBufferStock.idv[659] (TractableBufferStock658x.svg)
-l. 1492 Writing TractableBufferStock.idv[660] (TractableBufferStock659x.svg)
-l. 1495 Writing TractableBufferStock.idv[661] (TractableBufferStock660x.svg)
-l. 1495 Writing TractableBufferStock.idv[662] (TractableBufferStock661x.svg)
-l. 1496 Writing TractableBufferStock.idv[663] (TractableBufferStock662x.svg)
-l. 1498 Writing TractableBufferStock.idv[664] (TractableBufferStock663x.svg)
-l. 1499 Writing TractableBufferStock.idv[665] (TractableBufferStock664x.svg)
-l. 1503 Writing TractableBufferStock.idv[666] (TractableBufferStock665x.svg)
-l. 1510 Writing TractableBufferStock.idv[667] (TractableBufferStock666x.svg)
-l. 1511 Writing TractableBufferStock.idv[668] (TractableBufferStock667x.svg)
-l. 1520 Writing TractableBufferStock.idv[669] (TractableBufferStock668x.svg)
+l. 1503 Writing TractableBufferStock.idv[660] (TractableBufferStock659x.svg)
+l. 1510 Writing TractableBufferStock.idv[661] (TractableBufferStock660x.svg)
+l. 1511 Writing TractableBufferStock.idv[662] (TractableBufferStock661x.svg)
+l. 1520 Writing TractableBufferStock.idv[663] (TractableBufferStock662x.svg)
+l. 1528 Writing TractableBufferStock.idv[664] (TractableBufferStock663x.svg)
 [92]
-l. 1528 Writing TractableBufferStock.idv[670] (TractableBufferStock669x.svg)
-l. 1531 Writing TractableBufferStock.idv[671] (TractableBufferStock670x.svg)
-l. 1531 Writing TractableBufferStock.idv[672] (TractableBufferStock671x.svg)
-l. 1537 Writing TractableBufferStock.idv[673] (TractableBufferStock672x.svg)
-l. 1539 Writing TractableBufferStock.idv[674] (TractableBufferStock673x.svg)
+l. 1531 Writing TractableBufferStock.idv[665] (TractableBufferStock664x.svg)
+l. 1531 Writing TractableBufferStock.idv[666] (TractableBufferStock665x.svg)
+l. 1537 Writing TractableBufferStock.idv[667] (TractableBufferStock666x.svg)
+l. 1539 Writing TractableBufferStock.idv[668] (TractableBufferStock667x.svg)
 --- file TractableBufferStock42.html ---
-l. 1540 Writing TractableBufferStock.idv[675] (TractableBufferStock674x.svg)
+l. 1540 Writing TractableBufferStock.idv[669] (TractableBufferStock668x.svg)
 --- file TractableBufferStock43.html ---
-l. 1545 Writing TractableBufferStock.idv[676] (TractableBufferStock675x.svg)
+l. 1545 Writing TractableBufferStock.idv[670] (TractableBufferStock669x.svg)
+l. 1550 Writing TractableBufferStock.idv[671] (TractableBufferStock670x.svg)
+l. 1555 Writing TractableBufferStock.idv[672] (TractableBufferStock671x.svg)
 [93
 
 
 ]
-l. 1550 Writing TractableBufferStock.idv[677] (TractableBufferStock676x.svg)
-l. 1555 Writing TractableBufferStock.idv[678] (TractableBufferStock677x.svg)
-l. 1557 Writing TractableBufferStock.idv[679] (TractableBufferStock678x.svg)
-l. 1561 Writing TractableBufferStock.idv[680] (TractableBufferStock679x.svg)
-l. 1568 Writing TractableBufferStock.idv[681] (TractableBufferStock680x.svg)
-l. 1568 Writing TractableBufferStock.idv[682] (TractableBufferStock681x.svg)
-l. 1570 Writing TractableBufferStock.idv[683] (TractableBufferStock682x.svg)
-l. 1570 Writing TractableBufferStock.idv[684] (TractableBufferStock683x.svg)
-l. 1571 Writing TractableBufferStock.idv[685] (TractableBufferStock684x.svg)
+l. 1557 Writing TractableBufferStock.idv[673] (TractableBufferStock672x.svg)
+l. 1561 Writing TractableBufferStock.idv[674] (TractableBufferStock673x.svg)
+l. 1568 Writing TractableBufferStock.idv[675] (TractableBufferStock674x.svg)
+l. 1568 Writing TractableBufferStock.idv[676] (TractableBufferStock675x.svg)
+l. 1570 Writing TractableBufferStock.idv[677] (TractableBufferStock676x.svg)
+l. 1570 Writing TractableBufferStock.idv[678] (TractableBufferStock677x.svg)
+l. 1571 Writing TractableBufferStock.idv[679] (TractableBufferStock678x.svg)
 --- file TractableBufferStock44.html ---
-l. 1573 Writing TractableBufferStock.idv[686] (TractableBufferStock685x.svg)
-l. 1573 Writing TractableBufferStock.idv[687] (TractableBufferStock686x.svg)
-[94]
-l. 1578 Writing TractableBufferStock.idv[688] (TractableBufferStock687x.svg)
-l. 1580 Writing TractableBufferStock.idv[689] (TractableBufferStock688x.svg)
-l. 1581 Writing TractableBufferStock.idv[690] (TractableBufferStock689x.svg)
-l. 1583 Writing TractableBufferStock.idv[691] (TractableBufferStock690x.svg)
-l. 1589 Writing TractableBufferStock.idv[692] (TractableBufferStock691x.svg)
-l. 1594 Writing TractableBufferStock.idv[693] (TractableBufferStock692x.svg)
-l. 1595 Writing TractableBufferStock.idv[694] (TractableBufferStock693x.svg)
-[95
+l. 1573 Writing TractableBufferStock.idv[680] (TractableBufferStock679x.svg)
+l. 1573 Writing TractableBufferStock.idv[681] (TractableBufferStock680x.svg)
+l. 1578 Writing TractableBufferStock.idv[682] (TractableBufferStock681x.svg)
+l. 1580 Writing TractableBufferStock.idv[683] (TractableBufferStock682x.svg)
+l. 1581 Writing TractableBufferStock.idv[684] (TractableBufferStock683x.svg)
+[94
 
-] (./TractableBufferStock.bbl [96] [97]) [98] (./TractableBufferStock.aux)
+]
+l. 1583 Writing TractableBufferStock.idv[685] (TractableBufferStock684x.svg)
+l. 1589 Writing TractableBufferStock.idv[686] (TractableBufferStock685x.svg)
+l. 1594 Writing TractableBufferStock.idv[687] (TractableBufferStock686x.svg)
+l. 1595 Writing TractableBufferStock.idv[688] (TractableBufferStock687x.svg)
+[95] (./TractableBufferStock.bbl [96] [97]) [98] (./TractableBufferStock.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -2416,12 +2411,12 @@ L3 programming layer <2020/03/25>
 Dependency list written on TractableBufferStock.dep.
  ) 
 Here is how much of TeX's memory you used:
- 28673 strings out of 474123
- 536498 string characters out of 5746487
- 1943184 words of memory out of 5000000
- 50062 multiletter control sequences out of 15000+600000
+ 28671 strings out of 474123
+ 536487 string characters out of 5746487
+ 1942184 words of memory out of 5000000
+ 50060 multiletter control sequences out of 15000+600000
  593589 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  129i,33n,149p,11471b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TractableBufferStock.dvi (98 pages, 470032 bytes).
+Output written on TractableBufferStock.dvi (98 pages, 468348 bytes).
