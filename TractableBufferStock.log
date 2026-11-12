@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  11 NOV 2026 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  11 NOV 2026 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -998,37 +998,31 @@ um-ber 15228\T1/cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 45--49
-[]\T1/cmr/m/sc/12 Carroll, Chris-to-pher D., and Miles S. Kim-ball \T1/cmr/m/n/
-12 (1996): ``On the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--56
+Underfull \hbox (badness 4120) in paragraph at lines 45--48
 []\T1/cmr/m/sc/12 Carroll, Christo-pher D., and Miles S. Kim-ball \T1/cmr/m/n/1
-2 (2007):
+2 (1996): ``On the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--56
-\T1/cmr/m/n/12 ``Pre-cau-tion-ary Sav-ing and Pre-cau-tion-ary Wealth,'' \T1/cm
-r/m/it/12 Pal-grave
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
+[][]  \T1/cmr/m/n/12 (2007): ``Pre-cau-tion-ary Sav-ing and Pre-cau-tion-ary We
+alth,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--56
-\T1/cmr/m/it/12 Dic-tio-nary of Eco-nomics and Fi-nance, 2nd Ed.\T1/cmr/m/n/12 
-, [][]$\T1/cmtt/m/n/12 https :
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
+\T1/cmr/m/it/12 Pal-grave Dic-tio-nary of Eco-nomics and Fi-nance, 2nd Ed.\T1/c
+mr/m/n/12 , [][]$\T1/cmtt/m/n/12 https :
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 62--65
+Underfull \hbox (badness 7451) in paragraph at lines 60--63
 []\T1/cmr/m/sc/12 Hall, Robert E. \T1/cmr/m/n/12 (1988): ``In-tertem-po-ral Sub
 -sti-tu-tion in Con-sump-tion,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
 \T1/cmr/m/it/12 Jour-nal of Po-lit-i-cal Econ-omy\T1/cmr/m/n/12 , XCVI, 339--35
 7, Avail-able at
  []
@@ -1098,7 +1092,7 @@ pe1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
 public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
 blic/wasy-type1/wasy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
 ic/wasy-type1/wasy8.pfb>
-Output written on TractableBufferStock.pdf (43 pages, 800499 bytes).
+Output written on TractableBufferStock.pdf (43 pages, 800841 bytes).
 PDF statistics:
  1484 PDF objects out of 1728 (max. 8388607)
  1043 compressed objects within 11 object streams

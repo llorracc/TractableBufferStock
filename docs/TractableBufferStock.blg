@@ -6,15 +6,15 @@ Database file #1: ./TractableBufferStock.bib
 Done.
 You've used 17 entries,
             2309 wiz_defined-function locations,
-            624 strings with 6484 characters,
-and the built_in function-call counts, 7398 in all, are:
-= -- 768
-> -- 305
+            623 strings with 6426 characters,
+and the built_in function-call counts, 7390 in all, are:
+= -- 770
+> -- 301
 < -- 0
-+ -- 109
-- -- 84
-* -- 626
-:= -- 1474
++ -- 108
+- -- 83
+* -- 624
+:= -- 1472
 add.period$ -- 19
 call.type$ -- 17
 change.case$ -- 89
@@ -22,8 +22,8 @@ chr.to.int$ -- 17
 cite$ -- 17
 duplicate$ -- 281
 empty$ -- 491
-format.name$ -- 114
-if$ -- 1415
+format.name$ -- 113
+if$ -- 1411
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 18
@@ -35,13 +35,13 @@ purify$ -- 89
 quote$ -- 0
 skip$ -- 258
 stack$ -- 0
-substring$ -- 442
+substring$ -- 446
 swap$ -- 48
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 181
 warning$ -- 0
-while$ -- 99
+while$ -- 100
 width$ -- 0
 write$ -- 211
