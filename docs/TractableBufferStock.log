@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  11 NOV 2026 19:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  11 NOV 2026 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,7 +459,7 @@ MathFactsList.defs) (./@local/dir-paths.tex) (./@local/TractableBufferStock.sty
 ushort.sty by M. Vaeth: Release: 2.2 
 Package: ushort 2001/06/13 v2.2
 )) (./@resources/texlive/texmf-local/tex/latex/econark-bibfilesfind.sty
-Package: econark-bibfilesfind 2024/11/04 collect existing among filename.bib, s
+Package: econark-bibfilesfind 2026/11/05 collect existing among filename.bib, s
 ystem.bib, filename-Add-Refs.bib
 \filetest=\read4
 \econarksysbibread=\read5
@@ -2411,10 +2411,10 @@ L3 programming layer <2020/03/25>
 Dependency list written on TractableBufferStock.dep.
  ) 
 Here is how much of TeX's memory you used:
- 28671 strings out of 474123
- 536487 string characters out of 5746487
+ 28672 strings out of 474123
+ 536494 string characters out of 5746487
  1942184 words of memory out of 5000000
- 50060 multiletter control sequences out of 15000+600000
+ 50061 multiletter control sequences out of 15000+600000
  593589 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  129i,33n,149p,11471b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
