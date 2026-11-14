@@ -2,12 +2,13 @@ This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: TractableBufferStock.aux
 The style file: econark.bst
-Database file #1: ./TractableBufferStock.bib
+Database file #1: system.bib
+Database file #2: ./TractableBufferStock.bib
 Done.
 You've used 17 entries,
             2309 wiz_defined-function locations,
-            623 strings with 6426 characters,
-and the built_in function-call counts, 7390 in all, are:
+            625 strings with 6502 characters,
+and the built_in function-call counts, 7392 in all, are:
 = -- 770
 > -- 301
 < -- 0
@@ -27,13 +28,13 @@ if$ -- 1411
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 18
-newline$ -- 57
+newline$ -- 58
 num.names$ -- 102
 pop$ -- 64
-preamble$ -- 1
+preamble$ -- 2
 purify$ -- 89
 quote$ -- 0
-skip$ -- 258
+skip$ -- 257
 stack$ -- 0
 substring$ -- 446
 swap$ -- 48
@@ -44,4 +45,5 @@ type$ -- 181
 warning$ -- 0
 while$ -- 100
 width$ -- 0
-write$ -- 211
+write$ -- 212
+

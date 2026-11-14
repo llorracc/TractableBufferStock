@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  11 NOV 2026 23:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  14 NOV 2026 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,13 +496,17 @@ ystem.bib, filename-Add-Refs.bib
 \filetest=\read4
 \econarksysbibread=\read5
 )
-File ./system.bib is empty
-econark-bibfilesfind: system.bib not found
+File /usr/local/texlive/texmf-local/bibtex/bib/system.bib is not empty
+econark-bibfilesfind: system.bib found via kpsewhich: /usr/local/texlive/texmf-
+local/bibtex/bib/system.bib
 econark-bibfilesfind: File TractableBufferStock-Add-Refs.bib not found
 File TractableBufferStock.bib is not empty
 econark-bibfilesfind: File TractableBufferStock.bib found
-econark-bibfilesfind: references in TractableBufferStock.bib
-:{TractableBufferStock}
+econark-bibfilesfind: References in global system.bib take precedence (it is li
+sted first)
+econark-bibfilesfind: TractableBufferStock.bib supplies items not in system.bib
+
+:{system,TractableBufferStock}
 (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
 
@@ -968,61 +972,61 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1578.
 
 [41] (./TractableBufferStock.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
 []\T1/cmr/m/sc/12 Carroll, Christo-pher \T1/cmr/m/n/12 (2020): ``The-o-ret-i-ca
 l Foun-da-tions of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
 \T1/cmr/m/n/12 Buffer Stock Sav-ing,'' \T1/cmr/m/it/12 Econ-ARK RE-MARK\T1/cmr/
 m/n/12 , Avail-able at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--42
+Underfull \hbox (badness 10000) in paragraph at lines 39--43
 []\T1/cmr/m/sc/12 Carroll, Christo-pher D., and Olivier Jeanne \T1/cmr/m/n/12 (
 2009): ``A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--42
+Underfull \hbox (badness 10000) in paragraph at lines 39--43
 \T1/cmr/m/n/12 Tractable Model of Pre-cau-tion-ary Re-serves, Net For-eign As-s
 ets, or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--42
+Underfull \hbox (badness 10000) in paragraph at lines 39--43
 \T1/cmr/m/n/12 Sovereign Wealth Funds,'' \T1/cmr/m/it/12 NBER Work-ing Pa-per N
 um-ber 15228\T1/cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 45--48
+Underfull \hbox (badness 4120) in paragraph at lines 46--49
 []\T1/cmr/m/sc/12 Carroll, Christo-pher D., and Miles S. Kim-ball \T1/cmr/m/n/1
 2 (1996): ``On the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--54
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
 [][]  \T1/cmr/m/n/12 (2007): ``Pre-cau-tion-ary Sav-ing and Pre-cau-tion-ary We
 alth,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--54
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
 \T1/cmr/m/it/12 Pal-grave Dic-tio-nary of Eco-nomics and Fi-nance, 2nd Ed.\T1/c
 mr/m/n/12 , [][]$\T1/cmtt/m/n/12 https :
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 60--63
+Underfull \hbox (badness 7451) in paragraph at lines 61--64
 []\T1/cmr/m/sc/12 Hall, Robert E. \T1/cmr/m/n/12 (1988): ``In-tertem-po-ral Sub
 -sti-tu-tion in Con-sump-tion,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--63
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 \T1/cmr/m/it/12 Jour-nal of Po-lit-i-cal Econ-omy\T1/cmr/m/n/12 , XCVI, 339--35
 7, Avail-able at
  []
@@ -1041,10 +1045,10 @@ Package rerunfilecheck Info: File `TractableBufferStock.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23581 strings out of 474122
- 451562 string characters out of 5746461
+ 23584 strings out of 474122
+ 451744 string characters out of 5746461
  1953187 words of memory out of 5000000
- 45250 multiletter control sequences out of 15000+600000
+ 45252 multiletter control sequences out of 15000+600000
  596424 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,31n,131p,10988b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
