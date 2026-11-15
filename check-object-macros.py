@@ -69,8 +69,6 @@ ALLOWED = [
 
 # (letter, where, why it waits): raw object letters left for a decision of Chris's, which the macro would anticipate.
 HELD = [
-    ('C', r'\\uFunc\(\[\[C\]\]_\{t', "the unemployed consumer's consumption, a level: levels wait for Chris's levels"
-     ' decision'),
     ('c', r'\\tilde\{\\mathbf\{\[\[c\]\]\}\}', "reverse shooting's approximation to the consumption function, a bold c:"
      ' its macro, \\cFunc, prints an upright c (a symbol batch)'),
     ('c', r'Aggregate \$\[\[c\]\]\$', "aggregate consumption, in two figures' captions: the registry's aggregate prints"
@@ -80,13 +78,7 @@ HELD = [
 # Functions' macros used as numbers. (macro, where, why): the macro, as a pattern; where, a pattern searched in the
 # math around it (its whole equation).
 FUNC_ALLOWED = []
-FUNC_HELD = [
-    (r'\\VFunc', r'_\{\\equiv \\vMultUnemp\}', "the unemployed consumer's value at t, a level: \\vLvl_{t}^{\\UnempLbl}"
-     " with the levels decision, which the equation's raw C waits for too"),
-    (r'\\cFunc|\\MPCFunc', r'\\label\{eq:kappaP(Expr|Reverse)\}', "c and kappa written as their functions in the"
-     " consumption function's curvature (Numerical Solution), whose numbers' macros print an italic c and a plain"
-     ' kappa (a symbol batch); the section goes to its notebook at the split'),
-]
+FUNC_HELD = []
 
 GREEK = set('alpha beta gamma delta epsilon varepsilon zeta eta theta vartheta iota kappa varkappa lambda mu nu xi '
             'pi varpi rho varrho sigma varsigma tau upsilon phi varphi chi psi omega Gamma Delta Theta Lambda Xi Pi '
@@ -97,7 +89,9 @@ NOT_MATH = re.compile(r'\\(label|ref|eqref|pageref|hyperref|href|url|cite[a-z]*|
                       r'operatorname|tag|begin|end)\*?\s*(\[[^\]]*\])?\s*\{')
 WINDOW = 160  # how far around a letter its pattern may look
 GROUP = r'\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}'  # a brace group, nested up to three deep
-FUNC = re.compile(r'\\[A-Za-z]*Func(?![A-Za-z])((?:\s*(?:[_^]\s*(?:' + GROUP + r"|\\[A-Za-z]+|[^\s{}])|'))+)")
+ACCENT = r'\\(?:bar|check|hat|tilde|breve|dot|ddot|vec|grave|acute|mathring|underline|overline|widehat|widetilde)'
+FUNC = re.compile(r'(?:' + ACCENT + r'\s*\{\s*\\[A-Za-z]*Func\s*\}|\\[A-Za-z]*Func(?![A-Za-z]))'  # \bar{\cFunc}_{t} too
+                  r"((?:\s*(?:[_^]\s*(?:" + GROUP + r"|\\[A-Za-z]+|[^\s{}])|'))+)")
 SUBSCRIPT = re.compile(r'_\s*(' + GROUP + r'|\\[A-Za-z]+|[^\s{}])')
 DATE = re.compile(r'(?<![A-Za-z\\])[tT](?![A-Za-z])|\\prd[tT](?![A-Za-z])|\\Alt\{')
 ARGUMENT = re.compile(r'\s*(\\(left|bigl?|Bigl?|biggl?|Biggl?)\s*)?\(')

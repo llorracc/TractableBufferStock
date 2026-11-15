@@ -1351,9 +1351,9 @@ parameter values have been defined a numerical rootfinder can calculate a soluti
 
 Finally, it will be useful to have an estimate of the curvature (second derivative) of the consumption function.  This can be obtained by a procedure analogous to the one used to obtain the MPC: differentiate the differentiated Euler equation \eqref{eq:dEuler} again.  Noting that $\MPC^{\UnempLbl\prime}=0$ we can obtain:
 \begin{equation}\begin{gathered}\begin{aligned}
-\lefteqn{  (\MPCFunc^{\EmpLbl}_{t})^{2} \uPPP(\cFunc^{\EmpLbl}_{t}) +\MPCFunc_{t}^{\EmpLbl\prime}\uPP(\cFunc^{\EmpLbl}_{t}) = } &   \nonumber \\ 
-&  \DiscFacAlt \RNrmByG \left\{(-\MPCFunc_{t}^{\EmpLbl\prime}) \Ex_{t}[\uPP(\cFunc^{\bullet}_{t+1})\MPCFunc^{\bullet}_{t+1}]
-+  \RNrmByG (1-\MPCFunc^{\EmpLbl}_{t})^{2}\left(\Ex_{t}[(\MPCFunc_{t+1}^{\bullet})^{2}\uPPP(\cFunc^{\bullet}_{t+1})]+\erate  \uPP(\cFunc^{\EmpLbl}_{t+1})\MPCFunc_{t+1}^{\EmpLbl\prime}\right)\right\} \nonumber \\ \label{eq:kappaPExpr}
+\lefteqn{  (\MPC^{\EmpLbl}_{t})^{2} \uPPP(\cNrm^{\EmpLbl}_{t}) +\MPC_{t}^{\EmpLbl\prime}\uPP(\cNrm^{\EmpLbl}_{t}) = } &   \nonumber \\ 
+&  \DiscFacAlt \RNrmByG \left\{(-\MPC_{t}^{\EmpLbl\prime}) \Ex_{t}[\uPP(\cNrm^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}]
++  \RNrmByG (1-\MPC^{\EmpLbl}_{t})^{2}\left(\Ex_{t}[(\MPC_{t+1}^{\bullet})^{2}\uPPP(\cNrm^{\bullet}_{t+1})]+\erate  \uPP(\cNrm^{\EmpLbl}_{t+1})\MPC_{t+1}^{\EmpLbl\prime}\right)\right\} \nonumber \\ \label{eq:kappaPExpr}
 \end{aligned}\end{gathered}\end{equation}
 \begin{comment} % The following attempts to derive an expression that will be useful in determining a functional form for \MPC^{e \prime} as c goes to infinity
 the limit of which as ${\cNrm}^{e}_{t} \rightarrow \infty$ is 
@@ -1383,7 +1383,7 @@ and dividing both sides by $\uPP(c_{t})$ and realizing that $\uPPP(c)/\uPP(c) = 
 \end{comment}
 so that
 \begin{equation}\begin{gathered}\begin{aligned}
-\MPCFunc^{\EmpLbl\prime}_{t}   & =  \left(\frac{\DiscFacAlt \RNrmByG^{2} (1-\MPCFunc^{\EmpLbl}_{t})^{2} \left( \Ex_{t}[(\MPCFunc_{t+1}^{\bullet})^{2}\uPPP(\cFunc^{\bullet}_{t+1})] +\erate \uPP(\cFunc^{\EmpLbl}_{t+1}) \MPCFunc^{\EmpLbl \prime}_{t+1}\right)-(\MPCFunc^{\EmpLbl}_{t})^{2} \uPPP(\cFunc^{\EmpLbl}_{t})}{\uPP(\cFunc^{\EmpLbl}_{t})+\DiscFacAlt \RNrmByG \Ex_{t}[\uPP(\cFunc^{\bullet}_{t+1})\MPCFunc^{\bullet}_{t+1}]  }\right) \nonumber \\ \label{eq:kappaPReverse}
+\MPC^{\EmpLbl\prime}_{t}   & =  \left(\frac{\DiscFacAlt \RNrmByG^{2} (1-\MPC^{\EmpLbl}_{t})^{2} \left( \Ex_{t}[(\MPC_{t+1}^{\bullet})^{2}\uPPP(\cNrm^{\bullet}_{t+1})] +\erate \uPP(\cNrm^{\EmpLbl}_{t+1}) \MPC^{\EmpLbl \prime}_{t+1}\right)-(\MPC^{\EmpLbl}_{t})^{2} \uPPP(\cNrm^{\EmpLbl}_{t})}{\uPP(\cNrm^{\EmpLbl}_{t})+\DiscFacAlt \RNrmByG \Ex_{t}[\uPP(\cNrm^{\bullet}_{t+1})\MPC^{\bullet}_{t+1}]  }\right) \nonumber \\ \label{eq:kappaPReverse}
 \end{aligned}\end{gathered}\end{equation}
 %leading to a dynamic equation for $\MPC_{t}^{e\prime}$
 %\begin{equation}\begin{gathered}\begin{aligned}
@@ -1440,9 +1440,9 @@ consumption function on the interval $[\underline{\mNrm}^{\EmpLbl},\bar{\mNrm}^{
 
 As a preliminary, note that since $\uFunc(xy)=\uFunc(x)y^{1-\CRRA}$, value for an unemployed consumer is 
 \begin{equation}\begin{gathered}\begin{aligned}
-  \VFunc_{t}^{\UnempLbl} & =  \uFunc(C_{t}^{\UnempLbl})+\DiscFac \uFunc(C_{t+1}^{\UnempLbl}) + \DiscFac^{2} \uFunc(C_{t+2}^{\UnempLbl})+...
-\\ & =  \uFunc(C_{t}^{\UnempLbl})\left(1+\DiscFac \{(\Rfree \DiscFac)^{1/\CRRA}\}^{1-\CRRA} + \DiscFac^{2}\left\{(\Rfree \DiscFac)^{2/\CRRA}\right\}^{1-\CRRA}+...\right)
-\\ & =  \uFunc(C_{t}^{\UnempLbl})\underbrace{\left(\frac{1}{1-\DiscFac (\Rfree \DiscFac)^{(1/\CRRA)-1}}\right)}_{\equiv \vMultUnemp}
+  \vLvl_{t}^{\UnempLbl} & =  \uFunc(\cLvl_{t}^{\UnempLbl})+\DiscFac \uFunc(\cLvl_{t+1}^{\UnempLbl}) + \DiscFac^{2} \uFunc(\cLvl_{t+2}^{\UnempLbl})+...
+\\ & =  \uFunc(\cLvl_{t}^{\UnempLbl})\left(1+\DiscFac \{(\Rfree \DiscFac)^{1/\CRRA}\}^{1-\CRRA} + \DiscFac^{2}\left\{(\Rfree \DiscFac)^{2/\CRRA}\right\}^{1-\CRRA}+...\right)
+\\ & =  \uFunc(\cLvl_{t}^{\UnempLbl})\underbrace{\left(\frac{1}{1-\DiscFac (\Rfree \DiscFac)^{(1/\CRRA)-1}}\right)}_{\equiv \vMultUnemp}
 \end{aligned}\end{gathered}\end{equation}
 where the RIC guarantees that the denominator in the fraction is a positive number.  
 
