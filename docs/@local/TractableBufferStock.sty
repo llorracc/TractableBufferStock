@@ -20,14 +20,30 @@
 
 % TractableBufferStock's own macros: objects the shared registry (econ-ark-tools, @resources/notation) lacks, built on its names.
 % The math-mode ones are wrapped in \ensuremath because the handout uses several of them in running text.
-\providecommand{\aNrmE}{\ensuremath{\aNrm^{e}}}
-\providecommand{\bNrmE}{\ensuremath{\bNrm^{e}}}
-\providecommand{\cNrmE}{\ensuremath{\cNrm^{e}}}
-\providecommand{\cNrmU}{\ensuremath{\cNrm^{u}}}
-\providecommand{\mNrmE}{\ensuremath{\mNrm^{e}}}
-\providecommand{\mNrmU}{\ensuremath{\mNrm^{u}}}
-\providecommand{\vNrmE}{\ensuremath{\vNrm^{e}}}
-\providecommand{\MPCE}{\ensuremath{\MPC^{e}}}
+% Every object in the handout's math is written with its macro, never as a raw letter, so its print is decided here
+% (rule D, Chris Carroll, 2026-11-15). ./check-raw-letters.py fails a raw object letter.
+
+% The employment states' labels: c^e, c^u. They print in italic, as before; whether labels become upright is Chris's
+% decision (X-C11 in workspace-course-choice's notation schema).
+\providecommand{\EmpLbl}{\ensuremath{e}}
+\providecommand{\UnempLbl}{\ensuremath{u}}
+\providecommand{\aNrmE}{\ensuremath{\aNrm^{\EmpLbl}}}
+\providecommand{\bNrmE}{\ensuremath{\bNrm^{\EmpLbl}}}
+\providecommand{\cNrmE}{\ensuremath{\cNrm^{\EmpLbl}}}
+\providecommand{\cNrmU}{\ensuremath{\cNrm^{\UnempLbl}}}
+\providecommand{\mNrmE}{\ensuremath{\mNrm^{\EmpLbl}}}
+\providecommand{\mNrmU}{\ensuremath{\mNrm^{\UnempLbl}}}
+\providecommand{\vNrmE}{\ensuremath{\vNrm^{\EmpLbl}}}
+\providecommand{\MPCE}{\ensuremath{\MPC^{\EmpLbl}}}
+% The handout's own letters, written raw before 2026-11-15:
+% how much more an employed consumer consumes next period than an unemployed one, (c^e_{t+1} - c^u_{t+1})/c^u_{t+1}
+\providecommand{\cGap}{\ensuremath{\nabla}}
+% \RNrmByG \MPC \straight, (proportional to) the slope of the \Delta c^e = 0 locus
+\providecommand{\cLocusSlope}{\ensuremath{\mathfrak{z}}}
+% wage growth's shortfall from the return, in units of the unemployment risk: G = R(1 - this \urate)
+\providecommand{\WGroShortfall}{\ensuremath{\mathfrak{a}}}
+% an unemployed consumer's value is utility times this multiplier
+\providecommand{\vMultUnemp}{\ensuremath{\mathfrak{v}}}
 \providecommand{\cTrgNrm}{\ensuremath{\TargetNrm{\cNrm}}}
 \providecommand{\bTrgNrm}{\ensuremath{\TargetNrm{\bNrm}}}
 \providecommand{\vTrgNrm}{\ensuremath{\TargetNrm{\vNrm}}}
