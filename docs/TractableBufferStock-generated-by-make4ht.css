@@ -325,6 +325,7 @@ div.figure{text-align:center;clear:both;overflow:auto;width:100%;margin-bottom:1
 div.table{text-align:center;clear:both;overflow:auto;width:100%;margin-bottom:1em;margin-left:auto;margin-right:auto}
 div.float{text-align:center;clear:both;overflow:auto;width:100%;margin-bottom:1em;margin-left:auto;margin-right:auto}
 .subfigure img{display:block; margin-left:auto; margin-right:auto}
+body{text-align:justify; -webkit-hyphens:auto; hyphens:auto;}
 .equation td{text-align:center; }
 td.equation { margin-top:5em; margin-bottom:5em; }
 /* end css.sty */

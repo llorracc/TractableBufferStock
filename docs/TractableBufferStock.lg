@@ -369,6 +369,7 @@ Css: div.figure{text-align:center;clear:both;overflow:auto;width:100%;margin-bot
 Css: div.table{text-align:center;clear:both;overflow:auto;width:100%;margin-bottom:1em;margin-left:auto;margin-right:auto}
 Css: div.float{text-align:center;clear:both;overflow:auto;width:100%;margin-bottom:1em;margin-left:auto;margin-right:auto}
 Css: .subfigure img{display:block; margin-left:auto; margin-right:auto}
+Css: body{text-align:justify; -webkit-hyphens:auto; hyphens:auto;}
 Css: .equation td{text-align:center; }
 Css: td.equation { margin-top:5em; margin-bottom:5em; }
 --- needs --- TractableBufferStock.idv[2] ==> TractableBufferStock0x.svg ---

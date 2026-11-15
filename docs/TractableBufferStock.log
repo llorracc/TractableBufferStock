@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  15 NOV 2026 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  15 NOV 2026 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1342,34 +1342,34 @@ LaTeX Warning: Unused global option(s):
 (./TractableBufferStock.aux)
 \openout1 = `TractableBufferStock.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-Package scrbase Info: activating english \abstractname on input line 81.
-Package scrbase Info: activating english \partname on input line 81.
-Package scrbase Info: activating english \figurename on input line 81.
-Package scrbase Info: activating english \tablename on input line 81.
-Package scrbase Info: activating english \contentsname on input line 81.
-Package scrbase Info: activating english \listfigurename on input line 81.
-Package scrbase Info: activating english \listtablename on input line 81.
-Package scrbase Info: activating english \refname on input line 81.
-Package scrbase Info: activating english \indexname on input line 81.
-Package hyperref Info: Link coloring ON on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+Package scrbase Info: activating english \abstractname on input line 87.
+Package scrbase Info: activating english \partname on input line 87.
+Package scrbase Info: activating english \figurename on input line 87.
+Package scrbase Info: activating english \tablename on input line 87.
+Package scrbase Info: activating english \contentsname on input line 87.
+Package scrbase Info: activating english \listfigurename on input line 87.
+Package scrbase Info: activating english \listtablename on input line 87.
+Package scrbase Info: activating english \refname on input line 87.
+Package scrbase Info: activating english \indexname on input line 87.
+Package hyperref Info: Link coloring ON on input line 87.
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
 (scrartcl)           because of handling of possible bookmark level gaps.
@@ -1377,7 +1377,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 81.
+(scrartcl)           before \begin{document} on input line 87.
 (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/bookmark-hooks.4ht
 version 2022-07-07-14:08
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
@@ -2423,4 +2423,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  129i,33n,149p,11471b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TractableBufferStock.dvi (98 pages, 468120 bytes).
+Output written on TractableBufferStock.dvi (98 pages, 468196 bytes).
