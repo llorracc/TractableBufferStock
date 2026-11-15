@@ -71,8 +71,6 @@ ALLOWED = [
 HELD = [
     ('c', r'\\tilde\{\\mathbf\{\[\[c\]\]\}\}', "reverse shooting's approximation to the consumption function, a bold c:"
      ' its macro, \\cFunc, prints an upright c (a symbol batch)'),
-    ('c', r'Aggregate \$\[\[c\]\]\$', "aggregate consumption, in two figures' captions: the registry's aggregate prints"
-     ' a capital (a symbol batch)'),
 ]
 
 # Functions' macros used as numbers. (macro, where, why): the macro, as a pattern; where, a pattern searched in the
