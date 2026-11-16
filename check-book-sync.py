@@ -271,6 +271,8 @@ def book_words(md, used):
     b = re.sub(r'\{cite:[tp]\}`([^`]*)`', r'CITE\1', b)
     b = re.sub(r'^\([A-Za-z:-]+\)=$', '', b, flags=re.M)
     b = re.sub(r'^#+ ', '', b, flags=re.M)
+    # A link to an equation names it where the handout prints its number: keep both.
+    b = re.sub(r'\[([^\]]*)\]\(#(eq:[^)]*)\)', lambda m: m[1] + ' EQ' + strip_label(m[2]), b)
     b = re.sub(r'\[([^\]]*)\]\((?:\\.|[^)\\])*\)', r'\1', b)
     return tokens(b)
 
