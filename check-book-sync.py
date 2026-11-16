@@ -21,6 +21,14 @@ the macros render. It ignores macro names that render the same, a macro that pri
 letter or symbol against that symbol written raw (rule D's conversions), quotation marks and
 emphasis, and does not compare the bibliography's entries.
 
+A symbol that prints differently in the two documents is a difference to fix, never one to accept
+(Chris Carroll, 2026-11-16 11:11:13 EST: "This is exactly the kind of thing that should be sync'd
+when we sync handout and chapter"). So nothing that prints is accepted: delimiter sizes and spacing
+are compared too. What it still sets aside is how each format lays out a display: the environments
+that wrap it, its row breaks, and \\lefteqn, which KaTeX lacks; marks that print nothing (\\hideSup,
+\\tSS); and the labels' letters in the wording, whose upright print is compared once, by
+compare_labels.
+
 The notes: the chapters write their notes as margin notes and the handouts keep footnotes (Chris
 Carroll, 2026-11-15 15:58:48 EST). The handout's footnotes are compared with the chapter's notes,
 footnotes or margin notes, as one sequence of words in order. A footnote marks a word mid-sentence
@@ -73,7 +81,6 @@ PFCRRA = 'each document points to the perfect-foresight material its own way: th
 ACCEPTED_REWRITES = [
     (r'(?:[Tt]he )?\[perfect foresight CRRA\]\(#sec:PerfForesightCRRA\)(?: section)?', 'PFCRRAREF', PFCRRA),
     (r'\[appendix to the perfect foresight CRRA section\]\(#sec:\w+\)', 'appendix to PFCRRAREF', PFCRRA),
-    (r'\\overset\{\\dots\}\{([^{}]*)\}', r'\\dddot{\1}', "KaTeX's spelling of \\dddot, which prints the same"),
 ]
 # The handout's side of the same: its names for other handouts.
 HAND_REWRITES = [
@@ -306,8 +313,7 @@ def book_words(md, used):
 def tokens(s):
     s = re.sub(r'\\(begin|end)\{(equation|gathered|aligned|align|split|eqnarray|gather|multline)\*?\}', '', s)
     s = s.replace('\\\\', ' ')  # rows of a display, which are layout
-    # Spacing and the sizes of delimiters, which are layout too.
-    s = re.sub(r'\\(?:left|right|[Bb]igg?[lr]?|quad|qquad)(?![A-Za-z])|\\[,;:!]', ' ', s)
+    # Delimiter sizes and spacing print, so they are compared (Chris, 2026-11-16 11:11:13, below).
     s = s.replace('\\\n', ' ').replace('\\ ', ' ').replace('~', ' ').replace('``', '').replace("''", '')
     for mark in '"`*“”':
         s = s.replace(mark, '')
