@@ -67,8 +67,8 @@ htfcss: ecss  font-family: sans-serif;
 htfcss: ecff  font-family: fantasy;
 htfcss: ecti  font-style: italic;
 htfcss: ectt  font-family: monospace,monospace;
-htfcss: cmbxti  font-weight: bold; font-style: italic;
-htfcss: cmti  font-style: italic;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
 htfcss: cmbx  font-weight: bold;
 htfcss: cmbxsl  font-weight: bold; font-style: oblique;
 htfcss: cmss   font-family: sans-serif;
@@ -86,8 +86,6 @@ htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
 htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
 htfcss: cmssdc  font-family: sans-serif;
 htfcss: cmssi  font-family: sans-serif; font-style: oblique;
-htfcss: cmmi font-style: italic;
-htfcss: cmmib font-style: italic; font-weight: bold;
 htfcss: ecbx  font-weight: bold;
 htfcss: ecsx  font-weight: bold;
 htfcss: ecbi  font-weight: bold;   font-style: italic;
@@ -1108,7 +1106,7 @@ Font("cmss","12","12","100")
 Font("cmss","8","8","100")
 Font("cmss","8","8","75")
 Font("cmbx","12","12","100")
-Font("cmbxti","10","10","120")
+Font("cmmib","10","10","120")
 Font("ecbx","1200","12","100")
 Font("cmss","10","10","100")
 Font("cmss","8","8","87")

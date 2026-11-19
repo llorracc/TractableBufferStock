@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  16 NOV 2026 11:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2024.7.25)  19 NOV 2026 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -437,7 +437,7 @@ Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 \tab@size=\count300
 \listing@line=\count301
 ))) (./@resources/texlive/texmf-local/tex/latex/econark-shortcuts.sty
-Package: econark-shortcuts 2026/11/04 v9.0.0 Econ-ARK shared notation
+Package: econark-shortcuts 2026/11/18 v14.3.0 Econ-ARK shared notation
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/graphics-hooks.4ht
@@ -2411,12 +2411,12 @@ L3 programming layer <2020/03/25>
 Dependency list written on TractableBufferStock.dep.
  ) 
 Here is how much of TeX's memory you used:
- 28628 strings out of 474123
- 534664 string characters out of 5746487
+ 28756 strings out of 474123
+ 535314 string characters out of 5746487
  1942184 words of memory out of 5000000
- 50016 multiletter control sequences out of 15000+600000
- 593589 words of font info for 130 fonts, out of 8000000 for 9000
+ 50145 multiletter control sequences out of 15000+600000
+ 592512 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  129i,33n,149p,11471b,745s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TractableBufferStock.dvi (98 pages, 459804 bytes).
+Output written on TractableBufferStock.dvi (98 pages, 459728 bytes).

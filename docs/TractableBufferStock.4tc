@@ -9,13 +9,13 @@
 \doTocEntry\tocsubsubsection{2.2.4}{\csname a:TocLink\endcsname{1}{x1-80002.2.4}{QQ2-1-8}{Finding the Target}}{12}\relax 
 \doTocEntry\tocsubsubsection{2.2.5}{\csname a:TocLink\endcsname{1}{x1-90002.2.5}{QQ2-1-9}{Upper Bounds for $\beta $, Given Other Parameters}}{14}\relax 
 \doTocEntry\tocsubsubsection{2.2.6}{\csname a:TocLink\endcsname{1}{x1-100002.2.6}{QQ2-1-10}{Why Increased Unemployment Risk Increases Effective Growth Impatience}}{16}\relax 
-\doTocEntry\tocsubsubsection{2.2.7}{\csname a:TocLink\endcsname{1}{x1-110002.2.7}{QQ2-1-11}{The Target Level of $\ensuremath  {m^{\ensuremath  {\mathrm@@ {e}}}}$}}{17}\relax 
-\doTocEntry\tocsubsubsection{2.2.8}{\csname a:TocLink\endcsname{1}{x1-120002.2.8}{QQ2-1-12}{Conditions Required for a Perfect Foresight Solution; Existence of Target $\ensuremath  {m^{\ensuremath  {\mathrm@@ {e}}}}$}}{20}\relax 
+\doTocEntry\tocsubsubsection{2.2.7}{\csname a:TocLink\endcsname{1}{x1-110002.2.7}{QQ2-1-11}{The Target Level of $m^{\mathrm@@ {e}}$}}{17}\relax 
+\doTocEntry\tocsubsubsection{2.2.8}{\csname a:TocLink\endcsname{1}{x1-120002.2.8}{QQ2-1-12}{Conditions Required for a Perfect Foresight Solution; Existence of Target $m^{\mathrm@@ {e}}$}}{20}\relax 
 \doTocEntry\tocsubsubsection{2.2.9}{\csname a:TocLink\endcsname{1}{x1-130002.2.9}{QQ2-1-13}{The Phase Diagram}}{20}\relax 
 \doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-13001r1}{}{\ignorespaces Phase Diagram}}{figure}\relax 
 \doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-13004r2}{}{\ignorespaces The Consumption Function}}{figure}\relax 
 \doTocEntry\tocsubsubsection{2.2.10}{\csname a:TocLink\endcsname{1}{x1-140002.2.10}{QQ2-1-16}{The Consumption Function}}{26}\relax 
-\doTocEntry\tocsubsubsection{2.2.11}{\csname a:TocLink\endcsname{1}{x1-150002.2.11}{QQ2-1-17}{Expected Consumption Growth Is Downward Sloping in $\ensuremath  {m^{\ensuremath  {\mathrm@@ {e}}}}$}}{27}\relax 
+\doTocEntry\tocsubsubsection{2.2.11}{\csname a:TocLink\endcsname{1}{x1-150002.2.11}{QQ2-1-17}{Expected Consumption Growth Is Downward Sloping in $m^{\mathrm@@ {e}}$}}{27}\relax 
 \doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-15005r3}{}{\ignorespaces Income and Consumption Growth}}{figure}\relax 
 \doTocEntry\tocsubsubsection{2.2.12}{\csname a:TocLink\endcsname{1}{x1-160002.2.12}{QQ2-1-19}{Summing Up the Intuition}}{31}\relax 
 \doTocEntry\toclof{4}{\csname a:TocLink\endcsname{1}{x1-16001r4}{}{\ignorespaces Effect of An Increase In $\mathsf@@ {r}$}}{figure}\relax 
@@ -23,8 +23,8 @@
 \doTocEntry\tocsubsubsection{2.2.13}{\csname a:TocLink\endcsname{1}{x1-170002.2.13}{QQ2-1-22}{Death to the Log-Linearized Consumption Euler Equation!}}{37}\relax 
 \doTocEntry\tocsubsubsection{2.2.14}{\csname a:TocLink\endcsname{1}{x1-180002.2.14}{QQ2-1-23}{A Final Experiment}}{39}\relax 
 \doTocEntry\toclof{6}{\csname a:TocLink\endcsname{1}{x1-18003r6}{}{\ignorespaces Effect of Lower $\vartheta $ On Consumption Function}}{figure}\relax 
-\doTocEntry\toclof{7}{\csname a:TocLink\endcsname{1}{x1-18004r7}{}{\ignorespaces Path of ${c}^{\ensuremath  {\mathrm@@ {e}}}$ Before and After $\vartheta $ Decline}}{figure}\relax 
-\doTocEntry\toclof{8}{\csname a:TocLink\endcsname{1}{x1-18005r8}{}{\ignorespaces Path of $\ensuremath  {m^{\ensuremath  {\mathrm@@ {e}}}}$ Before and After $\vartheta $ Decline}}{figure}\relax 
+\doTocEntry\toclof{7}{\csname a:TocLink\endcsname{1}{x1-18004r7}{}{\ignorespaces Path of ${c}^{\mathrm@@ {e}}$ Before and After $\vartheta $ Decline}}{figure}\relax 
+\doTocEntry\toclof{8}{\csname a:TocLink\endcsname{1}{x1-18005r8}{}{\ignorespaces Path of $m^{\mathrm@@ {e}}$ Before and After $\vartheta $ Decline}}{figure}\relax 
 \doTocEntry\toclof{9}{\csname a:TocLink\endcsname{1}{x1-18006r9}{}{\ignorespaces Marginal Propensity to Consume $\kappa _{t}$ Before and After $\vartheta $ Decline}}{figure}\relax 
 \doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-28}{A Macroeconomic Interpretation}}{52}\relax 
 \doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{1}{x1-200003.1}{QQ2-1-29}{Stakes}}{54}\relax 
@@ -44,5 +44,5 @@
 \doTocEntry\tocsubsection{E.1}{\csname a:TocLink\endcsname{1}{x1-32000E.1}{QQ2-1-43}{The Consumption Function}}{83}\relax 
 \doTocEntry\tocsubsection{E.2}{\csname a:TocLink\endcsname{1}{x1-33000E.2}{QQ2-1-44}{The Value Function}}{89}\relax 
 \doTocEntry\tocsection{F}{\csname a:TocLink\endcsname{1}{x1-34000F}{QQ2-1-45}{The Algorithm}}{91}\relax 
-\doTocEntry\tocsection{G}{\csname a:TocLink\endcsname{1}{x1-35000G}{QQ2-1-46}{Modified Formulas For Case Where $\ensuremath  {\cc@accent {"7017}{\mathrm@@ {G}}}\geq \mathsf@@ {R}$}}{95}\relax 
+\doTocEntry\tocsection{G}{\csname a:TocLink\endcsname{1}{x1-35000G}{QQ2-1-46}{Modified Formulas For Case Where $\cc@accent {"7017}{\ensuremath  {\mathrm@@ {G}}}\geq \mathsf@@ {R}$}}{95}\relax 
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-36000}{QQ2-1-47}{References}}{96}\relax 

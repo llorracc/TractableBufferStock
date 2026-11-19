@@ -18,61 +18,27 @@
 \newcommand{\nFuncPP}{\nFunc^{\prime\prime}}
 \newcommand{\nFuncPPP}{\nFunc^{\prime\prime\prime}}
 
-% TractableBufferStock's own macros: objects the shared registry (econ-ark-tools, @resources/notation) lacks, built on its names.
+% TractableBufferStock's own objects are rows of the shared registry (econ-ark-tools, @resources/notation) from
+% v14.3.0: the employment states and their composites, the targets, the conditions and the bounds on beta, the
+% model's own letters and the growth objects that keep human wealth h fixed. What stays here waits on a decision.
+% Every object in the handout's math is written with its macro, never as a raw letter, so its print is decided by
+% the registry or here (rule D, Chris Carroll, 2026-11-15). ./check-object-macros.py fails a raw object letter, and
+% a function's macro used as a number.
 % The math-mode ones are wrapped in \ensuremath because the handout uses several of them in running text.
-% Every object in the handout's math is written with its macro, never as a raw letter, so its print is decided here
-% (rule D, Chris Carroll, 2026-11-15). ./check-object-macros.py fails a raw object letter, and a function's macro used
-% as a number.
 
-% The employment states' labels: c^e, c^u. Labels are upright (Chris, 2026-11-15 12:07:32: "labels upright").
-\providecommand{\EmpLbl}{\ensuremath{\mathrm{e}}}
-\providecommand{\UnempLbl}{\ensuremath{\mathrm{u}}}
-\providecommand{\aNrmE}{\ensuremath{\aNrm^{\EmpLbl}}}
-\providecommand{\bNrmE}{\ensuremath{\bNrm^{\EmpLbl}}}
-\providecommand{\cNrmE}{\ensuremath{\cNrm^{\EmpLbl}}}
-\providecommand{\cNrmU}{\ensuremath{\cNrm^{\UnempLbl}}}
-\providecommand{\mNrmE}{\ensuremath{\mNrm^{\EmpLbl}}}
-\providecommand{\mNrmU}{\ensuremath{\mNrm^{\UnempLbl}}}
-\providecommand{\vNrmE}{\ensuremath{\vNrm^{\EmpLbl}}}
-\providecommand{\MPCE}{\ensuremath{\MPC^{\EmpLbl}}}
-% The handout's own letters, written raw before 2026-11-15:
-% how much more an employed consumer consumes next period than an unemployed one, (c^e_{t+1} - c^u_{t+1})/c^u_{t+1}
-\providecommand{\cGap}{\ensuremath{\nabla}}
-% \RNrmByG \MPC \straight, (proportional to) the slope of the \Delta c^e = 0 locus
-\providecommand{\cLocusSlope}{\ensuremath{\mathfrak{z}}}
-% wage growth's shortfall from the return, in units of the unemployment risk: G = R(1 - this \urate)
-\providecommand{\WGroShortfall}{\ensuremath{\mathfrak{a}}}
-% an unemployed consumer's value is utility times this multiplier
-\providecommand{\vMultUnemp}{\ensuremath{\mathfrak{v}}}
-\providecommand{\cTrgNrm}{\ensuremath{\TargetNrm{\cNrm}}}
-\providecommand{\bTrgNrm}{\ensuremath{\TargetNrm{\bNrm}}}
-\providecommand{\vTrgNrm}{\ensuremath{\TargetNrm{\vNrm}}}
-\providecommand{\GPRteAdj}{\ensuremath{\check{\APRte}_{\WGroRtehFix}}}
+% No registry row: these could be written out where they are used.
 \providecommand{\dcEqZero}{\ensuremath{\Delta\cNrmE=0}}
 \providecommand{\dmEqZero}{\ensuremath{\Delta\mNrmE=0}}
+% Waiting on Chris: Pi's face, the check, the cancel mark, and the birth date's letter.
+\providecommand{\GPRteAdj}{\ensuremath{\check{\APRte}_{\WGroRtehFix}}}
 \providecommand{\straight}{\ensuremath{\Pi}}
-\providecommand{\prudEx}{\ensuremath{\mathfrak{p}}}
 \providecommand{\tThen}{\ensuremath{\tau}}
-\providecommand{\uPPP}{\ensuremath{\uFunc^{\prime\prime\prime}}}
 \providecommand{\psavFunc}{\ensuremath{\cancel{\cFunc}}}
+% The registry has no bare FHWC row, because BufferStockTheory defines \FHWC itself.
 \providecommand{\FHWC}{\ensuremath{\text{FHWC}}}
-\providecommand{\FHWChFix}{\ensuremath{\text{FHWC}_{\WGroFachFix}}}
-\providecommand{\FHWCWGro}{\ensuremath{\text{FHWC}_{\WGroFac}}}
-\providecommand{\GIChFix}{\ensuremath{\text{GIC}_{\WGroFachFix}}}
-\providecommand{\GICWGro}{\ensuremath{\text{GIC}_{\WGroFac}}}
-\providecommand{\DiscFacMaxRIC}{\ensuremath{\bar{\DiscFac}_{\text{RIC}}}}
-\providecommand{\DiscFacMaxGICTBS}{\ensuremath{\bar{\DiscFac}_{\text{TBS}}}}
-\providecommand{\DiscFacMaxGIChFix}{\ensuremath{\bar{\DiscFac}_{\text{GIC}_{\WGroFachFix}}}}
-\providecommand{\DiscFacMaxGICWGro}{\ensuremath{\bar{\DiscFac}_{\text{GIC}_{\WGroFac}}}}
-\providecommand{\DiscFacMaxGICWhenFHWCTBSHolds}{\ensuremath{\bar{\DiscFac}_{\text{FHW}}}}
 
-% The growth objects adjusted to keep human wealth h fixed. The glyph is chosen here.
-\providecommand{\WGroFachFix}{\ensuremath{\mathring{\mathrm{G}}}}
-\providecommand{\WGroRtehFix}{\ensuremath{\mathring{\mathrm{g}}}}
 % \mathring overflows hyperref's bookmark conversion, and the factor appears in a section title
 \AtBeginDocument{\pdfstringdefDisableCommands{\def\WGroFachFix{G}\def\WGroRtehFix{g}}}
-\providecommand{\GPFachFix}{\ensuremath{\APFac_{\WGroFachFix}}}
-\providecommand{\GPRtehFix}{\ensuremath{\APRte_{\WGroRtehFix}}}
 
 % tex4ht gives a \label inside a footnote the footnote's number, so state the equation's number.
 % Use this after the end of the equation, not inside it.

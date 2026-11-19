@@ -2,7 +2,7 @@
 % @resources/notation/notation.yml, the single source of notation for the papers).
 % Explicit definitions only (no factory/\@for loops); Lvl/Nrm/Func for a-z and A-Z are inline.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{econark-shortcuts}[2026/11/04 v9.0.0 Econ-ARK shared notation]
+\ProvidesPackage{econark-shortcuts}[2026/11/18 v14.3.0 Econ-ARK shared notation]
 % What the macros below need (2026-10-22). eucal is loaded only if no package has defined
 % \mathscr already, so a class that loads it with its own options is not disturbed.
 \RequirePackage{amsmath,amssymb,cancel,graphicx}
@@ -36,165 +36,279 @@
 % (Replaced by explicit definitions below; no \makeatletter or \@for used)
 
 % Level, normalized, and function commands for each letter (explicit definitions)
+% Levels are \boldsymbol{x}: bold italic in LaTeX and KaTeX alike (owner ruling 2026-11-15;
+% was \boldsymbol{\mathit{x}}, which KaTeX prints unbolded). Normalized: plain italic. Functions: upright.
+% Bold marks a level that can be or will be divided by a normalizer; a normalizer itself is never bold:
+% labor-augmenting productivity Z, in k = K/(ZL), is one (owner ruling 2026-11-16). \ZLvl is a generic level Z;
+% productivity Z is \PtyLab. Labor \LLvl, population \NLvl and permanent income \pLvl stay bold.
 % Lowercase a-z
-\ARKcommand{\aLvl}{\boldsymbol{\mathit{a}}}
+\ARKcommand{\aLvl}{\boldsymbol{a}}
 \ARKcommand{\aNrm}{a}
 \ARKcommand{\aFunc}{\mathrm{a}}
-\ARKcommand{\bLvl}{\boldsymbol{\mathit{b}}}
+\ARKcommand{\bLvl}{\boldsymbol{b}}
 \ARKcommand{\bNrm}{b}
 \ARKcommand{\bFunc}{\mathrm{b}}
-\ARKcommand{\cLvl}{\boldsymbol{\mathit{c}}}
+\ARKcommand{\cLvl}{\boldsymbol{c}}
 \ARKcommand{\cNrm}{c}
 \ARKcommand{\cFunc}{\mathrm{c}}
-\ARKcommand{\dLvl}{\boldsymbol{\mathit{d}}}
+\ARKcommand{\dLvl}{\boldsymbol{d}}
 \ARKcommand{\dNrm}{d}
 \ARKcommand{\dFunc}{\mathrm{d}}
-\ARKcommand{\eLvl}{\boldsymbol{\mathit{e}}}
+\ARKcommand{\eLvl}{\boldsymbol{e}}
 \ARKcommand{\eNrm}{e}
 \ARKcommand{\eFunc}{\mathrm{e}}
-\ARKcommand{\fLvl}{\boldsymbol{\mathit{f}}}
+\ARKcommand{\fLvl}{\boldsymbol{f}}
 \ARKcommand{\fNrm}{f}
 \ARKcommand{\fFunc}{\mathrm{f}}
-\ARKcommand{\gLvl}{\boldsymbol{\mathit{g}}}
+\ARKcommand{\gLvl}{\boldsymbol{g}}
 \ARKcommand{\gNrm}{g}
 \ARKcommand{\gFunc}{\mathrm{g}}
-\ARKcommand{\hLvl}{\boldsymbol{\mathit{h}}}
+\ARKcommand{\hLvl}{\boldsymbol{h}}
 \ARKcommand{\hNrm}{h}
 \ARKcommand{\hFunc}{\mathrm{h}}
-\ARKcommand{\iLvl}{\boldsymbol{\mathit{i}}}
+\ARKcommand{\iLvl}{\boldsymbol{i}}
 \ARKcommand{\iNrm}{i}
 \ARKcommand{\iFunc}{\mathrm{i}}
-\ARKcommand{\jLvl}{\boldsymbol{\mathit{j}}}
+\ARKcommand{\jLvl}{\boldsymbol{j}}
 \ARKcommand{\jNrm}{j}
 \ARKcommand{\jFunc}{\mathrm{j}}
-\ARKcommand{\kLvl}{\boldsymbol{\mathit{k}}}
+\ARKcommand{\kLvl}{\boldsymbol{k}}
 \ARKcommand{\kNrm}{k}
 \ARKcommand{\kFunc}{\mathrm{k}}
-\ARKcommand{\lLvl}{\boldsymbol{\mathit{l}}}
+\ARKcommand{\lLvl}{\boldsymbol{l}}
 \ARKcommand{\lNrm}{l}
 \ARKcommand{\lFunc}{\mathrm{l}}
-\ARKcommand{\mLvl}{\boldsymbol{\mathit{m}}}
+\ARKcommand{\mLvl}{\boldsymbol{m}}
 \ARKcommand{\mNrm}{m}
 \ARKcommand{\mFunc}{\mathrm{m}}
-\ARKcommand{\nLvl}{\boldsymbol{\mathit{n}}}
+\ARKcommand{\nLvl}{\boldsymbol{n}}
 \ARKcommand{\nNrm}{n}
 \ARKcommand{\nFunc}{\mathrm{n}}
-\ARKcommand{\oLvl}{\boldsymbol{\mathit{o}}}
+\ARKcommand{\oLvl}{\boldsymbol{o}}
 \ARKcommand{\oNrm}{o}
 \ARKcommand{\oFunc}{\mathrm{o}}
-\ARKcommand{\pLvl}{\boldsymbol{\mathit{p}}}
+\ARKcommand{\pLvl}{\boldsymbol{p}}
 \ARKcommand{\pNrm}{p}
 \ARKcommand{\pFunc}{\mathrm{p}}
-\ARKcommand{\qLvl}{\boldsymbol{\mathit{q}}}
+\ARKcommand{\qLvl}{\boldsymbol{q}}
 \ARKcommand{\qNrm}{q}
 \ARKcommand{\qFunc}{\mathrm{q}}
-\ARKcommand{\rLvl}{\boldsymbol{\mathit{r}}}
+\ARKcommand{\rLvl}{\boldsymbol{r}}
 \ARKcommand{\rNrm}{r}
 \ARKcommand{\rFunc}{\mathrm{r}}
-\ARKcommand{\sLvl}{\boldsymbol{\mathit{s}}}
+\ARKcommand{\sLvl}{\boldsymbol{s}}
 \ARKcommand{\sNrm}{s}
 \ARKcommand{\sFunc}{\mathrm{s}}
-\ARKcommand{\tLvl}{\boldsymbol{\mathit{t}}}
+\ARKcommand{\tLvl}{\boldsymbol{t}}
 \ARKcommand{\tNrm}{t}
 \ARKcommand{\tFunc}{\mathrm{t}}
-\ARKcommand{\uLvl}{\boldsymbol{\mathit{u}}}
+\ARKcommand{\uLvl}{\boldsymbol{u}}
 \ARKcommand{\uNrm}{u}
 \ARKcommand{\uFunc}{\mathrm{u}}
-\ARKcommand{\vLvl}{\boldsymbol{\mathit{v}}}
+\ARKcommand{\vLvl}{\boldsymbol{v}}
 \ARKcommand{\vNrm}{v}
 \ARKcommand{\vFunc}{\mathrm{v}}
-\ARKcommand{\wLvl}{\boldsymbol{\mathit{w}}}
+\ARKcommand{\wLvl}{\boldsymbol{w}}
 \ARKcommand{\wNrm}{w}
 \ARKcommand{\wFunc}{\mathrm{w}}
-\ARKcommand{\xLvl}{\boldsymbol{\mathit{x}}}
+\ARKcommand{\xLvl}{\boldsymbol{x}}
 \ARKcommand{\xNrm}{x}
 \ARKcommand{\xFunc}{\mathrm{x}}
-\ARKcommand{\yLvl}{\boldsymbol{\mathit{y}}}
+\ARKcommand{\yLvl}{\boldsymbol{y}}
 \ARKcommand{\yNrm}{y}
 \ARKcommand{\yFunc}{\mathrm{y}}
-\ARKcommand{\zLvl}{\boldsymbol{\mathit{z}}}
+\ARKcommand{\zLvl}{\boldsymbol{z}}
 \ARKcommand{\zNrm}{z}
 \ARKcommand{\zFunc}{\mathrm{z}}
 
 % Uppercase A-Z
-\ARKcommand{\ALvl}{\boldsymbol{\mathit{A}}}
+\ARKcommand{\ALvl}{\boldsymbol{A}}
 \ARKcommand{\ANrm}{A}
 \ARKcommand{\AFunc}{\mathrm{A}}
-\ARKcommand{\BLvl}{\boldsymbol{\mathit{B}}}
+\ARKcommand{\BLvl}{\boldsymbol{B}}
 \ARKcommand{\BNrm}{B}
 \ARKcommand{\BFunc}{\mathrm{B}}
-\ARKcommand{\CLvl}{\boldsymbol{\mathit{C}}}
+\ARKcommand{\CLvl}{\boldsymbol{C}}
 \ARKcommand{\CNrm}{C}
 \ARKcommand{\CFunc}{\mathrm{C}}
-\ARKcommand{\DLvl}{\boldsymbol{\mathit{D}}}
+\ARKcommand{\DLvl}{\boldsymbol{D}}
 \ARKcommand{\DNrm}{D}
 \ARKcommand{\DFunc}{\mathrm{D}}
-\ARKcommand{\ELvl}{\boldsymbol{\mathit{E}}}
+\ARKcommand{\ELvl}{\boldsymbol{E}}
 \ARKcommand{\ENrm}{E}
 \ARKcommand{\EFunc}{\mathrm{E}}
-\ARKcommand{\FLvl}{\boldsymbol{\mathit{F}}}
+\ARKcommand{\FLvl}{\boldsymbol{F}}
 \ARKcommand{\FNrm}{F}
 \ARKcommand{\FFunc}{\mathrm{F}}
-\ARKcommand{\GLvl}{\boldsymbol{\mathit{G}}}
+\ARKcommand{\GLvl}{\boldsymbol{G}}
 \ARKcommand{\GNrm}{G}
 \ARKcommand{\GFunc}{\mathrm{G}}
-\ARKcommand{\HLvl}{\boldsymbol{\mathit{H}}}
+\ARKcommand{\HLvl}{\boldsymbol{H}}
 \ARKcommand{\HNrm}{H}
 \ARKcommand{\HFunc}{\mathrm{H}}
-\ARKcommand{\ILvl}{\boldsymbol{\mathit{I}}}
+\ARKcommand{\ILvl}{\boldsymbol{I}}
 \ARKcommand{\INrm}{I}
 \ARKcommand{\IFunc}{\mathrm{I}}
-\ARKcommand{\JLvl}{\boldsymbol{\mathit{J}}}
+\ARKcommand{\JLvl}{\boldsymbol{J}}
 \ARKcommand{\JNrm}{J}
 \ARKcommand{\JFunc}{\mathrm{J}}
-\ARKcommand{\KLvl}{\boldsymbol{\mathit{K}}}
+\ARKcommand{\KLvl}{\boldsymbol{K}}
 \ARKcommand{\KNrm}{K}
 \ARKcommand{\KFunc}{\mathrm{K}}
-\ARKcommand{\LLvl}{\boldsymbol{\mathit{L}}}
+\ARKcommand{\LLvl}{\boldsymbol{L}}
 \ARKcommand{\LNrm}{L}
 \ARKcommand{\LFunc}{\mathrm{L}}
-\ARKcommand{\MLvl}{\boldsymbol{\mathit{M}}}
+\ARKcommand{\MLvl}{\boldsymbol{M}}
 \ARKcommand{\MNrm}{M}
 \ARKcommand{\MFunc}{\mathrm{M}}
-\ARKcommand{\NLvl}{\boldsymbol{\mathit{N}}}
+\ARKcommand{\NLvl}{\boldsymbol{N}}
 \ARKcommand{\NNrm}{N}
 \ARKcommand{\NFunc}{\mathrm{N}}
-\ARKcommand{\OLvl}{\boldsymbol{\mathit{O}}}
+\ARKcommand{\OLvl}{\boldsymbol{O}}
 \ARKcommand{\ONrm}{O}
 \ARKcommand{\OFunc}{\mathrm{O}}
-\ARKcommand{\PLvl}{\boldsymbol{\mathit{P}}}
+\ARKcommand{\PLvl}{\boldsymbol{P}}
 \ARKcommand{\PNrm}{P}
 \ARKcommand{\PFunc}{\mathrm{P}}
-\ARKcommand{\QLvl}{\boldsymbol{\mathit{Q}}}
+\ARKcommand{\QLvl}{\boldsymbol{Q}}
 \ARKcommand{\QNrm}{Q}
 \ARKcommand{\QFunc}{\mathrm{Q}}
-\ARKcommand{\RLvl}{\boldsymbol{\mathit{R}}}
+\ARKcommand{\RLvl}{\boldsymbol{R}}
 \ARKcommand{\RNrm}{R}
 \ARKcommand{\RFunc}{\mathrm{R}}
-\ARKcommand{\SLvl}{\boldsymbol{\mathit{S}}}
+\ARKcommand{\SLvl}{\boldsymbol{S}}  % aggregate saving, Y - C (a row from v14.2.0)
 \ARKcommand{\SNrm}{S}
 \ARKcommand{\SFunc}{\mathrm{S}}
-\ARKcommand{\TLvl}{\boldsymbol{\mathit{T}}}
+\ARKcommand{\TLvl}{\boldsymbol{T}}
 \ARKcommand{\TNrm}{T}
 \ARKcommand{\TFunc}{\mathrm{T}}
-\ARKcommand{\ULvl}{\boldsymbol{\mathit{U}}}
+\ARKcommand{\ULvl}{\boldsymbol{U}}
 \ARKcommand{\UNrm}{U}
 \ARKcommand{\UFunc}{\mathrm{U}}
-\ARKcommand{\VLvl}{\boldsymbol{\mathit{V}}}
+\ARKcommand{\VLvl}{\boldsymbol{V}}
 \ARKcommand{\VNrm}{V}
 \ARKcommand{\VFunc}{\mathrm{V}}
-\ARKcommand{\WLvl}{\boldsymbol{\mathit{W}}}
+\ARKcommand{\WLvl}{\boldsymbol{W}}
 \ARKcommand{\WNrm}{W}
 \ARKcommand{\WFunc}{\mathrm{W}}
-\ARKcommand{\XLvl}{\boldsymbol{\mathit{X}}}
+\ARKcommand{\XLvl}{\boldsymbol{X}}
 \ARKcommand{\XNrm}{X}
 \ARKcommand{\XFunc}{\mathrm{X}}
-\ARKcommand{\YLvl}{\boldsymbol{\mathit{Y}}}
+\ARKcommand{\YLvl}{\boldsymbol{Y}}
 \ARKcommand{\YNrm}{Y}
 \ARKcommand{\YFunc}{\mathrm{Y}}
-\ARKcommand{\ZLvl}{\boldsymbol{\mathit{Z}}}
+\ARKcommand{\ZLvl}{\boldsymbol{Z}}
 \ARKcommand{\ZNrm}{Z}
 \ARKcommand{\ZFunc}{\mathrm{Z}}
+
+% Logs (owner rulings 2026-11-15 and 2026-11-17): \l<macro> is the natural log of <macro>, printed with ell:
+% \lcNrm = \ell c, \lcLvl = \ell\cLvl; no lower case for logs. The print is set once, in \lnat (was \log, "log c",
+% until v11.0.0, when labor moved from \ell to l; named \lnat until v13.0.0, owner 2026-11-17).
+\ARKcommand{\lnat}{\ell}
+\ARKcommand{\laNrm}{\lnat\aNrm}
+\ARKcommand{\laLvl}{\lnat\aLvl}
+\ARKcommand{\lbNrm}{\lnat\bNrm}
+\ARKcommand{\lbLvl}{\lnat\bLvl}
+\ARKcommand{\lcNrm}{\lnat\cNrm}
+\ARKcommand{\lcLvl}{\lnat\cLvl}
+\ARKcommand{\ldNrm}{\lnat\dNrm}
+\ARKcommand{\ldLvl}{\lnat\dLvl}
+\ARKcommand{\leNrm}{\lnat\eNrm}
+\ARKcommand{\leLvl}{\lnat\eLvl}
+\ARKcommand{\lfNrm}{\lnat\fNrm}
+\ARKcommand{\lfLvl}{\lnat\fLvl}
+\ARKcommand{\lgNrm}{\lnat\gNrm}
+\ARKcommand{\lgLvl}{\lnat\gLvl}
+\ARKcommand{\lhNrm}{\lnat\hNrm}
+\ARKcommand{\lhLvl}{\lnat\hLvl}
+\ARKcommand{\liNrm}{\lnat\iNrm}
+\ARKcommand{\liLvl}{\lnat\iLvl}
+\ARKcommand{\ljNrm}{\lnat\jNrm}
+\ARKcommand{\ljLvl}{\lnat\jLvl}
+\ARKcommand{\lkNrm}{\lnat\kNrm}
+\ARKcommand{\lkLvl}{\lnat\kLvl}
+\ARKcommand{\llNrm}{\lnat\lNrm}
+\ARKcommand{\llLvl}{\lnat\lLvl}
+\ARKcommand{\lmNrm}{\lnat\mNrm}
+\ARKcommand{\lmLvl}{\lnat\mLvl}
+\ARKcommand{\lnNrm}{\lnat\nNrm}
+\ARKcommand{\lnLvl}{\lnat\nLvl}
+\ARKcommand{\loNrm}{\lnat\oNrm}
+\ARKcommand{\loLvl}{\lnat\oLvl}
+\ARKcommand{\lpNrm}{\lnat\pNrm}
+\ARKcommand{\lpLvl}{\lnat\pLvl}
+\ARKcommand{\lqNrm}{\lnat\qNrm}
+\ARKcommand{\lqLvl}{\lnat\qLvl}
+\ARKcommand{\lrNrm}{\lnat\rNrm}
+\ARKcommand{\lrLvl}{\lnat\rLvl}
+\ARKcommand{\lsNrm}{\lnat\sNrm}
+\ARKcommand{\lsLvl}{\lnat\sLvl}
+\ARKcommand{\ltNrm}{\lnat\tNrm}
+\ARKcommand{\ltLvl}{\lnat\tLvl}
+\ARKcommand{\luNrm}{\lnat\uNrm}
+\ARKcommand{\luLvl}{\lnat\uLvl}
+\ARKcommand{\lvNrm}{\lnat\vNrm}
+\ARKcommand{\lvLvl}{\lnat\vLvl}
+\ARKcommand{\lwNrm}{\lnat\wNrm}
+\ARKcommand{\lwLvl}{\lnat\wLvl}
+\ARKcommand{\lxNrm}{\lnat\xNrm}
+\ARKcommand{\lxLvl}{\lnat\xLvl}
+\ARKcommand{\lyNrm}{\lnat\yNrm}
+\ARKcommand{\lyLvl}{\lnat\yLvl}
+\ARKcommand{\lzNrm}{\lnat\zNrm}
+\ARKcommand{\lzLvl}{\lnat\zLvl}
+\ARKcommand{\lANrm}{\lnat\ANrm}
+\ARKcommand{\lALvl}{\lnat\ALvl}
+\ARKcommand{\lBNrm}{\lnat\BNrm}
+\ARKcommand{\lBLvl}{\lnat\BLvl}
+\ARKcommand{\lCNrm}{\lnat\CNrm}
+\ARKcommand{\lCLvl}{\lnat\CLvl}
+\ARKcommand{\lDNrm}{\lnat\DNrm}
+\ARKcommand{\lDLvl}{\lnat\DLvl}
+\ARKcommand{\lENrm}{\lnat\ENrm}
+\ARKcommand{\lELvl}{\lnat\ELvl}
+\ARKcommand{\lFNrm}{\lnat\FNrm}
+\ARKcommand{\lFLvl}{\lnat\FLvl}
+\ARKcommand{\lGNrm}{\lnat\GNrm}
+\ARKcommand{\lGLvl}{\lnat\GLvl}
+\ARKcommand{\lHNrm}{\lnat\HNrm}
+\ARKcommand{\lHLvl}{\lnat\HLvl}
+\ARKcommand{\lINrm}{\lnat\INrm}
+\ARKcommand{\lILvl}{\lnat\ILvl}
+\ARKcommand{\lJNrm}{\lnat\JNrm}
+\ARKcommand{\lJLvl}{\lnat\JLvl}
+\ARKcommand{\lKNrm}{\lnat\KNrm}
+\ARKcommand{\lKLvl}{\lnat\KLvl}
+\ARKcommand{\lLNrm}{\lnat\LNrm}
+\ARKcommand{\lLLvl}{\lnat\LLvl}
+\ARKcommand{\lMNrm}{\lnat\MNrm}
+\ARKcommand{\lMLvl}{\lnat\MLvl}
+\ARKcommand{\lNNrm}{\lnat\NNrm}
+\ARKcommand{\lNLvl}{\lnat\NLvl}
+\ARKcommand{\lONrm}{\lnat\ONrm}
+\ARKcommand{\lOLvl}{\lnat\OLvl}
+\ARKcommand{\lPNrm}{\lnat\PNrm}
+\ARKcommand{\lPLvl}{\lnat\PLvl}
+\ARKcommand{\lQNrm}{\lnat\QNrm}
+\ARKcommand{\lQLvl}{\lnat\QLvl}
+\ARKcommand{\lRNrm}{\lnat\RNrm}
+\ARKcommand{\lRLvl}{\lnat\RLvl}
+\ARKcommand{\lSNrm}{\lnat\SNrm}
+\ARKcommand{\lSLvl}{\lnat\SLvl}
+\ARKcommand{\lTNrm}{\lnat\TNrm}
+\ARKcommand{\lTLvl}{\lnat\TLvl}
+\ARKcommand{\lUNrm}{\lnat\UNrm}
+\ARKcommand{\lULvl}{\lnat\ULvl}
+\ARKcommand{\lVNrm}{\lnat\VNrm}
+\ARKcommand{\lVLvl}{\lnat\VLvl}
+\ARKcommand{\lWNrm}{\lnat\WNrm}
+\ARKcommand{\lWLvl}{\lnat\WLvl}
+\ARKcommand{\lXNrm}{\lnat\XNrm}
+\ARKcommand{\lXLvl}{\lnat\XLvl}
+\ARKcommand{\lYNrm}{\lnat\YNrm}
+\ARKcommand{\lYLvl}{\lnat\YLvl}
+\ARKcommand{\lZNrm}{\lnat\ZNrm}
+\ARKcommand{\lZLvl}{\lnat\ZLvl}
 
 
 % variables:
@@ -216,7 +330,9 @@
 \ARKcommand{\tranShkInd}{\xi}      % (purely) transitory
 \ARKcommand{\permShkIndMin}{\Min{\permShkInd}}
 \ARKcommand{\permShkIndMax}{\Max{\permShkInd}}
-\ARKcommand{\prstShkAgg}{\Phi}     % persistent not permanent
+% Capital Greek numbers print italic, by rule C (italic for a number, upright for a function):
+% \varPhi, \varTheta, \varPsi, \varXi, \varOmega (owner ruling 2026-11-15; were upright).
+\ARKcommand{\prstShkAgg}{\varPhi}     % persistent not permanent
 % \prstShkInd, \prstShk and their Min/Max were \phi, which is the log equity premium (\eprem);
 % used by no paper, they are retired (owner ruling 2026-10-22). A paper that needs a persistent shock proposes a symbol.
 \ARKcommand{\tranShkMin}{\Min{\xi}}
@@ -233,8 +349,8 @@
 \ARKcommand{\IncUnempBen}{\IncUnemp}           % alias: income while unemployed and receiving benefits (HAFiscal's name)
 
 %% Agg variables (also affect individuals)
-\ARKcommand{\TranShkAgg}{\Theta}   % the aggregate transitory shock, aggregate of \tranShkEmp (xi has no aggregate)
-\ARKcommand{\PermShkAgg}{\Psi}  % 
+\ARKcommand{\TranShkAgg}{\varTheta}   % the aggregate transitory shock, aggregate of \tranShkEmp (xi has no aggregate)
+\ARKcommand{\PermShkAgg}{\varPsi}  % 
 
 %% Shock std and var
 \ARKcommand{\std}{\sigma}
@@ -245,12 +361,12 @@
 
 %% Combo variables (combining Ind and Agg)
 % Principle: "All" (Ind+Agg) uses \pmb for all such macros. \pmb is supported by MathJax and KaTeX.
-\ARKcommand{\PermShkAll}{\pmb{\Psi}}
+\ARKcommand{\PermShkAll}{\pmb{\varPsi}}
 \ARKcommand{\PermShkAllStd}{\std_{\PermShkAll}}
 \ARKcommand{\PermShkAllVar}{\std^{2}_{\PermShkAll}}
 
-\ARKcommand{\PermLvlAgg}{\boldsymbol{\mathit{P}}}      % 
-\ARKcommand{\permLvlInd}{\boldsymbol{\mathit{p}}}      % 
+\ARKcommand{\PermLvlAgg}{\boldsymbol{P}}      % 
+\ARKcommand{\permLvlInd}{\boldsymbol{p}}      % 
 \ARKcommand{\permLvl}{\permLvlInd}      % 
 \ARKcommand{\PermLvl}{\PermLvlAgg}      % 
 \ARKcommand{\PermLvlAll}{\pmb{P}}
@@ -287,6 +403,7 @@
 \ARKcommand{\Alive}{\mathcal{L}}
 \ARKcommand{\diePrb}{\mathsf{d}} % Continuous time death rate (annual)
 \ARKcommand{\DiePrb}{\mathsf{D}} % Discrete-time one-period death rate
+\ARKcommand{\UpdatePrb}{\varPi}   % probability of updating expectations (sticky expectations; HARK-style name UpdatePrb; owner ruling 2026-11-16)
 
 \ARKcommand{\DeprFac}{\daleth}
 \ARKcommand{\deprRte}{\delta}  % 
@@ -349,9 +466,10 @@
 
 \ARKcommand{\RfreeEff}{\mathring{\Rfree}} % Blanchard-adjusted return R/\LivPrb: the survival ring (owner ruling 2026-10-22); R-bar is \RBoro
 
-\ARKcommand{\PopnGroFac}{\Xi}
-\ARKcommand{\PopnGroRte}{n}   % Solow's letter (owner ruling 2026-11-02); was \ln\PopnGroFac, and before that xi, the transitory shock
-\ARKcommand{\PopnLvl}{\pmb{\mathrm{N}}}
+\ARKcommand{\PopnGroFac}{\varXi}
+\ARKcommand{\PopnGroRte}{\lnat\varXi}   % the log of the factor, ell-Xi (\lnat), explained where a document first introduces it
+                                         % (owner ruling 2026-11-17); was n (2026-11-02), \ln\PopnGroFac, and before that xi
+\ARKcommand{\PopnLvl}{\NLvl}   % population, a level: bold italic N (owner ruling 2026-11-15: a quantity is italic; was \pmb{\mathrm{N}})
   
 \ARKcommand{\LivPrb}{\Alive}
 % \livPrb (was \ell) retired (owner ruling 2026-10-22): used by no paper; \ell is \labor and survival is \LivPrb.
@@ -376,7 +494,7 @@
                                         % \omega only because one paper happened to use it, and
                                         % \omega is \weight above -- so there is no Greek letter it
                                         % has a claim on, and convention (2) does not apply.
-\ARKcommand{\ADElas}{\Omega}             % consumption elasticity of the aggregate-demand effect.
+\ARKcommand{\ADElas}{\varOmega}             % consumption elasticity of the aggregate-demand effect.
                                         % NOT \kappa (the MPC) and NOT \varkappa (too close to it).
                                         % A CAPITAL: this governs an economy-wide externality, not an
                                         % individual's behavior, so upper case follows the
@@ -397,7 +515,7 @@
                                         % tgt^{1-\varpi} vs tgt^{-\varpi} and were easy to transpose.
 \ARKcommand{\tightness}{\mathrm{tgt}}    % labor-market tightness, vacancies per searcher. Was
                                         % \Theta, which is NARK's \TranShkAgg / \TranShkEmp.
-\ARKcommand{\MPCFunc}{\pmb{\kappa}}
+\ARKcommand{\MPCFunc}{\pmb{\kappa}}   % a codified exception to rule C: a Greek letter may name a function, printed bold (owner ruling 2026-11-15)
 \ARKcommand{\pZero}{\wp}
 
 \ARKcommand{\rfree}{\mathsf{r}}   % The net return rate on the safe asset
@@ -415,7 +533,7 @@
 \ARKcommand{\splurge}{\gimel}  % share of income consumed off the top, outside the
                                % optimizing problem (HAFiscal). NOT \varsigma, which is
                                % \riskyshare above; NOT a styled Latin letter, because
-                               % KaTeX renders those as plain ASCII (see \PtyGroRte below)
+                               % KaTeX renders those as plain ASCII (tests/check_katex.py)
 \ARKcommand{\riskyvar}{\std^{2}_{\risky}}
 \ARKcommand{\Rport}{\mathfrak{R}}       % Portfolio -weighted return
 \ARKcommand{\rport}{\mathfrak{r}}
@@ -450,11 +568,13 @@
 % \unins (was \zeta) removed (owner ruling 2026-10-22): TractableBufferStock's uninsurance rate, defined in that paper (as \lambda);
 % \zeta is the leisure share (\leiShare).
 
-\ARKcommand{\Labor}{\mathrm{L}}
-\ARKcommand{\labor}{\ell}
-\ARKcommand{\leisure}{z}       % time not worked, z = 1 - \ell with a unit endowment (owner ruling 2026-11-03); the share is \leiShare
+\ARKcommand{\Labor}{\LLvl}   % aggregate labor, a level: bold italic L (owner ruling 2026-11-15: a quantity is italic; was \mathrm{L})
+\ARKcommand{\labor}{l}   % labor: italic l (owner ruling 2026-11-17; was \ell, which is now the natural log, \lnat)
+\ARKcommand{\leisure}{z}       % time not worked, z = 1 - l with a unit endowment (owner ruling 2026-11-03); the share is \leiShare
 \ARKcommand{\itcRte}{\chi}     % investment tax credit rate: chi, the Greek C, for credit (owner ruling 2026-11-03); write 1-\chi out
-\ARKcommand{\savRte}{\mathrm{sav}}  % saving rate, a word (owner ruling 2026-11-03); \varsigma is \riskyshare
+\ARKcommand{\savRte}{\mathsf{s}}  % saving rate: sans-serif s (owner ruling 2026-11-17 17:16; was the word sav, 2026-11-03); \varsigma is \riskyshare
+\ARKcommand{\netWorth}{\mathsf{n}}  % net worth, assets minus debt: sans-serif n (owner ruling 2026-11-17 16:43; was s)
+\ARKcommand{\NetWorth}{\mathsf{N}}  % aggregate net worth: sans-serif N (owner ruling 2026-11-17 16:43; was S)
 
 \ARKcommand{\EEndMap}{{\mathsf{E}}}
 
@@ -520,7 +640,7 @@
 
 % Evolving ideas:
 % - FOR GREEK CHARACTERS ONLY: Use upper and lower case for Factor vs Rate
-\ARKcommand{\PopGroFac}{\Xi}
+\ARKcommand{\PopGroFac}{\varXi}
 
 \ARKcommand{\popGroRte}{\PopnGroRte}    % alias (owner ruling 2026-10-22)
 
@@ -531,10 +651,77 @@
 % Productivity growth, which is also aggregate permanent growth (\PermGroFacAgg): calligraphic G, rate italic g (owner
 % rulings 2026-11-02; calligraphic has no lowercase, so the rate is plain g). It was sans-serif from 2026-10-22, now
 % permanent-income growth's; before that script G, a script g that no font has, and Roman G and g.
-\ARKcommand{\PtyGroFac}{\mathcal{G}}
-\ARKcommand{\PtyGroRte}{g}
+\ARKcommand{\PtyGroFac}{\mathrm{G}}   % growth of labor-augmenting productivity Z (\PtyLab), itself a normalizer and so never bold (owner ruling 2026-11-16);
+                                      % wage growth's letters, roman G and g (owner ruling 2026-11-15; was \mathcal{G} and italic g)
+\ARKcommand{\PtyGroRte}{\mathrm{g}}
 \ARKcommand{\ptyGroFac}{\PtyGroFac}
 \ARKcommand{\ptyGroRte}{\PtyGroRte}
+% Productivity (owner rulings 2026-11-17): the Z that multiplies labor, an italic number (rule C) and plain (a
+% normalizer), and the sans-serif A that multiplies total output. With Cobb-Douglas, \PtyAgg = \PtyLab^{1-\alpha};
+% Z grows by \PtyGroFac. \PtyLev (italic A, v11.1.0) was retired in v12.0.0 in favor of \PtyAgg.
+\ARKcommand{\PtyLab}{Z}     % labor-augmenting (Harrod-neutral) productivity: Y = F(K, Z L)
+\ARKcommand{\lPtyLab}{\lnat\PtyLab}   % its log, \ell Z
+\ARKcommand{\PtyAgg}{\mathsf{A}}   % productivity multiplying total output (Hicks-neutral): Y = \PtyAgg F(K, L)
+\ARKcommand{\lPtyAgg}{\lnat\PtyAgg}   % its log, \ell 𝖠 (no lower case for logs: not a)
+% Continuous-time optimization and capital (owner, 2026-11-17 22:41, as relayed): the course's Growth handouts' own
+% macros, now shared.
+\ARKcommand{\Ham}{\mathcal{H}}     % current-value Hamiltonian
+\ARKcommand{\vk}{\lambda}          % costate on capital: the marginal value of a unit of capital
+\ARKcommand{\kapRent}{\varkappa}   % rental rate of capital, f'(k); its documents do not write the MPC \kappa
+\ARKcommand{\VFuncCts}{\mathcal{V}} % value function in continuous time, beside the discrete-time \VFunc
+% Government (owner, 2026-11-17 22:55): per-household quantities, plain (rule B).
+\ARKcommand{\GovSpend}{X}          % government spending
+\ARKcommand{\TaxLev}{T}            % lump-sum tax; scoped: where a document writes the terminal period T, the tax moves
+\ARKcommand{\Debt}{D}              % government debt
+% Growth (owner, 2026-11-18, as relayed): the course's growth module, now shared.
+\ARKcommand{\Knwl}{\mathcal{K}}     % aggregate stock of knowledge (Romer 1986); calligraphic, plain
+\ARKcommand{\BalGroEndog}{\mathsf{G}}  % endogenous growth factor; scoped: prints as \PermGroFac
+\ARKcommand{\balGroEndog}{\mathsf{g}}  % endogenous growth rate; scoped: prints as \PermGroRte
+\ARKcommand{\hCap}{\mathsf{h}}      % human capital per worker (Lucas 1988)
+\ARKcommand{\hCapAvg}{\hCap_{\mathrm{a}}} % its economy-wide average, which firms take as given
+\ARKcommand{\extElas}{\eta}         % elasticity of a firm's output w.r.t. an aggregate stock it takes as given
+\ARKcommand{\hCapProd}{\phi}        % productivity of study time; scoped: phi is \eprem elsewhere
+\ARKcommand{\labShare}{\nu}         % labor's Cobb-Douglas exponent (its share only if alpha + nu = 1)
+% Survival-inclusive rates (the ring rule), for Blanchard's perpetual youth; d is \diePrb.
+\ARKcommand{\rfreeEff}{\mathring{\mathsf{r}}}  % r + d, the rate partner of \RfreeEff (\rfree written out: it has no row)
+\ARKcommand{\discRteEff}{\mathring{\discRte}} % vartheta + d
+\ARKcommand{\PDVEff}{\mathring{\mathbb{P}}}    % present value at \rfreeEff (\PDV written out: it has no row)
+% TractableBufferStock (owner, 2026-11-18, as relayed): its own objects, now shared; also \vEndFunc and \PIHMPC.
+% The ring rows (...hFix) are scoped away from the survival ring (accent-locality).
+\ARKcommand{\WGroFachFix}{\mathring{\WGroFac}}
+\ARKcommand{\WGroRtehFix}{\mathring{\WGroRte}}
+\ARKcommand{\GPFachFix}{\APFac_{\WGroFachFix}}
+\ARKcommand{\GPRtehFix}{\thorn_{\WGroRtehFix}}
+\ARKcommand{\FHWChFix}{\text{FHWC}_{\WGroFachFix}}
+\ARKcommand{\GIChFix}{\text{GIC}_{\WGroFachFix}}
+\ARKcommand{\DiscFacMaxGIChFix}{\bar{\DiscFac}_{\GIChFix}}
+\ARKcommand{\EmpLbl}{\mathrm{e}}
+\ARKcommand{\UnempLbl}{\mathrm{u}}
+\ARKcommand{\aNrmE}{\aNrm^{\EmpLbl}}
+\ARKcommand{\bNrmE}{\bNrm^{\EmpLbl}}
+\ARKcommand{\cNrmE}{\cNrm^{\EmpLbl}}
+\ARKcommand{\cNrmU}{\cNrm^{\UnempLbl}}
+\ARKcommand{\mNrmE}{\mNrm^{\EmpLbl}}
+\ARKcommand{\mNrmU}{\mNrm^{\UnempLbl}}
+\ARKcommand{\vNrmE}{\vNrm^{\EmpLbl}}
+\ARKcommand{\MPCE}{\MPC^{\EmpLbl}}
+\ARKcommand{\cTrgNrm}{\TargetNrm{\cNrm}}
+\ARKcommand{\bTrgNrm}{\TargetNrm{\bNrm}}
+\ARKcommand{\vTrgNrm}{\TargetNrm{\vNrm}}
+\ARKcommand{\FHWCWGro}{\text{FHWC}_{\WGroFac}}
+\ARKcommand{\GICWGro}{\text{GIC}_{\WGroFac}}
+\ARKcommand{\DiscFacMaxRIC}{\bar{\DiscFac}_{\text{RIC}}}
+\ARKcommand{\DiscFacMaxGICTBS}{\bar{\DiscFac}_{\text{TBS}}}
+\ARKcommand{\DiscFacMaxGICWGro}{\bar{\DiscFac}_{\GICWGro}}
+\ARKcommand{\DiscFacMaxGICWhenFHWCTBSHolds}{\bar{\DiscFac}_{\text{FHW}}}
+\ARKcommand{\prudEx}{\mathfrak{p}}
+\ARKcommand{\cGap}{\nabla}
+\ARKcommand{\cLocusSlope}{\mathfrak{z}}
+\ARKcommand{\WGroShortfall}{\mathfrak{a}}
+\ARKcommand{\vEndFunc}{{\mathfrak{v}}}
+\ARKcommand{\vMultUnemp}{\mathfrak{v}}
+\ARKcommand{\PIHMPC}{\varkappa}
+\ARKcommand{\uPPP}{\mathrm{u}^{\prime\prime\prime}}
 
 % agg vs ind?  upper vs lower conflicts with upper vs lower for factors and rates
 
@@ -556,6 +743,7 @@
 % Steady state and golden rule (owner rulings 2026-11-03). The bar also means an upper bound elsewhere; the registry
 % allows both, provided no document uses two meanings of one accent (terminology.yml, accent-locality).
 \ARKcommandParam{\Steady}{1}{\bar{#1}}
+\ARKcommandParam{\Est}{1}{\hat{#1}}   % an estimate, \Est{\tau}; the hat's estimation meaning, never on a page that writes the target \mTrgNrm (owner ruling 2026-11-15)
 \ARKcommandParam{\GoldRule}{1}{\bar{\bar{#1}}}
 \ARKcommand{\avg}{\bar}
 \ARKcommand{\Max}{\overline}
