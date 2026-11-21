@@ -402,6 +402,13 @@ def compare_marks(plain, md, problems, links_used):
     for display in re.findall(r'\\begin\{equation\*\}.*?\\end\{equation\*\}', plain, re.S):
         for x in re.findall(r'\\label\{([^}]*)\}', display):
             problems.append(f'Label in an unnumbered equation, so citations of it print the wrong number: {x}')
+    # One \\notag or \\nonumber anywhere in an equation environment removes its only number, and a label in it
+    # then takes the next equation's number (found 2026-11-21: four labels, two of them cited).
+    for display in re.findall(r'\\begin\{equation\}.*?\\end\{equation\}', plain, re.S):
+        if re.search(r'\\(?:notag|nonumber)(?![A-Za-z])', display):
+            for x in re.findall(r'\\label\{([^}]*)\}', display):
+                problems.append(f'Label in an equation whose number a \\notag or \\nonumber removes, so citations '
+                                f"of it print the next equation's number: {x}")
 
     h_cites = {k.strip() for g in re.findall(r'\\cite[tp]?\{([^}]*)\}', plain) for k in g.split(',')}
     b_cites = {k.strip() for g in re.findall(r'\{cite:[tp]\}`([^`]*)`', md) for k in g.split(',')}
