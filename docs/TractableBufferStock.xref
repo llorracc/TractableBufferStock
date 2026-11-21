@@ -8,7 +8,7 @@
 \:CrossWord{)Qx2-1002x1}{2}{1}%
 \:CrossWord{)Qfn1x0}{2}{1}%
 \:CrossWord{)Qx1-20002}{1}{1}%
-\:CrossWord{)Qx1-2001r1}{1}{1}%
+\:CrossWord{)Qx1-2001r1}{1}{2}%
 \:CrossWord{)Qx1-2002r2}{1}{2}%
 \:CrossWord{fn2x0}{}{2}%
 \:CrossWord{)Qx1-2003f2}{1}{2}%
@@ -110,7 +110,7 @@
 \:CrossWord{)QGIFMax}{1}{14}%
 \:CrossWord{)QDiscountMaxGICTBS}{1}{14}%
 \:CrossWord{)Qx1-90002.2.5}{1}{14}%
-\:CrossWord{)Qx1-9001r22}{1}{14}%
+\:CrossWord{)Qx1-9001r22}{1}{15}%
 \:CrossWord{)Qx1-9002r23}{1}{15}%
 \:CrossWord{fn12x0}{}{15}%
 \:CrossWord{)Qx1-9003f12}{1}{15}%
@@ -131,337 +131,339 @@
 \:CrossWord{TractableBufferStock14.html(L }{TractableBufferStock14.html}{17}%
 \:CrossWord{)Qx14-10002x2.2.6}{14}{17}%
 \:CrossWord{)Qfn13x0}{14}{17}%
-\:CrossWord{)Qx1-110002.2.7}{1}{17}%
+\:CrossWord{)Qx1-110002.2.7}{1}{18}%
 \:CrossWord{)Qx1-11001r28}{1}{18}%
 \:CrossWord{)Qx1-11002r29}{1}{18}%
 \:CrossWord{)Qx1-11003r30}{1}{19}%
-\:CrossWord{)Qx1-11004r31}{1}{19}%
+\:CrossWord{)Qx1-120002.2.8}{1}{19}%
 \:CrossWord{fn14x0}{}{19}%
-\:CrossWord{)Qx1-11005f14}{1}{19}%
+\:CrossWord{)Qx1-12001f14}{1}{19}%
 \:CrossWord{)BTractableBufferStock15.html(L }{TractableBufferStock.html}{19}%
 \:CrossWord{)F15F-}{TractableBufferStock15.html}{19}%
 \:CrossWord{TractableBufferStock15.html(L }{TractableBufferStock15.html}{19}%
-\:CrossWord{)Qx15-11006x2.2.7}{15}{19}%
+\:CrossWord{)Qx15-12002x2.2.8}{15}{19}%
 \:CrossWord{)Qfn14x0}{15}{19}%
-\:CrossWord{)Qx1-11007r32}{1}{20}%
-\:CrossWord{)Qx1-120002.2.8}{1}{20}%
-\:CrossWord{fn15x0}{}{20}%
-\:CrossWord{)Qx1-12001f15}{1}{20}%
-\:CrossWord{)BTractableBufferStock16.html(L }{TractableBufferStock.html}{20}%
-\:CrossWord{)F16F-}{TractableBufferStock16.html}{20}%
-\:CrossWord{TractableBufferStock16.html(L }{TractableBufferStock16.html}{20}%
-\:CrossWord{)Qx16-12002x2.2.8}{16}{20}%
-\:CrossWord{)Qfn15x0}{16}{20}%
-\:CrossWord{)Qx1-130002.2.9}{1}{24}%
-\:CrossWord{)Qx1-13001r1}{1}{26}%
-\:CrossWord{2cAp1}{x1-13001r1}{26}%
+\:CrossWord{)Qx1-130002.2.9}{1}{23}%
+\:CrossWord{)Qx1-13001r31}{1}{23}%
+\:CrossWord{fn15x0}{}{23}%
+\:CrossWord{)Qx1-13002f15}{1}{23}%
+\:CrossWord{)BTractableBufferStock16.html(L }{TractableBufferStock.html}{23}%
+\:CrossWord{)F16F-}{TractableBufferStock16.html}{23}%
+\:CrossWord{TractableBufferStock16.html(L }{TractableBufferStock16.html}{23}%
+\:CrossWord{)Qx16-13003x2.2.9}{16}{23}%
+\:CrossWord{)Qfn15x0}{16}{23}%
+\:CrossWord{)Qx1-13004r32}{1}{24}%
+\:CrossWord{)Qx1-140002.2.10}{1}{24}%
+\:CrossWord{)Qx1-14001r1}{1}{26}%
+\:CrossWord{2cAp1}{x1-14001r1}{26}%
 \:CrossWord{fn16x0}{}{27}%
-\:CrossWord{)Qx1-13002f16}{1}{27}%
+\:CrossWord{)Qx1-14002f16}{1}{27}%
 \:CrossWord{)BTractableBufferStock17.html(L }{TractableBufferStock.html}{27}%
 \:CrossWord{)F17F-}{TractableBufferStock17.html}{27}%
 \:CrossWord{TractableBufferStock17.html(L }{TractableBufferStock17.html}{27}%
-\:CrossWord{)Qx17-13003x2.2.9}{17}{27}%
+\:CrossWord{)Qx17-14003x2.2.10}{17}{27}%
 \:CrossWord{)Qfn16x0}{17}{27}%
-\:CrossWord{)Qx1-13004r2}{1}{29}%
-\:CrossWord{3cAp1}{x1-13004r2}{29}%
-\:CrossWord{)Qx1-140002.2.10}{1}{30}%
-\:CrossWord{)Qx1-14001r33}{1}{30}%
-\:CrossWord{)Qx1-14002r34}{1}{30}%
+\:CrossWord{)Qx1-14004r2}{1}{29}%
+\:CrossWord{3cAp1}{x1-14004r2}{29}%
+\:CrossWord{)Qx1-150002.2.11}{1}{30}%
+\:CrossWord{)Qx1-15001r33}{1}{30}%
+\:CrossWord{)Qx1-15002r34}{1}{30}%
 \:CrossWord{fn17x0}{}{31}%
-\:CrossWord{)Qx1-14003f17}{1}{31}%
+\:CrossWord{)Qx1-15003f17}{1}{31}%
 \:CrossWord{)BTractableBufferStock18.html(L }{TractableBufferStock.html}{31}%
 \:CrossWord{)F18F-}{TractableBufferStock18.html}{31}%
 \:CrossWord{TractableBufferStock18.html(L }{TractableBufferStock18.html}{31}%
-\:CrossWord{)Qx18-14004x2.2.10}{18}{31}%
+\:CrossWord{)Qx18-15004x2.2.11}{18}{31}%
 \:CrossWord{)Qfn17x0}{18}{31}%
 \:CrossWord{fn18x0}{}{31}%
-\:CrossWord{)Qx1-14005f18}{1}{31}%
+\:CrossWord{)Qx1-15005f18}{1}{31}%
 \:CrossWord{)BTractableBufferStock19.html(L }{TractableBufferStock.html}{31}%
 \:CrossWord{)F19F-}{TractableBufferStock19.html}{31}%
 \:CrossWord{TractableBufferStock19.html(L }{TractableBufferStock19.html}{31}%
-\:CrossWord{)Qx19-14006x2.2.10}{19}{31}%
+\:CrossWord{)Qx19-15006x2.2.11}{19}{31}%
 \:CrossWord{)Qfn18x0}{19}{31}%
 \:CrossWord{fn19x0}{}{31}%
-\:CrossWord{)Qx1-14007f19}{1}{31}%
+\:CrossWord{)Qx1-15007f19}{1}{31}%
 \:CrossWord{)BTractableBufferStock20.html(L }{TractableBufferStock.html}{31}%
 \:CrossWord{)F20F-}{TractableBufferStock20.html}{31}%
 \:CrossWord{TractableBufferStock20.html(L }{TractableBufferStock20.html}{31}%
-\:CrossWord{)Qx20-14008x2.2.10}{20}{31}%
+\:CrossWord{)Qx20-15008x2.2.11}{20}{31}%
 \:CrossWord{)Qfn19x0}{20}{31}%
-\:CrossWord{)Qx1-150002.2.11}{1}{31}%
-\:CrossWord{)Qx1-15001r35}{1}{32}%
-\:CrossWord{)Qx1-15002r36}{1}{32}%
+\:CrossWord{)Qx1-160002.2.12}{1}{31}%
+\:CrossWord{)Qx1-16001r35}{1}{32}%
+\:CrossWord{)Qx1-16002r36}{1}{32}%
 \:CrossWord{fn20x0}{}{32}%
-\:CrossWord{)Qx1-15003f20}{1}{32}%
+\:CrossWord{)Qx1-16003f20}{1}{32}%
 \:CrossWord{)BTractableBufferStock21.html(L }{TractableBufferStock.html}{32}%
 \:CrossWord{)F21F-}{TractableBufferStock21.html}{32}%
 \:CrossWord{TractableBufferStock21.html(L }{TractableBufferStock21.html}{32}%
-\:CrossWord{)Qx21-15004x2.2.11}{21}{32}%
+\:CrossWord{)Qx21-16004x2.2.12}{21}{32}%
 \:CrossWord{)Qfn20x0}{21}{32}%
-\:CrossWord{)Qx1-15005r3}{1}{34}%
-\:CrossWord{4cAp1}{x1-15005r3}{34}%
-\:CrossWord{)Qx1-160002.2.12}{1}{35}%
-\:CrossWord{)Qx1-16001r4}{1}{37}%
-\:CrossWord{5cAp1}{x1-16001r4}{37}%
-\:CrossWord{)Qx1-16002r5}{1}{40}%
-\:CrossWord{6cAp1}{x1-16002r5}{40}%
-\:CrossWord{)Qx1-170002.2.13}{1}{41}%
-\:CrossWord{)Qx1-17001r37}{1}{41}%
-\:CrossWord{)Qx1-17002r38}{1}{41}%
-\:CrossWord{)Qx1-17003r39}{1}{42}%
-\:CrossWord{)Qx1-17004r40}{1}{42}%
+\:CrossWord{)Qx1-16005r3}{1}{34}%
+\:CrossWord{4cAp1}{x1-16005r3}{34}%
+\:CrossWord{)Qx1-170002.2.13}{1}{35}%
+\:CrossWord{)Qx1-17001r4}{1}{37}%
+\:CrossWord{5cAp1}{x1-17001r4}{37}%
+\:CrossWord{)Qx1-180002.2.14}{1}{38}%
+\:CrossWord{)Qx1-18001r5}{1}{40}%
+\:CrossWord{6cAp1}{x1-18001r5}{40}%
+\:CrossWord{)Qx1-190002.2.15}{1}{41}%
+\:CrossWord{)Qx1-19001r37}{1}{41}%
+\:CrossWord{)Qx1-19002r38}{1}{41}%
+\:CrossWord{)Qx1-19003r39}{1}{42}%
+\:CrossWord{)Qx1-19004r40}{1}{42}%
 \:CrossWord{fn21x0}{}{43}%
-\:CrossWord{)Qx1-17005f21}{1}{43}%
+\:CrossWord{)Qx1-19005f21}{1}{43}%
 \:CrossWord{)BTractableBufferStock22.html(L }{TractableBufferStock.html}{43}%
 \:CrossWord{)F22F-}{TractableBufferStock22.html}{43}%
 \:CrossWord{TractableBufferStock22.html(L }{TractableBufferStock22.html}{43}%
-\:CrossWord{)Qx22-17006x2.2.13}{22}{43}%
+\:CrossWord{)Qx22-19006x2.2.15}{22}{43}%
 \:CrossWord{)Qfn21x0}{22}{43}%
-\:CrossWord{)Qx1-17007r41}{1}{43}%
-\:CrossWord{)Qx1-180002.2.14}{1}{43}%
+\:CrossWord{)Qx1-19007r41}{1}{43}%
+\:CrossWord{)Qx1-200002.2.16}{1}{43}%
 \:CrossWord{fn22x0}{}{43}%
-\:CrossWord{)Qx1-18001f22}{1}{43}%
+\:CrossWord{)Qx1-20001f22}{1}{43}%
 \:CrossWord{)BTractableBufferStock23.html(L }{TractableBufferStock.html}{43}%
 \:CrossWord{)F23F-}{TractableBufferStock23.html}{43}%
 \:CrossWord{TractableBufferStock23.html(L }{TractableBufferStock23.html}{43}%
-\:CrossWord{)Qx23-18002x2.2.14}{23}{43}%
+\:CrossWord{)Qx23-20002x2.2.16}{23}{43}%
 \:CrossWord{)Qfn22x0}{23}{43}%
-\:CrossWord{)Qx1-18003r6}{1}{46}%
-\:CrossWord{7cAp1}{x1-18003r6}{46}%
-\:CrossWord{)Qx1-18004r7}{1}{49}%
-\:CrossWord{8cAp1}{x1-18004r7}{49}%
-\:CrossWord{)Qx1-18005r8}{1}{52}%
-\:CrossWord{9cAp1}{x1-18005r8}{52}%
-\:CrossWord{)Qx1-18006r9}{1}{55}%
-\:CrossWord{10cAp1}{x1-18006r9}{55}%
-\:CrossWord{)Qx1-190003}{1}{56}%
-\:CrossWord{)Qx1-19001r42}{1}{56}%
+\:CrossWord{)Qx1-20003r6}{1}{46}%
+\:CrossWord{7cAp1}{x1-20003r6}{46}%
+\:CrossWord{)Qx1-20004r7}{1}{49}%
+\:CrossWord{8cAp1}{x1-20004r7}{49}%
+\:CrossWord{)Qx1-20005r8}{1}{52}%
+\:CrossWord{9cAp1}{x1-20005r8}{52}%
+\:CrossWord{)Qx1-20006r9}{1}{55}%
+\:CrossWord{10cAp1}{x1-20006r9}{55}%
+\:CrossWord{)Qx1-210003}{1}{56}%
+\:CrossWord{)Qx1-21001r42}{1}{56}%
 \:CrossWord{fn23x0}{}{56}%
-\:CrossWord{)Qx1-19002f23}{1}{56}%
+\:CrossWord{)Qx1-21002f23}{1}{56}%
 \:CrossWord{)BTractableBufferStock24.html(L }{TractableBufferStock.html}{56}%
 \:CrossWord{)F24F-}{TractableBufferStock24.html}{56}%
 \:CrossWord{TractableBufferStock24.html(L }{TractableBufferStock24.html}{56}%
-\:CrossWord{)Qx24-19003x3}{24}{56}%
+\:CrossWord{)Qx24-21003x3}{24}{56}%
 \:CrossWord{)Qfn23x0}{24}{56}%
-\:CrossWord{)Qx1-19004r43}{1}{57}%
-\:CrossWord{)Qx1-19005r44}{1}{57}%
-\:CrossWord{)Qx1-19006r45}{1}{58}%
-\:CrossWord{)Qx1-200003.1}{1}{58}%
-\:CrossWord{)Qx1-210003.1.1}{1}{58}%
+\:CrossWord{)Qx1-21004r43}{1}{57}%
+\:CrossWord{)Qx1-21005r44}{1}{57}%
+\:CrossWord{)Qx1-21006r45}{1}{58}%
+\:CrossWord{)Qx1-220003.1}{1}{58}%
+\:CrossWord{)Qx1-230003.1.1}{1}{58}%
 \:CrossWord{fn24x0}{}{59}%
-\:CrossWord{)Qx1-21001f24}{1}{59}%
+\:CrossWord{)Qx1-23001f24}{1}{59}%
 \:CrossWord{)BTractableBufferStock25.html(L }{TractableBufferStock.html}{59}%
 \:CrossWord{)F25F-}{TractableBufferStock25.html}{59}%
 \:CrossWord{TractableBufferStock25.html(L }{TractableBufferStock25.html}{59}%
-\:CrossWord{)Qx25-21002x3.1.1}{25}{59}%
+\:CrossWord{)Qx25-23002x3.1.1}{25}{59}%
 \:CrossWord{)Qfn24x0}{25}{59}%
-\:CrossWord{)Qx1-21003r46}{1}{59}%
-\:CrossWord{)Qx1-21004r47}{1}{60}%
-\:CrossWord{)Qx1-21005r48}{1}{60}%
-\:CrossWord{)Qx1-21006r49}{1}{60}%
+\:CrossWord{)Qx1-23003r46}{1}{59}%
+\:CrossWord{)Qx1-23004r47}{1}{60}%
+\:CrossWord{)Qx1-23005r48}{1}{60}%
+\:CrossWord{)Qx1-23006r49}{1}{60}%
 \:CrossWord{fn25x0}{}{61}%
-\:CrossWord{)Qx1-21007f25}{1}{61}%
+\:CrossWord{)Qx1-23007f25}{1}{61}%
 \:CrossWord{)BTractableBufferStock26.html(L }{TractableBufferStock.html}{61}%
 \:CrossWord{)F26F-}{TractableBufferStock26.html}{61}%
 \:CrossWord{TractableBufferStock26.html(L }{TractableBufferStock26.html}{61}%
-\:CrossWord{)Qx26-21008x3.1.1}{26}{61}%
+\:CrossWord{)Qx26-23008x3.1.1}{26}{61}%
 \:CrossWord{)Qfn25x0}{26}{61}%
-\:CrossWord{)Qx1-21009r10}{1}{64}%
-\:CrossWord{11cAp1}{x1-21009r10}{64}%
-\:CrossWord{)Qx1-220003.1.2}{1}{65}%
+\:CrossWord{)Qx1-23009r10}{1}{64}%
+\:CrossWord{11cAp1}{x1-23009r10}{64}%
+\:CrossWord{)Qx1-240003.1.2}{1}{65}%
 \:CrossWord{fn26x0}{}{65}%
-\:CrossWord{)Qx1-22001f26}{1}{65}%
+\:CrossWord{)Qx1-24001f26}{1}{65}%
 \:CrossWord{)BTractableBufferStock27.html(L }{TractableBufferStock.html}{65}%
 \:CrossWord{)F27F-}{TractableBufferStock27.html}{65}%
 \:CrossWord{TractableBufferStock27.html(L }{TractableBufferStock27.html}{65}%
-\:CrossWord{)Qx27-22002x3.1.2}{27}{65}%
+\:CrossWord{)Qx27-24002x3.1.2}{27}{65}%
 \:CrossWord{)Qfn26x0}{27}{65}%
-\:CrossWord{)Qx1-22003r50}{1}{65}%
+\:CrossWord{)Qx1-24003r50}{1}{65}%
 \:CrossWord{fn27x0}{}{65}%
-\:CrossWord{)Qx1-22004f27}{1}{65}%
+\:CrossWord{)Qx1-24004f27}{1}{65}%
 \:CrossWord{)BTractableBufferStock28.html(L }{TractableBufferStock.html}{65}%
 \:CrossWord{)F28F-}{TractableBufferStock28.html}{65}%
 \:CrossWord{TractableBufferStock28.html(L }{TractableBufferStock28.html}{65}%
-\:CrossWord{)Qx28-22005x3.1.2}{28}{65}%
+\:CrossWord{)Qx28-24005x3.1.2}{28}{65}%
 \:CrossWord{)Qfn27x0}{28}{65}%
-\:CrossWord{)Qx1-22006r51}{1}{66}%
-\:CrossWord{)Qx1-22007r11}{1}{68}%
-\:CrossWord{12cAp1}{x1-22007r11}{68}%
-\:CrossWord{)Qx1-23000A}{1}{70}%
-\:CrossWord{)Qx1-23001r52}{1}{70}%
-\:CrossWord{)Qx1-24000B}{1}{70}%
-\:CrossWord{)Qx1-25000B.1}{1}{70}%
-\:CrossWord{)Qx1-25001r52}{1}{71}%
+\:CrossWord{)Qx1-24006r51}{1}{66}%
+\:CrossWord{)Qx1-24007r11}{1}{68}%
+\:CrossWord{12cAp1}{x1-24007r11}{68}%
+\:CrossWord{)Qx1-25000A}{1}{70}%
+\:CrossWord{)Qx1-25001r52}{1}{70}%
+\:CrossWord{)Qx1-26000B}{1}{70}%
+\:CrossWord{)Qx1-27000B.1}{1}{70}%
+\:CrossWord{)Qx1-27001r52}{1}{71}%
 \:CrossWord{fn28x0}{}{71}%
-\:CrossWord{)Qx1-25002f28}{1}{71}%
+\:CrossWord{)Qx1-27002f28}{1}{71}%
 \:CrossWord{)BTractableBufferStock29.html(L }{TractableBufferStock.html}{71}%
 \:CrossWord{)F29F-}{TractableBufferStock29.html}{71}%
 \:CrossWord{TractableBufferStock29.html(L }{TractableBufferStock29.html}{71}%
-\:CrossWord{)Qx29-25003xB.1}{29}{71}%
+\:CrossWord{)Qx29-27003xB.1}{29}{71}%
 \:CrossWord{)Qfn28x0}{29}{71}%
-\:CrossWord{)Qx1-25004r53}{1}{71}%
-\:CrossWord{)Qx1-25005r54}{1}{71}%
-\:CrossWord{)Qx1-25006r55}{1}{72}%
-\:CrossWord{)Qx1-25007r56}{1}{72}%
-\:CrossWord{)Qx1-26000B.2}{1}{73}%
-\:CrossWord{)Qx1-26001r57}{1}{73}%
-\:CrossWord{)Qx1-26002r58}{1}{73}%
-\:CrossWord{)Qx1-27000B.3}{1}{74}%
-\:CrossWord{)Qx1-27001r59}{1}{74}%
-\:CrossWord{)Qx1-27002r60}{1}{75}%
-\:CrossWord{)Qx1-27003r61}{1}{75}%
-\:CrossWord{)Qx1-28000B.4}{1}{76}%
-\:CrossWord{)Qx1-28001r62}{1}{76}%
-\:CrossWord{)Qx1-28002r63}{1}{76}%
+\:CrossWord{)Qx1-27004r53}{1}{71}%
+\:CrossWord{)Qx1-27005r54}{1}{71}%
+\:CrossWord{)Qx1-27006r55}{1}{72}%
+\:CrossWord{)Qx1-27007r56}{1}{72}%
+\:CrossWord{)Qx1-28000B.2}{1}{73}%
+\:CrossWord{)Qx1-28001r57}{1}{73}%
+\:CrossWord{)Qx1-28002r58}{1}{73}%
+\:CrossWord{)Qx1-29000B.3}{1}{74}%
+\:CrossWord{)Qx1-29001r59}{1}{74}%
+\:CrossWord{)Qx1-29002r60}{1}{75}%
+\:CrossWord{)Qx1-29003r61}{1}{75}%
+\:CrossWord{)Qx1-30000B.4}{1}{76}%
+\:CrossWord{)Qx1-30001r62}{1}{76}%
+\:CrossWord{)Qx1-30002r63}{1}{76}%
 \:CrossWord{fn29x0}{}{77}%
-\:CrossWord{)Qx1-28003f29}{1}{77}%
+\:CrossWord{)Qx1-30003f29}{1}{77}%
 \:CrossWord{)BTractableBufferStock30.html(L }{TractableBufferStock.html}{77}%
 \:CrossWord{)F30F-}{TractableBufferStock30.html}{77}%
 \:CrossWord{TractableBufferStock30.html(L }{TractableBufferStock30.html}{77}%
-\:CrossWord{)Qx30-28004xB.4}{30}{77}%
+\:CrossWord{)Qx30-30004xB.4}{30}{77}%
 \:CrossWord{)Qfn29x0}{30}{77}%
 \:CrossWord{fn30x0}{}{77}%
-\:CrossWord{)Qx1-28005f30}{1}{77}%
+\:CrossWord{)Qx1-30005f30}{1}{77}%
 \:CrossWord{)BTractableBufferStock31.html(L }{TractableBufferStock.html}{77}%
 \:CrossWord{)F31F-}{TractableBufferStock31.html}{77}%
 \:CrossWord{TractableBufferStock31.html(L }{TractableBufferStock31.html}{77}%
-\:CrossWord{)Qx31-28006xB.4}{31}{77}%
+\:CrossWord{)Qx31-30006xB.4}{31}{77}%
 \:CrossWord{)Qfn30x0}{31}{77}%
-\:CrossWord{)Qx1-28007r64}{1}{78}%
-\:CrossWord{)Qx1-29000C}{1}{78}%
-\:CrossWord{)Qx1-29001r65}{1}{79}%
-\:CrossWord{)Qx1-29002r66}{1}{79}%
-\:CrossWord{)Qx1-29003r67}{1}{80}%
+\:CrossWord{)Qx1-30007r64}{1}{78}%
+\:CrossWord{)Qx1-31000C}{1}{78}%
+\:CrossWord{)Qx1-31001r65}{1}{79}%
+\:CrossWord{)Qx1-31002r66}{1}{79}%
+\:CrossWord{)Qx1-31003r67}{1}{80}%
 \:CrossWord{fn31x0}{}{80}%
-\:CrossWord{)Qx1-29004f31}{1}{80}%
+\:CrossWord{)Qx1-31004f31}{1}{80}%
 \:CrossWord{)BTractableBufferStock32.html(L }{TractableBufferStock.html}{80}%
 \:CrossWord{)F32F-}{TractableBufferStock32.html}{80}%
 \:CrossWord{TractableBufferStock32.html(L }{TractableBufferStock32.html}{80}%
-\:CrossWord{)Qx32-29005xC}{32}{80}%
+\:CrossWord{)Qx32-31005xC}{32}{80}%
 \:CrossWord{)Qfn31x0}{32}{80}%
-\:CrossWord{)Qx1-30000D}{1}{81}%
-\:CrossWord{)Qx1-30001r68}{1}{81}%
+\:CrossWord{)Qx1-32000D}{1}{81}%
+\:CrossWord{)Qx1-32001r68}{1}{81}%
 \:CrossWord{fn32x0}{}{82}%
-\:CrossWord{)Qx1-30002f32}{1}{82}%
+\:CrossWord{)Qx1-32002f32}{1}{82}%
 \:CrossWord{)BTractableBufferStock33.html(L }{TractableBufferStock.html}{82}%
 \:CrossWord{)F33F-}{TractableBufferStock33.html}{82}%
 \:CrossWord{TractableBufferStock33.html(L }{TractableBufferStock33.html}{82}%
-\:CrossWord{)Qx33-30003xD}{33}{82}%
+\:CrossWord{)Qx33-32003xD}{33}{82}%
 \:CrossWord{)Qfn32x0}{33}{82}%
-\:CrossWord{)Qx1-30004r69}{1}{82}%
-\:CrossWord{)Qx1-30005r70}{1}{82}%
+\:CrossWord{)Qx1-32004r69}{1}{82}%
+\:CrossWord{)Qx1-32005r70}{1}{82}%
 \:CrossWord{fn33x0}{}{83}%
-\:CrossWord{)Qx1-30006f33}{1}{83}%
+\:CrossWord{)Qx1-32006f33}{1}{83}%
 \:CrossWord{)BTractableBufferStock34.html(L }{TractableBufferStock.html}{83}%
 \:CrossWord{)F34F-}{TractableBufferStock34.html}{83}%
 \:CrossWord{TractableBufferStock34.html(L }{TractableBufferStock34.html}{83}%
-\:CrossWord{)Qx34-30007xD}{34}{83}%
+\:CrossWord{)Qx34-32007xD}{34}{83}%
 \:CrossWord{)Qfn33x0}{34}{83}%
-\:CrossWord{)Qx1-30008r71}{1}{83}%
-\:CrossWord{)Qx1-30009r72}{1}{83}%
-\:CrossWord{)Qx1-30010r73}{1}{84}%
+\:CrossWord{)Qx1-32008r71}{1}{83}%
+\:CrossWord{)Qx1-32009r72}{1}{83}%
+\:CrossWord{)Qx1-32010r73}{1}{84}%
 \:CrossWord{fn34x0}{}{84}%
-\:CrossWord{)Qx1-30011f34}{1}{84}%
+\:CrossWord{)Qx1-32011f34}{1}{84}%
 \:CrossWord{)BTractableBufferStock35.html(L }{TractableBufferStock.html}{84}%
 \:CrossWord{)F35F-}{TractableBufferStock35.html}{84}%
 \:CrossWord{TractableBufferStock35.html(L }{TractableBufferStock35.html}{84}%
-\:CrossWord{)Qx35-30012xD}{35}{84}%
+\:CrossWord{)Qx35-32012xD}{35}{84}%
 \:CrossWord{)Qfn34x0}{35}{84}%
-\:CrossWord{)Qx1-30013r74}{1}{84}%
-\:CrossWord{)Qx1-30014r75}{1}{85}%
+\:CrossWord{)Qx1-32013r74}{1}{84}%
+\:CrossWord{)Qx1-32014r75}{1}{85}%
 \:CrossWord{fn35x0}{}{85}%
-\:CrossWord{)Qx1-30015f35}{1}{85}%
+\:CrossWord{)Qx1-32015f35}{1}{85}%
 \:CrossWord{)BTractableBufferStock36.html(L }{TractableBufferStock.html}{85}%
 \:CrossWord{)F36F-}{TractableBufferStock36.html}{85}%
 \:CrossWord{TractableBufferStock36.html(L }{TractableBufferStock36.html}{85}%
-\:CrossWord{)Qx36-30016xD}{36}{85}%
+\:CrossWord{)Qx36-32016xD}{36}{85}%
 \:CrossWord{)Qfn35x0}{36}{85}%
-\:CrossWord{)Qx1-30017r76}{1}{85}%
-\:CrossWord{)Qx1-30018r77}{1}{86}%
-\:CrossWord{)Qx1-30019r78}{1}{86}%
-\:CrossWord{)Qx1-30020r79}{1}{87}%
-\:CrossWord{)Qx1-30021r80}{1}{87}%
+\:CrossWord{)Qx1-32017r76}{1}{85}%
+\:CrossWord{)Qx1-32018r77}{1}{86}%
+\:CrossWord{)Qx1-32019r78}{1}{86}%
+\:CrossWord{)Qx1-32020r79}{1}{87}%
+\:CrossWord{)Qx1-32021r80}{1}{87}%
 \:CrossWord{fn36x0}{}{87}%
-\:CrossWord{)Qx1-30022f36}{1}{87}%
+\:CrossWord{)Qx1-32022f36}{1}{87}%
 \:CrossWord{)BTractableBufferStock37.html(L }{TractableBufferStock.html}{87}%
 \:CrossWord{)F37F-}{TractableBufferStock37.html}{87}%
 \:CrossWord{TractableBufferStock37.html(L }{TractableBufferStock37.html}{87}%
-\:CrossWord{)Qx37-30023xD}{37}{87}%
+\:CrossWord{)Qx37-32023xD}{37}{87}%
 \:CrossWord{)Qfn36x0}{37}{87}%
-\:CrossWord{)Qx1-31000E}{1}{88}%
-\:CrossWord{)Qx1-32000E.1}{1}{88}%
+\:CrossWord{)Qx1-33000E}{1}{88}%
+\:CrossWord{)Qx1-34000E.1}{1}{88}%
 \:CrossWord{fn37x0}{}{88}%
-\:CrossWord{)Qx1-32001f37}{1}{88}%
+\:CrossWord{)Qx1-34001f37}{1}{88}%
 \:CrossWord{)BTractableBufferStock38.html(L }{TractableBufferStock.html}{88}%
 \:CrossWord{)F38F-}{TractableBufferStock38.html}{88}%
 \:CrossWord{TractableBufferStock38.html(L }{TractableBufferStock38.html}{88}%
-\:CrossWord{)Qx38-32002xE.1}{38}{88}%
+\:CrossWord{)Qx38-34002xE.1}{38}{88}%
 \:CrossWord{)Qfn37x0}{38}{88}%
-\:CrossWord{)Qx1-32003r81}{1}{88}%
-\:CrossWord{)Qx1-32004r82}{1}{89}%
-\:CrossWord{)Qx1-32005r83}{1}{89}%
-\:CrossWord{)Qx1-32006r84}{1}{89}%
-\:CrossWord{)Qx1-32006r83}{1}{89}%
-\:CrossWord{)Qx1-32007r84}{1}{90}%
-\:CrossWord{)Qx1-32008r85}{1}{90}%
+\:CrossWord{)Qx1-34003r81}{1}{88}%
+\:CrossWord{)Qx1-34004r82}{1}{89}%
+\:CrossWord{)Qx1-34005r83}{1}{89}%
+\:CrossWord{)Qx1-34006r84}{1}{89}%
+\:CrossWord{)Qx1-34006r83}{1}{89}%
+\:CrossWord{)Qx1-34007r84}{1}{90}%
+\:CrossWord{)Qx1-34008r85}{1}{90}%
 \:CrossWord{fn38x0}{}{91}%
-\:CrossWord{)Qx1-32009f38}{1}{91}%
+\:CrossWord{)Qx1-34009f38}{1}{91}%
 \:CrossWord{)BTractableBufferStock39.html(L }{TractableBufferStock.html}{91}%
 \:CrossWord{)F39F-}{TractableBufferStock39.html}{91}%
 \:CrossWord{TractableBufferStock39.html(L }{TractableBufferStock39.html}{91}%
-\:CrossWord{)Qx39-32010xE.1}{39}{91}%
+\:CrossWord{)Qx39-34010xE.1}{39}{91}%
 \:CrossWord{)Qfn38x0}{39}{91}%
-\:CrossWord{)Qx1-32011r86}{1}{91}%
-\:CrossWord{)Qx1-32012r87}{1}{92}%
-\:CrossWord{)Qx1-32013r88}{1}{93}%
-\:CrossWord{)Qx1-32013r87}{1}{93}%
-\:CrossWord{)Qx1-32014r88}{1}{93}%
+\:CrossWord{)Qx1-34011r86}{1}{91}%
+\:CrossWord{)Qx1-34012r87}{1}{92}%
+\:CrossWord{)Qx1-34013r88}{1}{93}%
+\:CrossWord{)Qx1-34013r87}{1}{93}%
+\:CrossWord{)Qx1-34014r88}{1}{93}%
 \:CrossWord{fn39x0}{}{93}%
-\:CrossWord{)Qx1-32015f39}{1}{93}%
+\:CrossWord{)Qx1-34015f39}{1}{93}%
 \:CrossWord{)BTractableBufferStock40.html(L }{TractableBufferStock.html}{93}%
 \:CrossWord{)F40F-}{TractableBufferStock40.html}{93}%
 \:CrossWord{TractableBufferStock40.html(L }{TractableBufferStock40.html}{93}%
-\:CrossWord{)Qx40-32016xE.1}{40}{93}%
+\:CrossWord{)Qx40-34016xE.1}{40}{93}%
 \:CrossWord{)Qfn39x0}{40}{93}%
-\:CrossWord{)Qx1-32017r89}{1}{94}%
-\:CrossWord{)Qx1-32017r88}{1}{94}%
-\:CrossWord{)Qx1-33000E.2}{1}{94}%
-\:CrossWord{)Qx1-33001r89}{1}{94}%
-\:CrossWord{)Qx1-33002r90}{1}{95}%
-\:CrossWord{)Qx1-33003r91}{1}{95}%
-\:CrossWord{)Qx1-33004r92}{1}{95}%
-\:CrossWord{)Qx1-33005r93}{1}{96}%
-\:CrossWord{)Qx1-33006r94}{1}{96}%
-\:CrossWord{)Qx1-34000F}{1}{96}%
-\:CrossWord{)Qx1-34001r95}{1}{97}%
-\:CrossWord{)Qx1-34002r96}{1}{97}%
+\:CrossWord{)Qx1-34017r89}{1}{94}%
+\:CrossWord{)Qx1-34017r88}{1}{94}%
+\:CrossWord{)Qx1-35000E.2}{1}{94}%
+\:CrossWord{)Qx1-35001r89}{1}{94}%
+\:CrossWord{)Qx1-35002r90}{1}{95}%
+\:CrossWord{)Qx1-35003r91}{1}{95}%
+\:CrossWord{)Qx1-35004r92}{1}{95}%
+\:CrossWord{)Qx1-35005r93}{1}{96}%
+\:CrossWord{)Qx1-35006r94}{1}{96}%
+\:CrossWord{)Qx1-36000F}{1}{96}%
+\:CrossWord{)Qx1-36001r95}{1}{97}%
+\:CrossWord{)Qx1-36002r96}{1}{97}%
 \:CrossWord{fn40x0}{}{98}%
-\:CrossWord{)Qx1-34003f40}{1}{98}%
+\:CrossWord{)Qx1-36003f40}{1}{98}%
 \:CrossWord{)BTractableBufferStock41.html(L }{TractableBufferStock.html}{98}%
 \:CrossWord{)F41F-}{TractableBufferStock41.html}{98}%
 \:CrossWord{TractableBufferStock41.html(L }{TractableBufferStock41.html}{98}%
-\:CrossWord{)Qx41-34004xF}{41}{98}%
+\:CrossWord{)Qx41-36004xF}{41}{98}%
 \:CrossWord{)Qfn40x0}{41}{98}%
 \:CrossWord{fn41x0}{}{98}%
-\:CrossWord{)Qx1-34005f41}{1}{98}%
+\:CrossWord{)Qx1-36005f41}{1}{98}%
 \:CrossWord{)BTractableBufferStock42.html(L }{TractableBufferStock.html}{98}%
 \:CrossWord{)F42F-}{TractableBufferStock42.html}{98}%
 \:CrossWord{TractableBufferStock42.html(L }{TractableBufferStock42.html}{98}%
-\:CrossWord{)Qx42-34006xF}{42}{98}%
+\:CrossWord{)Qx42-36006xF}{42}{98}%
 \:CrossWord{)Qfn41x0}{42}{98}%
-\:CrossWord{)Qx1-34007r97}{1}{98}%
-\:CrossWord{)Qx1-34008r98}{1}{98}%
-\:CrossWord{)Qx1-34009r99}{1}{99}%
-\:CrossWord{)Qx1-34010r100}{1}{99}%
+\:CrossWord{)Qx1-36007r97}{1}{98}%
+\:CrossWord{)Qx1-36008r98}{1}{98}%
+\:CrossWord{)Qx1-36009r99}{1}{99}%
+\:CrossWord{)Qx1-36010r100}{1}{99}%
 \:CrossWord{fn42x0}{}{99}%
-\:CrossWord{)Qx1-34011f42}{1}{99}%
+\:CrossWord{)Qx1-36011f42}{1}{99}%
 \:CrossWord{)BTractableBufferStock43.html(L }{TractableBufferStock.html}{99}%
 \:CrossWord{)F43F-}{TractableBufferStock43.html}{99}%
 \:CrossWord{TractableBufferStock43.html(L }{TractableBufferStock43.html}{99}%
-\:CrossWord{)Qx43-34012xF}{43}{99}%
+\:CrossWord{)Qx43-36012xF}{43}{99}%
 \:CrossWord{)Qfn42x0}{43}{99}%
-\:CrossWord{)Qx1-35000G}{1}{100}%
-\:CrossWord{)Qx1-36000}{1}{102}%
+\:CrossWord{)Qx1-37000G}{1}{100}%
+\:CrossWord{)Qx1-38000}{1}{102}%
 \:CrossWord{)QXblanchardFinite}{1}{102}%
 \:CrossWord{)QXcarroll:brookings}{1}{102}%
 \:CrossWord{)QXcarroll:death}{1}{102}%
