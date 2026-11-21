@@ -51,6 +51,8 @@ ALLOWED = [
     ('C', r'\\mathbf\{\[\[C\]\]\}\^2', 'the class of functions with two continuous derivatives'),
     ('x', r'\\uFunc\((\[\[)?x(\]\])?(\[\[)?y(\]\])?\)', 'the generic variables of a property of CRRA utility'),
     ('y', r'\\uFunc\((\[\[)?x(\]\])?(\[\[)?y(\]\])?\)', 'the generic variables of a property of CRRA utility'),
+    ('x', r'\\MPC\(\\mNrm\+\[\[x\]\]\)|\[\[x\]\]_\{t(\+1)?\}|\$\[\[x\]\]\$ therefore',
+     "the large-wealth argument's gap between c(m)/kappa and m: a throwaway letter"),
     ('\\Delta', None, 'the difference operator, like the differential d'),
     ('\\eta', r'\[\[\\eta\]\]_\{[01]\}', "a regression's coefficients: throwaway letters"),
     ('\\epsilon', r'\[\[\\epsilon\]\]_\{i\}', "a regression's error: a throwaway letter"),

@@ -249,7 +249,7 @@ def handout_words(t):
     t = re.sub(r'\\(begin|end)\{(itemize|enumerate)\}|\\item\b', '', t)
     t = re.sub(r'\\(?:label|labelEqInFootnote)\{[^}]*\}', '', t)
     t = re.sub(r'\\hypertarget\{[^}]*\}\{\}', '', t)
-    t = re.sub(r'\\setcounter\{[^}]*\}\{[^}]*\}', '', t)
+    t = re.sub(r'\\set(?:counter|length)\{[^}]*\}\{[^}]*\}', '', t)
     # Marks that print nothing: an empty superscript that aligns, and the steady state's empty subscript.
     t = re.sub(r'[\^_]\{?\\(?:hideSup|tSS)\}?', '', t)
     t = re.sub(r'\\eqref\{([^}]*)\}', lambda m: 'EQ' + strip_label(m[1]), t)
@@ -259,13 +259,17 @@ def handout_words(t):
     t = re.sub(r'\\ref\{(sec:[^}]*)\}', lambda m: 'SECREF' + strip_label(m[1]), t)
     t = re.sub(r'\\cite[tp]?\{([^}]*)\}', r'CITE\1', t)
     t = re.sub(r'\\includegraphics(\[[^\]]*\])?\{[^}]*\}', '', t)
-    t = re.sub(r'\\(begin|end)\{(figure|center)\}(\[[^\]]*\])?', '', t)
+    t = re.sub(r'\\(begin|end)\{(figure|center|table)\}(\[[^\]]*\])?', '', t)
+    t = re.sub(r'\\renewcommand\{\\arraystretch\}\{[^}]*\}', '', t)
     t = re.sub(r'\\(notag|nonumber|medskip|bigskip|smallskip|pagebreak|newpage|appendix|centering|LARGE|Large|large|'
-               r'bf|it|em|small|footnotesize|par|noindent|indent)\b', '', t)
+               r'bf|it|em|small|footnotesize|par|noindent|indent|raggedright|strut)\b', '', t)
     t = re.sub(r'\\centerline(?=\s*[^\s{])', '', t)
     # The handout's names for linked facts and handouts, which the chapter writes as plain words or links.
     t = t.replace('\\Mma', 'Mathematica').replace('\\MathFactsList', 'Math Facts')
     t = re.sub(r'\\(TaylorOne|TaylorTwo|InfSum|FinSum)(?![A-Za-z])', r'\1', t)
+    # A table's layout, which the chapter writes as a Markdown table: & becomes a space in tokens().
+    t = re.sub(r'\\begin\{tabular\}\{[^}]*\}|\\end\{tabular\}|\\hline', '', t)
+    t = unwrap(t, r'\\parbox(?:\[[a-z]\])?\{[^}]*\}')
     t = t.replace('\\\\', ' ')  # a display's rows, before \& is read as an ampersand
     t = t.replace('\\%', '%').replace('\\&', '&')
     for opener in (r'\\hyperref\[[^\]]*\]', r'\\href\{[^}]*\}', r'\\textit', r'\\textbf', r'\\emph', r'\\texttt',
@@ -283,6 +287,9 @@ def book_words(md, used):
         used[pattern] = used.get(pattern, 0) + count
     b = re.sub(r'\\([A-Za-z]+)', lambda m: '\\' + BOOK_TO_HANDOUT.get(m[1], m[1]), b)
     b = re.sub(r'^- ', '', b, flags=re.M)  # list items, which the handout writes as \item
+    # A Markdown table: its rule line and the bars between cells are layout, as the handout's \hline and & are.
+    b = re.sub(r'^\|(?:\s*:?-+:?\s*\|)+\s*$', '', b, flags=re.M)
+    b = re.sub(r'^\|(.*)\|\s*$', lambda m: m[1].replace('|', ' '), b, flags=re.M)
     footnotes = {}
 
     def keep(m):

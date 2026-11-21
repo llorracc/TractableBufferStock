@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  21 NOV 2026 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  21 NOV 2026 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,183 +813,171 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [5] [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 250.
+(hyperref)                removing `math shift' on input line 255.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 250.
+(hyperref)                removing `\beta' on input line 255.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 250.
+(hyperref)                removing `math shift' on input line 255.
 
 [7] [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 318.
+(hyperref)                removing `math shift' on input line 323.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 318.
+(hyperref)                removing `superscript' on input line 323.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 318.
+(hyperref)                removing `math shift' on input line 323.
 
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 373.
+(hyperref)                removing `math shift' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 373.
+(hyperref)                removing `superscript' on input line 378.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 373.
+(hyperref)                removing `math shift' on input line 378.
 
-[10]
-<./Figures/TractableBufferStockPhaseDiag.pdf, id=248, 462.52798pt x 289.08pt>
+[10] [11]
+<./Figures/TractableBufferStockPhaseDiag.pdf, id=253, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockPhaseDiag.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockPhaseDiag.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockPhaseDiag.pdf  used on i
-nput line 395.
+nput line 415.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [11 <./Figures/TractableBufferStockPhaseDiag.pdf>]
-<./Figures/TractableBufferStockcFunc.pdf, id=302, 462.52798pt x 289.08pt>
+ [12]
+<./Figures/TractableBufferStockcFunc.pdf, id=269, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockcFunc.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockcFunc.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockcFunc.pdf  used on input
- line 411.
+ line 431.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [12]
+ [13 <./Figures/TractableBufferStockPhaseDiag.pdf>] [14 <./Figures/TractableBuf
+ferStockcFunc.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 455.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 455.
+(hyperref)                removing `math shift' on input line 475.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 455.
+(hyperref)                removing `superscript' on input line 475.
 
-[13 <./Figures/TractableBufferStockcFunc.pdf>]
-<./Figures/TractableBufferStockGrowthA.pdf, id=383, 462.52798pt x 289.08pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 475.
+
+<./Figures/TractableBufferStockGrowthA.pdf, id=387, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockGrowthA.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockGrowthA.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockGrowthA.pdf  used on inp
-ut line 482.
+ut line 502.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [14 <./Figures/TractableBufferStockGrowthA.pdf>]
-<./Figures/TractableBufferStockGrowthB.pdf, id=464, 462.52798pt x 289.08pt>
+<./Figures/TractableBufferStockGrowthB.pdf, id=388, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockGrowthB.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockGrowthB.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockGrowthB.pdf  used on inp
-ut line 507.
+ut line 527.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [15 <./Figures/TractableBufferStockGrowthB.pdf>]
-<./Figures/cGroIncreaseMhoPlot.pdf, id=530, 462.52798pt x 289.08pt>
+[15] [16 <./Figures/TractableBufferStockGrowthA.pdf> <./Figures/TractableBuffer
+StockGrowthB.pdf>]
+<./Figures/cGroIncreaseMhoPlot.pdf, id=536, 462.52798pt x 289.08pt>
 File: ./Figures/cGroIncreaseMhoPlot.pdf Graphic file (type pdf)
 <use ./Figures/cGroIncreaseMhoPlot.pdf>
 Package pdftex.def Info: ./Figures/cGroIncreaseMhoPlot.pdf  used on input line 
-554.
+574.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [16 <./Figures/cGroIncreaseMhoPlot.pdf>] [17]
-<./Figures/PhaseDiagramDecreaseThetaPlot.pdf, id=630, 462.52798pt x 289.08pt>
+ [17] [18 <./Figures/cGroIncreaseMhoPlot.pdf>]
+<./Figures/PhaseDiagramDecreaseThetaPlot.pdf, id=636, 462.52798pt x 289.08pt>
 File: ./Figures/PhaseDiagramDecreaseThetaPlot.pdf Graphic file (type pdf)
 <use ./Figures/PhaseDiagramDecreaseThetaPlot.pdf>
 Package pdftex.def Info: ./Figures/PhaseDiagramDecreaseThetaPlot.pdf  used on i
-nput line 670.
+nput line 690.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
-<./Figures/cPathAfterThetaDrop.pdf, id=631, 462.52798pt x 289.08pt>
+<./Figures/cPathAfterThetaDrop.pdf, id=637, 462.52798pt x 289.08pt>
 File: ./Figures/cPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/cPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/cPathAfterThetaDrop.pdf  used on input line 
-676.
+696.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
-<./Figures/mPathAfterThetaDrop.pdf, id=632, 462.52798pt x 289.08pt>
+<./Figures/mPathAfterThetaDrop.pdf, id=638, 462.52798pt x 289.08pt>
 File: ./Figures/mPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/mPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/mPathAfterThetaDrop.pdf  used on input line 
-682.
+702.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
-<./Figures/MPCPathAfterThetaDrop.pdf, id=633, 462.52798pt x 289.08pt>
+<./Figures/MPCPathAfterThetaDrop.pdf, id=639, 462.52798pt x 289.08pt>
 File: ./Figures/MPCPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/MPCPathAfterThetaDrop.pdf>
 Package pdftex.def Info: ./Figures/MPCPathAfterThetaDrop.pdf  used on input lin
-e 690.
+e 710.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [18] [19 <./Figures/PhaseDiagramDecreaseThetaPlot.pdf> <./Figures/cPathAfterTh
-etaDrop.pdf>] [20 <./Figures/mPathAfterThetaDrop.pdf> <./Figures/MPCPathAfterTh
-etaDrop.pdf>] [21] [22] [23]
-<./Figures/SOEStakescPathAfterThetaDropPlot.pdf, id=822, 462.52798pt x 289.08pt
+ [19] [20 <./Figures/PhaseDiagramDecreaseThetaPlot.pdf> <./Figures/cPathAfterTh
+etaDrop.pdf>]
+[21 <./Figures/mPathAfterThetaDrop.pdf> <./Figures/MPCPathAfterThetaDrop.pdf>]
+[22] [23] [24]
+<./Figures/SOEStakescPathAfterThetaDropPlot.pdf, id=829, 462.52798pt x 289.08pt
 >
 File: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf Graphic file (type pdf)
 <use ./Figures/SOEStakescPathAfterThetaDropPlot.pdf>
 Package pdftex.def Info: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf  used o
-n input line 893.
+n input line 913.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [24]
-<./Figures/SOENoStakescPath.pdf, id=835, 462.52798pt x 289.08pt>
+ [25] [26 <./Figures/SOEStakescPathAfterThetaDropPlot.pdf>]
+<./Figures/SOENoStakescPath.pdf, id=871, 462.52798pt x 289.08pt>
 File: ./Figures/SOENoStakescPath.pdf Graphic file (type pdf)
 <use ./Figures/SOENoStakescPath.pdf>
-Package pdftex.def Info: ./Figures/SOENoStakescPath.pdf  used on input line 946
+Package pdftex.def Info: ./Figures/SOENoStakescPath.pdf  used on input line 966
 .
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [25 <./Figures/SOEStakescPathAfterThetaDropPlot.pdf>] [26 <./Figures/SOENoStak
-escPath.pdf>]
-[27]
+
+[27 <./Figures/SOENoStakescPath.pdf>] [28]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1011.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1011.
+(hyperref)                removing `math shift' on input line 1031.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1028.
+(hyperref)                removing `math shift' on input line 1031.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1028.
-
-[28] [29] [30]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1102.
+(hyperref)                removing `math shift' on input line 1048.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1102.
+(hyperref)                removing `math shift' on input line 1048.
 
-[31] [32]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1154.
-
+[29] [30] [31] [32]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1154.
-
-[33] [34] [35] [36] [37] [38] [39] [40] [41]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1584.
+(hyperref)                removing `math shift' on input line 1121.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\geq' on input line 1584.
+(hyperref)                removing `math shift' on input line 1121.
+
+[33]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1584.
+(hyperref)                removing `math shift' on input line 1173.
 
-[42] (./TractableBufferStock.bbl
+[34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44]
+(./TractableBufferStock.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 34--38
 []\T1/cmr/m/sc/12 Carroll, Christo-pher D., and Olivier Jeanne \T1/cmr/m/n/12 (
 2009): ``A
@@ -1037,7 +1025,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--59
 7, Avail-able at
  []
 
-[43]) [44] (./TractableBufferStock.aux)
+[45]) [46] (./TractableBufferStock.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1051,11 +1039,11 @@ Package rerunfilecheck Info: File `TractableBufferStock.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23727 strings out of 474122
- 452551 string characters out of 5746461
- 1951187 words of memory out of 5000000
- 45396 multiletter control sequences out of 15000+600000
- 597823 words of font info for 148 fonts, out of 8000000 for 9000
+ 23745 strings out of 474122
+ 452905 string characters out of 5746461
+ 1952187 words of memory out of 5000000
+ 45413 multiletter control sequences out of 15000+600000
+ 600761 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,31n,131p,10988b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -1068,44 +1056,43 @@ local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
 l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/202
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dis
-t/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2023/texmf-d
-ist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2023/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/202
-3/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2
-023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/202
-3/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/te
-xmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2023/texm
-f-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-
-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-di
-st/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist
-/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/f
-onts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts
-/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
-ype1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/typ
-e1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
-/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
-ublic/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
-lic/wasy-type1/wasy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
-c/wasy-type1/wasy8.pfb>
-Output written on TractableBufferStock.pdf (44 pages, 803171 bytes).
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/20
+23/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/202
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-
+dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2023/texm
+f-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
+2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/
+2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/20
+23/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2023/t
+exmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf
+-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dis
+t/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2023/texmf-dist/
+fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/font
+s/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/
+type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/ty
+pe1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
+1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
+public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
+blic/wasy-type1/wasy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
+ic/wasy-type1/wasy8.pfb>
+Output written on TractableBufferStock.pdf (46 pages, 817759 bytes).
 PDF statistics:
- 1497 PDF objects out of 1728 (max. 8388607)
- 1055 compressed objects within 11 object streams
+ 1511 PDF objects out of 1728 (max. 8388607)
+ 1069 compressed objects within 11 object streams
  260 named destinations out of 1000 (max. 500000)
  336 words of extra memory for PDF output out of 10000 (max. 10000000)
 
