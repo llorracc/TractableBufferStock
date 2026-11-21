@@ -48,7 +48,7 @@ ALLOWED = [
      ' m[N]'),
     ('d', r'\[\[d\]\]\s*\\', 'the differential, as in d\\cFunc'),
     ('e', r'\[\[e\]\]\s*\^', "Euler's e, raised to a power"),
-    ('C', r'\\mathbf\{\[\[C\]\]\}\^4', 'the class of functions with four continuous derivatives'),
+    ('C', r'\\mathbf\{\[\[C\]\]\}\^2', 'the class of functions with two continuous derivatives'),
     ('x', r'\\uFunc\((\[\[)?x(\]\])?(\[\[)?y(\]\])?\)', 'the generic variables of a property of CRRA utility'),
     ('y', r'\\uFunc\((\[\[)?x(\]\])?(\[\[)?y(\]\])?\)', 'the generic variables of a property of CRRA utility'),
     ('\\Delta', None, 'the difference operator, like the differential d'),
@@ -64,7 +64,6 @@ ALLOWED = [
      ' coefficients, named in the text'),
     ('\\gamma', r'\$(\[\[)?\\(phi|gamma)(\]\])?\$ and \$(\[\[)?\\(phi|gamma)(\]\])?\$', "the fitted function's"
      ' coefficients, named in the text'),
-    ('\\varepsilon', r'\\pmb\{\\circ\}\(-?\[\[\\varepsilon\]\]\)', 'a small perturbation: a throwaway letter'),
 ]
 
 # (letter, where, why it waits): raw object letters left for a decision of Chris's, which the macro would anticipate.

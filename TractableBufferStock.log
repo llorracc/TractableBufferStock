@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  19 NOV 2026 00:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  21 NOV 2026 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -850,14 +850,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 373.
 
 [10]
-<./Figures/TractableBufferStockPhaseDiag.pdf, id=247, 462.52798pt x 289.08pt>
+<./Figures/TractableBufferStockPhaseDiag.pdf, id=248, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockPhaseDiag.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockPhaseDiag.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockPhaseDiag.pdf  used on i
 nput line 395.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
  [11 <./Figures/TractableBufferStockPhaseDiag.pdf>]
-<./Figures/TractableBufferStockcFunc.pdf, id=301, 462.52798pt x 289.08pt>
+<./Figures/TractableBufferStockcFunc.pdf, id=302, 462.52798pt x 289.08pt>
 File: ./Figures/TractableBufferStockcFunc.pdf Graphic file (type pdf)
 <use ./Figures/TractableBufferStockcFunc.pdf>
 Package pdftex.def Info: ./Figures/TractableBufferStockcFunc.pdf  used on input
@@ -932,15 +932,33 @@ File: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf  used o
 n input line 893.
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [24 <./Figures/SOEStakescPathAfterThetaDropPlot.pdf>]
-<./Figures/SOENoStakescPath.pdf, id=853, 462.52798pt x 289.08pt>
+ [24]
+<./Figures/SOENoStakescPath.pdf, id=835, 462.52798pt x 289.08pt>
 File: ./Figures/SOENoStakescPath.pdf Graphic file (type pdf)
 <use ./Figures/SOENoStakescPath.pdf>
 Package pdftex.def Info: ./Figures/SOENoStakescPath.pdf  used on input line 946
 .
 (pdftex.def)             Requested size: 433.62pt x 271.02505pt.
- [25] [26 <./Figures/SOENoStakescPath.pdf>]
-[27] [28] [29] [30]
+ [25 <./Figures/SOEStakescPathAfterThetaDropPlot.pdf>] [26 <./Figures/SOENoStak
+escPath.pdf>]
+[27]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1011.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1011.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1028.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1028.
+
+[28] [29] [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1102.
@@ -949,7 +967,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1102.
 
-[31]
+[31] [32]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1154.
@@ -958,20 +976,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1154.
 
-[32] [33] [34] [35] [36] [37] [38] [39] [40]
+[33] [34] [35] [36] [37] [38] [39] [40] [41]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1579.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\geq' on input line 1579.
+(hyperref)                removing `math shift' on input line 1584.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1579.
+(hyperref)                removing `\geq' on input line 1584.
 
-[41] (./TractableBufferStock.bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1584.
+
+[42] (./TractableBufferStock.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 34--38
 []\T1/cmr/m/sc/12 Carroll, Christo-pher D., and Olivier Jeanne \T1/cmr/m/n/12 (
 2009): ``A
@@ -1019,7 +1037,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--59
 7, Avail-able at
  []
 
-[42]) [43] (./TractableBufferStock.aux)
+[43]) [44] (./TractableBufferStock.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1033,13 +1051,13 @@ Package rerunfilecheck Info: File `TractableBufferStock.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23716 strings out of 474122
- 452386 string characters out of 5746461
- 1952187 words of memory out of 5000000
- 45386 multiletter control sequences out of 15000+600000
- 595347 words of font info for 138 fonts, out of 8000000 for 9000
+ 23727 strings out of 474122
+ 452551 string characters out of 5746461
+ 1951187 words of memory out of 5000000
+ 45396 multiletter control sequences out of 15000+600000
+ 597823 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,31n,131p,10988b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,31n,131p,10988b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -1084,10 +1102,10 @@ e1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
 ublic/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
 lic/wasy-type1/wasy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
 c/wasy-type1/wasy8.pfb>
-Output written on TractableBufferStock.pdf (43 pages, 800631 bytes).
+Output written on TractableBufferStock.pdf (44 pages, 803171 bytes).
 PDF statistics:
- 1490 PDF objects out of 1728 (max. 8388607)
- 1049 compressed objects within 11 object streams
- 259 named destinations out of 1000 (max. 500000)
+ 1497 PDF objects out of 1728 (max. 8388607)
+ 1055 compressed objects within 11 object streams
+ 260 named destinations out of 1000 (max. 500000)
  336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

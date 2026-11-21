@@ -37,8 +37,8 @@
 % The registry has no bare FHWC row, because BufferStockTheory defines \FHWC itself.
 \providecommand{\FHWC}{\ensuremath{\text{FHWC}}}
 
-% \mathring overflows hyperref's bookmark conversion, and the factor appears in a section title
-\AtBeginDocument{\pdfstringdefDisableCommands{\def\WGroFachFix{G}\def\WGroRtehFix{g}}}
+% \mathring overflows hyperref's bookmark conversion, and the factor and FHWC on it appear in section titles
+\AtBeginDocument{\pdfstringdefDisableCommands{\def\WGroFachFix{G}\def\WGroRtehFix{g}\def\FHWChFix{FHWC}}}
 
 % tex4ht gives a \label inside a footnote the footnote's number, so state the equation's number.
 % Use this after the end of the equation, not inside it.

@@ -25,7 +25,7 @@
 \doTocEntry\toclof{6}{\csname a:TocLink\endcsname{1}{x1-18003r6}{}{\ignorespaces Effect of Lower $\vartheta $ On Consumption Function}}{figure}\relax 
 \doTocEntry\toclof{7}{\csname a:TocLink\endcsname{1}{x1-18004r7}{}{\ignorespaces Path of ${c}^{\mathrm@@ {e}}$ Before and After $\vartheta $ Decline}}{figure}\relax 
 \doTocEntry\toclof{8}{\csname a:TocLink\endcsname{1}{x1-18005r8}{}{\ignorespaces Path of $m^{\mathrm@@ {e}}$ Before and After $\vartheta $ Decline}}{figure}\relax 
-\doTocEntry\toclof{9}{\csname a:TocLink\endcsname{1}{x1-18006r9}{}{\ignorespaces Marginal Propensity to Consume $\kappa _{t}$ Before and After $\vartheta $ Decline}}{figure}\relax 
+\doTocEntry\toclof{9}{\csname a:TocLink\endcsname{1}{x1-18006r9}{}{\ignorespaces Marginal Propensity to Consume $\pmb  {\kappa }(m_{t})$ Before and After $\vartheta $ Decline}}{figure}\relax 
 \doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-28}{A Macroeconomic Interpretation}}{52}\relax 
 \doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{1}{x1-200003.1}{QQ2-1-29}{Stakes}}{54}\relax 
 \doTocEntry\tocsubsubsection{3.1.1}{\csname a:TocLink\endcsname{1}{x1-210003.1.1}{QQ2-1-30}{A `Stake' That Yields a Representative Agent}}{54}\relax 
@@ -35,14 +35,14 @@
 \doTocEntry\tocsection{A}{\csname a:TocLink\endcsname{1}{x1-23000A}{QQ2-1-34}{Approximate Formula for Consumption Growth}}{66}\relax 
 \doTocEntry\tocsection{B}{\csname a:TocLink\endcsname{1}{x1-24000B}{QQ2-1-35}{Conditions for a Target to Exist}}{66}\relax 
 \doTocEntry\tocsubsection{B.1}{\csname a:TocLink\endcsname{1}{x1-25000B.1}{QQ2-1-36}{Using the Phase Diagram Loci}}{66}\relax 
-\doTocEntry\tocsubsection{B.2}{\csname a:TocLink\endcsname{1}{x1-26000B.2}{QQ2-1-37}{A Target Always Exists When Human Wealth Is Infinite}}{69}\relax 
-\doTocEntry\tocsubsection{B.3}{\csname a:TocLink\endcsname{1}{x1-27000B.3}{QQ2-1-38}{Conditions Under Which a Target Exists When Human Wealth is Finite}}{70}\relax 
+\doTocEntry\tocsubsection{B.2}{\csname a:TocLink\endcsname{1}{x1-26000B.2}{QQ2-1-37}{A Target Always Exists When the $\text  {FHWC}_{\cc@accent {"7017}{\ensuremath  {\mathrm@@ {G}}}}$ Fails}}{69}\relax 
+\doTocEntry\tocsubsection{B.3}{\csname a:TocLink\endcsname{1}{x1-27000B.3}{QQ2-1-38}{Conditions Under Which a Target Exists When the $\text  {FHWC}_{\cc@accent {"7017}{\ensuremath  {\mathrm@@ {G}}}}$ Holds}}{70}\relax 
 \doTocEntry\tocsubsection{B.4}{\csname a:TocLink\endcsname{1}{x1-28000B.4}{QQ2-1-39}{Solutions Exist Even When Growth Impatience Fails}}{72}\relax 
 \doTocEntry\tocsection{C}{\csname a:TocLink\endcsname{1}{x1-29000C}{QQ2-1-40}{The Exact Formula for Target $m$}}{74}\relax 
 \doTocEntry\tocsection{D}{\csname a:TocLink\endcsname{1}{x1-30000D}{QQ2-1-41}{Approximating Target $m$}}{77}\relax 
 \doTocEntry\tocsection{E}{\csname a:TocLink\endcsname{1}{x1-31000E}{QQ2-1-42}{Numerical Solution}}{83}\relax 
 \doTocEntry\tocsubsection{E.1}{\csname a:TocLink\endcsname{1}{x1-32000E.1}{QQ2-1-43}{The Consumption Function}}{83}\relax 
-\doTocEntry\tocsubsection{E.2}{\csname a:TocLink\endcsname{1}{x1-33000E.2}{QQ2-1-44}{The Value Function}}{89}\relax 
-\doTocEntry\tocsection{F}{\csname a:TocLink\endcsname{1}{x1-34000F}{QQ2-1-45}{The Algorithm}}{91}\relax 
+\doTocEntry\tocsubsection{E.2}{\csname a:TocLink\endcsname{1}{x1-33000E.2}{QQ2-1-44}{The Value Function}}{90}\relax 
+\doTocEntry\tocsection{F}{\csname a:TocLink\endcsname{1}{x1-34000F}{QQ2-1-45}{The Algorithm}}{92}\relax 
 \doTocEntry\tocsection{G}{\csname a:TocLink\endcsname{1}{x1-35000G}{QQ2-1-46}{Modified Formulas For Case Where $\cc@accent {"7017}{\ensuremath  {\mathrm@@ {G}}}\geq \mathsf@@ {R}$}}{95}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-36000}{QQ2-1-47}{References}}{96}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-36000}{QQ2-1-47}{References}}{97}\relax 
