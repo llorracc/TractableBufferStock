@@ -47,8 +47,7 @@ ALLOWED = [
     ('N', r'\[\[N\]\]\]|\$\[\[N\]\]\$ is the number of points', "an index's bound: the number of grid points, as in"
      ' m[N]'),
     ('d', r'\[\[d\]\]\s*\\', 'the differential, as in d\\cFunc'),
-    ('e', r'\[\[e\]\]\s*\^', "Euler's e, raised to a power"),
-    ('C', r'\\mathbf\{\[\[C\]\]\}\^2', 'the class of functions with two continuous derivatives'),
+    ('C', r'\\mathbf\{\[\[C\]\]\}\^[12]', 'the class of functions with one or two continuous derivatives'),
     ('x', r'\\uFunc\((\[\[)?x(\]\])?(\[\[)?y(\]\])?\)', 'the generic variables of a property of CRRA utility'),
     ('y', r'\\uFunc\((\[\[)?x(\]\])?(\[\[)?y(\]\])?\)', 'the generic variables of a property of CRRA utility'),
     ('x', r'\\MPC\(\\mNrm\+\[\[x\]\]\)|\[\[x\]\]_\{t(\+1)?\}|\$\[\[x\]\]\$ therefore',
@@ -60,12 +59,6 @@ ALLOWED = [
      ' Taylor approximations'),
     ('\\zeta', r'\(1\+(\[\[)?\\epsilon(\]\])?\)\^\{(\[\[)?\\zeta(\]\])?\}', "the generic variables of the Math Facts'"
      ' Taylor approximations'),
-    ('\\phi', r'\[\[\\phi\]\]_\{[01]\}', "a fitted function's coefficients: throwaway letters"),
-    ('\\gamma', r'\[\[\\gamma\]\]_\{[01]\}', "a fitted function's coefficients: throwaway letters"),
-    ('\\phi', r'\$(\[\[)?\\(phi|gamma)(\]\])?\$ and \$(\[\[)?\\(phi|gamma)(\]\])?\$', "the fitted function's"
-     ' coefficients, named in the text'),
-    ('\\gamma', r'\$(\[\[)?\\(phi|gamma)(\]\])?\$ and \$(\[\[)?\\(phi|gamma)(\]\])?\$', "the fitted function's"
-     ' coefficients, named in the text'),
 ]
 
 # (letter, where, why it waits): raw object letters left for a decision of Chris's, which the macro would anticipate.

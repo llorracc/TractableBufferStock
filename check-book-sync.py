@@ -85,18 +85,13 @@ ACCEPTED_REWRITES = [
     (r'\[appendix to the perfect foresight CRRA section\]\(#sec:\w+\)', 'appendix to PFCRRAREF', PFCRRA),
     (r"\bthe chapter's (?=\[notebook\])", "the handout's ", NBSELF_REWRITE),
     (r"\b([Tt]his) chapter's figures", r"\1 handout's figures", NBSELF_REWRITE),
+    (r"\b([Tt]he) chapter's notebook\b", r"\1 handout's notebook", NBSELF_REWRITE),
 ]
 # The handout's side of the same: its names for other handouts.
 HAND_REWRITES = [
     (r'(?:[Tt]he handout )?\\handout[CM]\{PerfForesightCRRA\}', 'PFCRRAREF'),
 ]
 
-# Differences that stay because each document describes itself (Chris, 2026-11-15 22:02:48 EST, in this
-# repo's session: "do as recommended").
-WHENFHWC = ("each document points to the Mathematica notebook its own way: the chapter links the file in the "
-            "handout's repository, the handout cites it and its code archive")
-MMA = ("the chapter's footnote also says where the Mathematica code is; the handout is in that repository, and "
-       "says the code is its own")
 # Both documents' figures are drawn by the chapter's notebook, and the handout links its own copy of it (Chris,
 # 2026-11-21 14:34:22 EST, in this repo's session: "(a), commit and push"). Binder opens the book's copy, the
 # same notebook, while the handout's binder/ can't build.
@@ -106,24 +101,16 @@ NBSELF = "the handout links its own copy of the chapter's notebook, and calls it
 # Words are as tokenized, with spaces between them.
 ACCEPTED_TEXT = [
     ('Introduction This', 'handout', 'chapter', 'each document names its own format'),
-    ('this is graphically . A', '', 'Mathematica', WHENFHWC),
-    ('graphically . A notebook', '', "in the handout's repository , When - FHWC - Holds . nb (", WHENFHWC),
-    ('A notebook CITEWhen - FHWC - Holds', '( see references for details', '', WHENFHWC),
-    ('( see references for details )', 'in the code archive associated with these lecture notes', ',', WHENFHWC),
-    ('equations . The Mathematica code', '', "in the handout's repository", MMA),
-    ('the quadratic equation analytically ;', 'the', 'its', MMA),
 ]
 
 # Links only in the chapter, by their text, and why.
-ACCEPTED_LINKS = {
-    'repository': MMA, 'When-FHWC-Holds.nb': WHENFHWC,
-}
+ACCEPTED_LINKS = {}
 
 # Links in both documents whose addresses differ, by their text, and why.
 ACCEPTED_LINK_URLS = {'notebook': NBSELF, 'figure notebook': NBSELF, 'Colab': NBSELF}
 
 # The figures, in order: (the chapter's file, the handout's), and why their pictures differ.
-FIGURES_DIFFER = ("both are drawn by the chapter's notebook with HARK's TractableConsumerType: the chapter shows "
+FIGURES_DIFFER = ("both are drawn by the chapter's notebook, with its own solver: the chapter shows "
                   "its PNGs, the handout PDFs saved by the same notebook with the same settings")
 
 # Handout macros that render differently from the book's, and why.
