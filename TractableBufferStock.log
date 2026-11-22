@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  21 NOV 2026 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.7.25)  21 NOV 2026 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -887,12 +887,12 @@ Package pdftex.def Info: ./Figures/cGroIncreaseMhoPlot.pdf  used on input line
 578.
 (pdftex.def)             Requested size: 433.62pt x 251.89816pt.
  [19 <./Figures/cGroIncreaseMhoPlot.pdf>] [20]
-<./Figures/PhaseDiagramDecreaseThetaPlot.pdf, id=667, 380.6047pt x 263.1431pt>
+<./Figures/PhaseDiagramDecreaseThetaPlot.pdf, id=667, 380.6047pt x 269.1656pt>
 File: ./Figures/PhaseDiagramDecreaseThetaPlot.pdf Graphic file (type pdf)
 <use ./Figures/PhaseDiagramDecreaseThetaPlot.pdf>
 Package pdftex.def Info: ./Figures/PhaseDiagramDecreaseThetaPlot.pdf  used on i
 nput line 692.
-(pdftex.def)             Requested size: 433.62pt x 299.80153pt.
+(pdftex.def)             Requested size: 433.62pt x 306.66302pt.
 <./Figures/cPathAfterThetaDrop.pdf, id=671, 391.628pt x 284.22382pt>
 File: ./Figures/cPathAfterThetaDrop.pdf Graphic file (type pdf)
 <use ./Figures/cPathAfterThetaDrop.pdf>
@@ -915,20 +915,20 @@ e 712.
 [22 <./Figures/PhaseDiagramDecreaseThetaPlot.pdf>] [23 <./Figures/cPathAfterThe
 taDrop.pdf>] [24 <./Figures/mPathAfterThetaDrop.pdf>] [25 <./Figures/MPCPathAft
 erThetaDrop.pdf>] [26] [27] [28]
-<./Figures/SOEStakescPathAfterThetaDropPlot.pdf, id=880, 386.60925pt x 281.2125
-7pt>
+<./Figures/SOEStakescPathAfterThetaDropPlot.pdf, id=881, 391.628pt x 281.85756p
+t>
 File: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf Graphic file (type pdf)
 <use ./Figures/SOEStakescPathAfterThetaDropPlot.pdf>
 Package pdftex.def Info: ./Figures/SOEStakescPathAfterThetaDropPlot.pdf  used o
 n input line 910.
-(pdftex.def)             Requested size: 433.62pt x 315.41504pt.
+(pdftex.def)             Requested size: 433.62pt x 312.07854pt.
  [29] [30 <./Figures/SOEStakescPathAfterThetaDropPlot.pdf>]
-<./Figures/SOENoStakescPath.pdf, id=922, 387.60039pt x 281.21257pt>
+<./Figures/SOENoStakescPath.pdf, id=924, 392.61914pt x 281.85756pt>
 File: ./Figures/SOENoStakescPath.pdf Graphic file (type pdf)
 <use ./Figures/SOENoStakescPath.pdf>
 Package pdftex.def Info: ./Figures/SOENoStakescPath.pdf  used on input line 960
 .
-(pdftex.def)             Requested size: 433.62pt x 314.60405pt.
+(pdftex.def)             Requested size: 433.62pt x 311.30869pt.
  [31] [32 <./Figures/SOENoStakescPath.pdf>] [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1077,9 +1077,9 @@ pe1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
 public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
 blic/wasy-type1/wasy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
 ic/wasy-type1/wasy8.pfb>
-Output written on TractableBufferStock.pdf (51 pages, 832481 bytes).
+Output written on TractableBufferStock.pdf (51 pages, 833421 bytes).
 PDF statistics:
- 1578 PDF objects out of 1728 (max. 8388607)
+ 1581 PDF objects out of 1728 (max. 8388607)
  1136 compressed objects within 12 object streams
  268 named destinations out of 1000 (max. 500000)
  352 words of extra memory for PDF output out of 10000 (max. 10000000)
