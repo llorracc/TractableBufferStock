@@ -1,7 +1,3 @@
 #!/bin/bash
-# Reproduce whatever set of results that can be reproduced in a few minutes
-
-scriptDir="$(dirname "$0")"
-
-./reproduce_computed.sh # All BufferStockTheory results can be reproduced quickly
-
+# The quickest reproduction. Everything the handout computes runs in well under a minute, so this is all of it.
+exec "$(dirname "$0")/computed.sh"

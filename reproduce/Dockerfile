@@ -1,28 +1,18 @@
-# Based on https://github.com/jupyter/docker-stacks/blob/master/datascience-notebook/Dockerfile
-ARG BASE_CONTAINER=jupyter/scipy-notebook:6d42503c684f
-FROM $BASE_CONTAINER
+# The handout's computed results, in a container:
+#
+#   docker build --load -f reproduce/Dockerfile -t tractable-buffer-stock .
+#   docker run --rm tractable-buffer-stock
+#
+# To keep the executed notebook and its figures, add -v "$PWD/reproduce/output:/handout/reproduce/output" to the
+# run. Building the PDF and the web page needs TeX Live as well; see README.md.
+FROM python:3.12-slim
 
-LABEL maintainer="Mridul Seth <seth.mridul@gmail.com>"
+# pip needs git to install the book's package from GitHub.
+RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
+COPY binder/requirements.txt /handout/binder/requirements.txt
+RUN pip install --no-cache-dir -r /handout/binder/requirements.txt nbconvert ipykernel
 
-USER root
-
-# install latex-full installation
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends texlive-full dvipng && \
-    rm -rf /var/lib/apt/lists/*
-
-USER $NB_UID
-WORKDIR $HOME
-
-# install the required packages for pandemic repo.
-COPY binder/requirements.txt /tmp/
-RUN pip install --requirement /tmp/requirements.txt && \
-    fix-permissions $CONDA_DIR && \
-    fix-permissions /home/$NB_USER
-
-# Import matplotlib the first time to build the font cache.
-ENV XDG_CACHE_HOME="/home/${NB_USER}/.cache/"
-
-RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
-    fix-permissions "/home/${NB_USER}"
-
+COPY TractableBufferStock.ipynb /handout/
+COPY reproduce/computed.sh /handout/reproduce/
+WORKDIR /handout
+CMD ["bash", "reproduce/computed.sh"]

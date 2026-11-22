@@ -93,8 +93,9 @@ HAND_REWRITES = [
 ]
 
 # Both documents' figures are drawn by the chapter's notebook, and the handout links its own copy of it (Chris,
-# 2026-11-21 14:34:22 EST, in this repo's session: "(a), commit and push"). Binder opens the book's copy, the
-# same notebook, while the handout's binder/ can't build.
+# 2026-11-21 14:34:22 EST, in this repo's session: "(a), commit and push"). Binder opens the handout's copy too
+# since binder/ was fixed (Chris, 2026-11-22: "2. fix"); JupyterLite opens the book's in-browser copy, the
+# same notebook, in both documents.
 NBSELF = "the handout links its own copy of the chapter's notebook, and calls it the handout's"
 
 # (the handout's words just before it, handout words, book words, why accepted)
@@ -107,7 +108,7 @@ ACCEPTED_TEXT = [
 ACCEPTED_LINKS = {}
 
 # Links in both documents whose addresses differ, by their text, and why.
-ACCEPTED_LINK_URLS = {'notebook': NBSELF, 'figure notebook': NBSELF, 'Colab': NBSELF}
+ACCEPTED_LINK_URLS = {'notebook': NBSELF, 'figure notebook': NBSELF, 'Colab': NBSELF, 'Binder': NBSELF}
 
 # The figures, in order: (the chapter's file, the handout's), and why their pictures differ.
 FIGURES_DIFFER = ("both are drawn by the chapter's notebook, with its own solver: the chapter shows "
