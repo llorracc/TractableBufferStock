@@ -21,7 +21,7 @@ Two checks:
 HELD and FUNC_HELD list what waits for a decision of Chris's; it is reported, and doesn't fail the check. An entry of
 any list that no longer matches anything fails it, so the lists can't go stale.
 
-    ./check-object-macros.py            check TractableBufferStock.tex
+    ./check-object-macros.py            check TractableBufferStock.tex and TractableBufferStock-Appendix.tex
     ./check-object-macros.py FILE ...   check other files
 
 Math is $...$, \\(...\\), \\[...\\], \\ensuremath{...} and the equation environments; inside it, the arguments of
@@ -36,18 +36,14 @@ import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT = ['TractableBufferStock.tex']
+DEFAULT = ['TractableBufferStock.tex', 'TractableBufferStock-Appendix.tex']  # the handout, and its appendix since the split
 
 # Raw letters. (letter, where it may stay raw, why). Where: a pattern searched near the letter, which is marked
 # [[ ]]; None for anywhere.
 ALLOWED = [
     ('t', None, 'the date'),
     ('i', None, 'an index: a country, in the cross-country regression'),
-    ('n', None, 'an index: periods back from the target, in reverse shooting'),
-    ('N', r'\[\[N\]\]\]|\$\[\[N\]\]\$ is the number of points', "an index's bound: the number of grid points, as in"
-     ' m[N]'),
     ('d', r'\[\[d\]\]\s*\\', 'the differential, as in d\\cFunc'),
-    ('C', r'\\mathbf\{\[\[C\]\]\}\^[12]', 'the class of functions with one or two continuous derivatives'),
     ('x', r'\\uFunc\((\[\[)?x(\]\])?(\[\[)?y(\]\])?\)', 'the generic variables of a property of CRRA utility'),
     ('y', r'\\uFunc\((\[\[)?x(\]\])?(\[\[)?y(\]\])?\)', 'the generic variables of a property of CRRA utility'),
     ('x', r'\\MPC\(\\mNrm\+\[\[x\]\]\)|\[\[x\]\]_\{t(\+1)?\}|\$\[\[x\]\]\$ therefore',

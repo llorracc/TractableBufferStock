@@ -9,3 +9,13 @@ local no_dark_invert = filter{ function(css)
   return (css:gsub("@media%s*%(prefers%-color%-scheme:%s*dark%)%s*%b{}", ""))
 end }
 Make:match("css$", no_dark_invert)
+
+-- tex4ht writes TeX's ligatures ff, fi, fl, ffi and ffl as single characters (U+FB00 to U+FB04), which searching
+-- and copying the page do not read as letters: write the letters.
+local fixligatures = filter{"fixligatures"}
+Make:match("html?$", fixligatures)
+
+-- make4ht's DOM filters for html5, without sectionid, which named each figure after its whole caption (ids of 500 to
+-- 700 characters) and pointed the in-page figure links at them. TractableBufferStock.sh turns the default list off.
+local domfilter = require "make4ht-domfilter"
+Make:match("html?$", domfilter({"fixinlines", "idcolons", "joincharacters", "tablerows", "booktabs", "itemparagraphs"}, "tbsdomfilters"))

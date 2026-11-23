@@ -12,8 +12,14 @@ llorracc/PerfForesightCRRA's on 2026-11-15.
     ./check-book-sync.py --book-git DIR   read the book at --ref from a local clone (git show)
     ./check-book-sync.py --book-dir DIR   read the book from a local checkout's working tree
 
-Neither document has split off its appendix yet: the handout's appendices follow \\appendix and
-the chapter's follow its heading "Appendix". Both are compared, as one text with the rest.
+The handout's appendix is a document of its own, TractableBufferStock-Appendix.tex, which the
+handout summarizes in its section "Results in the Appendix" (the split-chapter-appendix skill).
+Until the book splits off its appendix too, its chapter keeps it after the heading "Appendix", and
+the chapter is compared with the handout and the appendix taken together, without the handout's
+summary or the appendix's opening line. Once the book has its page in "Chapter Appendices"
+(BOOK_APPENDIX), the chapter is compared with the handout, and that page with the appendix. In the
+appendix, "the handout" and "the handout's" are accepted wherever the page says "the chapter" and
+"the chapter's": the appendix names the document it belongs to.
 
 It compares the title, the wording (headings, equations, notes and figure captions), equation
 labels, citations, external links, the figures, the notebook beside the chapter, and the symbols
@@ -68,6 +74,15 @@ HAND_END = '\\bibliographystyle'
 REGISTRY = '@resources/notation/econark-math.yml'
 LOCAL_STY = os.path.join('@local', 'TractableBufferStock.sty')
 NOTEBOOK = 'TractableBufferStock.ipynb'
+# The appendix, a document of its own since the split (plan: workspace-course-choice's
+# artifacts/book-drafts/2026-11-22_TractableBufferStock-appendix/plan.md), and the book's page for it.
+APPENDIX_TEX = 'TractableBufferStock-Appendix.tex'
+BOOK_APPENDIX = 'content/appendices/chapters/TractableBufferStock.md'
+APPENDIX_START = 'This is the appendix to'  # the first words of the appendix's shared text, in both
+SUMMARY = '\\section{Results in the Appendix}'  # the handout's summary of the appendix
+INLINE_APPENDIX = r'^## Appendix\s*$'  # the chapter's heading while the appendix is still inside it
+# The two documents' links to each other, which the book writes as links to labels; neither is compared.
+CROSS_LINKS = ('\\HandoutPDF', '\\AppendixPDF')
 
 # The book's macro names, where they differ, and the handout's for the same objects.
 BOOK_TO_HANDOUT = {}
@@ -79,17 +94,24 @@ LABELS = {'EmpLbl': 'e', 'UnempLbl': 'u'}
 
 # (book pattern, what the handout writes, why the difference is accepted). Applied to the book's text.
 NBSELF_REWRITE = "the handout calls the chapter's notebook its own"
-PFCRRA = 'each document points to the perfect-foresight material its own way: the handout names that handout, the chapter links its section'
+PFCRRA = ('each document points to the perfect-foresight material its own way: the handout names that handout or links its '
+          "appendix's PDF, the chapter links its section")
 ACCEPTED_REWRITES = [
     (r'(?:[Tt]he )?\[[Pp]erfect foresight CRRA\]\(#sec:PerfForesightCRRA\)(?: section)?', 'PFCRRAREF', PFCRRA),
-    (r'\[appendix to the perfect foresight CRRA section\]\(#sec:\w+\)', 'appendix to PFCRRAREF', PFCRRA),
+    (r'\[appendix to perfect foresight CRRA\]\(#sec:\w+\)', 'appendix to PFCRRAREF', PFCRRA),
     (r"\bthe chapter's (?=\[notebook\])", "the handout's ", NBSELF_REWRITE),
     (r"\b([Tt]his) chapter's figures", r"\1 handout's figures", NBSELF_REWRITE),
     (r"\b([Tt]he) chapter's notebook\b", r"\1 handout's notebook", NBSELF_REWRITE),
+    # The appendix's value function links the perfect-foresight model's closed-form value (finding 8 of the
+    # 2026-11-22 review); the handout links that handout's appendix, as a PDF.
+    (r'(?:the )?\[perfect foresight model\]\(#sec:PerfForesightCRRA-ValueClosedForm\)', 'PFCRRAREF', PFCRRA),
 ]
-# The handout's side of the same: its names for other handouts.
+# The handout's side of the same: its names for other handouts, and its links to their appendices' PDFs, in the
+# chapter's words (Chris Carroll, 2026-11-22: link the public appendix PDF).
 HAND_REWRITES = [
-    (r'(?:[Tt]he handout )?\\handout[CM]\{PerfForesightCRRA\}', 'PFCRRAREF'),
+    (r'\\handoutC\{PerfForesightCRRA\}', 'PFCRRAREF'),
+    (r'\\href\{https://llorracc\.github\.io/PerfForesightCRRA/PerfForesightCRRA-Appendix\.pdf\}\{appendix to perfect foresight CRRA\}', 'appendix to PFCRRAREF'),
+    (r'(?:the )?\\href\{https://llorracc\.github\.io/PerfForesightCRRA/PerfForesightCRRA-Appendix\.pdf\}\{perfect foresight model\}', 'PFCRRAREF'),
 ]
 
 # Both documents' figures are drawn by the chapter's notebook, and the handout links its own copy of it (Chris,
@@ -102,7 +124,20 @@ NBSELF = "the handout links its own copy of the chapter's notebook, and calls it
 # Words are as tokenized, with spaces between them.
 ACCEPTED_TEXT = [
     ('Introduction This', 'handout', 'chapter', 'each document names its own format'),
+    ('The conditions used in this', 'handout', 'chapter', 'each document names its own format'),
 ]
+
+# Differences that exist only once the book has split off its appendix, in the form of ACCEPTED_TEXT: the
+# summary's wording, which the chapter has only then. Used, and checked for staleness, only after the split.
+ACCEPTED_AFTER_SPLIT_TEXT = [
+    ('the approximation this', 'handout', 'chapter', 'each document names its own format'),
+]
+# Rewrites in ACCEPTED_REWRITES that apply only to the book's appendix page, so only after the split.
+AFTER_SPLIT_REWRITES = {r'(?:the )?\[perfect foresight model\]\(#sec:PerfForesightCRRA-ValueClosedForm\)'}
+
+# Differences that wait for the book to split off its appendix, in the form of ACCEPTED_TEXT. Used only while
+# the chapter still has its Appendix section; empty this list once it doesn't.
+PENDING_SPLIT_TEXT = []
 
 # Links only in the chapter, by their text, and why.
 ACCEPTED_LINKS = {}
@@ -271,9 +306,9 @@ def handout_words(t):
     return tokens(unwrap(t, r'\\footnote', ' FOOT ', ' ENDFOOT '))
 
 
-def book_words(md, used):
-    """The chapter's words from BOOK_START on, in the handout's macro names; `used` counts the rewrites."""
-    b = md[md.index(BOOK_START):]
+def book_words(md, used, start=BOOK_START):
+    """The words from `start` on, in the handout's macro names; `used` counts the rewrites."""
+    b = md[md.index(start):]
     for pattern, replacement, _ in ACCEPTED_REWRITES:
         b, count = re.subn(pattern, replacement, b)
         used[pattern] = used.get(pattern, 0) + count
@@ -403,7 +438,11 @@ def compare_marks(plain, md, problems, links_used):
     for k in sorted(b_cites ^ h_cites):
         problems.append(f'Citation only in the {"book" if k in b_cites else "handout"}: {k}')
 
-    h_links = {text: url for url, text in re.findall(r'\\href\{([^}]*)\}\{([^}]*)\}', plain)}
+    # The handout's links to other handouts' appendices are compared, like its names for those handouts, after
+    # HAND_REWRITES has turned them into the tokens the chapter's links to the same sections become.
+    for pattern, replacement in HAND_REWRITES:
+        plain = re.sub(pattern, replacement, plain)
+    h_links = {text: url for url, text in re.findall(r'\\href\{([^}]*)\}\{([^}]*)\}', plain) if url not in CROSS_LINKS}
     # A link's text in code font is `x` in the chapter and \texttt{\href{..}{x}} in the handout: compare x.
     b_links = {text.strip('`'): url for text, url in re.findall(r'\[([^\]]*)\]\(([^)#][^)]*)\)', md)}
     for text in sorted(set(b_links) | set(h_links)):
@@ -498,21 +537,39 @@ def rule_d(problems):
     return lines[-1] if lines else 'no output'
 
 
+def as_chapter(words):
+    """The appendix's words with its self-references in the page's terms: "the handout" and "the handout's"
+    become "the chapter" and "the chapter's" (the split-chapter-appendix skill, step 5). Returns the words and
+    how many were changed."""
+    out, n = [], 0
+    for w in words:
+        if w in ('handout', "handout's"):
+            out.append(w.replace('handout', 'chapter'))
+            n += 1
+        else:
+            out.append(w)
+    return out, n
+
+
 def main():
     global BOOK_DIR, BOOK_GIT
-    parser = argparse.ArgumentParser(description='Report where the handout has drifted from the book.')
+    parser = argparse.ArgumentParser(description='Report where the handout and its appendix have drifted from the book.')
     parser.add_argument('--ref', default='main', help='book branch or commit (default: main)')
     parser.add_argument('--book-git', help='a local clone of the book, read at --ref with git show')
     parser.add_argument('--book-dir', help='a local checkout of the book; files it lacks are read from GitHub at --ref')
     parser.add_argument('--handout', default=os.path.join(HERE, HANDOUT), help='handout source')
+    parser.add_argument('--appendix', default=os.path.join(HERE, APPENDIX_TEX), help="the appendix's source")
     args = parser.parse_args()
     BOOK_DIR, BOOK_GIT = args.book_dir, args.book_git
     book_name = args.book_dir or (f'{args.book_git} at {args.ref}' if args.book_git else f'book ref {args.ref}')
 
     tex = open(args.handout, encoding='utf8').read()
-    plain = printed_source(tex)
+    app = open(args.appendix, encoding='utf8').read()
+    plain, app_plain = printed_source(tex), printed_source(app)
     try:
         md = need(args.ref, CHAPTER + '/index.md')
+        split = not re.search(INLINE_APPENDIX, md, re.M)
+        app_md = need(args.ref, BOOK_APPENDIX) if split else ''
         book_table = book_macro_table(args.ref, md)
     except OSError as err:  # includes urllib's errors
         print(f'Could not read the book at {args.ref}: {err}', file=sys.stderr)
@@ -526,25 +583,52 @@ def main():
 
     problems = []
     used = {}
+    links_used = set()
     compare_title(tex, md, problems)
-    matched, h_notes, b_notes = compare_words(handout_words(between(plain, HAND_START, HAND_END)),
-                                              book_words(md, used), ACCEPTED_TEXT, problems)
+    if split:
+        compare_title(app, app_md, problems)
+        accepted = ACCEPTED_TEXT + ACCEPTED_AFTER_SPLIT_TEXT
+        matched, h_notes, b_notes = compare_words(handout_words(between(plain, HAND_START, HAND_END)),
+                                                  book_words(md, used), accepted, problems)
+        # Both sides in the page's terms: the book's own rewrites (NBSELF_REWRITE) make its "the chapter's notebook"
+        # "the handout's notebook", which as_chapter turns back.
+        app_words, n_self = as_chapter(handout_words(between(app_plain, APPENDIX_START, HAND_END)))
+        page_words, _ = as_chapter(book_words(app_md, used, APPENDIX_START))
+        app_matched, a_h_notes, a_b_notes = compare_words(app_words, page_words, accepted, problems)
+        matched |= app_matched
+        compare_marks(plain, md, problems, links_used)
+        compare_marks(app_plain, app_md, problems, links_used)
+        for entry in ACCEPTED_AFTER_SPLIT_TEXT:
+            if entry not in matched:
+                problems.append(f'No longer needed in ACCEPTED_AFTER_SPLIT_TEXT: {entry[1]!r} / {entry[2]!r}')
+        if PENDING_SPLIT_TEXT:
+            problems.append('The book has split off its appendix, so PENDING_SPLIT_TEXT can be emptied')
+    else:
+        # The handout's summary of the appendix, and the appendix's opening line, wait for the book's split.
+        hand = between(plain, HAND_START, SUMMARY) + '\n' + between(app_plain, '\\appendix', HAND_END)
+        matched, h_notes, b_notes = compare_words(handout_words(hand),
+                                                  book_words(re.sub(INLINE_APPENDIX, '', md, flags=re.M), used),
+                                                  ACCEPTED_TEXT + PENDING_SPLIT_TEXT, problems)
+        a_h_notes = a_b_notes = n_self = 0
+        compare_marks(plain + app_plain, md, problems, links_used)
+        for entry in PENDING_SPLIT_TEXT:
+            if entry not in matched:
+                problems.append(f'No longer needed in PENDING_SPLIT_TEXT: {entry[1]!r} / {entry[2]!r}')
     for entry in ACCEPTED_TEXT:
         if entry not in matched:
             problems.append(f'No longer needed in ACCEPTED_TEXT: {entry[1]!r} / {entry[2]!r}')
     for pattern, _, _ in ACCEPTED_REWRITES:
-        if not used.get(pattern):
+        if not used.get(pattern) and (split or pattern not in AFTER_SPLIT_REWRITES):
             problems.append(f'No longer needed in ACCEPTED_REWRITES: {pattern}')
 
-    links_used = set()
-    compare_marks(plain, md, problems, links_used)
     for text in sorted(set(ACCEPTED_LINKS) - links_used):
         problems.append(f'No longer needed in ACCEPTED_LINKS: {text}')
     for text in sorted(set(ACCEPTED_LINK_URLS) - links_used):
         problems.append(f'No longer needed in ACCEPTED_LINK_URLS: {text}')
     figures = compare_figures(plain, md, problems)
-    n_sym, label_macros = compare_symbols(md, plain[plain.index('\\begin{document}'):], book_table, hand_table, problems)
-    compare_labels(md, label_macros, problems)
+    bodies = plain[plain.index('\\begin{document}'):] + app_plain[app_plain.index('\\begin{document}'):]
+    n_sym, label_macros = compare_symbols(md + app_md, bodies, book_table, hand_table, problems)
+    compare_labels(md + app_md, label_macros, problems)
     book_nb = fetch(args.ref, CHAPTER + '/' + NOTEBOOK)
     if book_nb is None:
         problems.append(f'The notebook {NOTEBOOK} is not beside the chapter at this ref')
@@ -555,8 +639,20 @@ def main():
 
     rule_d_summary = rule_d(problems)
 
-    print(f'Compared the handout with the chapter {CHAPTER}/index.md in {book_name}.')
-    print(f'Notes: the chapter has {b_notes}, the handout {h_notes} printed footnotes (its instructor notes left out).')
+    if split:
+        print(f'Compared the handout with the chapter {CHAPTER}/index.md, and the appendix with its page '
+              f'{BOOK_APPENDIX}, in {book_name}.')
+        print(f'Notes: the chapter has {b_notes}, the handout {h_notes} printed footnotes (its instructor notes left '
+              f'out); the page has {a_b_notes}, the appendix {a_h_notes}.')
+        print(f'The appendix names itself the handout\'s where the page says the chapter\'s: {n_self} times, accepted.')
+    else:
+        print(f'Compared the handout and its appendix with the chapter {CHAPTER}/index.md in {book_name}, which still '
+              'has the appendix inside it.')
+        print(f'Notes: the chapter has {b_notes}, the handout and its appendix {h_notes} printed footnotes (its '
+              'instructor notes left out).')
+        print('Waiting for the book to split off its appendix: the handout\'s section "Results in the Appendix", the '
+              f'appendix\'s opening line, and {len(matched & set(PENDING_SPLIT_TEXT))} wording difference(s) listed '
+              'in PENDING_SPLIT_TEXT.')
     print(f'Figures, in order: {len(figures)} pairs; ' + FIGURES_DIFFER + '.')
     print(f'Accepted: {len(matched)} wording differences, {sum(used.values())} rewrites, '
           f'{n_sym} symbols that render differently.')
@@ -569,7 +665,6 @@ def main():
     for p in problems:
         print('- ' + p)
     return 1
-
 
 if __name__ == '__main__':
     sys.exit(main())

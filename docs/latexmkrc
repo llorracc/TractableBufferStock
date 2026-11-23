@@ -15,7 +15,7 @@ $ENV{'TEXINPUTS'} = './@resources/texlive/texmf-local/tex/latex//:' . ($ENV{'TEX
 $ENV{'BIBINPUTS'} = './@resources/texlive/texmf-local/bibtex/bib:' . ($ENV{'BIBINPUTS'} || '');
 $ENV{'BSTINPUTS'} = './@resources/texlive/texmf-local/bibtex/bst:' . ($ENV{'BSTINPUTS'} || '');
 $pdflatex="pdflatex -interaction=nonstopmode %O %S";
-@default_files = ('TractableBufferStock.tex');
+@default_files = ('TractableBufferStock-Appendix.tex', 'TractableBufferStock.tex');
 $aux_out_dir_report = 1;
 $silent  = 0;
 warn "PATH = '$ENV{PATH}'\n";

@@ -4,7 +4,13 @@ The source of *A Tractable Model of Buffer Stock Saving*, lecture notes by Chris
 with the [chapter of the same name](https://intertemporal-choice.github.io/content/consumption/tractablebufferstock)
 in the book *Intertemporal Choice*. The chapter is the source: changes are made there first.
 
-- **Read it** as a [web page](https://llorracc.github.io/TractableBufferStock/) or a [PDF](TractableBufferStock.pdf).
+The handout's appendix is a document of its own, `TractableBufferStock-Appendix.tex`, beside the handout, which states its
+results without proof in its section "Results in the Appendix"; the two link to each other. In the book, the appendix
+is a page in the part "Chapter Appendices".
+
+- **Read it** as a [web page](https://llorracc.github.io/TractableBufferStock/) or a [PDF](TractableBufferStock.pdf), and its
+  appendix as a [web page](https://llorracc.github.io/TractableBufferStock/TractableBufferStock-Appendix.html) or a
+  [PDF](TractableBufferStock-Appendix.pdf).
 - **The figures** are drawn by [`TractableBufferStock.ipynb`](TractableBufferStock.ipynb), a copy of the chapter's
   notebook, which solves the model itself; its results have been checked against those of HARK's
   [`TractableConsumerType`](https://github.com/econ-ark/HARK/blob/main/examples/TractableBufferStockModel/TractableConsumerType.ipynb).
@@ -17,10 +23,10 @@ in the book *Intertemporal Choice*. The chapter is the source: changes are made 
 
 | What | How | Needs |
 |---|---|---|
-| The PDF | `./reproduce.sh` | TeX Live, with `latexmk` |
-| The web page, in `docs/` | copy `TractableBufferStock.{tex,pdf,bbl,blg,bib}` into `docs/`, then `bash docs/TractableBufferStock.sh` | TeX Live, with `make4ht` and `dvisvgm` |
+| The two PDFs, the handout's and its appendix's | `./reproduce.sh`, which runs `latexmk` twice, since each document links to the other | TeX Live, with `latexmk` |
+| The two web pages, in `docs/` | after `./reproduce.sh`, copy `TractableBufferStock.{tex,pdf,bbl,blg,bib}` and `TractableBufferStock-Appendix.{tex,pdf,bbl,blg}` into `docs/`, then run `bash docs/TractableBufferStock.sh`, `bash docs/TractableBufferStock.sh TractableBufferStock-Appendix`, and the first again | TeX Live, with `make4ht` and `dvisvgm` |
 | The computed results: the notebook's checks and figures | `reproduce/computed.sh`, or in a container, `docker build --load -f reproduce/Dockerfile -t tractable-buffer-stock . && docker run --rm tractable-buffer-stock` | Python 3.12, `uv` or Docker |
-| Where the handout differs from the chapter | `./check-book-sync.py` | Python 3 |
-| Objects written with their notation macros | `./check-object-macros.py` | Python 3 |
+| Where the handout and its appendix differ from the chapter and its appendix | `./check-book-sync.py` | Python 3 |
+| Objects written with their notation macros, in both documents | `./check-object-macros.py` | Python 3 |
 
 `docs/` is the web page's folder. It also holds copies of this repository's other files.

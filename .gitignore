@@ -1,2 +1,24 @@
 # What reproduce/computed.sh writes
 reproduce/output/
+
+# Build products. The repository keeps only each document's .tex, .pdf, .dep and .title, and in docs/ the web
+# pages with their style sheets and images (Chris Carroll, 2026-11-22).
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+# tex4ht's working files in docs/, the CSS make4ht writes before docs/TractableBufferStock.sh merges it with
+# page-style.css, and the figures' bounding boxes, which that script makes on every build
+docs/*.4ct
+docs/*.4tc
+docs/*.dvi
+docs/*.idv
+docs/*.lg
+docs/*.tmp
+docs/*.xref
+docs/*-generated-by-make4ht.css
+docs/Figures/*.xbb
