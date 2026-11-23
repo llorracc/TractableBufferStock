@@ -333,7 +333,7 @@ condition.
 
 \subsubsection{The Target Level of $\mNrmE$}
 
-The \hyperref[sec:mTargExists]{appendix on conditions for a target} demonstrates that, given the RIC, the $\GIChFix$~is necessary and sufficient for the existence of a target value of market resources $\mTrgNrm^{\EmpLbl}$; the weaker GIC-TBS guarantees only that the $\dcEqZero$ locus exists and slopes upward, while the consumption function exists whether or not it holds.   The \hyperref[sec:mTargExact]{appendix on the exact target formula} solves for an explicit formula for that target.
+The \hyperref[sec:mTargExists]{appendix on conditions for a target} demonstrates that, given the RIC, the $\GIChFix$~is necessary and sufficient for the existence of a target value of market resources $\mTrgNrm^{\EmpLbl}$; the weaker GIC-TBS guarantees only that the $\dcEqZero$ locus exists and slopes upward, while for $\CRRA > 1$, and for $\CRRA < 1$ when $\DiscFac\WGroFachFix^{1-\CRRA}(1-\urate) < 1$, the consumption function exists whether or not the GIC-TBS holds.   The \hyperref[sec:mTargExact]{appendix on the exact target formula} solves for an explicit formula for that target.
 
 Briefly, this is accomplished as follows.  We can obtain the $\dcEqZero$ locus by substituting
 ${\cNrm}^{\EmpLbl}_{\prdt+1}={\cNrm}^{\EmpLbl}_{\prdt}={\cNrm}^{\EmpLbl}$ into equation \eqref{eq:PSTerm}:
@@ -369,13 +369,13 @@ Interestingly, the limit of the buffer stock model as $\urate \downarrow 0$ is {
 
 It turns out that in the buffer stock model, we can relax the requirement that human wealth is finite.  
 
-We pointed out above that \eqref{eq:GICExistsSoln}, which is necessary for the existence of a steady-state level of consumption, implies that the $\GIChFix$~holds in the case being considered here, the limit as $\urate \downarrow 0$.  The interesting question is therefore what happens when the $\FHWCWGro$~does not hold (that is $\WGroFac > \Rfree$).  
+We pointed out above that \eqref{eq:GICExistsSoln}, which is necessary for the existence of a steady-state level of consumption, reduces to the $\GIChFix$ in the case being considered here, the limit as $\urate \downarrow 0$.  The interesting question is therefore what happens when the $\FHWCWGro$~does not hold (that is $\WGroFac > \Rfree$).  
 
 Given that the $\GICWGro$~holds, if the $\FHWCWGro$~does not hold the RIC may or may not hold:  $\WGroFac > \Rfree$ implies that $\APFac/\Rfree > \APFac/\WGroFac$ but $1 > \APFac/\WGroFac$ could be consistent with $\APFac/\Rfree$ being greater or less than one.  But recall that our assumption is that the unemployed consumer is assumed to behave according to the perfect foresight model with human wealth equal to zero.  We must therefore impose the RIC in order to obtain a nondegenerate solution.
 
 For any finite horizon, human wealth is finite, and there is a positive probability that income will be zero over the remainder of the horizon.  This puts a strict bound on the extent to which consumers are willing to rely for current consumption upon future income that is unbounded in expectation (as the horizon extends) but potentially bounded in practice.  In effect, the precautionary motive introduces a self-imposed borrowing constraint that prevents the (arbitrarily large) amount of future income from being something the consumer is willing to borrow against.
 
-The consequence is that the limiting model (as $\urate \downarrow 0$) exhibits a solution with a unique finite target $\mNrmE$ so long as \eqref{eq:GICExistsSoln} holds, {\it even if human wealth is infinite}; in this case the $\dmEqZero$ locus is downward sloping (because $\Rfree < \WGroFachFix$ means $\RNrmByG < 1$, so its slope $1-\RNrmByG^{-1}$ in \eqref{eq:mDelEqZero} is negative) while the $\dcEqZero$ locus is upward sloping (as guaranteed by \eqref{eq:GICExistsSoln}).  Thus, a target $\mNrmE$ will exist.  (The $\GIChFix$ that a target requires holds automatically here: $\RNrmByG < 1$ and the RIC give $\GPFachFix = \RNrmByG\RPFac < \RPFac < 1$.)
+The consequence is that, given the RIC, the limiting model (as $\urate \downarrow 0$) exhibits, for $\CRRA > 1$, and for $\CRRA < 1$ when $\DiscFac\WGroFachFix^{1-\CRRA}(1-\urate) < 1$, a solution with a unique finite target $\mNrmE$ so long as the $\GIChFix$ holds, {\it even if human wealth is infinite}; in this case the $\dmEqZero$ locus is downward sloping (because $\Rfree < \WGroFachFix$ means $\RNrmByG < 1$, so its slope $1-\RNrmByG^{-1}$ in \eqref{eq:mDelEqZero} is negative) while the $\dcEqZero$ locus is upward sloping (as guaranteed by the \hyperref[eq:GICExistsSoln]{GIC-TBS}, which the $\GIChFix$ implies).  Thus, a target $\mNrmE$ will exist.  (The $\GIChFix$ holds automatically here: $\RNrmByG < 1$ and the RIC give $\GPFachFix = \RNrmByG\RPFac < \RPFac < 1$.)
 
 The conditions used in this handout, and what each guarantees, are summarized below.  They nest: the $\GICWGro$ implies the $\GIChFix$, which implies the GIC-TBS.
 \begin{table}[htbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.3}
@@ -401,7 +401,7 @@ In the special case of logarithmic utility ($\CRRA = 1$), the
 and that the RIC and the $\GIChFix$ guarantee that the denominator of the fraction is a positive number.
 
 This expression encapsulates several of the key intuitions of the model.  The
-``human wealth effect'' of growth (cf.\ \cite{summersCapTax}) is captured by the first $\WGroRtehFix$ term in the denominator;
+``human wealth effect'' of growth, which \citet{summersCapTax} emphasized, is captured by the first $\WGroRtehFix$ term in the denominator;
 clearly, for any calibration for which the denominator is a positive number, increasing
 $\WGroRtehFix$ will increase the size of the denominator and therefore reduce the target
 level of wealth.  The human wealth effect of interest rates is  correspondingly captured
@@ -496,7 +496,7 @@ a condition that can be visually verified for our benchmark calibration in Figur
 \\       \Delta \log \cLvl^{\EmpLbl}_{t+1} & \approx  \CRRA^{-1}(\rfree-\discRte) +  \urate \cGap _{t+1}, %\label{eq:cLevGroLogUtil}
 \end{aligned}\end{gathered}\end{equation}
 where the last line uses the same (dubious) approximations used to obtain
-\eqref{eq:cedelapprox}.\footnote{We have also assumed that $(\cGap _{t+1})^{2}$ is ``small''.}
+\eqref{eq:cedelapprox}.\footnote{We have also assumed that $(\cGap _{t+1})^{2}$ is ``small.''}
 
 Thus consumption growth is equal to what it would be in the absence of
 uncertainty, plus a precautionary term.  Furthermore, 
@@ -795,7 +795,7 @@ motive and newborns are unrelated to anyone in the existing
 population.  Our motivation is to make the model more tractable,
 rather than to represent an important feature of the real world; the model without a ``stake'' can only be solved by simulation, and Figure~\ref{fig:SOENoStakescPath} shows how its aggregate consumption evolves when households start with no wealth.
 
-\subsubsection{A ``Stake'' That Yields a Representative Agent}
+\subsubsection{A \texorpdfstring{``Stake''}{\textquotedblleft Stake\textquotedblright} That Yields a Representative Agent}
 
 We first consider a version of the model in which an exogenous
 redistribution program guarantees that the behavior of employed households can 
@@ -973,15 +973,15 @@ roughly to the postwar population growth rate in the United States.
 
 \section{Results in the Appendix}\label{sec:TractableBufferStock-AppendixResults}
 
-The \href{\AppendixPDF}{appendix} derives nine further results, which are stated here without their derivations.  The handout's notebook uses those on the MPC to solve the model.
+The \href{\AppendixPDF}{appendix} derives nine further results, which are stated here without their derivations.  The \href{https://github.com/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb}{notebook} uses those on the MPC to solve the model.
 \begin{itemize}
 \item \emph{\hyperref[sec:CGroApprox]{Approximate consumption growth}.}  Taylor approximations turn the employed consumer's Euler equation into ${\cNrm}^{\EmpLbl}_{t+1}/{\cNrm}^{\EmpLbl}_{t} \approx \GPFachFix\left(1+\urate(1+\prudEx\cGap_{t+1})\cGap_{t+1}\right)$, the approximation this handout uses, where $\prudEx = (\CRRA-1)/2$.
 \item \emph{\hyperref[sec:mTargExists]{A target exists if and only if the $\GIChFix$ holds}.}  Given the RIC, the employed consumer has a target $\mTrgNrm^{\EmpLbl}$ if and only if $\GPFachFix < 1$, that is, $\DiscFac < \WGroFachFix^{\CRRA}/\Rfree$.  When the $\FHWChFix$ fails ($\WGroFachFix \geq \Rfree$), the RIC implies the $\GIChFix$, so a target always exists.
-\item \emph{\hyperref[sec:TractableBufferStock-cLocusExists]{The $\dcEqZero$ locus exists under a weaker condition}.}  Given the RIC, the $\dcEqZero$ locus exists, and slopes upward, if and only if the GIC-TBS, $\GPFachFix(1-\urate)^{1/\CRRA} < 1$, holds, while the employed consumer's consumption function exists whether or not it does.  The GIC-TBS can hold even when the perfect foresight $\GICWGro$ fails.  When the GIC-TBS holds but the $\GIChFix$ fails, there is no target, and the ratio of wealth to income grows forever.
+\item \emph{\hyperref[sec:TractableBufferStock-cLocusExists]{The $\dcEqZero$ locus exists under a weaker condition}.}  Given the RIC, the $\dcEqZero$ locus exists, and slopes upward, if and only if the GIC-TBS, $\GPFachFix(1-\urate)^{1/\CRRA} < 1$, holds, while for $\CRRA > 1$, and for $\CRRA < 1$ when $\DiscFac\WGroFachFix^{1-\CRRA}(1-\urate) < 1$, the employed consumer's consumption function exists whether or not the GIC-TBS holds.  The GIC-TBS can hold even when the perfect foresight $\GICWGro$ fails.  When the GIC-TBS holds but the $\GIChFix$ fails, there is no target, and the ratio of wealth to income grows forever.
 \item \emph{\hyperref[sec:mTargExact]{The exact target}.}  The target is $\mTrgNrm^{\EmpLbl} = 1 + \Rfree/(\WGroFachFix+\Rfree\MPC\straight-\Rfree)$, whose denominator the RIC and the $\GIChFix$ make positive.  As the unemployment risk vanishes, the target approaches 1 if the perfect foresight $\GICWGro$ holds, and a finite value above 1 if $\APFac_{\WGroFac} = 1$.
 \item \emph{\hyperref[sec:mTargApprox]{Approximate formulas for the target}.}  Taylor approximations give simple formulas for the target, such as $\mTrgNrm^{\EmpLbl} \approx 1 + 1/\left((\WGroRtehFix-\rfree)+\discRte(1+(\WGroRtehFix+\discRte-\rfree)/\urate)\right)$ under logarithmic utility.  Under logarithmic utility they are close; otherwise they are reliable only when the consumer is barely growth-impatient relative to the unemployment risk: rough when $\discRte=\rfree$, and useless at the benchmark calibration.
 \item \emph{\hyperref[sec:TractableBufferStock-MPC]{The MPC at the target and as $\mNrm$ approaches zero}.}  The MPC at the target is the root in (0, 1) of a quadratic, which has a closed form.  As $\mNrm$ approaches zero, the MPC approaches $\MPC/(\MPC+\RPFac\urate^{1/\CRRA})$, which lies between the perfect foresight $\MPC$ and 1.
-\item \emph{\hyperref[sec:TractableBufferStock-MPCDerivatives]{The MPC's derivatives at the target}.}  Each derivative of the MPC at the target has an explicit formula in terms of the lower ones.  With the \hyperref[sec:NumericalSolution]{reverse-shooting equations}, these let the notebook trace the consumption function out from the target.
+\item \emph{\hyperref[sec:TractableBufferStock-MPCDerivatives]{The MPC's derivatives at the target}.}  Each derivative of the MPC at the target has an explicit formula in terms of the lower ones.  With the \hyperref[sec:TractableBufferStock-ReverseShooting]{reverse-shooting equations}, these let the notebook trace the consumption function out from the target.
 \item \emph{\hyperref[sec:TractableBufferStock-ValueFunction]{The value function}.}  For $\CRRA \neq 1$, the unemployed consumer's value is current utility times $1/\MPC$, as in the perfect foresight model.  The employed consumer's value at the target has a closed form, finite when $\DiscFac\WGroFachFix^{1-\CRRA}(1-\urate) < 1$, which the RIC and the $\GIChFix$ imply when $\CRRA \geq 1$.
 \item \emph{\hyperref[sec:PGroGEQRfree]{The consumption function as wealth grows large}.}  When human wealth is finite ($\WGroFac < \Rfree$), the consumption function approaches the perfect foresight function $\MPC(\mNrm-1+\hNrm)$ as $\mNrm$ grows, even when the $\FHWChFix$ fails.  When $\WGroFac \geq \Rfree$, it approaches $\MPC\mNrm$ only in ratio.
 \end{itemize}

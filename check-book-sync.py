@@ -25,7 +25,8 @@ It compares the title, the wording (headings, equations, notes and figure captio
 labels, citations, external links, the figures, the notebook beside the chapter, and the symbols
 the macros render. It ignores macro names that render the same, a macro that prints a single
 letter or symbol against that symbol written raw (rule D's conversions), quotation marks and
-emphasis, and does not compare the bibliography's entries.
+emphasis, and does not compare the bibliography's entries or the second argument of a heading's
+\\texorpdfstring, the words of its PDF bookmark.
 
 A symbol that prints differently in the two documents is a difference to fix, never one to accept
 (Chris Carroll, 2026-11-16 11:11:13 EST: "This is exactly the kind of thing that should be sync'd
@@ -299,6 +300,8 @@ def handout_words(t):
     t = unwrap(t, r'\\parbox(?:\[[a-z]\])?\{[^}]*\}')
     t = t.replace('\\\\', ' ')  # a display's rows, before \& is read as an ampersand
     t = t.replace('\\%', '%').replace('\\&', '&')
+    # A heading's \texorpdfstring{what prints}{its PDF bookmark}: what prints is compared, the bookmark is not.
+    t = re.sub(r'\\texorpdfstring\{((?:[^{}]|\{[^{}]*\})*)\}\{(?:[^{}]|\{[^{}]*\})*\}', r'\1', t)
     for opener in (r'\\hyperref\[[^\]]*\]', r'\\href\{[^}]*\}', r'\\textit', r'\\textbf', r'\\emph', r'\\texttt',
                    r'\\centerline', r'\\lefteqn', r'\\handout[CM]', r'\\(?:sub)*section\*?'):
         t = unwrap(t, opener)
