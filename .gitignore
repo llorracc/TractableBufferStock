@@ -22,3 +22,5 @@ docs/*.tmp
 docs/*.xref
 docs/*-generated-by-make4ht.css
 docs/Figures/*.xbb
+# Text dumps of the PDFs (pdftotext writes them beside the PDF), which are not sources
+/TractableBufferStock*.txt
