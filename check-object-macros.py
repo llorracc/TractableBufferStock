@@ -36,7 +36,7 @@ import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT = ['TractableBufferStock.tex', 'TractableBufferStock-Appendix.tex']  # the handout, and its appendix since the split
+DEFAULT = ['TractableBufferStock.tex', 'TractableBufferStock-Appendix.tex', 'TractableBufferStock-Macro.tex']  # the handout, its appendix since the split, and its note since 2026-11-25
 
 # Raw letters. (letter, where it may stay raw, why). Where: a pattern searched near the letter, which is marked
 # [[ ]]; None for anywhere.

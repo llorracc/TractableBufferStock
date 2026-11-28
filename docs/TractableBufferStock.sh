@@ -1,9 +1,10 @@
 #!/bin/bash
-# Rebuild a web page, in this directory: the handout (the default) or its appendix.
+# Rebuild a web page, in this directory: the handout (the default), its appendix, or its note.
 #   bash docs/TractableBufferStock.sh                                the handout, TractableBufferStock.html
 #   bash docs/TractableBufferStock.sh TractableBufferStock-Appendix  the appendix, TractableBufferStock-Appendix.html
-# Each page links to the other through the other's .aux, so after a change that moves labels, build the
-# handout, then the appendix, then the handout again. Both use TractableBufferStock.cfg, and the build file
+#   bash docs/TractableBufferStock.sh TractableBufferStock-Macro     the note, TractableBufferStock-Macro.html
+# The pages link to each other through each other's .aux, so after a change that moves labels, build the
+# handout, then the appendix and the note, then the handout again. All use TractableBufferStock.cfg, and the build file
 # TractableBufferStock.mk4, which make4ht would otherwise look for under the job's own name.
 # CLEAR_OLD_PAGES=1 first removes the page's numbered pages (one per footnote) from earlier builds, which
 # make4ht never deletes: a page with fewer footnotes than before otherwise leaves the old ones served.

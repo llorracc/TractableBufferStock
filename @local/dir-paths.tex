@@ -1,10 +1,12 @@
 \providecommand{\FigDir}{}\renewcommand{\FigDir}{\econtexRoot/Figures}
-% The handout and its appendix link to each other as files in the same folder (this repo is the master copy):
+% The handout, its appendix and its note link to each other as files in the same folder (this repo is the master copy):
 % each PDF to the other PDF, and on the web, where make4ht defines \HCode, each page to the other page.
 \ifdefined\HCode
   \providecommand{\HandoutPDF}{TractableBufferStock.html}
   \providecommand{\AppendixPDF}{TractableBufferStock-Appendix.html}
+  \providecommand{\MacroPDF}{TractableBufferStock-Macro.html}
 \else
   \providecommand{\HandoutPDF}{TractableBufferStock.pdf}
   \providecommand{\AppendixPDF}{TractableBufferStock-Appendix.pdf}
+  \providecommand{\MacroPDF}{TractableBufferStock-Macro.pdf}
 \fi

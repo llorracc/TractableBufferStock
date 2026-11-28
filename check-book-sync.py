@@ -82,8 +82,14 @@ BOOK_APPENDIX = 'content/appendices/chapters/TractableBufferStock.md'
 APPENDIX_START = 'This is the appendix to'  # the first words of the appendix's shared text, in both
 SUMMARY = '\\section{Results in the Appendix}'  # the handout's summary of the appendix
 INLINE_APPENDIX = r'^## Appendix\s*$'  # the chapter's heading while the appendix is still inside it
-# The two documents' links to each other, which the book writes as links to labels; neither is compared.
-CROSS_LINKS = ('\\HandoutPDF', '\\AppendixPDF')
+# The note made from the handout's section "A Macroeconomic Interpretation" (plan: workspace-course-choice's
+# records, 2026-11-25), a document of its own; the book's Supplemental Note for it; and the first words of its
+# shared text, in both.
+MACRO_TEX = 'TractableBufferStock-Macro.tex'
+BOOK_MACRO = 'content/supplemental/TractableBufferStockMacro.md'
+MACRO_START = 'Loosely following'
+# The documents' links to each other, which the book writes as links to labels; none is compared.
+CROSS_LINKS = ('\\HandoutPDF', '\\AppendixPDF', '\\MacroPDF')
 
 # The book's macro names, where they differ, and the handout's for the same objects.
 BOOK_TO_HANDOUT = {}
@@ -562,17 +568,21 @@ def main():
     parser.add_argument('--book-dir', help='a local checkout of the book; files it lacks are read from GitHub at --ref')
     parser.add_argument('--handout', default=os.path.join(HERE, HANDOUT), help='handout source')
     parser.add_argument('--appendix', default=os.path.join(HERE, APPENDIX_TEX), help="the appendix's source")
+    parser.add_argument('--note', default=os.path.join(HERE, MACRO_TEX), help="the note's source")
     args = parser.parse_args()
     BOOK_DIR, BOOK_GIT = args.book_dir, args.book_git
     book_name = args.book_dir or (f'{args.book_git} at {args.ref}' if args.book_git else f'book ref {args.ref}')
 
     tex = open(args.handout, encoding='utf8').read()
     app = open(args.appendix, encoding='utf8').read()
-    plain, app_plain = printed_source(tex), printed_source(app)
+    note = open(args.note, encoding='utf8').read()
+    plain, app_plain, note_plain = printed_source(tex), printed_source(app), printed_source(note)
     try:
         md = need(args.ref, CHAPTER + '/index.md')
         split = not re.search(INLINE_APPENDIX, md, re.M)
         app_md = need(args.ref, BOOK_APPENDIX) if split else ''
+        note_raw = fetch(args.ref, BOOK_MACRO)  # None until the book has the note
+        note_md = note_raw.decode('utf8') if note_raw is not None else ''
         book_table = book_macro_table(args.ref, md)
     except OSError as err:  # includes urllib's errors
         print(f'Could not read the book at {args.ref}: {err}', file=sys.stderr)
@@ -617,6 +627,22 @@ def main():
         for entry in PENDING_SPLIT_TEXT:
             if entry not in matched:
                 problems.append(f'No longer needed in PENDING_SPLIT_TEXT: {entry[1]!r} / {entry[2]!r}')
+    # The note, compared as the appendix is: in the page's terms, its "the handout" read as "the chapter".
+    n_note_self = n_h_note = n_b_note = 0
+    note_figures = []
+    if not note_md:
+        problems.append(f'The book has no Supplemental Note {BOOK_MACRO} at this ref, for the handout\'s {MACRO_TEX}')
+    elif MACRO_START not in note_md:
+        problems.append(f'The book\'s note {BOOK_MACRO} doesn\'t contain the note\'s first words, {MACRO_START!r}')
+    else:
+        compare_title(note, note_md, problems)
+        note_words, n_note_self = as_chapter(handout_words(between(note_plain, MACRO_START, HAND_END)))
+        page_words, _ = as_chapter(book_words(note_md, used, MACRO_START))
+        note_matched, n_h_note, n_b_note = compare_words(note_words, page_words,
+                                                         ACCEPTED_TEXT + ACCEPTED_AFTER_SPLIT_TEXT, problems)
+        matched |= note_matched
+        compare_marks(note_plain, note_md, problems, links_used)
+        note_figures = compare_figures(note_plain, note_md, problems)
     for entry in ACCEPTED_TEXT:
         if entry not in matched:
             problems.append(f'No longer needed in ACCEPTED_TEXT: {entry[1]!r} / {entry[2]!r}')
@@ -629,9 +655,10 @@ def main():
     for text in sorted(set(ACCEPTED_LINK_URLS) - links_used):
         problems.append(f'No longer needed in ACCEPTED_LINK_URLS: {text}')
     figures = compare_figures(plain, md, problems)
-    bodies = plain[plain.index('\\begin{document}'):] + app_plain[app_plain.index('\\begin{document}'):]
-    n_sym, label_macros = compare_symbols(md + app_md, bodies, book_table, hand_table, problems)
-    compare_labels(md + app_md, label_macros, problems)
+    bodies = (plain[plain.index('\\begin{document}'):] + app_plain[app_plain.index('\\begin{document}'):]
+              + note_plain[note_plain.index('\\begin{document}'):])
+    n_sym, label_macros = compare_symbols(md + app_md + note_md, bodies, book_table, hand_table, problems)
+    compare_labels(md + app_md + note_md, label_macros, problems)
     book_nb = fetch(args.ref, CHAPTER + '/' + NOTEBOOK)
     if book_nb is None:
         problems.append(f'The notebook {NOTEBOOK} is not beside the chapter at this ref')
@@ -656,6 +683,10 @@ def main():
         print('Waiting for the book to split off its appendix: the handout\'s section "Results in the Appendix", the '
               f'appendix\'s opening line, and {len(matched & set(PENDING_SPLIT_TEXT))} wording difference(s) listed '
               'in PENDING_SPLIT_TEXT.')
+    if note_md:
+        print(f'Compared the note with the book\'s Supplemental Note {BOOK_MACRO}: notes, the page {n_b_note}, the note '
+              f'{n_h_note}; it names the handout where the page names the chapter {n_note_self} times, accepted; '
+              f'figures, in order: {len(note_figures)} pairs.')
     print(f'Figures, in order: {len(figures)} pairs; ' + FIGURES_DIFFER + '.')
     print(f'Accepted: {len(matched)} wording differences, {sum(used.values())} rewrites, '
           f'{n_sym} symbols that render differently.')
