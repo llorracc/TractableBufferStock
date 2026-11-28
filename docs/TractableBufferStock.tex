@@ -45,7 +45,7 @@ Two assumptions make the model tractable. Unemployment is permanent, so an unemp
 
 We show that a consumer who is sufficiently impatient has a target ratio of wealth to income, at which impatience, pulling wealth down, is balanced by prudence, which grows stronger as wealth falls; and that the consumption function is concave. The model then shows why estimates of the consumption Euler equation can mislead and, for \href{\MacroPDF}{a small open economy}, how a transfer to each newborn generation (a ``stake'') lets a representative agent describe the behavior of many households. The \href{\AppendixPDF}{appendix} derives the results and describes how the model is solved numerically.
 
-A companion notebook in the Econ-ARK DemARK collection, \href{https://econ-ark.org/materials/tractablebufferstock-interactive}{Tractable Buffer Stock (interactive)}, lets you vary the model's parameters and watch the consumption function and target wealth respond. HARK solves the model as its \texttt{\href{https://github.com/econ-ark/HARK/blob/main/examples/TractableBufferStockModel/TractableConsumerType.ipynb}{TractableConsumerType}}.  This handout's figures are drawn by its \href{https://github.com/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb}{figure notebook}, which solves the model itself; its results have been checked against HARK's.  Run it in your browser, with nothing to install, in \href{https://intertemporal-choice.github.io/lite/notebooks/index.html?path=TractableBufferStock.ipynb}{JupyterLite}, or open it in \href{https://colab.research.google.com/github/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb}{Colab} or \href{https://mybinder.org/v2/gh/llorracc/TractableBufferStock/main?labpath=TractableBufferStock.ipynb}{Binder}.
+A companion notebook in the Econ-ARK DemARK collection, \href{https://econ-ark.org/materials/tractablebufferstock-interactive}{Tractable Buffer Stock (interactive)}, lets you vary the model's parameters and watch the consumption function and target wealth respond. HARK solves the model as its \texttt{\href{https://github.com/econ-ark/HARK/blob/main/examples/TractableBufferStockModel/TractableConsumerType.ipynb}{TractableConsumerType}}.\marginFootnote{This handout's figures are drawn by its \href{https://github.com/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb}{figure notebook}, which solves the model itself; its results have been checked against HARK's.  Run it in your browser, with nothing to install, in \href{https://intertemporal-choice.github.io/lite/notebooks/index.html?path=TractableBufferStock.ipynb}{JupyterLite}, or open it in \href{https://colab.research.google.com/github/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb}{Colab} or \href{https://mybinder.org/v2/gh/llorracc/TractableBufferStock/main?labpath=TractableBufferStock.ipynb}{Binder}.\footnoteLabel{TractableBufferStock-FigureNotebook}}
 
 \section{The Microeconomic Consumer's Problem}
 The aggregate wage $\Wage_{t}$ grows by a constant factor $\WGroFac$ every period, reflecting exogenous labor productivity improvements:
@@ -425,7 +425,7 @@ Figure~\ref{fig:PhaseDiag} presents the phase diagram.
 \begin{figure}
 \caption{Phase Diagram}\label{fig:PhaseDiag}
 \includegraphics[width=6in]{\FigDir/TractableBufferStockPhaseDiag}
-\FigNote{The $\dcEqZero$ and $\dmEqZero$ loci cross at the target; the stable arm through it is the consumption function, and the arrows show the direction of motion in each region.}
+\FigNote{The $\dcEqZero$ and $\dmEqZero$ loci cross at the target; the stable arm through it is the consumption function, and the arrows show the direction of motion in each region. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 The $\Delta \mNrmE_{\tSS} = 0$ locus, given in \eqref{eq:mDelEqZero}, indicates, for a given level of $\mNrmE_{\tSS}$, how much consumption ${\cNrm}^{\EmpLbl}_{\tSS}$ would be exactly the right amount to leave $\mNrmE$ unchanged.  Call this the ``permanently sustainable consumption locus,'' or for short ``sustainable consumption.''\footnote{Some authors refer to $\Delta \mNrmE_{\tSS} = 0$ as giving the level of ``permanent income,'' but this definition differs from \cite{friedmanATheory}'s and is problematic because it could be confused with ``permanent labor income'' $\Wage_{t} \labor_{t}$.}  For any given $\mNrmE$, consuming an amount less than the ``sustainable'' level will cause wealth to rise (and conversely for points above $\Delta \mNrmE =0$).  This provides the logic for the horizontal arrows of motion in the diagram: Above the sustainable consumption locus they point left, and below they point right.
@@ -442,7 +442,7 @@ was zero, this means that to the right of the locus, $\cNrmE$ is declining (henc
 \begin{figure}
 \caption{The Consumption Function}\label{fig:cFunc}
 \includegraphics[width=6in]{\FigDir/TractableBufferStockcFunc}
-\FigNote{The consumption function lies below the 45 degree line and below the perfect foresight consumption function $\bar{\cFunc}$, which it approaches as $\mNrmE$ grows.}
+\FigNote{The consumption function lies below the 45 degree line and below the perfect foresight consumption function $\bar{\cFunc}$, which it approaches as $\mNrmE$ grows. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 \subsubsection{The Consumption Function}
@@ -511,7 +511,7 @@ gets low, the growth of consumption for a consumer who stays employed gets very 
 \begin{figure}
 \caption{Income and Consumption Growth}\label{fig:GrowthA}
 \includegraphics[width=6in]{\FigDir/TractableBufferStockGrowthA}
-\FigNote{The growth of consumption for a consumer who stays employed falls as $\mNrmE$ rises and equals income growth $\WGroRtehFix$ at the target; its excess over the perfect foresight rate is the precautionary increment.}
+\FigNote{The growth of consumption for a consumer who stays employed falls as $\mNrmE$ rises and equals income growth $\WGroRtehFix$ at the target; its excess over the perfect foresight rate is the precautionary increment. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 
@@ -538,7 +538,7 @@ target wealth-to-income ratio.
 \caption{Effect of An Increase In $\rfree$}
 \includegraphics[width=6in]{\FigDir/TractableBufferStockGrowthB}
 \label{fig:GrowthB}
-\FigNote{A higher interest rate raises the perfect foresight growth rate and shifts the consumption growth curve up, so the target rises.}
+\FigNote{A higher interest rate raises the perfect foresight growth rate and shifts the consumption growth curve up, so the target rises. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 %\input{handoutBibMake.tex}\end{document}
@@ -588,7 +588,7 @@ saving \citep{kimball:smallandlarge}.
 \caption{Effect of an Increase in $\urate$}
 \includegraphics[width=6in]{\FigDir/cGroIncreaseMhoPlot}
 \label{fig:cGroIncreaseMhoPlot}
-\FigNote{Higher unemployment risk shifts the consumption growth curve up and raises income growth $\WGroRtehFix$ for consumers who stay employed; at the benchmark calibration the target rises.}
+\FigNote{Higher unemployment risk shifts the consumption growth curve up and raises income growth $\WGroRtehFix$ for consumers who stay employed; at the benchmark calibration the target rises. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 \subsubsection{Death to the Log-Linearized Consumption Euler Equation!}
@@ -703,21 +703,21 @@ adjusts toward the steady state.
 \caption{Effect of Lower $\discRte$ On Consumption Function}
 \includegraphics[width=6in]{\FigDir/PhaseDiagramDecreaseThetaPlot}
 \label{fig:DecreaseTheta}
-\FigNote{The new consumption function lies below the original; from the original target, consumption drops, and the consumer then moves along the new function to the higher new target.}
+\FigNote{The new consumption function lies below the original; from the original target, consumption drops, and the consumer then moves along the new function to the higher new target. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 \begin{figure}
 \caption{Path of ${\cNrm}^{\EmpLbl}$ Before and After $\discRte$ Decline}
 \includegraphics[width=6in]{\FigDir/cPathAfterThetaDrop}
 \label{fig:cPathAfterThetaDrop}
-\FigNote{Consumption drops when $\discRte$ falls, then rises to a higher steady-state ratio.}
+\FigNote{Consumption drops when $\discRte$ falls, then rises to a higher steady-state ratio. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 \begin{figure}
 \caption{Path of $\mNrmE$ Before and After $\discRte$ Decline}
 \includegraphics[width=6in]{\FigDir/mPathAfterThetaDrop}
 \label{fig:mPathAfterThetaDrop}
-\FigNote{Market resources rise gradually to the higher new target.}
+\FigNote{Market resources rise gradually to the higher new target. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 
@@ -726,7 +726,7 @@ adjusts toward the steady state.
 \medskip
 \includegraphics[width=6in]{\FigDir/MPCPathAfterThetaDrop}
 \label{fig:MPCPathAfterThetaDrop}
-\FigNote{The MPC drops when $\discRte$ falls and keeps falling as wealth accumulates, staying above the perfect foresight MPC $\MPC$.}
+\FigNote{The MPC drops when $\discRte$ falls and keeps falling as wealth accumulates, staying above the perfect foresight MPC $\MPC$. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 \section{A Macroeconomic Interpretation}
@@ -737,7 +737,7 @@ Loosely following~\cite{cjSOE}, the model can be read as a small open economy of
 \caption{Aggregate $\CNrm$ in a Small Open Economy Before and After $\discRte$ Decline}
 \includegraphics[width=6in]{\FigDir/SOEStakescPathAfterThetaDropPlot}
 \label{fig:SOEStakescPathAfterThetaDropPlot}
-\FigNote{With stakes, aggregate consumption behaves like an individual's: it drops, then rises to a higher ratio.}
+\FigNote{With stakes, aggregate consumption behaves like an individual's: it drops, then rises to a higher ratio. \LiveVersion{TractableBufferStock-FigureNotebook}}
 \end{figure}
 
 

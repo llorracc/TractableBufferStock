@@ -19,3 +19,41 @@ Make:match("html?$", fixligatures)
 -- 700 characters) and pointed the in-page figure links at them. TractableBufferStock.sh turns the default list off.
 local domfilter = require "make4ht-domfilter"
 Make:match("html?$", domfilter({"fixinlines", "idcolons", "joincharacters", "tablerows", "booktabs", "itemparagraphs"}, "tbsdomfilters"))
+
+-- A figure's note ends with "[live version]", a link to the footnote that gives the figure notebook's links (Chris,
+-- 2026-11-27 22:11:09 EST). tex4ht puts each footnote on a page of its own, and the link is written as #id: point
+-- every link whose id isn't on its page, but is on another of the same page's pages, at that page.
+local function pages_holding(dir, job)
+  local where, pattern = {}, "^" .. job:gsub("%p", "%%%0") .. "%d*%.html$"
+  for page in lfs.dir(dir) do
+    if page:match(pattern) then
+      local f = io.open(dir .. "/" .. page, "r")
+      if f then
+        for id in f:read("*a"):gmatch("id=[\"']([^\"']+)[\"']") do where[id] = page end
+        f:close()
+      end
+    end
+  end
+  return where
+end
+Make:match("html?$", function(filename)
+  local dir, base = filename:match("^(.-)/?([^/]+)$")
+  if dir == "" then dir = "." end
+  local f = io.open(filename, "r")
+  if not f then return end
+  local s = f:read("*a")
+  f:close()
+  local here = {}
+  for id in s:gmatch("id=[\"']([^\"']+)[\"']") do here[id] = true end
+  local where = nil
+  local fixed = s:gsub("href=([\"'])#([^\"']+)%1", function(q, id)
+    if here[id] then return nil end
+    where = where or pages_holding(dir, base:match("^(.-)%d*%.html?$"))
+    if where[id] and where[id] ~= base then return "href=" .. q .. where[id] .. "#" .. id .. q end
+  end)
+  if fixed ~= s then
+    local o = io.open(filename, "w")
+    o:write(fixed)
+    o:close()
+  end
+end)

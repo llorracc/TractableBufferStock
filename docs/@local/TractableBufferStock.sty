@@ -57,3 +57,22 @@
 \else
   \newcommand{\FigNote}[1]{\par\nointerlineskip\vspace{-6pt}{\small\noindent Note: #1\par}}
 \fi
+
+% A note that is a margin note in the book's chapter prints as a footnote here (the book's rule
+% margin-notes-not-footnotes); the sync check pairs it with the chapter's {margin} block.
+\providecommand{\marginFootnote}[1]{\footnote{#1}}
+
+% A figure's note ends with "[live version]", linked to the footnote that gives the figure notebook's links (Chris,
+% 2026-11-27 22:11:09 EST): \LiveVersion{name}, where that footnote ends with \footnoteLabel{name}. The tie keeps the
+% two words on one line.
+% - In the PDF the name is a \label, recording the footnote's number rather than footmisc's \p@footnote, which the
+%   other documents can't read when they load this one's labels.
+% - On the web tex4ht puts each footnote on a page of its own, where a \label's link doesn't arrive. So the footnote
+%   carries the name as an id, and TractableBufferStock.mk4 points each link at the page that holds it.
+\ifdefined\HCode
+  \newcommand{\footnoteLabel}[1]{\HCode{<a id='#1'></a>}}
+  \newcommand{\LiveVersion}[1]{\HCode{<a href='\##1'>}[live~version]\HCode{</a>}}
+\else
+  \newcommand{\footnoteLabel}[1]{\protected@edef\@currentlabel{\arabic{footnote}}\label{#1}}
+  \newcommand{\LiveVersion}[1]{\hyperref[#1]{[live~version]}}
+\fi

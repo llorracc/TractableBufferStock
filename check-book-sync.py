@@ -278,6 +278,10 @@ def printed_source(tex):
 
 def handout_words(t):
     t = drop(t, r'\\opt\{MarginNotes\}')  # the instructor notes
+    # A figure note's last words, "[live version]", linked to the footnote with the notebook's links (Chris,
+    # 2026-11-27 22:11:09 EST), and that footnote's label.
+    t = re.sub(r'\\LiveVersion\{[^}]*\}', ' LIVEVERSION ', t)
+    t = re.sub(r'\\footnoteLabel\{[^}]*\}', '', t)
     for pattern, replacement in HAND_REWRITES:
         t = re.sub(pattern, replacement, t)
     t = re.sub(r'\\(begin|end)\{(itemize|enumerate)\}|\\item\b', '', t)
@@ -313,6 +317,7 @@ def handout_words(t):
         t = unwrap(t, opener)
     t = unwrap(t, r'\\caption', ' CAP ', ' ENDCAP ')
     t = unwrap(t, r'\\FigNote', ' CAP Note: ', ' ENDCAP ')  # the note under a figure, which is part of its caption
+    t = unwrap(t, r'\\marginFootnote', ' FOOT ', ' ENDFOOT ')  # a margin note in the chapter
     return tokens(unwrap(t, r'\\footnote', ' FOOT ', ' ENDFOOT '))
 
 
@@ -322,6 +327,8 @@ def book_words(md, used, start=BOOK_START):
     for pattern, replacement, _ in ACCEPTED_REWRITES:
         b, count = re.subn(pattern, replacement, b)
         used[pattern] = used.get(pattern, 0) + count
+    # "[live version]", the link a figure's note ends with: [[live version]](#…) or [\[live version\]](#…).
+    b = re.sub(r'\[(?:\\?\[)live version(?:\\?\])\]\(#[^)]*\)', ' LIVEVERSION ', b)
     b = re.sub(r'\\([A-Za-z]+)', lambda m: '\\' + BOOK_TO_HANDOUT.get(m[1], m[1]), b)
     b = re.sub(r'^- ', '', b, flags=re.M)  # list items, which the handout writes as \item
     # A Markdown table: its rule line and the bars between cells are layout, as the handout's \hline and & are.
@@ -337,7 +344,8 @@ def book_words(md, used, start=BOOK_START):
     b = re.sub(r'^\[\^([\w-]+)\]:[ \n]((?:.*\n?)(?:(?:[ ]{4}.*|)\n)*)', keep, b, flags=re.M)
     b = re.sub(r'\[\^([\w-]+)\]', lambda m: ' FOOT ' + footnotes.get(m[1], 'MISSING') + ' ENDFOOT ', b)
     # A margin block is read as the same note as the handout's footnote (Chris, 2026-11-15 15:58:48 EST).
-    b = re.sub(r'^:::\{margin\}\n(.*?)\n:::$', r' FOOT \1 ENDFOOT ', b, flags=re.M | re.S)
+    # A target on a margin note's first line is where a link lands (the figure notes' "[live version]"), not words.
+    b = re.sub(r'^:::\{margin\}\n(?:\([A-Za-z:-]+\)=\n)?(.*?)\n:::$', r' FOOT \1 ENDFOOT ', b, flags=re.M | re.S)
     # A figure's caption: its title, and the paragraph "Note: ..." under it, which the handout writes as \caption and
     # \FigNote (Chris, 2026-11-27 14:36:37 EST).
     b = re.sub(r'^:::\{figure\}[^\n]*\n(?::[a-z]+:[^\n]*\n)*(.*?)\n:::$', r' CAP \1 ENDCAP ', b, flags=re.M | re.S)
