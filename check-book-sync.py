@@ -312,6 +312,7 @@ def handout_words(t):
                    r'\\centerline', r'\\lefteqn', r'\\handout[CM]', r'\\(?:sub)*section\*?'):
         t = unwrap(t, opener)
     t = unwrap(t, r'\\caption', ' CAP ', ' ENDCAP ')
+    t = unwrap(t, r'\\FigNote', ' CAP Note: ', ' ENDCAP ')  # the note under a figure, which is part of its caption
     return tokens(unwrap(t, r'\\footnote', ' FOOT ', ' ENDFOOT '))
 
 
@@ -337,7 +338,8 @@ def book_words(md, used, start=BOOK_START):
     b = re.sub(r'\[\^([\w-]+)\]', lambda m: ' FOOT ' + footnotes.get(m[1], 'MISSING') + ' ENDFOOT ', b)
     # A margin block is read as the same note as the handout's footnote (Chris, 2026-11-15 15:58:48 EST).
     b = re.sub(r'^:::\{margin\}\n(.*?)\n:::$', r' FOOT \1 ENDFOOT ', b, flags=re.M | re.S)
-    # A figure's caption, which the handout writes as \caption.
+    # A figure's caption: its title, and the paragraph "Note: ..." under it, which the handout writes as \caption and
+    # \FigNote (Chris, 2026-11-27 14:36:37 EST).
     b = re.sub(r'^:::\{figure\}[^\n]*\n(?::[a-z]+:[^\n]*\n)*(.*?)\n:::$', r' CAP \1 ENDCAP ', b, flags=re.M | re.S)
     b = re.sub(r'^:name:.*$|^:align:.*$|^:width:.*$|^:::$|^:label:.*$', '', b, flags=re.M)
     b = b.replace('```{math}', '').replace('```', '')

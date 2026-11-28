@@ -47,3 +47,13 @@
     \Configure{newlabel}{\csname cur:th\endcsname\the\c@footnote}{\theequation}%
   \fi
   \label{#1}}
+
+% A figure's note (Chris, 2026-11-27 14:36:37 EST): a paragraph beginning "Note:" under the figure, in smaller type,
+% as close under the figure as it can be set. Each figure's PDF keeps a white margin of at least 7.6pt (as printed)
+% below its lowest mark, so the note is raised 6pt into it. The web page does the same in proportion to the page's
+% width: TractableBufferStock.cfg styles p.fignote.
+\ifdefined\HCode
+  \newcommand{\FigNote}[1]{\ifvmode\IgnorePar\fi\EndP\HCode{<p class="fignote">}\IgnorePar Note: #1\HCode{</p>}}
+\else
+  \newcommand{\FigNote}[1]{\par\nointerlineskip\vspace{-6pt}{\small\noindent Note: #1\par}}
+\fi

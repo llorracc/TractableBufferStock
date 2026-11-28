@@ -88,14 +88,16 @@ therefore be <img alt='Ξ  ' class='math' src='TractableBufferStock-Macro24x.svg
 therefore grows by <img alt='ΞG.  ' class='math' src='TractableBufferStock-Macro26x.svg' />
 </p>
   <h3 class='sectionHead'><span class='titlemark'>1  </span> <a id='x1-10001'></a>Stakes</h3>
-<!-- l. 95 --><p class='noindent'>We now examine this model under two assumptions about the initial “stake” of newborns in
-the economy. (We use “stake” to designate a transfer received by newborns). This is explicitly
-<span class='ecti-1200'>not </span>an inheritance, as we have assumed that individuals have no bequest motive and
-newborns are unrelated to anyone in the existing population. Our motivation is to
-make the model more tractable, rather than to represent an important feature of
-the real world; the model without a “stake” can only be solved by simulation, and
-Figure <a href='#x1-3007r2'>2<!-- tex4ht:ref: fig:SOENoStakescPath  --></a> shows how its aggregate consumption evolves when households start with no
-wealth.
+<!-- l. 95 --><p class='noindent'>We now examine this model under two assumptions about the initial “stake” of
+newborns in the economy. (We use “stake” to designate a transfer received by newborns).
+This is explicitly <span class='ecti-1200'>not </span>an inheritance, as we have assumed that individuals have no
+bequest motive and newborns are unrelated to anyone in the existing population.
+Our motivation is to make the model more tractable, rather than to represent an
+important feature of the real world; the model without a “stake” can only be solved by
+simulation, and Figure <a href='#x1-3007r2'>2<!-- tex4ht:ref: fig:SOENoStakescPath  --></a> shows how its aggregate consumption evolves when households
+start with no wealth. Both figures are drawn by the handout’s  <a href='https://github.com/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb'>notebook</a>; run it
+in your browser, with nothing to install, in  <a href='https://intertemporal-choice.github.io/lite/notebooks/index.html?path=TractableBufferStock.ipynb'>JupyterLite</a>, or open it in  <a href='https://colab.research.google.com/github/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb'>Colab</a> or
+<a href='https://mybinder.org/v2/gh/llorracc/TractableBufferStock/main?labpath=TractableBufferStock.ipynb'>Binder</a>.
 </p><!-- l. 103 --><p class='noindent'>
 </p>
   <h4 class='subsectionHead'><span class='titlemark'>1.1  </span> <a id='x1-20001.1'></a>A “Stake” That Yields a Representative Agent</h4>
@@ -232,23 +234,20 @@ obtainable without working through the extra complication involved in accounting
                                                                                      
                                                                                      
 <a id='x1-2010r1'></a>
-<figcaption class='caption'><span class='id'><span class='ecbx-1200'>Figure 1 </span> </span><span class='content'>Aggregate <img alt='C  ' class='math' src='TractableBufferStock-Macro59x.svg' /> in a Small Open Economy Before and After <img alt='𝜗  ' class='math' src='TractableBufferStock-Macro60x.svg' /> Decline.
-            With stakes, aggregate consumption behaves like an individual’s: it drops,
-            then rises to a higher ratio. Drawn by the handout’s  <a href='https://github.com/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb'>notebook</a>; run it in
-            your browser, with nothing to install, in  <a href='https://intertemporal-choice.github.io/lite/notebooks/index.html?path=TractableBufferStock.ipynb'>JupyterLite</a>, or open it in  <a href='https://colab.research.google.com/github/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb'>Colab</a>
-            or  <a href='https://mybinder.org/v2/gh/llorracc/TractableBufferStock/main?labpath=TractableBufferStock.ipynb'>Binder</a>.
+<figcaption class='caption'><span class='id'><span class='ecbx-1200'>Figure 1 </span> </span><span class='content'>Aggregate <img alt='C  ' class='math' src='TractableBufferStock-Macro59x.svg' /> in a Small Open Economy Before and After <img alt='𝜗  ' class='math' src='TractableBufferStock-Macro60x.svg' /> Decline
 </span></figcaption><!-- tex4ht:label?: x1-2010r1  -->
-  <img alt='PIC' src='./Figures/SOEStakescPathAfterThetaDropPlot.svg' style='width:96.76%' />
+  <img alt='PIC' src='./Figures/SOEStakescPathAfterThetaDropPlot.svg' style='width:96.76%' />   <p class='fignote'>Note: With stakes, aggregate consumption behaves like an individual’s: it drops, then
+rises to a higher ratio.</p>
                                                                                      
                                                                                      
   </div>
   <h4 class='subsectionHead'><span class='titlemark'>1.2  </span> <a id='x1-30001.2'></a>No Stake</h4>
-<!-- l. 228 --><p class='noindent'>The polar alternative to assuming that newborns get a “stake” is to assume that newborns
+<!-- l. 229 --><p class='noindent'>The polar alternative to assuming that newborns get a “stake” is to assume that newborns
 enter the economy with zero assets. Analysis of this version of the model must be performed
 using simulation methods, because households of different ages will have different levels of
 assets. (Because the consumption function is concave and has no closed form, aggregation
 cannot be done analytically.)
-</p><!-- l. 234 --><p class='indent'>  Our simulation procedure assumes that at date 0 the economy has existed
+</p><!-- l. 235 --><p class='indent'>  Our simulation procedure assumes that at date 0 the economy has existed
 forever (so that the age distribution of relative populations and productivities are
 at their steady-state values), but saving has been impossible prior to period
 0.<span class='footnote-mark'><a href='TractableBufferStock-Macro5.html#fn4x0'><sup class='textsuperscript'>4</sup></a></span><a id='x1-3001f4'></a>  
@@ -261,7 +260,7 @@ for all individuals, whatever their age <img alt='s  ' class='math' src='Tractab
 <img alt='me0,−s = 1.
 ' class='math-display' src='TractableBufferStock-Macro63x.svg' /><a id='x1-3003r10'></a></div>
   </td><td class='equation-label'>(10)</td></tr></table>
-<!-- l. 243 --><p class='nopar'>The consumption ratio in period 0 is therefore <img alt='c(1)  ' class='math' src='TractableBufferStock-Macro64x.svg' /> for every household (regardless of
+<!-- l. 244 --><p class='nopar'>The consumption ratio in period 0 is therefore <img alt='c(1)  ' class='math' src='TractableBufferStock-Macro64x.svg' /> for every household (regardless of
 age), while the level of per-capita labor income for a generation of age <img alt='s  ' class='math' src='TractableBufferStock-Macro65x.svg' /> is
 <img alt='  −s
 //℧   ' class='math' src='TractableBufferStock-Macro66x.svg' />.<span class='footnote-mark'><a href='TractableBufferStock-Macro6.html#fn5x0'><sup class='textsuperscript'>5</sup></a></span><a id='x1-3004f5'></a>  
@@ -285,12 +284,12 @@ C0  =     c(1)//℧   (//℧ ∕Ξ )
              1 − Ξ
 ' class='math-display' src='TractableBufferStock-Macro70x.svg' /><a id='x1-3006r11'></a></div>
   </td><td class='equation-label'>(11)</td></tr></table>
-<!-- l. 258 --><p class='nopar'>
-</p><!-- l. 260 --><p class='indent'>  The longer a generation lives, the more time it will have had to save toward its
+<!-- l. 259 --><p class='nopar'>
+</p><!-- l. 261 --><p class='indent'>  The longer a generation lives, the more time it will have had to save toward its
 target level of wealth; but newborns always begin life with no assets. After period
 0, therefore, age-heterogeneity in assets and consumption ratios creeps into the
 population.
-</p><!-- l. 263 --><p class='indent'>  The foregoing discussion contains (in some cases implicitly) all the assumptions necessary to
+</p><!-- l. 264 --><p class='indent'>  The foregoing discussion contains (in some cases implicitly) all the assumptions necessary to
 conduct a simulation of this economy. Figure <a href='#x1-3007r2'>2<!-- tex4ht:ref: fig:SOENoStakescPath  --></a> shows the path of <img alt='Ct  ' class='math' src='TractableBufferStock-Macro71x.svg' />, aggregate
 consumption as a ratio to aggregate labor income, starting from period 0 for an
 economy under the benchmark parameterization of  <a href='TractableBufferStock.html'>A Tractable Model of Buffer Stock
@@ -305,12 +304,10 @@ States.
                                                                                      
 <a id='x1-3007r2'></a>
 <figcaption class='caption'><span class='id'><span class='ecbx-1200'>Figure 2 </span> </span><span class='content'>Path of Aggregate <img alt='C  ' class='math' src='TractableBufferStock-Macro74x.svg' /> in a Small Open Economy Without Stakes From
-            Date 0. Starting with no wealth, aggregate consumption rises quickly
-            toward its steady-state ratio as households build their buffer stocks.
-            Drawn by the handout’s  <a href='https://github.com/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb'>notebook</a>; run it in your browser, with nothing
-            to install, in  <a href='https://intertemporal-choice.github.io/lite/notebooks/index.html?path=TractableBufferStock.ipynb'>JupyterLite</a>, or open it in  <a href='https://colab.research.google.com/github/llorracc/TractableBufferStock/blob/main/TractableBufferStock.ipynb'>Colab</a> or  <a href='https://mybinder.org/v2/gh/llorracc/TractableBufferStock/main?labpath=TractableBufferStock.ipynb'>Binder</a>.
+            Date 0
 </span></figcaption><!-- tex4ht:label?: x1-3007r2  -->
-  <img alt='PIC' src='./Figures/SOENoStakescPath.svg' style='width:96.76%' />
+  <img alt='PIC' src='./Figures/SOENoStakescPath.svg' style='width:96.76%' />   <p class='fignote'>Note: Starting with no wealth, aggregate consumption rises quickly toward its
+steady-state ratio as households build their buffer stocks.</p>
                                                                                      
                                                                                      
   </div>

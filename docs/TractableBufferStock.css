@@ -318,6 +318,7 @@ div.figure{text-align:center;clear:both;overflow:auto;width:100%;margin-bottom:1
 div.table{text-align:center;clear:both;overflow:auto;width:100%;margin-bottom:1em;margin-left:auto;margin-right:auto}
 div.float{text-align:center;clear:both;overflow:auto;width:100%;margin-bottom:1em;margin-left:auto;margin-right:auto}
 .subfigure img{display:block; margin-left:auto; margin-right:auto}
+div.figure p.fignote{font-size:83%;text-align:left;text-indent:0;margin:-1.5% 1.62% 0 1.62%;}
 body{text-align:justify; -webkit-hyphens:auto; hyphens:auto;}
 .equation td{text-align:center; }
 table.equation-star + p{margin-top:1em;}
